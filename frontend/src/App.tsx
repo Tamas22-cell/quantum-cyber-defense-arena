@@ -1,15 +1,15 @@
 
 import { useEffect, useMemo, useState } from "react";
-import type { ReactNode, CSSProperties } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import {
   Activity,
   AlertTriangle,
-  Shield,
-  ShieldAlert,
   BrainCircuit,
   Globe2,
   Pause,
   Play,
+  Shield,
+  ShieldAlert,
   Zap,
 } from "lucide-react";
 import {
@@ -22,6 +22,7 @@ import {
   YAxis,
 } from "recharts";
 import CyberNetwork3D from "./components/CyberNetwork3D";
+import AIThreatPanel from "./components/AIThreatPanel";
 import "./App.css";
 
 type Severity = "LOW" | "MEDIUM" | "HIGH" | "CRITICAL";
@@ -53,7 +54,7 @@ type ChartPoint = {
   threats: number;
 };
 
-const API = "http://127.0.0.1:8000/api/threats";
+const API_URL = "http://127.0.0.1:8000/api/threats";
 
 const colors = {
   cyan: "#6cf8eb",
@@ -64,7 +65,7 @@ const colors = {
   green: "#68efb5",
 };
 
-const panel: CSSProperties = {
+const panelStyle: CSSProperties = {
   background: "rgba(16, 45, 83, 0.80)",
   border: "1px solid rgba(112, 202, 255, 0.30)",
   borderRadius: 18,
@@ -82,6 +83,7 @@ function riskColor(score: number): string {
 
 function formatTime(value: string): string {
   const date = new Date(value);
+
   return Number.isNaN(date.getTime())
     ? "--:--:--"
     : date.toLocaleTimeString("hu-HU");
@@ -99,7 +101,7 @@ function Metric({
   color: string;
 }) {
   return (
-    <div style={panel}>
+    <div style={panelStyle}>
       <div
         style={{
           display: "flex",
@@ -163,7 +165,7 @@ function App() {
       fetching = true;
 
       try {
-        const response = await fetch(API, {
+        const response = await fetch(API_URL, {
           cache: "no-store",
           signal: controller.signal,
         });
@@ -177,6 +179,7 @@ function App() {
         if (!alive || !Array.isArray(data.events)) return;
 
         const list = data.events;
+
         const active = list.filter(
           (event) => event.risk_score >= 60
         ).length;
@@ -276,6 +279,7 @@ function App() {
           }}
         >
           <Shield size={36} color={colors.cyan} />
+
           <div>
             <div
               style={{
@@ -286,6 +290,7 @@ function App() {
             >
               QUANTUM CYBER DEFENSE
             </div>
+
             <div
               style={{
                 color: colors.cyan,
@@ -432,7 +437,7 @@ function App() {
             marginBottom: 20,
           }}
         >
-          <section style={panel}>
+          <section style={panelStyle}>
             <h3
               style={{
                 display: "flex",
@@ -524,7 +529,7 @@ function App() {
             </div>
           </section>
 
-          <section style={panel}>
+          <section style={panelStyle}>
             <h3
               style={{
                 display: "flex",
@@ -534,6 +539,7 @@ function App() {
             >
               <Globe2 color={colors.cyan} size={21} />
               Cyber Network
+
               <span
                 style={{
                   marginLeft: "auto",
@@ -541,7 +547,7 @@ function App() {
                   fontSize: 10,
                 }}
               >
-                3D SIMULATION
+                3D LIVE
               </span>
             </h3>
 
@@ -558,12 +564,13 @@ function App() {
                 background: "#06162988",
               }}
             >
-              <CyberNetwork3D />
+              {/* V3 FIX: Pass the live API events */}
+              <CyberNetwork3D events={events} />
             </div>
           </section>
         </div>
 
-        <section style={panel}>
+        <section style={panelStyle}>
           <h3
             style={{
               display: "flex",
@@ -573,6 +580,7 @@ function App() {
           >
             <Zap color={colors.cyan} size={21} />
             Security Event Stream
+
             <span
               style={{
                 marginLeft: "auto",
@@ -688,7 +696,7 @@ function App() {
         {selected && (
           <section
             style={{
-              ...panel,
+              ...panelStyle,
               marginTop: 20,
               borderColor: riskColor(selected.risk_score),
             }}
@@ -698,9 +706,11 @@ function App() {
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
+                gap: 16,
               }}
             >
               <h3>Threat Investigation</h3>
+
               <button
                 type="button"
                 onClick={() => setSelected(null)}
@@ -719,25 +729,33 @@ function App() {
 
             <p>Network: {selected.network}</p>
             <p>Type: {selected.type}</p>
+
             <p>
               Risk Score:{" "}
               <strong
-                style={{ color: riskColor(selected.risk_score) }}
+                style={{
+                  color: riskColor(selected.risk_score),
+                }}
               >
                 {selected.risk_score}/100
               </strong>
             </p>
+
             <p>Severity: {selected.severity}</p>
+
             <p style={{ overflowWrap: "anywhere" }}>
               Source: {selected.source}
             </p>
+
             <p style={{ overflowWrap: "anywhere" }}>
               Destination: {selected.destination}
             </p>
+
             <p>Data: SIMULATED — NOT REAL ATTACKS</p>
           </section>
         )}
 
+        <AIThreatPanel />
         <footer
           style={{
             marginTop: 25,
@@ -748,11 +766,10 @@ function App() {
           }}
         >
           QUANTUM CYBER DEFENSE ARENA · RESEARCH ENVIRONMENT
-          <br />
-          <span>
+          <p>
             Simulated telemetry. No real attacks or verified
             cybersecurity incidents are represented.
-          </span>
+          </p>
         </footer>
       </main>
     </div>

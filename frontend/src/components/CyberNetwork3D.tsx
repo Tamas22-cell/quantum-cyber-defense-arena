@@ -1,7 +1,7 @@
 
-import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, Stars } from "@react-three/drei";
 import { useMemo, useRef } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { Html, Line, OrbitControls, Stars } from "@react-three/drei";
 import * as THREE from "three";
 
 type Position = [number, number, number];
@@ -16,121 +16,158 @@ type Props = {
   events?: NetworkThreat[];
 };
 
-const NODES: {
+type NodeDefinition = {
   name: string;
   network: string;
   position: Position;
   color: string;
-}[] = [
+};
+
+const NODES: NodeDefinition[] = [
   {
     name: "ETH",
     network: "Ethereum",
-    position: [-2, 1, 0],
+    position: [-2.1, 1.2, 0.3],
     color: "#00e5ff",
   },
   {
     name: "BASE",
     network: "Base",
-    position: [2, 1, -1],
-    color: "#3b82f6",
+    position: [2.1, 1.1, -0.5],
+    color: "#398bff",
   },
   {
     name: "ARB",
     network: "Arbitrum",
-    position: [-2, -1, 1],
+    position: [-2.0, -1.2, 0.8],
     color: "#a855f7",
   },
   {
     name: "POLY",
     network: "Polygon",
-    position: [2, -1, 0],
-    color: "#22d3ee",
+    position: [2.0, -1.1, 0.4],
+    color: "#20f4d6",
   },
 ];
 
-function NetworkNode({
+function CyberNode({
   position,
   color,
-  critical,
+  label,
+  risk,
 }: {
   position: Position;
   color: string;
-  critical: boolean;
+  label: string;
+  risk: number;
 }) {
-  const mesh = useRef<THREE.Mesh>(null);
+  const sphere = useRef<THREE.Mesh>(null);
+  const ring = useRef<THREE.Mesh>(null);
+  const critical = risk >= 80;
+  const activeColor = critical ? "#ff315d" : color;
 
-  useFrame(({ clock }) => {
-    if (!mesh.current) return;
-
+  useFrame(({ clock }, delta) => {
     const time = clock.elapsedTime;
 
-    const pulse = critical
-      ? 1 + Math.sin(time * 5) * 0.22
-      : 1 + Math.sin(time * 2) * 0.1;
+    if (sphere.current) {
+      const pulse = critical
+        ? 1 + Math.sin(time * 6) * 0.22
+        : 1 + Math.sin(time * 2) * 0.07;
 
-    mesh.current.scale.setScalar(pulse);
+      sphere.current.scale.setScalar(pulse);
 
-    const material =
-      mesh.current.material as THREE.MeshStandardMaterial;
+      const material =
+        sphere.current.material as THREE.MeshStandardMaterial;
 
-    material.emissiveIntensity = critical
-      ? 2 + Math.max(0, Math.sin(time * 6)) * 3
-      : 1.5;
+      material.emissiveIntensity = critical
+        ? 2.5 + Math.max(0, Math.sin(time * 6)) * 2
+        : 1.6;
+    }
+
+    if (ring.current) {
+      ring.current.rotation.z += delta * 0.6;
+
+      const pulse =
+        1 + Math.sin(time * (critical ? 5 : 2)) * 0.12;
+
+      ring.current.scale.setScalar(pulse);
+    }
   });
 
   return (
-    <mesh ref={mesh} position={position}>
-      <sphereGeometry args={[0.3, 32, 32]} />
-      <meshStandardMaterial
-        color={critical ? "#ff1744" : color}
-        emissive={critical ? "#ff1744" : color}
-        emissiveIntensity={1.5}
-        metalness={0.3}
-        roughness={0.2}
-      />
-    </mesh>
-  );
-}
-
-function Connection({
-  end,
-  critical,
-}: {
-  end: Position;
-  critical: boolean;
-}) {
-  const positions = useMemo(
-    () => new Float32Array([0, 0, 0, ...end]),
-    [end],
-  );
-
-  return (
-    <line>
-      <bufferGeometry>
-        <bufferAttribute
-          attach="attributes-position"
-          args={[positions, 3]}
+    <group position={position}>
+      <mesh ref={sphere}>
+        <sphereGeometry args={[0.25, 24, 24]} />
+        <meshStandardMaterial
+          color={activeColor}
+          emissive={activeColor}
+          emissiveIntensity={2}
+          metalness={0.25}
+          roughness={0.2}
         />
-      </bufferGeometry>
-      <lineBasicMaterial
-        color={critical ? "#ff416c" : "#29b6f6"}
-        transparent
-        opacity={0.6}
-      />
-    </line>
+      </mesh>
+
+      <mesh ref={ring}>
+        <torusGeometry args={[0.39, 0.018, 8, 64]} />
+        <meshBasicMaterial
+          color={activeColor}
+          transparent
+          opacity={0.85}
+          depthWrite={false}
+        />
+      </mesh>
+
+      {critical && (
+        <mesh>
+          <sphereGeometry args={[0.41, 16, 16]} />
+          <meshBasicMaterial
+            color="#ff315d"
+            transparent
+            opacity={0.12}
+            depthWrite={false}
+          />
+        </mesh>
+      )}
+
+      <Html
+        center
+        position={[0, 0.57, 0]}
+        distanceFactor={9}
+        style={{ pointerEvents: "none" }}
+      >
+        <div
+          style={{
+            color: activeColor,
+            fontSize: 11,
+            fontWeight: 800,
+            background: "rgba(2,12,31,0.9)",
+            border: `1px solid ${activeColor}`,
+            borderRadius: 7,
+            padding: "5px 9px",
+            whiteSpace: "nowrap",
+            boxShadow: `0 0 14px ${activeColor}55`,
+          }}
+        >
+          {label}
+          {critical ? " ⚠" : ""}
+        </div>
+      </Html>
+    </group>
   );
 }
 
-function DataPacket({
-  end,
+function MovingPacket({
+  curve,
   speed,
   offset,
   critical,
+  size,
 }: {
-  end: Position;
+  curve: THREE.QuadraticBezierCurve3;
   speed: number;
   offset: number;
   critical: boolean;
+  size: number;
 }) {
   const mesh = useRef<THREE.Mesh>(null);
 
@@ -140,46 +177,144 @@ function DataPacket({
     const progress =
       (clock.elapsedTime * speed + offset) % 1;
 
-    mesh.current.position.set(
-      end[0] * progress,
-      end[1] * progress,
-      end[2] * progress,
-    );
+    const point = curve.getPointAt(progress);
 
-    mesh.current.scale.setScalar(
-      0.8 + Math.sin(progress * Math.PI) * 0.5,
-    );
+    mesh.current.position.copy(point);
+
+    const pulse =
+      0.8 + Math.sin(progress * Math.PI) * 0.6;
+
+    mesh.current.scale.setScalar(pulse);
   });
 
   return (
     <mesh ref={mesh}>
-      <sphereGeometry args={[0.075, 12, 12]} />
+      <sphereGeometry args={[size, 12, 12]} />
       <meshBasicMaterial
-        color={critical ? "#ff1744" : "#00ffcc"}
+        color={critical ? "#ff315d" : "#00f5ff"}
+        toneMapped={false}
+      />
+      <pointLight
+        color={critical ? "#ff315d" : "#00f5ff"}
+        intensity={0.45}
+        distance={0.9}
       />
     </mesh>
   );
 }
 
-function NetworkScene({ events = [] }: Props) {
+function Connection({
+  end,
+  index,
+  critical,
+}: {
+  end: Position;
+  index: number;
+  critical: boolean;
+}) {
+  const curve = useMemo(
+    () =>
+      new THREE.QuadraticBezierCurve3(
+        new THREE.Vector3(0, 0, 0),
+        new THREE.Vector3(
+          end[0] * 0.5,
+          end[1] * 0.5 + 0.45,
+          end[2] * 0.5 + 0.35
+        ),
+        new THREE.Vector3(...end)
+      ),
+    [end]
+  );
+
+  const points = useMemo(
+    () =>
+      curve.getPoints(50).map(
+        (p) => [p.x, p.y, p.z] as Position
+      ),
+    [curve]
+  );
+
+  return (
+    <group>
+      <Line
+        points={points}
+        color={critical ? "#ff315d" : "#00ccff"}
+        lineWidth={critical ? 2.5 : 1.6}
+        transparent
+        opacity={0.75}
+      />
+
+      {[0, 1, 2, 3, 4].map((packet) => (
+        <MovingPacket
+          key={packet}
+          curve={curve}
+          speed={0.10 + index * 0.015}
+          offset={packet * 0.2 + index * 0.07}
+          critical={critical}
+          size={packet === 0 ? 0.085 : 0.045}
+        />
+      ))}
+    </group>
+  );
+}
+
+function EnergyRings() {
   const group = useRef<THREE.Group>(null);
-
-  const networkRisks = useMemo(() => {
-    const risks: Record<string, number> = {};
-
-    for (const event of events) {
-      risks[event.network.toLowerCase()] = Math.max(
-        risks[event.network.toLowerCase()] ?? 0,
-        event.risk_score,
-      );
-    }
-
-    return risks;
-  }, [events]);
 
   useFrame((_, delta) => {
     if (group.current) {
-      group.current.rotation.y += delta * 0.1;
+      group.current.rotation.y += delta * 0.12;
+      group.current.rotation.z += delta * 0.035;
+    }
+  });
+
+  return (
+    <group ref={group}>
+      {[1.0, 1.7, 2.5, 3.0].map((radius, index) => (
+        <mesh
+          key={radius}
+          rotation={[
+            Math.PI / 2.5 + index * 0.2,
+            index * 0.45,
+            index * 0.2,
+          ]}
+        >
+          <torusGeometry args={[radius, 0.01, 6, 120]} />
+          <meshBasicMaterial
+            color={
+              index % 2 === 0 ? "#00ddff" : "#a855f7"
+            }
+            transparent
+            opacity={0.25}
+            depthWrite={false}
+          />
+        </mesh>
+      ))}
+    </group>
+  );
+}
+
+function Scene({ events = [] }: Props) {
+  const networkGroup = useRef<THREE.Group>(null);
+
+  const risks = useMemo(() => {
+    const result: Record<string, number> = {};
+
+    for (const event of events) {
+      const key = event.network.toLowerCase();
+
+      result[key] = Math.max(
+        result[key] ?? 0,
+        event.risk_score
+      );
+    }
+
+    return result;
+  }, [events]);
+
+  useFrame((_, delta) => {
+    if (networkGroup.current) {
+      networkGroup.current.rotation.y += delta * 0.07;
     }
   });
 
@@ -187,60 +322,56 @@ function NetworkScene({ events = [] }: Props) {
     <>
       <color attach="background" args={["#061326"]} />
 
-      <ambientLight intensity={0.7} />
-      <pointLight position={[5, 5, 5]} intensity={25} />
+      <ambientLight intensity={0.8} />
+
       <pointLight
-        position={[-4, -3, 2]}
+        position={[4, 5, 5]}
+        intensity={18}
+        color="#00e5ff"
+      />
+
+      <pointLight
+        position={[-4, -3, 4]}
         intensity={12}
-        color="#9333ea"
+        color="#a855f7"
       />
 
       <Stars
-        radius={40}
-        depth={20}
-        count={600}
+        radius={45}
+        depth={25}
+        count={1000}
         factor={2}
         fade
+        speed={0.5}
       />
 
-      <group ref={group}>
-        <NetworkNode
+      <group ref={networkGroup}>
+        <EnergyRings />
+
+        <CyberNode
           position={[0, 0, 0]}
-          color="#a855f7"
-          critical={false}
+          color="#bd7fff"
+          label="AI CORE"
+          risk={0}
         />
 
         {NODES.map((node, index) => {
           const risk =
-            networkRisks[node.network.toLowerCase()] ?? 0;
-
-          const critical = risk >= 80;
+            risks[node.network.toLowerCase()] ?? 0;
 
           return (
             <group key={node.name}>
-              <NetworkNode
+              <CyberNode
                 position={node.position}
                 color={node.color}
-                critical={critical}
+                label={node.name}
+                risk={risk}
               />
 
               <Connection
                 end={node.position}
-                critical={critical}
-              />
-
-              <DataPacket
-                end={node.position}
-                speed={0.25 + index * 0.04}
-                offset={index * 0.22}
-                critical={critical}
-              />
-
-              <DataPacket
-                end={node.position}
-                speed={0.2 + index * 0.03}
-                offset={0.5 + index * 0.12}
-                critical={critical}
+                index={index}
+                critical={risk >= 80}
               />
             </group>
           );
@@ -249,10 +380,12 @@ function NetworkScene({ events = [] }: Props) {
 
       <OrbitControls
         enablePan={false}
+        enableRotate
+        enableZoom
         enableDamping
-        dampingFactor={0.05}
+        dampingFactor={0.06}
         minDistance={4}
-        maxDistance={12}
+        maxDistance={11}
       />
     </>
   );
@@ -262,9 +395,19 @@ export default function CyberNetwork3D({
   events = [],
 }: Props) {
   return (
-    <div style={{ width: "100%", height: "420px" }}>
-      <Canvas camera={{ position: [0, 1.5, 7], fov: 55 }}>
-        <NetworkScene events={events} />
+    <div style={{ width: "100%", height: "100%" }}>
+      <Canvas
+        camera={{
+          position: [0, 1.4, 7.5],
+          fov: 52,
+        }}
+        dpr={[1, 1.5]}
+        gl={{
+          antialias: true,
+          alpha: false,
+        }}
+      >
+        <Scene events={events} />
       </Canvas>
     </div>
   );
