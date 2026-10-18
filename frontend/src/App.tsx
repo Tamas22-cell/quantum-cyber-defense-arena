@@ -21,8 +21,10 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
+
 import CyberNetwork3D from "./components/CyberNetwork3D";
 import AIThreatPanel from "./components/AIThreatPanel";
+import AIIncidentInvestigation from "./components/AIIncidentInvestigation";
 import "./App.css";
 
 type Severity = "LOW" | "MEDIUM" | "HIGH" | "CRITICAL";
@@ -564,7 +566,6 @@ function App() {
                 background: "#06162988",
               }}
             >
-              {/* V3 FIX: Pass the live API events */}
               <CyberNetwork3D events={events} />
             </div>
           </section>
@@ -756,6 +757,9 @@ function App() {
         )}
 
         <AIThreatPanel />
+
+        <AIIncidentInvestigation />
+
         <footer
           style={{
             marginTop: 25,
