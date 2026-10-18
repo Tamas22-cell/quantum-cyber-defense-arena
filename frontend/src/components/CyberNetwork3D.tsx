@@ -1,7 +1,12 @@
 
-import { useMemo, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Html, Line, OrbitControls, Stars } from "@react-three/drei";
+import {
+  Html,
+  Line,
+  OrbitControls,
+  Stars,
+} from "@react-three/drei";
 import * as THREE from "three";
 
 type Position = [number, number, number];
@@ -16,12 +21,21 @@ type Props = {
   events?: NetworkThreat[];
 };
 
+type NetworkAlert = {
+  count: number;
+  score: number;
+};
+
+type AlertMap = Record<string, NetworkAlert>;
+
 type NodeDefinition = {
   name: string;
   network: string;
   position: Position;
   color: string;
 };
+
+const AI_API = "http://127.0.0.1:8000/api/ai/live";
 
 const NODES: NodeDefinition[] = [
   {
@@ -50,21 +64,151 @@ const NODES: NodeDefinition[] = [
   },
 ];
 
+function readObject(value: unknown): Record<string, unknown> {
+  return value !== null &&
+    typeof value === "object" &&
+    !Array.isArray(value)
+    ? (value as Record<string, unknown>)
+    : {};
+}
+
+function readNumber(value: unknown): number | null {
+  if (typeof value === "number" && Number.isFinite(value)) {
+    return value;
+  }
+
+  if (typeof value === "string" && value.trim() !== "") {
+    const parsed = Number(value);
+    return Number.isFinite(parsed) ? parsed : null;
+  }
+
+  return null;
+}
+
+function parseAlerts(response: unknown): AlertMap {
+  const root = readObject(response);
+  const recent = Array.isArray(root.recent_anomalies)
+    ? root.recent_anomalies
+    : [];
+
+  const alerts: AlertMap = {};
+
+  for (const item of recent) {
+    const entry = readObject(item);
+    const event = readObject(entry.event);
+    const detection = readObject(entry.ai_detection);
+
+    const networkValue = entry.network ?? event.network;
+
+    if (typeof networkValue !== "string") {
+      continue;
+    }
+
+    const network = networkValue.toLowerCase().trim();
+
+    if (!network) continue;
+
+    const isAnomaly =
+      detection.is_anomaly === true ||
+      detection.classification === "ANOMALY" ||
+      entry.is_anomaly === true ||
+      entry.classification === "ANOMALY";
+
+    if (!isAnomaly && Object.keys(detection).length > 0) {
+      continue;
+    }
+
+    const score = readNumber(
+      detection.anomaly_score ?? entry.anomaly_score
+    );
+
+    const current = alerts[network] ?? {
+      count: 0,
+      score: 0,
+    };
+
+    alerts[network] = {
+      count: current.count + 1,
+      score: Math.max(current.score, score ?? 0),
+    };
+  }
+
+  return alerts;
+}
+
+function useLiveAIAlerts(): AlertMap {
+  const [alerts, setAlerts] = useState<AlertMap>({});
+
+  useEffect(() => {
+    let active = true;
+    let busy = false;
+
+    async function refresh() {
+      if (busy) return;
+      busy = true;
+
+      try {
+        const response = await fetch(AI_API, {
+          cache: "no-store",
+        });
+
+        if (!response.ok) {
+          throw new Error(`AI API HTTP ${response.status}`);
+        }
+
+        const body: unknown = await response.json();
+
+        if (active) {
+          setAlerts(parseAlerts(body));
+        }
+      } catch {
+        if (active) {
+          setAlerts({});
+        }
+      } finally {
+        busy = false;
+      }
+    }
+
+    void refresh();
+
+    const interval = window.setInterval(() => {
+      void refresh();
+    }, 3000);
+
+    return () => {
+      active = false;
+      window.clearInterval(interval);
+    };
+  }, []);
+
+  return alerts;
+}
+
 function CyberNode({
   position,
   color,
   label,
   risk,
+  aiAlert,
 }: {
   position: Position;
   color: string;
   label: string;
   risk: number;
+  aiAlert?: NetworkAlert;
 }) {
   const sphere = useRef<THREE.Mesh>(null);
   const ring = useRef<THREE.Mesh>(null);
-  const critical = risk >= 80;
-  const activeColor = critical ? "#ff315d" : color;
+
+  const hasAIAlert = (aiAlert?.count ?? 0) > 0;
+  const critical = risk >= 80 || hasAIAlert;
+
+  const activeColor = hasAIAlert
+    ? "#ff315d"
+    : risk >= 80
+      ? "#ff6b39"
+      : color;
 
   useFrame(({ clock }, delta) => {
     const time = clock.elapsedTime;
@@ -121,7 +265,7 @@ function CyberNode({
         <mesh>
           <sphereGeometry args={[0.41, 16, 16]} />
           <meshBasicMaterial
-            color="#ff315d"
+            color={activeColor}
             transparent
             opacity={0.12}
             depthWrite={false}
@@ -146,10 +290,28 @@ function CyberNode({
             padding: "5px 9px",
             whiteSpace: "nowrap",
             boxShadow: `0 0 14px ${activeColor}55`,
+            textAlign: "center",
           }}
         >
-          {label}
-          {critical ? " ⚠" : ""}
+          <div>
+            {label}
+            {critical ? " ⚠" : ""}
+          </div>
+
+          {hasAIAlert && (
+            <div
+              style={{
+                fontSize: 9,
+                color: "#ff93ab",
+                marginTop: 3,
+              }}
+            >
+              AI ALERTS: {aiAlert?.count}
+              <div>
+                SCORE: {aiAlert?.score.toFixed(3)}
+              </div>
+            </div>
+          )}
         </div>
       </Html>
     </group>
@@ -228,9 +390,9 @@ function Connection({
 
   const points = useMemo(
     () =>
-      curve.getPoints(50).map(
-        (p) => [p.x, p.y, p.z] as Position
-      ),
+      curve
+        .getPoints(50)
+        .map((point) => [point.x, point.y, point.z] as Position),
     [curve]
   );
 
@@ -294,7 +456,12 @@ function EnergyRings() {
   );
 }
 
-function Scene({ events = [] }: Props) {
+function Scene({
+  events = [],
+  aiAlerts,
+}: Props & {
+  aiAlerts: AlertMap;
+}) {
   const networkGroup = useRef<THREE.Group>(null);
 
   const risks = useMemo(() => {
@@ -356,8 +523,12 @@ function Scene({ events = [] }: Props) {
         />
 
         {NODES.map((node, index) => {
-          const risk =
-            risks[node.network.toLowerCase()] ?? 0;
+          const networkKey = node.network.toLowerCase();
+          const risk = risks[networkKey] ?? 0;
+          const aiAlert = aiAlerts[networkKey];
+
+          const critical =
+            risk >= 80 || (aiAlert?.count ?? 0) > 0;
 
           return (
             <group key={node.name}>
@@ -366,12 +537,13 @@ function Scene({ events = [] }: Props) {
                 color={node.color}
                 label={node.name}
                 risk={risk}
+                aiAlert={aiAlert}
               />
 
               <Connection
                 end={node.position}
                 index={index}
-                critical={risk >= 80}
+                critical={critical}
               />
             </group>
           );
@@ -394,6 +566,8 @@ function Scene({ events = [] }: Props) {
 export default function CyberNetwork3D({
   events = [],
 }: Props) {
+  const aiAlerts = useLiveAIAlerts();
+
   return (
     <div style={{ width: "100%", height: "100%" }}>
       <Canvas
@@ -407,7 +581,7 @@ export default function CyberNetwork3D({
           alpha: false,
         }}
       >
-        <Scene events={events} />
+        <Scene events={events} aiAlerts={aiAlerts} />
       </Canvas>
     </div>
   );
