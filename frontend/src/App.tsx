@@ -1,3 +1,4 @@
+import QuantumResearchPanel from "./components/QuantumResearchPanel";
 
 import { useEffect, useMemo, useState } from "react";
 import type { CSSProperties, ReactNode } from "react";
@@ -852,6 +853,7 @@ function App() {
         {/* V5 - AUTOMATED AI THREAT REPORT */}
 
         <AIThreatReport />
+        <QuantumResearchPanel />
 
         {/* FOOTER */}
 

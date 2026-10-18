@@ -1,3 +1,4 @@
+from backend.quantum_detection.api import router as quantum_router
 
 """
 Quantum Cyber Defense Arena
@@ -236,6 +237,7 @@ def ai_live():
 from backend.ai_detection.api import router as ai_router
 
 app.include_router(ai_router)
+app.include_router(quantum_router)
 
 
 if __name__ == "__main__":
