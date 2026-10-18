@@ -1,6 +1,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import type { CSSProperties, ReactNode } from "react";
+
 import {
   Activity,
   AlertTriangle,
@@ -12,6 +13,7 @@ import {
   ShieldAlert,
   Zap,
 } from "lucide-react";
+
 import {
   Area,
   AreaChart,
@@ -25,6 +27,8 @@ import {
 import CyberNetwork3D from "./components/CyberNetwork3D";
 import AIThreatPanel from "./components/AIThreatPanel";
 import AIIncidentInvestigation from "./components/AIIncidentInvestigation";
+import AIThreatReport from "./components/AIThreatReport";
+
 import "./App.css";
 
 type Severity = "LOW" | "MEDIUM" | "HIGH" | "CRITICAL";
@@ -153,7 +157,9 @@ function App() {
   const [history, setHistory] = useState<ChartPoint[]>([]);
   const [online, setOnline] = useState(false);
   const [paused, setPaused] = useState(false);
-  const [selected, setSelected] = useState<Threat | null>(null);
+  const [selected, setSelected] = useState<Threat | null>(
+    null
+  );
 
   useEffect(() => {
     if (paused) return;
@@ -164,6 +170,7 @@ function App() {
 
     async function update() {
       if (fetching) return;
+
       fetching = true;
 
       try {
@@ -178,7 +185,9 @@ function App() {
 
         const data: ApiData = await response.json();
 
-        if (!alive || !Array.isArray(data.events)) return;
+        if (!alive || !Array.isArray(data.events)) {
+          return;
+        }
 
         const list = data.events;
 
@@ -248,7 +257,11 @@ function App() {
         )
       : 0;
 
-    return { active, critical, average };
+    return {
+      active,
+      critical,
+      average,
+    };
   }, [events]);
 
   return (
@@ -353,7 +366,12 @@ function App() {
               fontWeight: 700,
             }}
           >
-            {paused ? <Play size={17} /> : <Pause size={17} />}
+            {paused ? (
+              <Play size={17} />
+            ) : (
+              <Pause size={17} />
+            )}
+
             {paused ? "Resume" : "Pause"}
           </button>
         </div>
@@ -387,10 +405,18 @@ function App() {
             Cyber Threat Command Center
           </h1>
 
-          <p style={{ color: "#afd0e6", margin: 0 }}>
-            Blockchain Security · AI Monitoring · Quantum Research
+          <p
+            style={{
+              color: "#afd0e6",
+              margin: 0,
+            }}
+          >
+            Blockchain Security · AI Monitoring · Quantum
+            Research
           </p>
         </div>
+
+        {/* MAIN SECURITY METRICS */}
 
         <div
           style={{
@@ -430,6 +456,8 @@ function App() {
           />
         </div>
 
+        {/* LIVE ANALYTICS AND 3D NETWORK */}
+
         <div
           style={{
             display: "grid",
@@ -447,16 +475,32 @@ function App() {
                 gap: 10,
               }}
             >
-              <Activity color={colors.cyan} size={21} />
+              <Activity
+                color={colors.cyan}
+                size={21}
+              />
               Threat Activity
             </h3>
 
-            <p style={{ color: "#b5d1e5", fontSize: 12 }}>
+            <p
+              style={{
+                color: "#b5d1e5",
+                fontSize: 12,
+              }}
+            >
               Automatically updating risk analytics
             </p>
 
-            <div style={{ height: 320, width: "100%" }}>
-              <ResponsiveContainer width="100%" height="100%">
+            <div
+              style={{
+                height: 320,
+                width: "100%",
+              }}
+            >
+              <ResponsiveContainer
+                width="100%"
+                height="100%"
+              >
                 <AreaChart data={history}>
                   <defs>
                     <linearGradient
@@ -471,6 +515,7 @@ function App() {
                         stopColor="#b18bff"
                         stopOpacity={0.55}
                       />
+
                       <stop
                         offset="100%"
                         stopColor="#b18bff"
@@ -487,13 +532,17 @@ function App() {
                   <XAxis
                     dataKey="time"
                     stroke="#b9d6e9"
-                    tick={{ fontSize: 10 }}
+                    tick={{
+                      fontSize: 10,
+                    }}
                   />
 
                   <YAxis
                     stroke="#b9d6e9"
                     domain={[0, 100]}
-                    tick={{ fontSize: 11 }}
+                    tick={{
+                      fontSize: 11,
+                    }}
                   />
 
                   <Tooltip
@@ -531,6 +580,8 @@ function App() {
             </div>
           </section>
 
+          {/* 3D CYBER NETWORK */}
+
           <section style={panelStyle}>
             <h3
               style={{
@@ -539,7 +590,11 @@ function App() {
                 gap: 10,
               }}
             >
-              <Globe2 color={colors.cyan} size={21} />
+              <Globe2
+                color={colors.cyan}
+                size={21}
+              />
+
               Cyber Network
 
               <span
@@ -553,7 +608,12 @@ function App() {
               </span>
             </h3>
 
-            <p style={{ color: "#b5d1e5", fontSize: 12 }}>
+            <p
+              style={{
+                color: "#b5d1e5",
+                fontSize: 12,
+              }}
+            >
               Interactive blockchain network visualization
             </p>
 
@@ -571,6 +631,8 @@ function App() {
           </section>
         </div>
 
+        {/* SECURITY EVENT STREAM */}
+
         <section style={panelStyle}>
           <h3
             style={{
@@ -579,7 +641,11 @@ function App() {
               gap: 10,
             }}
           >
-            <Zap color={colors.cyan} size={21} />
+            <Zap
+              color={colors.cyan}
+              size={21}
+            />
+
             Security Event Stream
 
             <span
@@ -593,7 +659,12 @@ function App() {
             </span>
           </h3>
 
-          <p style={{ color: "#b5d1e5", fontSize: 12 }}>
+          <p
+            style={{
+              color: "#b5d1e5",
+              fontSize: 12,
+            }}
+          >
             Simulated threats · Click a row for details
           </p>
 
@@ -620,7 +691,8 @@ function App() {
                       key={name}
                       style={{
                         padding: 13,
-                        borderBottom: "1px solid #528bb355",
+                        borderBottom:
+                          "1px solid #528bb355",
                       }}
                     >
                       {name}
@@ -636,7 +708,8 @@ function App() {
                     onClick={() => setSelected(event)}
                     style={{
                       cursor: "pointer",
-                      borderBottom: "1px solid #528bb322",
+                      borderBottom:
+                        "1px solid #528bb322",
                     }}
                   >
                     <td style={{ padding: 13 }}>
@@ -650,7 +723,9 @@ function App() {
                     <td
                       style={{
                         padding: 13,
-                        color: riskColor(event.risk_score),
+                        color: riskColor(
+                          event.risk_score
+                        ),
                         fontWeight: 800,
                       }}
                     >
@@ -663,8 +738,12 @@ function App() {
                           borderRadius: 7,
                           padding: "5px 9px",
                           background:
-                            riskColor(event.risk_score) + "22",
-                          color: riskColor(event.risk_score),
+                            riskColor(
+                              event.risk_score
+                            ) + "22",
+                          color: riskColor(
+                            event.risk_score
+                          ),
                           fontWeight: 800,
                         }}
                       >
@@ -694,12 +773,16 @@ function App() {
           </div>
         </section>
 
+        {/* SELECTED EVENT INVESTIGATION */}
+
         {selected && (
           <section
             style={{
               ...panelStyle,
               marginTop: 20,
-              borderColor: riskColor(selected.risk_score),
+              borderColor: riskColor(
+                selected.risk_score
+              ),
             }}
           >
             <div
@@ -735,7 +818,9 @@ function App() {
               Risk Score:{" "}
               <strong
                 style={{
-                  color: riskColor(selected.risk_score),
+                  color: riskColor(
+                    selected.risk_score
+                  ),
                 }}
               >
                 {selected.risk_score}/100
@@ -756,9 +841,19 @@ function App() {
           </section>
         )}
 
+        {/* V3 - AI THREAT INTELLIGENCE */}
+
         <AIThreatPanel />
 
+        {/* V4 - AI INCIDENT INVESTIGATION */}
+
         <AIIncidentInvestigation />
+
+        {/* V5 - AUTOMATED AI THREAT REPORT */}
+
+        <AIThreatReport />
+
+        {/* FOOTER */}
 
         <footer
           style={{
@@ -769,10 +864,13 @@ function App() {
             fontSize: 11,
           }}
         >
-          QUANTUM CYBER DEFENSE ARENA · RESEARCH ENVIRONMENT
+          QUANTUM CYBER DEFENSE ARENA · RESEARCH
+          ENVIRONMENT
+
           <p>
-            Simulated telemetry. No real attacks or verified
-            cybersecurity incidents are represented.
+            Simulated telemetry. No real attacks or
+            verified cybersecurity incidents are
+            represented.
           </p>
         </footer>
       </main>

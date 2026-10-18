@@ -110,7 +110,7 @@ function parseAI(json: unknown): AIState {
       ) ?? 0,
     detected:
       numberOf(
-        stats.total_anomalies_detected ??
+        stats.total_anomalies ?? stats.total_anomalies_detected ??
           stats.anomalies_detected ??
           root.total_anomalies_detected ??
           root.anomalies_detected ??
