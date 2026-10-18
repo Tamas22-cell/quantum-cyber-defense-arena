@@ -1,0 +1,435 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "6.2",
+  "experiment": "Overlapping Quantum vs Classical Benchmark",
+  "data_source": "SYNTHETIC_SIMULATION",
+  "configuration": {
+    "experiments": 10,
+    "base_seed": 2026,
+    "train_samples": 500,
+    "normal_test_samples": 150,
+    "anomaly_test_samples": 150,
+    "quantum_threshold": 0.35,
+    "features": [
+      "transaction_value",
+      "transactions_per_minute",
+      "failed_transaction_ratio",
+      "gas_spike_ratio"
+    ],
+    "normal_center": [
+      0.3,
+      0.35,
+      0.2,
+      0.25
+    ],
+    "normal_std": [
+      0.15,
+      0.16,
+      0.13,
+      0.14
+    ],
+    "anomaly_center": [
+      0.55,
+      0.57,
+      0.43,
+      0.5
+    ],
+    "anomaly_std": [
+      0.19,
+      0.18,
+      0.18,
+      0.19
+    ]
+  },
+  "quantum": {
+    "model": "Quantum State Fidelity Detector",
+    "summary": {
+      "accuracy": {
+        "mean": 0.886,
+        "std": 0.026096,
+        "min": 0.833333,
+        "max": 0.92
+      },
+      "precision": {
+        "mean": 0.921128,
+        "std": 0.028038,
+        "min": 0.878378,
+        "max": 0.954198
+      },
+      "recall": {
+        "mean": 0.844667,
+        "std": 0.038752,
+        "min": 0.76,
+        "max": 0.893333
+      },
+      "f1_score": {
+        "mean": 0.880839,
+        "std": 0.028592,
+        "min": 0.820144,
+        "max": 0.917808
+      },
+      "false_positives": {
+        "mean": 10.9,
+        "std": 4.040077,
+        "min": 6.0,
+        "max": 18.0
+      },
+      "false_negatives": {
+        "mean": 23.3,
+        "std": 5.812821,
+        "min": 16.0,
+        "max": 36.0
+      },
+      "prediction_time_ms": {
+        "mean": 87.26989,
+        "std": 8.290177,
+        "min": 79.7216,
+        "max": 107.5301
+      },
+      "average_prediction_ms": {
+        "mean": 0.2909,
+        "std": 0.027634,
+        "min": 0.265739,
+        "max": 0.358434
+      }
+    },
+    "experiments": [
+      {
+        "accuracy": 0.8966666666666666,
+        "precision": 0.9541984732824428,
+        "recall": 0.8333333333333334,
+        "f1_score": 0.8896797153024911,
+        "true_positives": 125,
+        "true_negatives": 144,
+        "false_positives": 6,
+        "false_negatives": 25,
+        "prediction_time_ms": 82.44279999780701,
+        "average_prediction_ms": 0.27480933332602336,
+        "model": "Quantum State Fidelity Detector"
+      },
+      {
+        "accuracy": 0.88,
+        "precision": 0.9130434782608695,
+        "recall": 0.84,
+        "f1_score": 0.875,
+        "true_positives": 126,
+        "true_negatives": 138,
+        "false_positives": 12,
+        "false_negatives": 24,
+        "prediction_time_ms": 83.65880000201287,
+        "average_prediction_ms": 0.2788626666733762,
+        "model": "Quantum State Fidelity Detector"
+      },
+      {
+        "accuracy": 0.8966666666666666,
+        "precision": 0.9541984732824428,
+        "recall": 0.8333333333333334,
+        "f1_score": 0.8896797153024911,
+        "true_positives": 125,
+        "true_negatives": 144,
+        "false_positives": 6,
+        "false_negatives": 25,
+        "prediction_time_ms": 83.55540000047768,
+        "average_prediction_ms": 0.27851800000159227,
+        "model": "Quantum State Fidelity Detector"
+      },
+      {
+        "accuracy": 0.9066666666666666,
+        "precision": 0.9236111111111112,
+        "recall": 0.8866666666666667,
+        "f1_score": 0.9047619047619048,
+        "true_positives": 133,
+        "true_negatives": 139,
+        "false_positives": 11,
+        "false_negatives": 17,
+        "prediction_time_ms": 80.81949999905191,
+        "average_prediction_ms": 0.26939833333017305,
+        "model": "Quantum State Fidelity Detector"
+      },
+      {
+        "accuracy": 0.8633333333333333,
+        "precision": 0.8978102189781022,
+        "recall": 0.82,
+        "f1_score": 0.8571428571428571,
+        "true_positives": 123,
+        "true_negatives": 136,
+        "false_positives": 14,
+        "false_negatives": 27,
+        "prediction_time_ms": 94.6579000010388,
+        "average_prediction_ms": 0.31552633333679597,
+        "model": "Quantum State Fidelity Detector"
+      },
+      {
+        "accuracy": 0.8766666666666667,
+        "precision": 0.9064748201438849,
+        "recall": 0.84,
+        "f1_score": 0.8719723183391004,
+        "true_positives": 126,
+        "true_negatives": 137,
+        "false_positives": 13,
+        "false_negatives": 24,
+        "prediction_time_ms": 107.53010000189533,
+        "average_prediction_ms": 0.35843366667298443,
+        "model": "Quantum State Fidelity Detector"
+      },
+      {
+        "accuracy": 0.92,
+        "precision": 0.9436619718309859,
+        "recall": 0.8933333333333333,
+        "f1_score": 0.9178082191780822,
+        "true_positives": 134,
+        "true_negatives": 142,
+        "false_positives": 8,
+        "false_negatives": 16,
+        "prediction_time_ms": 85.3932000027271,
+        "average_prediction_ms": 0.28464400000909035,
+        "model": "Quantum State Fidelity Detector"
+      },
+      {
+        "accuracy": 0.8733333333333333,
+        "precision": 0.8783783783783784,
+        "recall": 0.8666666666666667,
+        "f1_score": 0.87248322147651,
+        "true_positives": 130,
+        "true_negatives": 132,
+        "false_positives": 18,
+        "false_negatives": 20,
+        "prediction_time_ms": 79.72159999917494,
+        "average_prediction_ms": 0.2657386666639165,
+        "model": "Quantum State Fidelity Detector"
+      },
+      {
+        "accuracy": 0.8333333333333334,
+        "precision": 0.890625,
+        "recall": 0.76,
+        "f1_score": 0.8201438848920863,
+        "true_positives": 114,
+        "true_negatives": 136,
+        "false_positives": 14,
+        "false_negatives": 36,
+        "prediction_time_ms": 88.22399999917252,
+        "average_prediction_ms": 0.2940799999972417,
+        "model": "Quantum State Fidelity Detector"
+      },
+      {
+        "accuracy": 0.9133333333333333,
+        "precision": 0.9492753623188406,
+        "recall": 0.8733333333333333,
+        "f1_score": 0.9097222222222222,
+        "true_positives": 131,
+        "true_negatives": 143,
+        "false_positives": 7,
+        "false_negatives": 19,
+        "prediction_time_ms": 86.69559999543708,
+        "average_prediction_ms": 0.2889853333181236,
+        "model": "Quantum State Fidelity Detector"
+      }
+    ]
+  },
+  "classical": {
+    "model": "Isolation Forest",
+    "summary": {
+      "accuracy": {
+        "mean": 0.872333,
+        "std": 0.014146,
+        "min": 0.85,
+        "max": 0.896667
+      },
+      "precision": {
+        "mean": 0.935423,
+        "std": 0.018293,
+        "min": 0.915385,
+        "max": 0.974138
+      },
+      "recall": {
+        "mean": 0.800667,
+        "std": 0.038291,
+        "min": 0.753333,
+        "max": 0.873333
+      },
+      "f1_score": {
+        "mean": 0.862087,
+        "std": 0.01812,
+        "min": 0.833948,
+        "max": 0.894198
+      },
+      "false_positives": {
+        "mean": 8.4,
+        "std": 2.716207,
+        "min": 3.0,
+        "max": 12.0
+      },
+      "false_negatives": {
+        "mean": 29.9,
+        "std": 5.743595,
+        "min": 19.0,
+        "max": 37.0
+      },
+      "prediction_time_ms": {
+        "mean": 7.36712,
+        "std": 0.458285,
+        "min": 6.8664,
+        "max": 8.2024
+      },
+      "average_prediction_ms": {
+        "mean": 0.024557,
+        "std": 0.001528,
+        "min": 0.022888,
+        "max": 0.027341
+      }
+    },
+    "experiments": [
+      {
+        "accuracy": 0.86,
+        "precision": 0.9153846153846154,
+        "recall": 0.7933333333333333,
+        "f1_score": 0.85,
+        "true_positives": 119,
+        "true_negatives": 139,
+        "false_positives": 11,
+        "false_negatives": 31,
+        "prediction_time_ms": 8.202400000300258,
+        "average_prediction_ms": 0.027341333334334195,
+        "model": "Isolation Forest",
+        "training_time_ms": 106.31849999481346
+      },
+      {
+        "accuracy": 0.87,
+        "precision": 0.937007874015748,
+        "recall": 0.7933333333333333,
+        "f1_score": 0.8592057761732852,
+        "true_positives": 119,
+        "true_negatives": 142,
+        "false_positives": 8,
+        "false_negatives": 31,
+        "prediction_time_ms": 6.910099997185171,
+        "average_prediction_ms": 0.023033666657283902,
+        "model": "Isolation Forest",
+        "training_time_ms": 99.60839999985183
+      },
+      {
+        "accuracy": 0.8833333333333333,
+        "precision": 0.952755905511811,
+        "recall": 0.8066666666666666,
+        "f1_score": 0.8736462093862816,
+        "true_positives": 121,
+        "true_negatives": 144,
+        "false_positives": 6,
+        "false_negatives": 29,
+        "prediction_time_ms": 7.013299997197464,
+        "average_prediction_ms": 0.02337766665732488,
+        "model": "Isolation Forest",
+        "training_time_ms": 95.82760000193957
+      },
+      {
+        "accuracy": 0.8966666666666666,
+        "precision": 0.916083916083916,
+        "recall": 0.8733333333333333,
+        "f1_score": 0.89419795221843,
+        "true_positives": 131,
+        "true_negatives": 138,
+        "false_positives": 12,
+        "false_negatives": 19,
+        "prediction_time_ms": 6.954199998290278,
+        "average_prediction_ms": 0.023180666660967592,
+        "model": "Isolation Forest",
+        "training_time_ms": 96.11509999376722
+      },
+      {
+        "accuracy": 0.8633333333333333,
+        "precision": 0.936,
+        "recall": 0.78,
+        "f1_score": 0.850909090909091,
+        "true_positives": 117,
+        "true_negatives": 142,
+        "false_positives": 8,
+        "false_negatives": 33,
+        "prediction_time_ms": 6.866400006401818,
+        "average_prediction_ms": 0.022888000021339394,
+        "model": "Isolation Forest",
+        "training_time_ms": 104.25589999795193
+      },
+      {
+        "accuracy": 0.8733333333333333,
+        "precision": 0.9444444444444444,
+        "recall": 0.7933333333333333,
+        "f1_score": 0.8623188405797102,
+        "true_positives": 119,
+        "true_negatives": 143,
+        "false_positives": 7,
+        "false_negatives": 31,
+        "prediction_time_ms": 7.904099998995662,
+        "average_prediction_ms": 0.026346999996652205,
+        "model": "Isolation Forest",
+        "training_time_ms": 99.26640000048792
+      },
+      {
+        "accuracy": 0.89,
+        "precision": 0.920863309352518,
+        "recall": 0.8533333333333334,
+        "f1_score": 0.8858131487889274,
+        "true_positives": 128,
+        "true_negatives": 139,
+        "false_positives": 11,
+        "false_negatives": 22,
+        "prediction_time_ms": 7.68170000083046,
+        "average_prediction_ms": 0.025605666669434868,
+        "model": "Isolation Forest",
+        "training_time_ms": 99.5282000003499
+      },
+      {
+        "accuracy": 0.87,
+        "precision": 0.9236641221374046,
+        "recall": 0.8066666666666666,
+        "f1_score": 0.8612099644128114,
+        "true_positives": 121,
+        "true_negatives": 140,
+        "false_positives": 10,
+        "false_negatives": 29,
+        "prediction_time_ms": 7.308100000955164,
+        "average_prediction_ms": 0.024360333336517215,
+        "model": "Isolation Forest",
+        "training_time_ms": 101.8030000050203
+      },
+      {
+        "accuracy": 0.85,
+        "precision": 0.9338842975206612,
+        "recall": 0.7533333333333333,
+        "f1_score": 0.8339483394833949,
+        "true_positives": 113,
+        "true_negatives": 142,
+        "false_positives": 8,
+        "false_negatives": 37,
+        "prediction_time_ms": 7.270900001458358,
+        "average_prediction_ms": 0.024236333338194527,
+        "model": "Isolation Forest",
+        "training_time_ms": 104.0863999951398
+      },
+      {
+        "accuracy": 0.8666666666666667,
+        "precision": 0.9741379310344828,
+        "recall": 0.7533333333333333,
+        "f1_score": 0.849624060150376,
+        "true_positives": 113,
+        "true_negatives": 147,
+        "false_positives": 3,
+        "false_negatives": 37,
+        "prediction_time_ms": 7.559999998193234,
+        "average_prediction_ms": 0.025199999993977446,
+        "model": "Isolation Forest",
+        "training_time_ms": 100.03009999491042
+      }
+    ]
+  },
+  "best_mean_f1": "Quantum State Fidelity Detector",
+  "limitations": [
+    "All data are synthetic",
+    "Quantum model uses a fixed normal reference",
+    "Quantum threshold is not tuned on validation data",
+    "Classical model uses an assumed contamination value",
+    "Classical training time and quantum reference construction are not directly compared",
+    "Runtime depends on hardware and software environment",
+    "No evidence of quantum advantage",
+    "Not validated for real blockchain security monitoring"
+  ]
+}

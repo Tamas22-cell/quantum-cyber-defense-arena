@@ -1,0 +1,91 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "6.3",
+  "input_file": "benchmark_v2_results.json",
+  "data_source": "SYNTHETIC_SIMULATION",
+  "significance_level": 0.05,
+  "f1_score": {
+    "sample_size": 10,
+    "quantum_mean": 0.8808394058617746,
+    "classical_mean": 0.8620873382102306,
+    "mean_difference": 0.01875206765154378,
+    "std_difference": 0.020443362642832325,
+    "confidence_interval_95": {
+      "lower": 0.004127767003730978,
+      "upper": 0.033376368299356585
+    },
+    "paired_t_test": {
+      "statistic": 2.900660016283281,
+      "p_value": 0.01757647465654807
+    },
+    "wilcoxon_signed_rank": {
+      "statistic": 5.0,
+      "p_value": 0.01953125
+    },
+    "cohens_dz": 0.9172692369236266,
+    "quantum_wins": 9,
+    "classical_wins": 1,
+    "ties": 0
+  },
+  "accuracy": {
+    "sample_size": 10,
+    "quantum_mean": 0.8859999999999999,
+    "classical_mean": 0.8723333333333333,
+    "mean_difference": 0.01366666666666667,
+    "std_difference": 0.018950878672745888,
+    "confidence_interval_95": {
+      "lower": 0.00011002473390571595,
+      "upper": 0.027223308599427627
+    },
+    "paired_t_test": {
+      "statistic": 2.280516668133247,
+      "p_value": 0.04852146937771696
+    },
+    "wilcoxon_signed_rank": {
+      "statistic": 6.0,
+      "p_value": 0.05078125
+    },
+    "cohens_dz": 0.7211626913279393,
+    "quantum_wins": 8,
+    "classical_wins": 1,
+    "ties": 1
+  },
+  "recall": {
+    "sample_size": 10,
+    "quantum_mean": 0.8446666666666667,
+    "classical_mean": 0.8006666666666666,
+    "mean_difference": 0.044000000000000004,
+    "std_difference": 0.03114284096240861,
+    "confidence_interval_95": {
+      "lower": 0.021721753645994903,
+      "upper": 0.0662782463540051
+    },
+    "paired_t_test": {
+      "statistic": 4.467807455824592,
+      "p_value": 0.0015595890258908486
+    },
+    "wilcoxon_signed_rank": {
+      "statistic": 0.0,
+      "p_value": 0.001953125
+    },
+    "cohens_dz": 1.4128447707487832,
+    "quantum_wins": 10,
+    "classical_wins": 0,
+    "ties": 0
+  },
+  "runtime": {
+    "quantum_mean_ms": 87.26988999987952,
+    "classical_mean_ms": 7.367119999980787,
+    "quantum_to_classical_ratio": 11.845862426580146
+  },
+  "limitations": [
+    "Ten paired experiments provide limited statistical power",
+    "Both models were evaluated on synthetic data",
+    "Normal and anomaly distributions are manually specified",
+    "Quantum and classical hyperparameters were not jointly tuned",
+    "Paired t-test assumes approximately normal differences",
+    "Multiple metrics were examined without multiplicity adjustment",
+    "No verified quantum advantage",
+    "No real-world attack detection validation"
+  ]
+}

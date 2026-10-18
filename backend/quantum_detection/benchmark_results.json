@@ -1,0 +1,55 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "6.1",
+  "experiment": "Quantum vs Classical Anomaly Detection",
+  "data_source": "SYNTHETIC_SIMULATION",
+  "random_seed": 42,
+  "features": [
+    "transaction_value",
+    "transactions_per_minute",
+    "failed_transaction_ratio",
+    "gas_spike_ratio"
+  ],
+  "training_samples": 500,
+  "test_samples": 200,
+  "quantum": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "true_positives": 100,
+    "true_negatives": 100,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "prediction_time_ms": 53.903,
+    "average_prediction_ms": 0.2695,
+    "model": "Quantum State Fidelity Detector",
+    "qubits": 2,
+    "threshold": 0.35,
+    "mean_anomaly_score": 0.461758,
+    "execution": "Qiskit Statevector Simulation"
+  },
+  "classical": {
+    "accuracy": 0.97,
+    "precision": 0.9434,
+    "recall": 1.0,
+    "f1_score": 0.9709,
+    "true_positives": 100,
+    "true_negatives": 94,
+    "false_positives": 6,
+    "false_negatives": 0,
+    "prediction_time_ms": 6.365,
+    "average_prediction_ms": 0.0318,
+    "model": "Isolation Forest",
+    "training_time_ms": 98.962,
+    "estimators": 100,
+    "execution": "Classical CPU"
+  },
+  "limitations": [
+    "Synthetic, clearly separated anomaly classes",
+    "Quantum model uses an untrained fixed reference",
+    "The quantum threshold is not calibrated",
+    "This is not evidence of quantum advantage",
+    "This is not a production security benchmark"
+  ]
+}
