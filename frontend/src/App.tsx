@@ -1,4 +1,6 @@
+
 import QuantumResearchPanel from "./components/QuantumResearchPanel";
+import HybridFusionPanel from "./components/HybridFusionPanel";
 
 import { useEffect, useMemo, useState } from "react";
 import type { CSSProperties, ReactNode } from "react";
@@ -853,7 +855,14 @@ function App() {
         {/* V5 - AUTOMATED AI THREAT REPORT */}
 
         <AIThreatReport />
+
+        {/* V6.4 - QUANTUM RESEARCH DASHBOARD */}
+
         <QuantumResearchPanel />
+
+        {/* V7.2 - HYBRID QUANTUM AI FUSION */}
+
+        <HybridFusionPanel />
 
         {/* FOOTER */}
 

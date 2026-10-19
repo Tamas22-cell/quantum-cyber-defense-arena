@@ -1,12 +1,15 @@
-from backend.quantum_detection.api import router as quantum_router
 
 """
 Quantum Cyber Defense Arena
-FastAPI Backend V3
+FastAPI Backend V7.2
 
-Real-time simulated events with Isolation Forest inference.
-Research only — no verified attacks.
+Real-time simulated blockchain events with Isolation Forest inference.
+Includes AI, Quantum Research and Hybrid Fusion APIs.
+
+Research simulation only — no verified real-world attacks.
 """
+
+from __future__ import annotations
 
 import asyncio
 import logging
@@ -23,6 +26,9 @@ from backend.ai_detection.detector import (
     AIThreatDetector,
     generate_training_data,
 )
+from backend.ai_detection.api import router as ai_router
+from backend.quantum_detection.api import router as quantum_router
+from backend.fusion_engine.api import router as fusion_router
 
 
 logging.basicConfig(level=logging.INFO)
@@ -44,7 +50,7 @@ def initialize_ai() -> None:
 
 
 def analyze_event(event: dict) -> dict:
-    """Return a new event with AI results attached."""
+    """Return an event with classical AI results attached."""
     result = dict(event)
 
     try:
@@ -78,6 +84,7 @@ async def simulation_loop() -> None:
             started = perf_counter()
 
             raw_event = generate_threat()
+
             analyzed_event = await asyncio.to_thread(
                 analyze_event,
                 raw_event,
@@ -122,7 +129,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(
     title="Quantum Cyber Defense Arena",
-    version="3.0.0",
+    version="7.2.0",
     description=(
         "AI, Blockchain and Quantum Cybersecurity "
         "Research Platform"
@@ -137,7 +144,7 @@ app.add_middleware(
         "http://127.0.0.1:5173",
     ],
     allow_credentials=False,
-    allow_methods=["GET"],
+    allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["*"],
 )
 
@@ -147,9 +154,11 @@ def home():
     return {
         "project": "Quantum Cyber Defense Arena",
         "status": "ONLINE",
-        "version": "3.0.0",
+        "version": "7.2.0",
         "mode": "SIMULATION",
         "ai_engine": "Isolation Forest V2",
+        "quantum_engine": "Quantum State Fidelity",
+        "fusion_engine": "Hybrid Quantum AI Fusion",
     }
 
 
@@ -233,11 +242,14 @@ def ai_live():
     }
 
 
-# Register existing demonstration API before server startup.
-from backend.ai_detection.api import router as ai_router
-
+# Existing AI Threat Detection API
 app.include_router(ai_router)
+
+# Quantum Research Dashboard V6.4 API
 app.include_router(quantum_router)
+
+# Hybrid Quantum AI Fusion V7.2 API
+app.include_router(fusion_router)
 
 
 if __name__ == "__main__":
