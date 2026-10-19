@@ -1,6 +1,6 @@
 
 import { useEffect, useMemo, useState } from "react";
-import type { CSSProperties } from "react";
+import type { CSSProperties, ReactNode } from "react";
 
 import {
   Activity,
@@ -31,6 +31,8 @@ import AIThreatReport from "./components/AIThreatReport";
 import QuantumResearchPanel from "./components/QuantumResearchPanel";
 import HybridFusionPanel from "./components/HybridFusionPanel";
 import DynamicFusionPanel from "./components/DynamicFusionPanel";
+import AutonomousInvestigationPanel from "./components/AutonomousInvestigationPanel";
+import MultiAgentPanel from "./components/MultiAgentPanel";
 
 import "./App.css";
 
@@ -87,6 +89,7 @@ function riskColor(score: number): string {
 
 function formatTime(value: string): string {
   const date = new Date(value);
+
   return Number.isNaN(date.getTime())
     ? "--:--:--"
     : date.toLocaleTimeString("hu-HU");
@@ -101,7 +104,7 @@ function Metric({
   label: string;
   value: string | number;
   accent: string;
-  icon: React.ReactNode;
+  icon: ReactNode;
 }) {
   return (
     <div style={panelStyle}>
@@ -150,7 +153,9 @@ export default function App() {
   const [history, setHistory] = useState<ChartPoint[]>([]);
   const [online, setOnline] = useState(false);
   const [paused, setPaused] = useState(false);
-  const [selected, setSelected] = useState<Threat | null>(null);
+  const [selected, setSelected] = useState<Threat | null>(
+    null
+  );
 
   useEffect(() => {
     if (paused) return;
@@ -161,6 +166,7 @@ export default function App() {
 
     async function update() {
       if (fetching) return;
+
       fetching = true;
 
       try {
@@ -395,6 +401,8 @@ export default function App() {
           </p>
         </div>
 
+        {/* MAIN SECURITY METRICS */}
+
         <div
           style={{
             display: "grid",
@@ -432,6 +440,8 @@ export default function App() {
             icon={<BrainCircuit />}
           />
         </div>
+
+        {/* LIVE ANALYTICS AND 3D NETWORK */}
 
         <div
           style={{
@@ -575,6 +585,8 @@ export default function App() {
           </section>
         </div>
 
+        {/* SECURITY EVENT STREAM */}
+
         <section style={panelStyle}>
           <h3
             style={{
@@ -696,6 +708,8 @@ export default function App() {
           </div>
         </section>
 
+        {/* SELECTED EVENT INVESTIGATION */}
+
         {selected && (
           <section
             style={{
@@ -763,7 +777,7 @@ export default function App() {
         {/* V4 - AI INCIDENT INVESTIGATION */}
         <AIIncidentInvestigation />
 
-        {/* V5 - AI THREAT REPORT */}
+        {/* V5 - AUTOMATED THREAT REPORT */}
         <AIThreatReport />
 
         {/* V6.4 - QUANTUM RESEARCH */}
@@ -775,6 +789,13 @@ export default function App() {
         {/* V7.5 - DYNAMIC HYBRID FUSION */}
         <DynamicFusionPanel />
 
+        {/* V8.2 - AUTONOMOUS INVESTIGATION */}
+        <AutonomousInvestigationPanel />
+
+        {/* V9.3 - MULTI-AGENT CYBER DEFENSE */}
+        <MultiAgentPanel />
+
+        {/* FOOTER */}
         <footer
           style={{
             marginTop: 25,
