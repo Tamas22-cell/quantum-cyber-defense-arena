@@ -6,24 +6,24 @@
 
 Quantum Cyber Defense Arena combines **AI-driven anomaly detection**, **quantum-inspired security research**, **hybrid decision-making**, and **interactive 3D network visualization** in one unified research platform.
 
-<table>
-<tr>
-<td width="25%" align="center"><strong>🧠 AI Detection</strong><p>Threat scoring, anomaly monitoring and incident investigation.</p></td>
-<td width="25%" align="center"><strong>⚛️ Quantum Research</strong><p>Quantum-inspired simulations and benchmark validation.</p></td>
-<td width="25%" align="center"><strong>🔗 Hybrid Fusion</strong><p>Classical and quantum-inspired signals combined for decision support.</p></td>
-<td width="25%" align="center"><strong>🌐 Interactive 3D</strong><p>Animated cyber network visualization and synthetic dashboard telemetry.</p></td>
-</tr>
-</table>
+**🧠 AI Detection** — Threat scoring, anomaly monitoring and incident investigation.
+
+**⚛️ Quantum Research** — Quantum-inspired simulations and benchmark validation.
+
+**🔗 Hybrid Fusion** — Classical and quantum-inspired signals combined for decision support.
+
+**🌐 Interactive 3D** — Animated cyber network visualization and synthetic dashboard telemetry.
+
 
 ---
 
-### Animated Cyber Network Preview
+### Full Interactive 3D Dashboard
 
-[![Animated preview of the 3D cyber network — click to open full dashboard](./assets/dashboard-preview.gif)](https://quantum-cyber-defense-live-demo.vercel.app)
+[![Open the complete Cyber Defense 3D Dashboard](./41b6932f-f350-4721-94e4-51bf157ae3a8.png)](https://quantum-cyber-defense-live-demo.vercel.app)
 
 **[▶ OPEN FULL INTERACTIVE 3D DASHBOARD — VERCEL](https://quantum-cyber-defense-live-demo.vercel.app)**
 
-*The GIF is an illustrative animation, not a screen recording of the full application. The linked Vercel app contains the complete interactive React/Three.js dashboard. Standalone demo telemetry is synthetic, not live threat intelligence.*
+*Click the dashboard image to launch the complete interactive React/Three.js platform on Vercel. The standalone demonstration uses synthetic telemetry, not live threat intelligence.*
 
 
 **AI-Powered Cybersecurity Research | Quantum Simulation | Hybrid Threat Detection | Multi-Agent Investigation**
