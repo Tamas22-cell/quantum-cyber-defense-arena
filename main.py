@@ -1,11 +1,12 @@
 
 """
 Quantum Cyber Defense Arena
-FastAPI Backend V9.2
+FastAPI Backend V10.3
 
 Classical AI + Quantum Research + Hybrid Fusion
 + Dynamic Hybrid Fusion + Autonomous Investigation
-+ Multi-Agent Threat Intelligence.
++ Multi-Agent Threat Intelligence
++ Research Validation Lab
 
 RESEARCH SIMULATION ONLY.
 No verified real-world attacks.
@@ -55,6 +56,10 @@ from backend.investigation_api import (
 
 from backend.multi_agent_api import (
     register_multi_agent_routes,
+)
+
+from research_validation.api import (
+    router as research_validation_router,
 )
 
 
@@ -149,15 +154,15 @@ async def simulation_loop() -> None:
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """
-    Start the existing classical AI simulator and the
-    V7.4 Dynamic Hybrid Fusion worker.
+    Start the existing classical AI simulator and
+    the V7.4 Dynamic Hybrid Fusion worker.
 
-    The V8 investigation API and V9.2 multi-agent API
-    read existing events without starting another worker.
+    V8 and V9 consume existing events.
+    V10.3 serves saved research results.
     """
 
     logger.info(
-        "Quantum Cyber Defense Arena V9.2 starting"
+        "Quantum Cyber Defense Arena V10.3 starting"
     )
 
     await asyncio.to_thread(initialize_ai)
@@ -182,6 +187,10 @@ async def lifespan(app: FastAPI):
             "Multi-Agent Threat Intelligence API V9.2 READY"
         )
 
+        logger.info(
+            "Research Validation API V10.3 READY"
+        )
+
         yield
 
     finally:
@@ -201,11 +210,12 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(
     title="Quantum Cyber Defense Arena",
-    version="9.2.0",
+    version="10.3.0",
     description=(
         "AI, Blockchain, Quantum Cybersecurity, "
-        "Autonomous Threat Investigation and "
-        "Multi-Agent Research Platform"
+        "Autonomous Threat Investigation, "
+        "Multi-Agent Intelligence and "
+        "Research Validation Platform"
     ),
     lifespan=lifespan,
 )
@@ -232,7 +242,7 @@ def home():
     return {
         "project": "Quantum Cyber Defense Arena",
         "status": "ONLINE",
-        "version": "9.2.0",
+        "version": "10.3.0",
         "mode": "SIMULATION",
         "ai_engine": "Isolation Forest V2",
         "quantum_engine": "Quantum State Fidelity",
@@ -243,6 +253,7 @@ def home():
         "multi_agent_engine": (
             "Multi-Agent Threat Intelligence V9.2"
         ),
+        "research_engine": "Research Validation V10.3",
         "agent_count": 3,
     }
 
@@ -329,23 +340,26 @@ def ai_live():
     }
 
 
-# V2 / V3 - Existing AI Threat Detection API
+# V2 / V3 - Classical AI Threat Detection
 app.include_router(ai_router)
 
-# V6.4 - Quantum Research API
+# V6.4 - Quantum Research Dashboard
 app.include_router(quantum_router)
 
-# V7.2 - Hybrid Quantum AI Fusion API
+# V7.2 - Hybrid Quantum AI Fusion
 app.include_router(fusion_router)
 
-# V7.4 - Dynamic Hybrid Fusion API
+# V7.4 - Dynamic Hybrid Fusion
 register_dynamic_fusion(app)
 
-# V8.2 - Autonomous Threat Investigation API
+# V8.2 - Autonomous Threat Investigation
 app.include_router(investigation_router)
 
-# V9.2 - Multi-Agent Threat Intelligence API
+# V9.2 / V9.3 - Multi-Agent Threat Intelligence
 register_multi_agent_routes(app)
+
+# V10.3 - Research Validation Lab
+app.include_router(research_validation_router)
 
 
 if __name__ == "__main__":

@@ -35,6 +35,7 @@ import AutonomousInvestigationPanel from "./components/AutonomousInvestigationPa
 import MultiAgentPanel from "./components/MultiAgentPanel";
 
 import "./App.css";
+import ResearchValidationPanel from "./components/ResearchValidationPanel";
 
 type Severity = "LOW" | "MEDIUM" | "HIGH" | "CRITICAL";
 
@@ -794,6 +795,9 @@ export default function App() {
 
         {/* V9.3 - MULTI-AGENT CYBER DEFENSE */}
         <MultiAgentPanel />
+
+        {/* V10.3 - RESEARCH VALIDATION */}
+        <ResearchValidationPanel />
 
         {/* FOOTER */}
         <footer
