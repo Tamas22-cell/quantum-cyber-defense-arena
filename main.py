@@ -1,18 +1,20 @@
 
 """
 Quantum Cyber Defense Arena
-FastAPI Backend V7.4
+FastAPI Backend V8.1
 
 Classical AI + Quantum Research + Hybrid Fusion
-+ Dynamic Hybrid Fusion worker.
++ Dynamic Hybrid Fusion + Autonomous Investigation.
 
 RESEARCH SIMULATION ONLY.
+No verified real-world attacks.
 """
 
 from __future__ import annotations
 
 import asyncio
 import logging
+
 from collections import deque
 from contextlib import asynccontextmanager
 from datetime import datetime, timezone
@@ -22,40 +24,60 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from backend.threat_simulator import generate_threat
+
 from backend.ai_detection.detector import (
     AIThreatDetector,
     generate_training_data,
 )
+
 from backend.ai_detection.api import router as ai_router
-from backend.quantum_detection.api import router as quantum_router
-from backend.fusion_engine.api import router as fusion_router
+
+from backend.quantum_detection.api import (
+    router as quantum_router,
+)
+
+from backend.fusion_engine.api import (
+    router as fusion_router,
+)
+
 from backend.fusion_engine.dynamic_api import (
     register_dynamic_fusion,
     start_dynamic_fusion,
     stop_dynamic_fusion,
 )
 
+from backend.investigation_api import (
+    router as investigation_router,
+)
+
 
 logging.basicConfig(level=logging.INFO)
+
 logger = logging.getLogger("cyber_defense")
 
 MAX_EVENTS = 100
 
 events = deque(maxlen=MAX_EVENTS)
+
 total_generated = 0
 
 detector = AIThreatDetector(seed=42)
 
 
 def initialize_ai() -> None:
+    """Train the existing classical AI detector."""
+
     if not detector.trained:
         logger.info("Training Isolation Forest...")
+
         detector.train(generate_training_data())
+
         logger.info("AI Threat Detection V2 READY")
 
 
 def analyze_event(event: dict) -> dict:
-    """Return an event with classical AI results attached."""
+    """Attach classical AI results to a simulated event."""
+
     result = dict(event)
 
     try:
@@ -74,6 +96,7 @@ def analyze_event(event: dict) -> dict:
             "is_anomaly": None,
             "anomaly_score": None,
         }
+
         result["ai_is_anomaly"] = None
         result["ai_anomaly_score"] = None
         result["ai_classification"] = "ERROR"
@@ -82,6 +105,8 @@ def analyze_event(event: dict) -> dict:
 
 
 async def simulation_loop() -> None:
+    """Generate simulated security events every two seconds."""
+
     global total_generated
 
     while True:
@@ -96,9 +121,12 @@ async def simulation_loop() -> None:
             )
 
             events.appendleft(analyzed_event)
+
             total_generated += 1
 
-            elapsed = (perf_counter() - started) * 1000
+            elapsed = (
+                perf_counter() - started
+            ) * 1000
 
             logger.debug(
                 "Event processed in %.2f ms",
@@ -113,38 +141,64 @@ async def simulation_loop() -> None:
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    logger.info("Quantum Cyber Defense Arena starting")
+    """
+    Start the existing classical AI simulator and the
+    V7.4 Dynamic Hybrid Fusion worker.
+
+    The V8.1 investigation API reads existing events.
+    It does not start another background worker.
+    """
+
+    logger.info(
+        "Quantum Cyber Defense Arena V8.1 starting"
+    )
 
     await asyncio.to_thread(initialize_ai)
 
-    task = asyncio.create_task(simulation_loop())
+    simulation_task = asyncio.create_task(
+        simulation_loop(),
+        name="classical_ai_simulation",
+    )
 
     try:
         await start_dynamic_fusion()
-        logger.info("Dynamic Hybrid Fusion V7.4 READY")
+
+        logger.info(
+            "Dynamic Hybrid Fusion V7.4 READY"
+        )
+
+        logger.info(
+            "Autonomous Investigation API V8.1 READY"
+        )
+
         yield
+
     finally:
         await stop_dynamic_fusion()
 
-        task.cancel()
+        simulation_task.cancel()
 
         try:
-            await task
+            await simulation_task
         except asyncio.CancelledError:
             pass
 
-        logger.info("Quantum Cyber Defense Arena stopped")
+        logger.info(
+            "Quantum Cyber Defense Arena stopped"
+        )
 
 
 app = FastAPI(
     title="Quantum Cyber Defense Arena",
-    version="7.4.0",
+    version="8.1.0",
     description=(
-        "AI, Blockchain and Quantum Cybersecurity "
+        "AI, Blockchain, Quantum Cybersecurity "
+        "and Autonomous Threat Investigation "
         "Research Platform"
     ),
     lifespan=lifespan,
 )
+
 
 app.add_middleware(
     CORSMiddleware,
@@ -153,7 +207,11 @@ app.add_middleware(
         "http://127.0.0.1:5173",
     ],
     allow_credentials=False,
-    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_methods=[
+        "GET",
+        "POST",
+        "OPTIONS",
+    ],
     allow_headers=["*"],
 )
 
@@ -163,11 +221,14 @@ def home():
     return {
         "project": "Quantum Cyber Defense Arena",
         "status": "ONLINE",
-        "version": "7.4.0",
+        "version": "8.1.0",
         "mode": "SIMULATION",
         "ai_engine": "Isolation Forest V2",
         "quantum_engine": "Quantum State Fidelity",
         "fusion_engine": "Dynamic Hybrid Quantum AI Fusion",
+        "investigation_engine": (
+            "Autonomous Threat Investigator V8.1"
+        ),
     }
 
 
@@ -199,8 +260,10 @@ def get_threats():
 
     average = (
         round(
-            sum(event["risk_score"] for event in recent)
-            / len(recent),
+            sum(
+                event["risk_score"]
+                for event in recent
+            ) / len(recent),
             1,
         )
         if recent
@@ -251,13 +314,20 @@ def ai_live():
     }
 
 
-# Previous working APIs
+# V2 / V3 - Existing AI Threat Detection API
 app.include_router(ai_router)
+
+# V6.4 - Quantum Research API
 app.include_router(quantum_router)
+
+# V7.2 - Hybrid Quantum AI Fusion API
 app.include_router(fusion_router)
 
-# V7.4 Dynamic Hybrid Fusion API
+# V7.4 - Dynamic Hybrid Fusion API
 register_dynamic_fusion(app)
+
+# V8.1 - Autonomous Threat Investigation API
+app.include_router(investigation_router)
 
 
 if __name__ == "__main__":
