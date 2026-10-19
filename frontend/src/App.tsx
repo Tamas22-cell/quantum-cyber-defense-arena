@@ -33,9 +33,11 @@ import HybridFusionPanel from "./components/HybridFusionPanel";
 import DynamicFusionPanel from "./components/DynamicFusionPanel";
 import AutonomousInvestigationPanel from "./components/AutonomousInvestigationPanel";
 import MultiAgentPanel from "./components/MultiAgentPanel";
+import ResearchValidationPanel from "./components/ResearchValidationPanel";
+
+import ResearchDashboardV11_4 from "./ResearchDashboardV11_4";
 
 import "./App.css";
-import ResearchValidationPanel from "./components/ResearchValidationPanel";
 
 type Severity = "LOW" | "MEDIUM" | "HIGH" | "CRITICAL";
 
@@ -154,6 +156,7 @@ export default function App() {
   const [history, setHistory] = useState<ChartPoint[]>([]);
   const [online, setOnline] = useState(false);
   const [paused, setPaused] = useState(false);
+
   const [selected, setSelected] = useState<Threat | null>(
     null
   );
@@ -163,6 +166,7 @@ export default function App() {
 
     let alive = true;
     let fetching = false;
+
     const controller = new AbortController();
 
     async function update() {
@@ -798,6 +802,9 @@ export default function App() {
 
         {/* V10.3 - RESEARCH VALIDATION */}
         <ResearchValidationPanel />
+
+        {/* V11.4 - ADVANCED RESEARCH DASHBOARD */}
+        <ResearchDashboardV11_4 />
 
         {/* FOOTER */}
         <footer
