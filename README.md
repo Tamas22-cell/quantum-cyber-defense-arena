@@ -2,6 +2,15 @@
 
 ![Quantum Cyber Defense Arena — Cyber Threat Command Center](./41b6932f-f350-4721-94e4-51bf157ae3a8.png)
 
+### Animated Cyber Network Preview
+
+[![Animated cyber network research preview](./assets/animated-network.svg)](https://quantum-cyber-defense-live-demo.vercel.app)
+
+**[▶ OPEN FULL INTERACTIVE 3D DASHBOARD — VERCEL](https://quantum-cyber-defense-live-demo.vercel.app)**
+
+*The GitHub preview is an illustrative animation. The linked Vercel app contains the complete interactive React/Three.js dashboard. Standalone demo telemetry is synthetic, not live threat intelligence.*
+
+
 **AI-Powered Cybersecurity Research | Quantum Simulation | Hybrid Threat Detection | Multi-Agent Investigation**
 
 Quantum Cyber Defense Arena is a research-oriented cybersecurity platform combining classical machine learning, quantum-inspired anomaly detection, hybrid decision-making, autonomous investigation workflows, and interactive security dashboards.
