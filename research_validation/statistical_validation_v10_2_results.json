@@ -1,0 +1,63 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "10.2.0",
+  "created_at": "2026-10-19T10:11:26.145112+00:00",
+  "source_benchmark": "A:\\quantum-cyber-defense-arena\\research_validation\\benchmark_v10_1_results.json",
+  "source_version": "10.1.0",
+  "mode": "RESEARCH_SIMULATION",
+  "model_comparison": {
+    "classical_f1": 0.666667,
+    "quantum_f1": 0.692308,
+    "hybrid_f1": 0.692308,
+    "differences": {
+      "quantum_vs_classical_pp": 2.5641,
+      "hybrid_vs_classical_pp": 2.5641,
+      "hybrid_vs_quantum_pp": 0.0
+    }
+  },
+  "confidence_intervals": [
+    {
+      "model_a": "quantum_prediction",
+      "model_b": "classical_prediction",
+      "f1_difference_pp": 2.5641,
+      "ci_95_lower_pp": 1.5151,
+      "ci_95_upper_pp": 3.6458,
+      "excludes_zero": true,
+      "interpretation": "Positive F1 difference in this synthetic benchmark bootstrap.",
+      "method": "paired stratified bootstrap within experiment seed and true class",
+      "bootstrap_samples": 1000
+    },
+    {
+      "model_a": "hybrid_prediction",
+      "model_b": "classical_prediction",
+      "f1_difference_pp": 2.5641,
+      "ci_95_lower_pp": 1.5151,
+      "ci_95_upper_pp": 3.6458,
+      "excludes_zero": true,
+      "interpretation": "Positive F1 difference in this synthetic benchmark bootstrap.",
+      "method": "paired stratified bootstrap within experiment seed and true class",
+      "bootstrap_samples": 1000
+    }
+  ],
+  "hybrid_reviews": {
+    "review_count": 20,
+    "review_rate_percent": 5.56,
+    "decisive_coverage_percent": 94.44,
+    "policy": "REVIEW counts as not confirmed for conservative binary metrics."
+  },
+  "runtime": {
+    "classical_ms_per_event": 24.03936,
+    "quantum_plus_fusion_ms_per_event": 0.37309,
+    "note": "The measurements cover different operations. They cannot establish quantum speedup."
+  },
+  "limitations": [
+    "All evaluation data are synthetic.",
+    "The confidence intervals were already computed by V10.1.",
+    "This module does not generate new experiments.",
+    "The number of independent seeds is small.",
+    "The bootstrap is based on simulated events.",
+    "Model performance may not generalize.",
+    "No quantum hardware execution.",
+    "No evidence of quantum computational advantage."
+  ]
+}
