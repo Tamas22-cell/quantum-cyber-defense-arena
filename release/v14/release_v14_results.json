@@ -1,0 +1,233 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "14.0.0",
+  "created_at": "2026-10-19T12:17:05.097128+00:00",
+  "release_status": "SOURCE_AND_RESULT_AUDIT_PASS",
+  "audit_scope": "Source files, Python syntax, saved research JSON and Git metadata",
+  "project_files": {
+    "FastAPI application": {
+      "path": "main.py",
+      "exists": true
+    },
+    "React application": {
+      "path": "frontend/src/App.tsx",
+      "exists": true
+    },
+    "V11.4 Research Dashboard": {
+      "path": "frontend/src/ResearchDashboardV11_4.tsx",
+      "exists": true
+    },
+    "Classical AI detector": {
+      "path": "backend/ai_detection/detector.py",
+      "exists": true
+    },
+    "Quantum detector": {
+      "path": "backend/quantum_detection/quantum_detector.py",
+      "exists": true
+    },
+    "V13.4 diagnostic program": {
+      "path": "research_validation/v13/model_diagnostic_v13_4.py",
+      "exists": true
+    }
+  },
+  "research_files": {
+    "V11 benchmark": {
+      "status": "PASS",
+      "path": "research_validation/v11/benchmark_v11_results.json",
+      "version": "11.0.0"
+    },
+    "V11.2 extended benchmark": {
+      "status": "PASS",
+      "path": "research_validation/v11/benchmark_v11_2_results.json",
+      "version": "11.2.0"
+    },
+    "V11.3 statistical research": {
+      "status": "PASS",
+      "path": "research_validation/v11/research_analysis_v11_3_results.json",
+      "version": "11.3.0"
+    },
+    "V12 robustness testing": {
+      "status": "PASS",
+      "path": "research_validation/v12/robustness_benchmark_v12_results.json",
+      "version": "12.0.0"
+    },
+    "V13.1 data preparation": {
+      "status": "PASS",
+      "path": "research_validation/v13/elliptic_processed/dataset_report.json",
+      "version": "13.1.0"
+    },
+    "V13.2 real-data validation": {
+      "status": "PASS",
+      "path": "research_validation/v13/elliptic_validation_v13_2_results.json",
+      "version": "13.2.0"
+    },
+    "V13.3 model calibration": {
+      "status": "PASS",
+      "path": "research_validation/v13/model_calibration_v13_3_results.json",
+      "version": "13.3.0"
+    },
+    "V13.4 model diagnostics": {
+      "status": "PASS",
+      "path": "research_validation/v13/model_diagnostic_v13_4_results.json",
+      "version": "13.4.0"
+    }
+  },
+  "python_syntax": {
+    "main.py": "PASS",
+    "research_validation\\v11\\benchmark_v11.py": "PASS",
+    "research_validation\\v12\\robustness_benchmark_v12.py": "PASS",
+    "research_validation\\v13\\elliptic_prepare_v13.py": "PASS",
+    "research_validation\\v13\\elliptic_validation_v13_2.py": "PASS",
+    "research_validation\\v13\\model_calibration_v13_3.py": "PASS",
+    "research_validation\\v13\\model_diagnostic_v13_4.py": "PASS"
+  },
+  "git": {
+    "available": true,
+    "branch": "feature/cyber-network-v2",
+    "last_commit": "b09d142 V13.4 Real Blockchain Model Diagnostics",
+    "tracked_modified_count": 0,
+    "note": "Untracked files are excluded from this Git check."
+  },
+  "research_metrics": {
+    "v11_synthetic": {
+      "classical": 0.735692,
+      "quantum": 0.939137,
+      "hybrid": 0.940582
+    },
+    "v13_2_real_data": {
+      "classical": {
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0,
+        "tn": 423,
+        "fp": 45,
+        "fn": 32
+      },
+      "quantum": {
+        "f1": 0.121905,
+        "precision": 0.064909,
+        "recall": 1.0,
+        "tp": 32,
+        "tn": 7,
+        "fp": 461,
+        "fn": 0
+      },
+      "hybrid": {
+        "f1": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "tp": 0,
+        "tn": 423,
+        "fp": 45,
+        "fn": 32
+      }
+    },
+    "v13_3_calibration": {
+      "classical": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "accuracy": 0.844,
+        "tp": 0,
+        "tn": 422,
+        "fp": 46,
+        "fn": 32,
+        "false_positive_rate": 0.098291
+      },
+      "quantum": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "accuracy": 0.868,
+        "tp": 0,
+        "tn": 434,
+        "fp": 34,
+        "fn": 32,
+        "false_positive_rate": 0.07265
+      },
+      "hybrid_and": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "accuracy": 0.918,
+        "tp": 0,
+        "tn": 459,
+        "fp": 9,
+        "fn": 32,
+        "false_positive_rate": 0.019231
+      },
+      "hybrid_or": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "accuracy": 0.794,
+        "tp": 0,
+        "tn": 397,
+        "fp": 71,
+        "fn": 32,
+        "false_positive_rate": 0.151709
+      }
+    },
+    "v13_4_baselines": {
+      "dummy": {
+        "calibration_f1": 0.329854,
+        "test_metrics": {
+          "precision": 0.065,
+          "recall": 1.0,
+          "f1": 0.122066,
+          "balanced_accuracy": 0.5,
+          "average_precision": 0.065,
+          "roc_auc": 0.5,
+          "false_positive_rate": 1.0,
+          "tp": 130,
+          "tn": 0,
+          "fp": 1870,
+          "fn": 0
+        }
+      },
+      "logistic_regression": {
+        "calibration_f1": 0.621801,
+        "test_metrics": {
+          "precision": 0.14186,
+          "recall": 0.938462,
+          "f1": 0.246465,
+          "balanced_accuracy": 0.771905,
+          "average_precision": 0.195157,
+          "roc_auc": 0.846203,
+          "false_positive_rate": 0.394652,
+          "tp": 122,
+          "tn": 1132,
+          "fp": 738,
+          "fn": 8
+        }
+      },
+      "random_forest": {
+        "calibration_f1": 0.962963,
+        "test_metrics": {
+          "precision": 0.820513,
+          "recall": 0.738462,
+          "f1": 0.777328,
+          "balanced_accuracy": 0.863616,
+          "average_precision": 0.799118,
+          "roc_auc": 0.921826,
+          "false_positive_rate": 0.01123,
+          "tp": 96,
+          "tn": 1849,
+          "fp": 21,
+          "fn": 34
+        }
+      }
+    }
+  },
+  "unverified_checks": [
+    "FastAPI runtime and integration tests",
+    "React production build",
+    "Frontend functionality",
+    "Security vulnerability analysis",
+    "Independent benchmark reproduction",
+    "Remote GitHub publication"
+  ],
+  "quantum_advantage_proven": false,
+  "production_ready_certified": false
+}
