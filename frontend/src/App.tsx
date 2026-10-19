@@ -1,9 +1,6 @@
 
-import QuantumResearchPanel from "./components/QuantumResearchPanel";
-import HybridFusionPanel from "./components/HybridFusionPanel";
-
 import { useEffect, useMemo, useState } from "react";
-import type { CSSProperties, ReactNode } from "react";
+import type { CSSProperties } from "react";
 
 import {
   Activity,
@@ -31,6 +28,9 @@ import CyberNetwork3D from "./components/CyberNetwork3D";
 import AIThreatPanel from "./components/AIThreatPanel";
 import AIIncidentInvestigation from "./components/AIIncidentInvestigation";
 import AIThreatReport from "./components/AIThreatReport";
+import QuantumResearchPanel from "./components/QuantumResearchPanel";
+import HybridFusionPanel from "./components/HybridFusionPanel";
+import DynamicFusionPanel from "./components/DynamicFusionPanel";
 
 import "./App.css";
 
@@ -49,11 +49,7 @@ type Threat = {
 };
 
 type ApiData = {
-  mode: string;
   total_events: number;
-  active_threats: number;
-  critical_events?: number;
-  average_risk?: number;
   events: Threat[];
 };
 
@@ -67,7 +63,6 @@ const API_URL = "http://127.0.0.1:8000/api/threats";
 
 const colors = {
   cyan: "#6cf8eb",
-  blue: "#75caff",
   red: "#ff587f",
   yellow: "#ffd166",
   purple: "#d9acff",
@@ -75,8 +70,8 @@ const colors = {
 };
 
 const panelStyle: CSSProperties = {
-  background: "rgba(16, 45, 83, 0.80)",
-  border: "1px solid rgba(112, 202, 255, 0.30)",
+  background: "rgba(16,45,83,.8)",
+  border: "1px solid rgba(112,202,255,.3)",
   borderRadius: 18,
   padding: 20,
   minWidth: 0,
@@ -92,50 +87,45 @@ function riskColor(score: number): string {
 
 function formatTime(value: string): string {
   const date = new Date(value);
-
   return Number.isNaN(date.getTime())
     ? "--:--:--"
     : date.toLocaleTimeString("hu-HU");
 }
 
 function Metric({
-  title,
+  label,
   value,
+  accent,
   icon,
-  color,
 }: {
-  title: string;
+  label: string;
   value: string | number;
-  icon: ReactNode;
-  color: string;
+  accent: string;
+  icon: React.ReactNode;
 }) {
   return (
     <div style={panelStyle}>
       <div
         style={{
           display: "flex",
-          alignItems: "center",
           justifyContent: "space-between",
-          gap: 10,
+          alignItems: "center",
           color: "#bbd7ee",
           fontSize: 12,
           fontWeight: 700,
-          letterSpacing: 1,
         }}
       >
-        <span>{title.toUpperCase()}</span>
-        <span style={{ color }}>{icon}</span>
+        <span>{label}</span>
+        <span style={{ color: accent }}>{icon}</span>
       </div>
 
       <div
         style={{
-          color,
-          fontSize: "clamp(29px, 3vw, 40px)",
-          fontWeight: 800,
           textAlign: "center",
+          fontSize: 35,
+          fontWeight: 800,
+          color: accent,
           padding: "20px 0 12px",
-          textShadow: `0 0 24px ${color}55`,
-          fontVariantNumeric: "tabular-nums",
         }}
       >
         {value}
@@ -143,9 +133,9 @@ function Metric({
 
       <div
         style={{
+          textAlign: "center",
           color: "#8eb4d1",
           fontSize: 11,
-          textAlign: "center",
         }}
       >
         Simulated security telemetry
@@ -154,15 +144,13 @@ function Metric({
   );
 }
 
-function App() {
+export default function App() {
   const [events, setEvents] = useState<Threat[]>([]);
   const [totalEvents, setTotalEvents] = useState(0);
   const [history, setHistory] = useState<ChartPoint[]>([]);
   const [online, setOnline] = useState(false);
   const [paused, setPaused] = useState(false);
-  const [selected, setSelected] = useState<Threat | null>(
-    null
-  );
+  const [selected, setSelected] = useState<Threat | null>(null);
 
   useEffect(() => {
     if (paused) return;
@@ -173,7 +161,6 @@ function App() {
 
     async function update() {
       if (fetching) return;
-
       fetching = true;
 
       try {
@@ -183,10 +170,10 @@ function App() {
         });
 
         if (!response.ok) {
-          throw new Error(`API HTTP ${response.status}`);
+          throw new Error(`HTTP ${response.status}`);
         }
 
-        const data: ApiData = await response.json();
+        const data = (await response.json()) as ApiData;
 
         if (!alive || !Array.isArray(data.events)) {
           return;
@@ -207,9 +194,9 @@ function App() {
             )
           : 0;
 
-        setOnline(true);
         setEvents(list);
         setTotalEvents(data.total_events ?? list.length);
+        setOnline(true);
 
         setHistory((previous) => [
           ...previous.slice(-39),
@@ -221,7 +208,7 @@ function App() {
         ]);
       } catch (error) {
         if (alive && !controller.signal.aborted) {
-          console.error("Cyber API error:", error);
+          console.error("Cyber API error", error);
           setOnline(false);
         }
       } finally {
@@ -231,41 +218,39 @@ function App() {
 
     void update();
 
-    const interval = window.setInterval(() => {
-      void update();
-    }, 2000);
+    const timer = window.setInterval(
+      () => void update(),
+      2000
+    );
 
     return () => {
       alive = false;
-      window.clearInterval(interval);
+      window.clearInterval(timer);
       controller.abort();
     };
   }, [paused]);
 
-  const stats = useMemo(() => {
-    const active = events.filter(
-      (event) => event.risk_score >= 60
-    ).length;
+  const stats = useMemo(
+    () => ({
+      active: events.filter(
+        (event) => event.risk_score >= 60
+      ).length,
 
-    const critical = events.filter(
-      (event) => event.risk_score >= 80
-    ).length;
+      critical: events.filter(
+        (event) => event.risk_score >= 80
+      ).length,
 
-    const average = events.length
-      ? Math.round(
-          events.reduce(
-            (sum, event) => sum + event.risk_score,
-            0
-          ) / events.length
-        )
-      : 0;
-
-    return {
-      active,
-      critical,
-      average,
-    };
-  }, [events]);
+      average: events.length
+        ? Math.round(
+            events.reduce(
+              (sum, event) => sum + event.risk_score,
+              0
+            ) / events.length
+          )
+        : 0,
+    }),
+    [events]
+  );
 
   return (
     <div
@@ -279,7 +264,7 @@ function App() {
     >
       <header
         style={{
-          padding: "22px clamp(16px, 4vw, 48px)",
+          padding: "22px clamp(16px,4vw,48px)",
           borderBottom: "1px solid #47739977",
           background: "#071a2dbb",
           display: "flex",
@@ -292,22 +277,21 @@ function App() {
         <div
           style={{
             display: "flex",
-            alignItems: "center",
             gap: 14,
+            alignItems: "center",
           }}
         >
           <Shield size={36} color={colors.cyan} />
 
           <div>
-            <div
+            <strong
               style={{
                 fontSize: 18,
-                fontWeight: 800,
                 letterSpacing: 1,
               }}
             >
               QUANTUM CYBER DEFENSE
-            </div>
+            </strong>
 
             <div
               style={{
@@ -325,17 +309,17 @@ function App() {
         <div
           style={{
             display: "flex",
-            flexWrap: "wrap",
             alignItems: "center",
             gap: 16,
+            flexWrap: "wrap",
           }}
         >
           <span
             style={{
+              padding: "9px 12px",
               border: "1px solid #edbf66",
               borderRadius: 8,
               color: colors.yellow,
-              padding: "9px 12px",
               fontSize: 11,
               fontWeight: 800,
             }}
@@ -343,38 +327,31 @@ function App() {
             SIMULATION MODE
           </span>
 
-          <span
+          <strong
             style={{
-              color: online ? colors.green : colors.red,
               fontSize: 12,
-              fontWeight: 800,
+              color: online ? colors.green : colors.red,
             }}
           >
             ● API {online ? "ONLINE" : "OFFLINE"}
-          </span>
+          </strong>
 
           <button
             type="button"
             onClick={() => setPaused((value) => !value)}
             style={{
               display: "flex",
-              alignItems: "center",
               gap: 8,
+              alignItems: "center",
               background: "#256eaa",
               border: "1px solid #72d2ff",
               color: "white",
               padding: "10px 18px",
               borderRadius: 9,
               cursor: "pointer",
-              fontWeight: 700,
             }}
           >
-            {paused ? (
-              <Play size={17} />
-            ) : (
-              <Pause size={17} />
-            )}
-
+            {paused ? <Play size={17} /> : <Pause size={17} />}
             {paused ? "Resume" : "Pause"}
           </button>
         </div>
@@ -383,7 +360,7 @@ function App() {
       <main
         style={{
           maxWidth: 1500,
-          padding: "30px clamp(16px, 4vw, 48px)",
+          padding: "30px clamp(16px,4vw,48px)",
           margin: "auto",
         }}
       >
@@ -391,9 +368,9 @@ function App() {
           <div
             style={{
               color: colors.cyan,
-              letterSpacing: 2,
               fontSize: 11,
               fontWeight: 800,
+              letterSpacing: 2,
             }}
           >
             REAL-TIME SECURITY INTELLIGENCE
@@ -402,7 +379,7 @@ function App() {
           <h1
             style={{
               margin: "12px 0",
-              fontSize: "clamp(26px, 4vw, 40px)",
+              fontSize: "clamp(26px,4vw,40px)",
             }}
           >
             Cyber Threat Command Center
@@ -414,58 +391,53 @@ function App() {
               margin: 0,
             }}
           >
-            Blockchain Security · AI Monitoring · Quantum
-            Research
+            Blockchain Security · AI Monitoring · Quantum Research
           </p>
         </div>
-
-        {/* MAIN SECURITY METRICS */}
 
         <div
           style={{
             display: "grid",
             gridTemplateColumns:
-              "repeat(auto-fit, minmax(min(100%, 210px), 1fr))",
+              "repeat(auto-fit,minmax(min(100%,210px),1fr))",
             gap: 16,
             marginBottom: 20,
           }}
         >
           <Metric
-            title="Total Events"
+            label="TOTAL EVENTS"
             value={totalEvents}
-            color={colors.cyan}
+            accent={colors.cyan}
             icon={<Activity />}
           />
 
           <Metric
-            title="Active Threats"
+            label="ACTIVE THREATS"
             value={stats.active}
-            color={colors.red}
+            accent={colors.red}
             icon={<ShieldAlert />}
           />
 
           <Metric
-            title="Critical Events"
+            label="CRITICAL EVENTS"
             value={stats.critical}
-            color={colors.yellow}
+            accent={colors.yellow}
             icon={<AlertTriangle />}
           />
 
           <Metric
-            title="Average Risk"
+            label="AVERAGE RISK"
             value={`${stats.average}/100`}
-            color={colors.purple}
+            accent={colors.purple}
             icon={<BrainCircuit />}
           />
         </div>
-
-        {/* LIVE ANALYTICS AND 3D NETWORK */}
 
         <div
           style={{
             display: "grid",
             gridTemplateColumns:
-              "repeat(auto-fit, minmax(min(100%, 350px), 1fr))",
+              "repeat(auto-fit,minmax(min(100%,350px),1fr))",
             gap: 20,
             marginBottom: 20,
           }}
@@ -474,14 +446,11 @@ function App() {
             <h3
               style={{
                 display: "flex",
-                alignItems: "center",
                 gap: 10,
+                alignItems: "center",
               }}
             >
-              <Activity
-                color={colors.cyan}
-                size={21}
-              />
+              <Activity color={colors.cyan} size={21} />
               Threat Activity
             </h3>
 
@@ -494,23 +463,15 @@ function App() {
               Automatically updating risk analytics
             </p>
 
-            <div
-              style={{
-                height: 320,
-                width: "100%",
-              }}
-            >
-              <ResponsiveContainer
-                width="100%"
-                height="100%"
-              >
+            <div style={{ height: 320 }}>
+              <ResponsiveContainer width="100%" height="100%">
                 <AreaChart data={history}>
                   <defs>
                     <linearGradient
                       id="riskFill"
                       x1="0"
-                      x2="0"
                       y1="0"
+                      x2="0"
                       y2="1"
                     >
                       <stop
@@ -518,7 +479,6 @@ function App() {
                         stopColor="#b18bff"
                         stopOpacity={0.55}
                       />
-
                       <stop
                         offset="100%"
                         stopColor="#b18bff"
@@ -535,17 +495,12 @@ function App() {
                   <XAxis
                     dataKey="time"
                     stroke="#b9d6e9"
-                    tick={{
-                      fontSize: 10,
-                    }}
+                    tick={{ fontSize: 10 }}
                   />
 
                   <YAxis
                     stroke="#b9d6e9"
                     domain={[0, 100]}
-                    tick={{
-                      fontSize: 11,
-                    }}
                   />
 
                   <Tooltip
@@ -553,7 +508,6 @@ function App() {
                       background: "#102945",
                       border: "1px solid #528bb3",
                       borderRadius: 10,
-                      color: "white",
                     }}
                   />
 
@@ -564,8 +518,6 @@ function App() {
                     stroke="#d5b3ff"
                     strokeWidth={3}
                     fill="url(#riskFill)"
-                    isAnimationActive
-                    animationDuration={650}
                   />
 
                   <Area
@@ -573,42 +525,32 @@ function App() {
                     dataKey="threats"
                     name="Active Threats"
                     stroke={colors.green}
-                    strokeWidth={2}
                     fill="transparent"
-                    isAnimationActive
-                    animationDuration={650}
                   />
                 </AreaChart>
               </ResponsiveContainer>
             </div>
           </section>
 
-          {/* 3D CYBER NETWORK */}
-
           <section style={panelStyle}>
             <h3
               style={{
                 display: "flex",
-                alignItems: "center",
                 gap: 10,
+                alignItems: "center",
               }}
             >
-              <Globe2
-                color={colors.cyan}
-                size={21}
-              />
-
+              <Globe2 size={21} color={colors.cyan} />
               Cyber Network
 
-              <span
+              <small
                 style={{
                   marginLeft: "auto",
                   color: colors.green,
-                  fontSize: 10,
                 }}
               >
                 3D LIVE
-              </span>
+              </small>
             </h3>
 
             <p
@@ -622,7 +564,6 @@ function App() {
 
             <div
               style={{
-                width: "100%",
                 height: 320,
                 overflow: "hidden",
                 borderRadius: 12,
@@ -634,8 +575,6 @@ function App() {
           </section>
         </div>
 
-        {/* SECURITY EVENT STREAM */}
-
         <section style={panelStyle}>
           <h3
             style={{
@@ -644,22 +583,17 @@ function App() {
               gap: 10,
             }}
           >
-            <Zap
-              color={colors.cyan}
-              size={21}
-            />
-
+            <Zap color={colors.cyan} size={21} />
             Security Event Stream
 
-            <span
+            <small
               style={{
                 marginLeft: "auto",
                 color: colors.green,
-                fontSize: 12,
               }}
             >
               {events.length} EVENTS
-            </span>
+            </small>
           </h3>
 
           <p
@@ -675,30 +609,30 @@ function App() {
             <table
               style={{
                 width: "100%",
-                borderCollapse: "collapse",
                 minWidth: 650,
+                borderCollapse: "collapse",
                 fontSize: 12,
                 textAlign: "left",
               }}
             >
               <thead>
-                <tr style={{ color: "#acd9ed" }}>
+                <tr>
                   {[
                     "NETWORK",
                     "EVENT TYPE",
                     "RISK SCORE",
                     "SEVERITY",
                     "TIME",
-                  ].map((name) => (
+                  ].map((label) => (
                     <th
-                      key={name}
+                      key={label}
                       style={{
                         padding: 13,
-                        borderBottom:
-                          "1px solid #528bb355",
+                        borderBottom: "1px solid #528bb355",
+                        color: "#acd9ed",
                       }}
                     >
-                      {name}
+                      {label}
                     </th>
                   ))}
                 </tr>
@@ -711,8 +645,7 @@ function App() {
                     onClick={() => setSelected(event)}
                     style={{
                       cursor: "pointer",
-                      borderBottom:
-                        "1px solid #528bb322",
+                      borderBottom: "1px solid #528bb322",
                     }}
                   >
                     <td style={{ padding: 13 }}>
@@ -726,32 +659,20 @@ function App() {
                     <td
                       style={{
                         padding: 13,
-                        color: riskColor(
-                          event.risk_score
-                        ),
+                        color: riskColor(event.risk_score),
                         fontWeight: 800,
                       }}
                     >
                       {event.risk_score}/100
                     </td>
 
-                    <td style={{ padding: 13 }}>
-                      <span
-                        style={{
-                          borderRadius: 7,
-                          padding: "5px 9px",
-                          background:
-                            riskColor(
-                              event.risk_score
-                            ) + "22",
-                          color: riskColor(
-                            event.risk_score
-                          ),
-                          fontWeight: 800,
-                        }}
-                      >
-                        {event.severity}
-                      </span>
+                    <td
+                      style={{
+                        padding: 13,
+                        color: riskColor(event.risk_score),
+                      }}
+                    >
+                      {event.severity}
                     </td>
 
                     <td style={{ padding: 13 }}>
@@ -762,12 +683,11 @@ function App() {
               </tbody>
             </table>
 
-            {!events.length && (
+            {events.length === 0 && (
               <p
                 style={{
                   padding: 20,
                   textAlign: "center",
-                  color: "#a9cbe2",
                 }}
               >
                 Waiting for simulated security events...
@@ -776,16 +696,12 @@ function App() {
           </div>
         </section>
 
-        {/* SELECTED EVENT INVESTIGATION */}
-
         {selected && (
           <section
             style={{
               ...panelStyle,
               marginTop: 20,
-              borderColor: riskColor(
-                selected.risk_score
-              ),
+              borderColor: riskColor(selected.risk_score),
             }}
           >
             <div
@@ -793,7 +709,6 @@ function App() {
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
-                gap: 16,
               }}
             >
               <h3>Threat Investigation</h3>
@@ -821,9 +736,7 @@ function App() {
               Risk Score:{" "}
               <strong
                 style={{
-                  color: riskColor(
-                    selected.risk_score
-                  ),
+                  color: riskColor(selected.risk_score),
                 }}
               >
                 {selected.risk_score}/100
@@ -845,26 +758,22 @@ function App() {
         )}
 
         {/* V3 - AI THREAT INTELLIGENCE */}
-
         <AIThreatPanel />
 
         {/* V4 - AI INCIDENT INVESTIGATION */}
-
         <AIIncidentInvestigation />
 
-        {/* V5 - AUTOMATED AI THREAT REPORT */}
-
+        {/* V5 - AI THREAT REPORT */}
         <AIThreatReport />
 
-        {/* V6.4 - QUANTUM RESEARCH DASHBOARD */}
-
+        {/* V6.4 - QUANTUM RESEARCH */}
         <QuantumResearchPanel />
 
         {/* V7.2 - HYBRID QUANTUM AI FUSION */}
-
         <HybridFusionPanel />
 
-        {/* FOOTER */}
+        {/* V7.5 - DYNAMIC HYBRID FUSION */}
+        <DynamicFusionPanel />
 
         <footer
           style={{
@@ -875,18 +784,14 @@ function App() {
             fontSize: 11,
           }}
         >
-          QUANTUM CYBER DEFENSE ARENA · RESEARCH
-          ENVIRONMENT
+          QUANTUM CYBER DEFENSE ARENA · RESEARCH ENVIRONMENT
 
           <p>
-            Simulated telemetry. No real attacks or
-            verified cybersecurity incidents are
-            represented.
+            Simulated telemetry. No real attacks or verified
+            cybersecurity incidents are represented.
           </p>
         </footer>
       </main>
     </div>
   );
 }
-
-export default App;

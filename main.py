@@ -1,12 +1,12 @@
 
 """
 Quantum Cyber Defense Arena
-FastAPI Backend V7.2
+FastAPI Backend V7.4
 
-Real-time simulated blockchain events with Isolation Forest inference.
-Includes AI, Quantum Research and Hybrid Fusion APIs.
+Classical AI + Quantum Research + Hybrid Fusion
++ Dynamic Hybrid Fusion worker.
 
-Research simulation only — no verified real-world attacks.
+RESEARCH SIMULATION ONLY.
 """
 
 from __future__ import annotations
@@ -29,6 +29,11 @@ from backend.ai_detection.detector import (
 from backend.ai_detection.api import router as ai_router
 from backend.quantum_detection.api import router as quantum_router
 from backend.fusion_engine.api import router as fusion_router
+from backend.fusion_engine.dynamic_api import (
+    register_dynamic_fusion,
+    start_dynamic_fusion,
+    stop_dynamic_fusion,
+)
 
 
 logging.basicConfig(level=logging.INFO)
@@ -115,8 +120,12 @@ async def lifespan(app: FastAPI):
     task = asyncio.create_task(simulation_loop())
 
     try:
+        await start_dynamic_fusion()
+        logger.info("Dynamic Hybrid Fusion V7.4 READY")
         yield
     finally:
+        await stop_dynamic_fusion()
+
         task.cancel()
 
         try:
@@ -129,7 +138,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(
     title="Quantum Cyber Defense Arena",
-    version="7.2.0",
+    version="7.4.0",
     description=(
         "AI, Blockchain and Quantum Cybersecurity "
         "Research Platform"
@@ -154,11 +163,11 @@ def home():
     return {
         "project": "Quantum Cyber Defense Arena",
         "status": "ONLINE",
-        "version": "7.2.0",
+        "version": "7.4.0",
         "mode": "SIMULATION",
         "ai_engine": "Isolation Forest V2",
         "quantum_engine": "Quantum State Fidelity",
-        "fusion_engine": "Hybrid Quantum AI Fusion",
+        "fusion_engine": "Dynamic Hybrid Quantum AI Fusion",
     }
 
 
@@ -242,14 +251,13 @@ def ai_live():
     }
 
 
-# Existing AI Threat Detection API
+# Previous working APIs
 app.include_router(ai_router)
-
-# Quantum Research Dashboard V6.4 API
 app.include_router(quantum_router)
-
-# Hybrid Quantum AI Fusion V7.2 API
 app.include_router(fusion_router)
+
+# V7.4 Dynamic Hybrid Fusion API
+register_dynamic_fusion(app)
 
 
 if __name__ == "__main__":
