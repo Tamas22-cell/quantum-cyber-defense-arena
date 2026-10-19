@@ -2,6 +2,21 @@
 
 ![Quantum Cyber Defense Arena — Cyber Threat Command Center](./41b6932f-f350-4721-94e4-51bf157ae3a8.png)
 
+## Research Platform Overview
+
+Quantum Cyber Defense Arena combines **AI-driven anomaly detection**, **quantum-inspired security research**, **hybrid decision-making**, and **interactive 3D network visualization** in one unified research platform.
+
+<table>
+<tr>
+<td width="25%" align="center"><strong>🧠 AI Detection</strong><p>Threat scoring, anomaly monitoring and incident investigation.</p></td>
+<td width="25%" align="center"><strong>⚛️ Quantum Research</strong><p>Quantum-inspired simulations and benchmark validation.</p></td>
+<td width="25%" align="center"><strong>🔗 Hybrid Fusion</strong><p>Classical and quantum-inspired signals combined for decision support.</p></td>
+<td width="25%" align="center"><strong>🌐 Interactive 3D</strong><p>Animated cyber network visualization and synthetic dashboard telemetry.</p></td>
+</tr>
+</table>
+
+---
+
 ### Animated Cyber Network Preview
 
 [![Animated preview of the 3D cyber network — click to open full dashboard](./assets/dashboard-preview.gif)](https://quantum-cyber-defense-live-demo.vercel.app)
