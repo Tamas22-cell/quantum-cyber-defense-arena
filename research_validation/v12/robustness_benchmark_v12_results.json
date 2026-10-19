@@ -1,0 +1,893 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "12.0.0",
+  "mode": "RESEARCH_SIMULATION",
+  "generated_at": "2026-10-19T11:38:57.812173+00:00",
+  "configuration": {
+    "seeds": [
+      101,
+      202,
+      303
+    ],
+    "scenarios": [
+      "baseline",
+      "noisy",
+      "rare_anomalies",
+      "overlapping_anomalies"
+    ],
+    "train_size": 800,
+    "test_size": 200,
+    "total_runs": 12,
+    "total_test_evaluations": 2400,
+    "quantum_threshold": 0.35,
+    "hybrid_policy": "agreement-based decision; disagreement=REVIEW",
+    "review_binary_policy": "REVIEW counted as negative for binary metrics"
+  },
+  "scenario_summary": {
+    "baseline": {
+      "classical": {
+        "precision": {
+          "mean": 0.56508,
+          "std": 0.009579
+        },
+        "recall": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "f1": {
+          "mean": 0.722078,
+          "std": 0.007821
+        },
+        "accuracy": {
+          "mean": 0.615,
+          "std": 0.015
+        },
+        "false_positive_rate": {
+          "mean": 0.77
+        },
+        "runtime_ms": {
+          "mean": 4527.038
+        }
+      },
+      "quantum": {
+        "precision": {
+          "mean": 0.900909,
+          "std": 0.038475
+        },
+        "recall": {
+          "mean": 0.99,
+          "std": 0.01
+        },
+        "f1": {
+          "mean": 0.943147,
+          "std": 0.024351
+        },
+        "accuracy": {
+          "mean": 0.94,
+          "std": 0.026458
+        },
+        "false_positive_rate": {
+          "mean": 0.11
+        },
+        "runtime_ms": {
+          "mean": 55.682
+        }
+      },
+      "hybrid": {
+        "precision": {
+          "mean": 0.900909,
+          "std": 0.038475
+        },
+        "recall": {
+          "mean": 0.99,
+          "std": 0.01
+        },
+        "f1": {
+          "mean": 0.943147,
+          "std": 0.024351
+        },
+        "accuracy": {
+          "mean": 0.94,
+          "std": 0.026458
+        },
+        "false_positive_rate": {
+          "mean": 0.11
+        },
+        "review_rate": {
+          "mean": 0.335
+        }
+      }
+    },
+    "noisy": {
+      "classical": {
+        "precision": {
+          "mean": 0.52829,
+          "std": 0.009775
+        },
+        "recall": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "f1": {
+          "mean": 0.691312,
+          "std": 0.008377
+        },
+        "accuracy": {
+          "mean": 0.553333,
+          "std": 0.017559
+        },
+        "false_positive_rate": {
+          "mean": 0.893333
+        },
+        "runtime_ms": {
+          "mean": 4450.182
+        }
+      },
+      "quantum": {
+        "precision": {
+          "mean": 0.803416,
+          "std": 0.029275
+        },
+        "recall": {
+          "mean": 0.99,
+          "std": 0.0
+        },
+        "f1": {
+          "mean": 0.886808,
+          "std": 0.017869
+        },
+        "accuracy": {
+          "mean": 0.873333,
+          "std": 0.022546
+        },
+        "false_positive_rate": {
+          "mean": 0.243333
+        },
+        "runtime_ms": {
+          "mean": 54.561
+        }
+      },
+      "hybrid": {
+        "precision": {
+          "mean": 0.805446,
+          "std": 0.026207
+        },
+        "recall": {
+          "mean": 0.99,
+          "std": 0.0
+        },
+        "f1": {
+          "mean": 0.888083,
+          "std": 0.015932
+        },
+        "accuracy": {
+          "mean": 0.875,
+          "std": 0.02
+        },
+        "false_positive_rate": {
+          "mean": 0.24
+        },
+        "review_rate": {
+          "mean": 0.333333
+        }
+      }
+    },
+    "rare_anomalies": {
+      "classical": {
+        "precision": {
+          "mean": 0.065337,
+          "std": 0.003405
+        },
+        "recall": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "f1": {
+          "mean": 0.122647,
+          "std": 0.006004
+        },
+        "accuracy": {
+          "mean": 0.283333,
+          "std": 0.040415
+        },
+        "false_positive_rate": {
+          "mean": 0.754386
+        },
+        "runtime_ms": {
+          "mean": 4488.998
+        }
+      },
+      "quantum": {
+        "precision": {
+          "mean": 0.30822,
+          "std": 0.031981
+        },
+        "recall": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "f1": {
+          "mean": 0.470603,
+          "std": 0.036909
+        },
+        "accuracy": {
+          "mean": 0.886667,
+          "std": 0.016073
+        },
+        "false_positive_rate": {
+          "mean": 0.119298
+        },
+        "runtime_ms": {
+          "mean": 56.253
+        }
+      },
+      "hybrid": {
+        "precision": {
+          "mean": 0.312325,
+          "std": 0.03904
+        },
+        "recall": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "f1": {
+          "mean": 0.475102,
+          "std": 0.04464
+        },
+        "accuracy": {
+          "mean": 0.888333,
+          "std": 0.01893
+        },
+        "false_positive_rate": {
+          "mean": 0.117544
+        },
+        "review_rate": {
+          "mean": 0.606667
+        }
+      }
+    },
+    "overlapping_anomalies": {
+      "classical": {
+        "precision": {
+          "mean": 0.555833,
+          "std": 0.012097
+        },
+        "recall": {
+          "mean": 0.963333,
+          "std": 0.020817
+        },
+        "f1": {
+          "mean": 0.704892,
+          "std": 0.013992
+        },
+        "accuracy": {
+          "mean": 0.596667,
+          "std": 0.020207
+        },
+        "false_positive_rate": {
+          "mean": 0.77
+        },
+        "runtime_ms": {
+          "mean": 4463.446
+        }
+      },
+      "quantum": {
+        "precision": {
+          "mean": 0.871753,
+          "std": 0.051104
+        },
+        "recall": {
+          "mean": 0.743333,
+          "std": 0.032146
+        },
+        "f1": {
+          "mean": 0.802344,
+          "std": 0.039503
+        },
+        "accuracy": {
+          "mean": 0.816667,
+          "std": 0.037859
+        },
+        "false_positive_rate": {
+          "mean": 0.11
+        },
+        "runtime_ms": {
+          "mean": 54.589
+        }
+      },
+      "hybrid": {
+        "precision": {
+          "mean": 0.871753,
+          "std": 0.051104
+        },
+        "recall": {
+          "mean": 0.743333,
+          "std": 0.032146
+        },
+        "f1": {
+          "mean": 0.802344,
+          "std": 0.039503
+        },
+        "accuracy": {
+          "mean": 0.816667,
+          "std": 0.037859
+        },
+        "false_positive_rate": {
+          "mean": 0.11
+        },
+        "review_rate": {
+          "mean": 0.44
+        }
+      }
+    }
+  },
+  "robustness_comparison": {
+    "noisy": {
+      "classical": {
+        "baseline_f1": 0.722078,
+        "scenario_f1": 0.691312,
+        "f1_change": -0.030766,
+        "change_percentage_points": -3.0766
+      },
+      "quantum": {
+        "baseline_f1": 0.943147,
+        "scenario_f1": 0.886808,
+        "f1_change": -0.056339,
+        "change_percentage_points": -5.6339
+      },
+      "hybrid": {
+        "baseline_f1": 0.943147,
+        "scenario_f1": 0.888083,
+        "f1_change": -0.055064,
+        "change_percentage_points": -5.5064
+      }
+    },
+    "rare_anomalies": {
+      "classical": {
+        "baseline_f1": 0.722078,
+        "scenario_f1": 0.122647,
+        "f1_change": -0.599431,
+        "change_percentage_points": -59.9431
+      },
+      "quantum": {
+        "baseline_f1": 0.943147,
+        "scenario_f1": 0.470603,
+        "f1_change": -0.472544,
+        "change_percentage_points": -47.2544
+      },
+      "hybrid": {
+        "baseline_f1": 0.943147,
+        "scenario_f1": 0.475102,
+        "f1_change": -0.468045,
+        "change_percentage_points": -46.8045
+      }
+    },
+    "overlapping_anomalies": {
+      "classical": {
+        "baseline_f1": 0.722078,
+        "scenario_f1": 0.704892,
+        "f1_change": -0.017186,
+        "change_percentage_points": -1.7186
+      },
+      "quantum": {
+        "baseline_f1": 0.943147,
+        "scenario_f1": 0.802344,
+        "f1_change": -0.140803,
+        "change_percentage_points": -14.0803
+      },
+      "hybrid": {
+        "baseline_f1": 0.943147,
+        "scenario_f1": 0.802344,
+        "f1_change": -0.140803,
+        "change_percentage_points": -14.0803
+      }
+    }
+  },
+  "runs": [
+    {
+      "seed": 101,
+      "scenario": "baseline",
+      "test_samples": 200,
+      "normal_samples": 100,
+      "anomaly_samples": 100,
+      "classical": {
+        "precision": 0.564972,
+        "recall": 1.0,
+        "f1": 0.722022,
+        "accuracy": 0.615,
+        "tp": 100,
+        "tn": 23,
+        "fp": 77,
+        "fn": 0,
+        "runtime_ms": 4554.159
+      },
+      "quantum": {
+        "precision": 0.943396,
+        "recall": 1.0,
+        "f1": 0.970874,
+        "accuracy": 0.97,
+        "tp": 100,
+        "tn": 94,
+        "fp": 6,
+        "fn": 0,
+        "runtime_ms": 56.521
+      },
+      "hybrid": {
+        "precision": 0.943396,
+        "recall": 1.0,
+        "f1": 0.970874,
+        "accuracy": 0.97,
+        "tp": 100,
+        "tn": 94,
+        "fp": 6,
+        "fn": 0,
+        "review_rate": 0.355,
+        "fusion_score_mean": 0.630599
+      }
+    },
+    {
+      "seed": 202,
+      "scenario": "baseline",
+      "test_samples": 200,
+      "normal_samples": 100,
+      "anomaly_samples": 100,
+      "classical": {
+        "precision": 0.555556,
+        "recall": 1.0,
+        "f1": 0.714286,
+        "accuracy": 0.6,
+        "tp": 100,
+        "tn": 20,
+        "fp": 80,
+        "fn": 0,
+        "runtime_ms": 4516.702
+      },
+      "quantum": {
+        "precision": 0.890909,
+        "recall": 0.98,
+        "f1": 0.933333,
+        "accuracy": 0.93,
+        "tp": 98,
+        "tn": 88,
+        "fp": 12,
+        "fn": 2,
+        "runtime_ms": 55.697
+      },
+      "hybrid": {
+        "precision": 0.890909,
+        "recall": 0.98,
+        "f1": 0.933333,
+        "accuracy": 0.93,
+        "tp": 98,
+        "tn": 88,
+        "fp": 12,
+        "fn": 2,
+        "review_rate": 0.35,
+        "fusion_score_mean": 0.637967
+      }
+    },
+    {
+      "seed": 303,
+      "scenario": "baseline",
+      "test_samples": 200,
+      "normal_samples": 100,
+      "anomaly_samples": 100,
+      "classical": {
+        "precision": 0.574713,
+        "recall": 1.0,
+        "f1": 0.729927,
+        "accuracy": 0.63,
+        "tp": 100,
+        "tn": 26,
+        "fp": 74,
+        "fn": 0,
+        "runtime_ms": 4510.254
+      },
+      "quantum": {
+        "precision": 0.868421,
+        "recall": 0.99,
+        "f1": 0.925234,
+        "accuracy": 0.92,
+        "tp": 99,
+        "tn": 85,
+        "fp": 15,
+        "fn": 1,
+        "runtime_ms": 54.829
+      },
+      "hybrid": {
+        "precision": 0.868421,
+        "recall": 0.99,
+        "f1": 0.925234,
+        "accuracy": 0.92,
+        "tp": 99,
+        "tn": 85,
+        "fp": 15,
+        "fn": 1,
+        "review_rate": 0.3,
+        "fusion_score_mean": 0.642769
+      }
+    },
+    {
+      "seed": 101,
+      "scenario": "noisy",
+      "test_samples": 200,
+      "normal_samples": 100,
+      "anomaly_samples": 100,
+      "classical": {
+        "precision": 0.529101,
+        "recall": 1.0,
+        "f1": 0.692042,
+        "accuracy": 0.555,
+        "tp": 100,
+        "tn": 11,
+        "fp": 89,
+        "fn": 0,
+        "runtime_ms": 4434.051
+      },
+      "quantum": {
+        "precision": 0.831933,
+        "recall": 0.99,
+        "f1": 0.90411,
+        "accuracy": 0.895,
+        "tp": 99,
+        "tn": 80,
+        "fp": 20,
+        "fn": 1,
+        "runtime_ms": 55.092
+      },
+      "hybrid": {
+        "precision": 0.831933,
+        "recall": 0.99,
+        "f1": 0.90411,
+        "accuracy": 0.895,
+        "tp": 99,
+        "tn": 80,
+        "fp": 20,
+        "fn": 1,
+        "review_rate": 0.35,
+        "fusion_score_mean": 0.668872
+      }
+    },
+    {
+      "seed": 202,
+      "scenario": "noisy",
+      "test_samples": 200,
+      "normal_samples": 100,
+      "anomaly_samples": 100,
+      "classical": {
+        "precision": 0.537634,
+        "recall": 1.0,
+        "f1": 0.699301,
+        "accuracy": 0.57,
+        "tp": 100,
+        "tn": 14,
+        "fp": 86,
+        "fn": 0,
+        "runtime_ms": 4457.916
+      },
+      "quantum": {
+        "precision": 0.773438,
+        "recall": 0.99,
+        "f1": 0.868421,
+        "accuracy": 0.85,
+        "tp": 99,
+        "tn": 71,
+        "fp": 29,
+        "fn": 1,
+        "runtime_ms": 54.112
+      },
+      "hybrid": {
+        "precision": 0.779528,
+        "recall": 0.99,
+        "f1": 0.872247,
+        "accuracy": 0.855,
+        "tp": 99,
+        "tn": 72,
+        "fp": 28,
+        "fn": 1,
+        "review_rate": 0.3,
+        "fusion_score_mean": 0.668097
+      }
+    },
+    {
+      "seed": 303,
+      "scenario": "noisy",
+      "test_samples": 200,
+      "normal_samples": 100,
+      "anomaly_samples": 100,
+      "classical": {
+        "precision": 0.518135,
+        "recall": 1.0,
+        "f1": 0.682594,
+        "accuracy": 0.535,
+        "tp": 100,
+        "tn": 7,
+        "fp": 93,
+        "fn": 0,
+        "runtime_ms": 4458.579
+      },
+      "quantum": {
+        "precision": 0.804878,
+        "recall": 0.99,
+        "f1": 0.887892,
+        "accuracy": 0.875,
+        "tp": 99,
+        "tn": 76,
+        "fp": 24,
+        "fn": 1,
+        "runtime_ms": 54.48
+      },
+      "hybrid": {
+        "precision": 0.804878,
+        "recall": 0.99,
+        "f1": 0.887892,
+        "accuracy": 0.875,
+        "tp": 99,
+        "tn": 76,
+        "fp": 24,
+        "fn": 1,
+        "review_rate": 0.35,
+        "fusion_score_mean": 0.679326
+      }
+    },
+    {
+      "seed": 101,
+      "scenario": "rare_anomalies",
+      "test_samples": 200,
+      "normal_samples": 190,
+      "anomaly_samples": 10,
+      "classical": {
+        "precision": 0.068493,
+        "recall": 1.0,
+        "f1": 0.128205,
+        "accuracy": 0.32,
+        "tp": 10,
+        "tn": 54,
+        "fp": 136,
+        "fn": 0,
+        "runtime_ms": 4485.334
+      },
+      "quantum": {
+        "precision": 0.344828,
+        "recall": 1.0,
+        "f1": 0.512821,
+        "accuracy": 0.905,
+        "tp": 10,
+        "tn": 171,
+        "fp": 19,
+        "fn": 0,
+        "runtime_ms": 59.069
+      },
+      "hybrid": {
+        "precision": 0.357143,
+        "recall": 1.0,
+        "f1": 0.526316,
+        "accuracy": 0.91,
+        "tp": 10,
+        "tn": 172,
+        "fp": 18,
+        "fn": 0,
+        "review_rate": 0.595,
+        "fusion_score_mean": 0.402843
+      }
+    },
+    {
+      "seed": 202,
+      "scenario": "rare_anomalies",
+      "test_samples": 200,
+      "normal_samples": 190,
+      "anomaly_samples": 10,
+      "classical": {
+        "precision": 0.061728,
+        "recall": 1.0,
+        "f1": 0.116279,
+        "accuracy": 0.24,
+        "tp": 10,
+        "tn": 38,
+        "fp": 152,
+        "fn": 0,
+        "runtime_ms": 4497.096
+      },
+      "quantum": {
+        "precision": 0.294118,
+        "recall": 1.0,
+        "f1": 0.454545,
+        "accuracy": 0.88,
+        "tp": 10,
+        "tn": 166,
+        "fp": 24,
+        "fn": 0,
+        "runtime_ms": 54.951
+      },
+      "hybrid": {
+        "precision": 0.294118,
+        "recall": 1.0,
+        "f1": 0.454545,
+        "accuracy": 0.88,
+        "tp": 10,
+        "tn": 166,
+        "fp": 24,
+        "fn": 0,
+        "review_rate": 0.64,
+        "fusion_score_mean": 0.422537
+      }
+    },
+    {
+      "seed": 303,
+      "scenario": "rare_anomalies",
+      "test_samples": 200,
+      "normal_samples": 190,
+      "anomaly_samples": 10,
+      "classical": {
+        "precision": 0.065789,
+        "recall": 1.0,
+        "f1": 0.123457,
+        "accuracy": 0.29,
+        "tp": 10,
+        "tn": 48,
+        "fp": 142,
+        "fn": 0,
+        "runtime_ms": 4484.564
+      },
+      "quantum": {
+        "precision": 0.285714,
+        "recall": 1.0,
+        "f1": 0.444444,
+        "accuracy": 0.875,
+        "tp": 10,
+        "tn": 165,
+        "fp": 25,
+        "fn": 0,
+        "runtime_ms": 54.74
+      },
+      "hybrid": {
+        "precision": 0.285714,
+        "recall": 1.0,
+        "f1": 0.444444,
+        "accuracy": 0.875,
+        "tp": 10,
+        "tn": 165,
+        "fp": 25,
+        "fn": 0,
+        "review_rate": 0.585,
+        "fusion_score_mean": 0.417303
+      }
+    },
+    {
+      "seed": 101,
+      "scenario": "overlapping_anomalies",
+      "test_samples": 200,
+      "normal_samples": 100,
+      "anomaly_samples": 100,
+      "classical": {
+        "precision": 0.549708,
+        "recall": 0.94,
+        "f1": 0.693727,
+        "accuracy": 0.585,
+        "tp": 94,
+        "tn": 23,
+        "fp": 77,
+        "fn": 6,
+        "runtime_ms": 4456.65
+      },
+      "quantum": {
+        "precision": 0.928571,
+        "recall": 0.78,
+        "f1": 0.847826,
+        "accuracy": 0.86,
+        "tp": 78,
+        "tn": 94,
+        "fp": 6,
+        "fn": 22,
+        "runtime_ms": 54.094
+      },
+      "hybrid": {
+        "precision": 0.928571,
+        "recall": 0.78,
+        "f1": 0.847826,
+        "accuracy": 0.86,
+        "tp": 78,
+        "tn": 94,
+        "fp": 6,
+        "fn": 22,
+        "review_rate": 0.435,
+        "fusion_score_mean": 0.525602
+      }
+    },
+    {
+      "seed": 202,
+      "scenario": "overlapping_anomalies",
+      "test_samples": 200,
+      "normal_samples": 100,
+      "anomaly_samples": 100,
+      "classical": {
+        "precision": 0.548023,
+        "recall": 0.97,
+        "f1": 0.700361,
+        "accuracy": 0.585,
+        "tp": 97,
+        "tn": 20,
+        "fp": 80,
+        "fn": 3,
+        "runtime_ms": 4467.434
+      },
+      "quantum": {
+        "precision": 0.857143,
+        "recall": 0.72,
+        "f1": 0.782609,
+        "accuracy": 0.8,
+        "tp": 72,
+        "tn": 88,
+        "fp": 12,
+        "fn": 28,
+        "runtime_ms": 54.2
+      },
+      "hybrid": {
+        "precision": 0.857143,
+        "recall": 0.72,
+        "f1": 0.782609,
+        "accuracy": 0.8,
+        "tp": 72,
+        "tn": 88,
+        "fp": 12,
+        "fn": 28,
+        "review_rate": 0.465,
+        "fusion_score_mean": 0.530691
+      }
+    },
+    {
+      "seed": 303,
+      "scenario": "overlapping_anomalies",
+      "test_samples": 200,
+      "normal_samples": 100,
+      "anomaly_samples": 100,
+      "classical": {
+        "precision": 0.569767,
+        "recall": 0.98,
+        "f1": 0.720588,
+        "accuracy": 0.62,
+        "tp": 98,
+        "tn": 26,
+        "fp": 74,
+        "fn": 2,
+        "runtime_ms": 4466.253
+      },
+      "quantum": {
+        "precision": 0.829545,
+        "recall": 0.73,
+        "f1": 0.776596,
+        "accuracy": 0.79,
+        "tp": 73,
+        "tn": 85,
+        "fp": 15,
+        "fn": 27,
+        "runtime_ms": 55.473
+      },
+      "hybrid": {
+        "precision": 0.829545,
+        "recall": 0.73,
+        "f1": 0.776596,
+        "accuracy": 0.79,
+        "tp": 73,
+        "tn": 85,
+        "fp": 15,
+        "fn": 27,
+        "review_rate": 0.42,
+        "fusion_score_mean": 0.538945
+      }
+    }
+  ],
+  "execution_seconds": 57.158,
+  "limitations": [
+    "Synthetic datasets only",
+    "Classical quantum simulator",
+    "Only three seeds per scenario",
+    "No demonstrated quantum speedup",
+    "No real cybersecurity incidents",
+    "Fixed model thresholds",
+    "Precision depends on anomaly prevalence",
+    "Stress scenarios are simplified",
+    "Review decisions are counted as negative",
+    "Further real-data validation is required"
+  ]
+}
