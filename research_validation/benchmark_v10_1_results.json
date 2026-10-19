@@ -1,0 +1,123 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "10.1.0",
+  "created_at": "2026-10-19T10:08:00.408208+00:00",
+  "mode": "RESEARCH_SIMULATION",
+  "dataset": "OVERLAPPING_SYNTHETIC_CLASSES",
+  "configuration": {
+    "seeds": [
+      42,
+      123,
+      2026
+    ],
+    "training_samples_per_seed": 800,
+    "normal_test_samples_per_seed": 60,
+    "anomaly_test_samples_per_seed": 60,
+    "normal_mean": 0.4,
+    "anomaly_mean": 0.55,
+    "standard_deviation": 0.16
+  },
+  "summary": {
+    "sample_count": 360,
+    "classical": {
+      "accuracy": 0.5,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.666667,
+      "confusion_matrix": {
+        "TP": 180,
+        "TN": 0,
+        "FP": 180,
+        "FN": 0
+      },
+      "sample_count": 360
+    },
+    "quantum": {
+      "accuracy": 0.555556,
+      "precision": 0.529412,
+      "recall": 1.0,
+      "f1": 0.692308,
+      "confusion_matrix": {
+        "TP": 180,
+        "TN": 20,
+        "FP": 160,
+        "FN": 0
+      },
+      "sample_count": 360
+    },
+    "hybrid_conservative": {
+      "accuracy": 0.555556,
+      "precision": 0.529412,
+      "recall": 1.0,
+      "f1": 0.692308,
+      "confusion_matrix": {
+        "TP": 180,
+        "TN": 20,
+        "FP": 160,
+        "FN": 0
+      },
+      "sample_count": 360
+    },
+    "hybrid_abstention": {
+      "review_count": 20,
+      "review_rate": 0.055556,
+      "decisive_coverage": 0.944444,
+      "decisive_only_metrics": {
+        "accuracy": 0.529412,
+        "precision": 0.529412,
+        "recall": 1.0,
+        "f1": 0.692308,
+        "confusion_matrix": {
+          "TP": 180,
+          "TN": 0,
+          "FP": 160,
+          "FN": 0
+        },
+        "sample_count": 340
+      },
+      "policy": "REVIEW counts as not confirmed for conservative binary metrics."
+    },
+    "classical_quantum_agreement": {
+      "agree_count": 340,
+      "disagree_count": 20,
+      "agreement_rate": 0.944444
+    },
+    "runtime_ms": {
+      "classical_mean": 24.03936,
+      "classical_median": 23.11175,
+      "quantum_plus_fusion_mean": 0.37309,
+      "quantum_plus_fusion_median": 0.35035,
+      "note": "Measured as separate Python inference calls; quantum-plus-fusion includes statevector simulation and fusion logic."
+    },
+    "confidence_intervals": [
+      {
+        "model_a": "quantum_prediction",
+        "model_b": "classical_prediction",
+        "observed_f1_difference_pp": 2.5641,
+        "ci_95_lower_pp": 1.5151,
+        "ci_95_upper_pp": 3.6458,
+        "bootstrap_samples": 1000,
+        "method": "paired stratified bootstrap within experiment seed and true class"
+      },
+      {
+        "model_a": "hybrid_prediction",
+        "model_b": "classical_prediction",
+        "observed_f1_difference_pp": 2.5641,
+        "ci_95_lower_pp": 1.5151,
+        "ci_95_upper_pp": 3.6458,
+        "bootstrap_samples": 1000,
+        "method": "paired stratified bootstrap within experiment seed and true class"
+      }
+    ]
+  },
+  "limitations": [
+    "Synthetic labeled events only.",
+    "Training and testing distributions differ.",
+    "Class distributions deliberately overlap.",
+    "Only three experiment seeds.",
+    "No real-world attack labels.",
+    "Quantum calculations use a simulator.",
+    "Hybrid REVIEW is an abstention.",
+    "No demonstrated quantum advantage."
+  ]
+}

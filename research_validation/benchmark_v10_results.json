@@ -1,0 +1,271 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "10.0.0",
+  "created_at": "2026-10-19T09:57:22.298116+00:00",
+  "mode": "RESEARCH_SIMULATION",
+  "configuration": {
+    "training_samples_per_seed": 800,
+    "normal_test_samples_per_seed": 60,
+    "anomaly_test_samples_per_seed": 60,
+    "experiment_seeds": [
+      42,
+      123,
+      2026
+    ],
+    "bootstrap_samples": 1000,
+    "classical_features": [
+      "transaction_value",
+      "transactions_per_minute",
+      "failed_transaction_ratio",
+      "gas_spike_ratio",
+      "unique_counterparties"
+    ],
+    "quantum_features": [
+      "transaction_value",
+      "transactions_per_minute",
+      "failed_transaction_ratio",
+      "gas_spike_ratio"
+    ]
+  },
+  "experiments": [
+    {
+      "seed": 42,
+      "results": {
+        "classical": {
+          "accuracy": 0.95,
+          "precision": 0.909091,
+          "recall": 1.0,
+          "f1": 0.952381,
+          "confusion_matrix": {
+            "TP": 60,
+            "TN": 54,
+            "FP": 6,
+            "FN": 0
+          },
+          "sample_count": 120
+        },
+        "quantum": {
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "confusion_matrix": {
+            "TP": 60,
+            "TN": 60,
+            "FP": 0,
+            "FN": 0
+          },
+          "sample_count": 120
+        },
+        "hybrid": {
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "confusion_matrix": {
+            "TP": 60,
+            "TN": 60,
+            "FP": 0,
+            "FN": 0
+          },
+          "sample_count": 120
+        },
+        "review_count": 6
+      }
+    },
+    {
+      "seed": 123,
+      "results": {
+        "classical": {
+          "accuracy": 0.941667,
+          "precision": 0.895522,
+          "recall": 1.0,
+          "f1": 0.944882,
+          "confusion_matrix": {
+            "TP": 60,
+            "TN": 53,
+            "FP": 7,
+            "FN": 0
+          },
+          "sample_count": 120
+        },
+        "quantum": {
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "confusion_matrix": {
+            "TP": 60,
+            "TN": 60,
+            "FP": 0,
+            "FN": 0
+          },
+          "sample_count": 120
+        },
+        "hybrid": {
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "confusion_matrix": {
+            "TP": 60,
+            "TN": 60,
+            "FP": 0,
+            "FN": 0
+          },
+          "sample_count": 120
+        },
+        "review_count": 7
+      }
+    },
+    {
+      "seed": 2026,
+      "results": {
+        "classical": {
+          "accuracy": 0.966667,
+          "precision": 0.9375,
+          "recall": 1.0,
+          "f1": 0.967742,
+          "confusion_matrix": {
+            "TP": 60,
+            "TN": 56,
+            "FP": 4,
+            "FN": 0
+          },
+          "sample_count": 120
+        },
+        "quantum": {
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "confusion_matrix": {
+            "TP": 60,
+            "TN": 60,
+            "FP": 0,
+            "FN": 0
+          },
+          "sample_count": 120
+        },
+        "hybrid": {
+          "accuracy": 1.0,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "confusion_matrix": {
+            "TP": 60,
+            "TN": 60,
+            "FP": 0,
+            "FN": 0
+          },
+          "sample_count": 120
+        },
+        "review_count": 4
+      }
+    }
+  ],
+  "summary": {
+    "sample_count": 360,
+    "classical": {
+      "accuracy": 0.952778,
+      "precision": 0.913706,
+      "recall": 1.0,
+      "f1": 0.954907,
+      "confusion_matrix": {
+        "TP": 180,
+        "TN": 163,
+        "FP": 17,
+        "FN": 0
+      },
+      "sample_count": 360
+    },
+    "quantum": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": {
+        "TP": 180,
+        "TN": 180,
+        "FP": 0,
+        "FN": 0
+      },
+      "sample_count": 360
+    },
+    "hybrid_conservative": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "confusion_matrix": {
+        "TP": 180,
+        "TN": 180,
+        "FP": 0,
+        "FN": 0
+      },
+      "sample_count": 360
+    },
+    "hybrid_abstention": {
+      "review_count": 17,
+      "review_rate": 0.047222,
+      "decisive_coverage": 0.952778,
+      "decisive_only_metrics": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "confusion_matrix": {
+          "TP": 180,
+          "TN": 163,
+          "FP": 0,
+          "FN": 0
+        },
+        "sample_count": 343
+      },
+      "policy": "REVIEW counts as not confirmed for conservative binary metrics."
+    },
+    "classical_quantum_agreement": {
+      "agree_count": 343,
+      "disagree_count": 17,
+      "agreement_rate": 0.952778
+    },
+    "runtime_ms": {
+      "classical_mean": 22.50366,
+      "classical_median": 22.16145,
+      "quantum_plus_fusion_mean": 0.34791,
+      "quantum_plus_fusion_median": 0.33655,
+      "note": "Measured as separate Python inference calls; quantum-plus-fusion includes statevector simulation and fusion logic."
+    },
+    "confidence_intervals": [
+      {
+        "model_a": "quantum_prediction",
+        "model_b": "classical_prediction",
+        "observed_f1_difference_pp": 4.5093,
+        "ci_95_lower_pp": 2.7027,
+        "ci_95_upper_pp": 6.7358,
+        "bootstrap_samples": 1000,
+        "method": "paired stratified bootstrap within experiment seed and true class"
+      },
+      {
+        "model_a": "hybrid_prediction",
+        "model_b": "classical_prediction",
+        "observed_f1_difference_pp": 4.5093,
+        "ci_95_lower_pp": 2.7027,
+        "ci_95_upper_pp": 6.4935,
+        "bootstrap_samples": 1000,
+        "method": "paired stratified bootstrap within experiment seed and true class"
+      }
+    ]
+  },
+  "limitations": [
+    "Synthetic events only.",
+    "Anomaly distribution is deliberately different from the normal distribution.",
+    "Test datasets are generated independently from training datasets.",
+    "Only three experiment seeds are used.",
+    "Hybrid REVIEW is an abstention, not a confirmed positive detection.",
+    "No real-world blockchain attack labels.",
+    "No calibration of anomaly scores.",
+    "No quantum hardware execution.",
+    "No demonstrated quantum advantage."
+  ]
+}
