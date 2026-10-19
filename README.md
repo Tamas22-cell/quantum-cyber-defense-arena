@@ -4,11 +4,11 @@
 
 ### Animated Cyber Network Preview
 
-[![Animated cyber network research preview](./assets/animated-network.svg)](https://quantum-cyber-defense-live-demo.vercel.app)
+[![Animated preview of the 3D cyber network — click to open full dashboard](./assets/dashboard-preview.gif)](https://quantum-cyber-defense-live-demo.vercel.app)
 
 **[▶ OPEN FULL INTERACTIVE 3D DASHBOARD — VERCEL](https://quantum-cyber-defense-live-demo.vercel.app)**
 
-*The GitHub preview is an illustrative animation. The linked Vercel app contains the complete interactive React/Three.js dashboard. Standalone demo telemetry is synthetic, not live threat intelligence.*
+*The GIF is an illustrative animation, not a screen recording of the full application. The linked Vercel app contains the complete interactive React/Three.js dashboard. Standalone demo telemetry is synthetic, not live threat intelligence.*
 
 
 **AI-Powered Cybersecurity Research | Quantum Simulation | Hybrid Threat Detection | Multi-Agent Investigation**
