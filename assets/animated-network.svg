@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="430" viewBox="0 0 960 430">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#07162d"/><stop offset="1" stop-color="#19113e"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="4"/></filter></defs>
+<rect width="960" height="430" rx="20" fill="url(#bg)"/><rect x="12" y="12" width="936" height="406" rx="15" fill="none" stroke="#225678"/>
+<text x="38" y="57" fill="#e5f5ff" font-family="Arial" font-size="24" font-weight="bold">QUANTUM CYBER DEFENSE ARENA</text>
+<text x="38" y="82" fill="#52e3fb" font-family="Arial" font-size="13" letter-spacing="2">INTERACTIVE 3D NETWORK • RESEARCH SIMULATION</text>
+<g stroke="#22799b" stroke-width="2" opacity=".8"><path d="M170 170L340 125L490 230L690 135L820 245L620 337L410 318L170 170L180 310L410 318L340 125L690 135L620 337L490 230L820 245" fill="none"/></g>
+<g fill="#41e6fb"><circle cx="170" cy="170" r="11"/><circle cx="340" cy="125" r="12"/><circle cx="490" cy="230" r="14"/><circle cx="690" cy="135" r="12"/><circle cx="820" cy="245" r="11"/><circle cx="620" cy="337" r="12"/><circle cx="410" cy="318" r="11"/><circle cx="180" cy="310" r="10"/></g>
+<g fill="#af7afe"><circle cx="340" cy="125" r="23" opacity=".18"><animate attributeName="r" values="18;34;18" dur="2.6s" repeatCount="indefinite"/></circle><circle cx="620" cy="337" r="24" opacity=".22"><animate attributeName="r" values="19;36;19" dur="2.2s" repeatCount="indefinite"/></circle></g>
+<g fill="#f7669a"><circle r="7"><animateMotion dur="3s" repeatCount="indefinite" path="M170 170L340 125L490 230L690 135L820 245"/></circle><circle r="6"><animateMotion dur="3.8s" repeatCount="indefinite" path="M820 245L620 337L410 318L180 310L170 170"/></circle></g>
+<g fill="#9befff"><circle r="5"><animateMotion dur="2.3s" repeatCount="indefinite" path="M340 125L410 318L620 337L690 135"/></circle><circle r="4"><animateMotion dur="3.2s" repeatCount="indefinite" path="M490 230L620 337L820 245"/></circle></g>
+<g font-family="Arial" font-size="13" fill="#bdcce5"><text x="137" y="154">ETH</text><text x="308" y="102">BASE</text><text x="454" y="210">AI CORE</text><text x="661" y="111">ARB</text><text x="788" y="224">POLY</text><text x="594" y="372">FUSION</text><text x="376" y="354">QUANTUM</text></g>
+<rect x="34" y="376" rx="8" width="215" height="26" fill="#102d46"/><text x="45" y="394" font-family="Arial" font-size="12" fill="#52ebd1">● SYNTHETIC LIVE PREVIEW</text></svg>
