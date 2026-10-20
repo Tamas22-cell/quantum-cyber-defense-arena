@@ -1,0 +1,2317 @@
+{
+  "version": "V23.2",
+  "status": "INTELLIGENT_THREAT_FUSION_PASS",
+  "simulation_mode": true,
+  "is_live": false,
+  "ticks": 120,
+  "timeline": [
+    {
+      "tick": 0,
+      "timestamp": "2026-01-01T00:00:00+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.126261,
+      "maximum_fusion_score": 0.159011,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 1,
+      "timestamp": "2026-01-01T00:00:01+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.134578,
+      "maximum_fusion_score": 0.163365,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 2,
+      "timestamp": "2026-01-01T00:00:02+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.134751,
+      "maximum_fusion_score": 0.164608,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 3,
+      "timestamp": "2026-01-01T00:00:03+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.135848,
+      "maximum_fusion_score": 0.166491,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 4,
+      "timestamp": "2026-01-01T00:00:04+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.134981,
+      "maximum_fusion_score": 0.166506,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 5,
+      "timestamp": "2026-01-01T00:00:05+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.133663,
+      "maximum_fusion_score": 0.164295,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 6,
+      "timestamp": "2026-01-01T00:00:06+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.137927,
+      "maximum_fusion_score": 0.165853,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 7,
+      "timestamp": "2026-01-01T00:00:07+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.136042,
+      "maximum_fusion_score": 0.16581,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 8,
+      "timestamp": "2026-01-01T00:00:08+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.133678,
+      "maximum_fusion_score": 0.169082,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 9,
+      "timestamp": "2026-01-01T00:00:09+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.131988,
+      "maximum_fusion_score": 0.164482,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 10,
+      "timestamp": "2026-01-01T00:00:10+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.130049,
+      "maximum_fusion_score": 0.156331,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 11,
+      "timestamp": "2026-01-01T00:00:11+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.125739,
+      "maximum_fusion_score": 0.159441,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 12,
+      "timestamp": "2026-01-01T00:00:12+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.177402,
+      "maximum_fusion_score": 0.29723,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 9,
+        "low": 1,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 13,
+      "timestamp": "2026-01-01T00:00:13+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.160606,
+      "maximum_fusion_score": 0.314259,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 9,
+        "low": 1,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 14,
+      "timestamp": "2026-01-01T00:00:14+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.190373,
+      "maximum_fusion_score": 0.299667,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 7,
+        "low": 3,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 15,
+      "timestamp": "2026-01-01T00:00:15+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.13788,
+      "maximum_fusion_score": 0.227474,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 16,
+      "timestamp": "2026-01-01T00:00:16+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.154787,
+      "maximum_fusion_score": 0.253276,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 9,
+        "low": 1,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 17,
+      "timestamp": "2026-01-01T00:00:17+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.423686,
+      "maximum_fusion_score": 0.980123,
+      "adaptive_detections": 4,
+      "high_priority_nodes": [
+        "api",
+        "firewall",
+        "gateway"
+      ],
+      "priority_counts": {
+        "normal": 6,
+        "low": 1,
+        "medium": 0,
+        "high": 0,
+        "critical": 3
+      },
+      "human_approval_required": 3,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 18,
+      "timestamp": "2026-01-01T00:00:18+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.189082,
+      "maximum_fusion_score": 0.376104,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 7,
+        "low": 3,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 19,
+      "timestamp": "2026-01-01T00:00:19+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.145057,
+      "maximum_fusion_score": 0.225888,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 20,
+      "timestamp": "2026-01-01T00:00:20+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.141248,
+      "maximum_fusion_score": 0.223445,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 21,
+      "timestamp": "2026-01-01T00:00:21+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.141059,
+      "maximum_fusion_score": 0.246957,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 22,
+      "timestamp": "2026-01-01T00:00:22+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.141796,
+      "maximum_fusion_score": 0.25302,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 9,
+        "low": 1,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 23,
+      "timestamp": "2026-01-01T00:00:23+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.132703,
+      "maximum_fusion_score": 0.25975,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 9,
+        "low": 1,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 24,
+      "timestamp": "2026-01-01T00:00:24+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.153192,
+      "maximum_fusion_score": 0.313601,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 9,
+        "low": 1,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 25,
+      "timestamp": "2026-01-01T00:00:25+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.139366,
+      "maximum_fusion_score": 0.306476,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 9,
+        "low": 1,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 26,
+      "timestamp": "2026-01-01T00:00:26+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.135367,
+      "maximum_fusion_score": 0.20783,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 27,
+      "timestamp": "2026-01-01T00:00:27+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.115679,
+      "maximum_fusion_score": 0.159697,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 28,
+      "timestamp": "2026-01-01T00:00:28+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.136307,
+      "maximum_fusion_score": 0.233917,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 29,
+      "timestamp": "2026-01-01T00:00:29+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.156633,
+      "maximum_fusion_score": 0.264531,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 9,
+        "low": 1,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 30,
+      "timestamp": "2026-01-01T00:00:30+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.143,
+      "maximum_fusion_score": 0.2673,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 9,
+        "low": 1,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 31,
+      "timestamp": "2026-01-01T00:00:31+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.136639,
+      "maximum_fusion_score": 0.269438,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 9,
+        "low": 1,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 32,
+      "timestamp": "2026-01-01T00:00:32+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.14428,
+      "maximum_fusion_score": 0.339472,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 9,
+        "low": 1,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 33,
+      "timestamp": "2026-01-01T00:00:33+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.140657,
+      "maximum_fusion_score": 0.257816,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 9,
+        "low": 1,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 34,
+      "timestamp": "2026-01-01T00:00:34+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.406394,
+      "maximum_fusion_score": 0.953469,
+      "adaptive_detections": 4,
+      "high_priority_nodes": [
+        "api",
+        "firewall",
+        "gateway"
+      ],
+      "priority_counts": {
+        "normal": 5,
+        "low": 2,
+        "medium": 0,
+        "high": 1,
+        "critical": 2
+      },
+      "human_approval_required": 3,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 35,
+      "timestamp": "2026-01-01T00:00:35+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.204798,
+      "maximum_fusion_score": 0.38666,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 7,
+        "low": 3,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 36,
+      "timestamp": "2026-01-01T00:00:36+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.175179,
+      "maximum_fusion_score": 0.309313,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 8,
+        "low": 2,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 37,
+      "timestamp": "2026-01-01T00:00:37+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.183601,
+      "maximum_fusion_score": 0.386231,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 8,
+        "low": 2,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 38,
+      "timestamp": "2026-01-01T00:00:38+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.170722,
+      "maximum_fusion_score": 0.272193,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 8,
+        "low": 2,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 39,
+      "timestamp": "2026-01-01T00:00:39+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.179723,
+      "maximum_fusion_score": 0.296128,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 8,
+        "low": 2,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 40,
+      "timestamp": "2026-01-01T00:00:40+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.204105,
+      "maximum_fusion_score": 0.369867,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 8,
+        "low": 2,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 41,
+      "timestamp": "2026-01-01T00:00:41+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.21022,
+      "maximum_fusion_score": 0.319266,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 7,
+        "low": 3,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 42,
+      "timestamp": "2026-01-01T00:00:42+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.233996,
+      "maximum_fusion_score": 0.32429,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 6,
+        "low": 4,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 43,
+      "timestamp": "2026-01-01T00:00:43+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.207308,
+      "maximum_fusion_score": 0.346668,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 6,
+        "low": 4,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 44,
+      "timestamp": "2026-01-01T00:00:44+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.209101,
+      "maximum_fusion_score": 0.294937,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 8,
+        "low": 2,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 45,
+      "timestamp": "2026-01-01T00:00:45+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.211298,
+      "maximum_fusion_score": 0.361081,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 7,
+        "low": 3,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 46,
+      "timestamp": "2026-01-01T00:00:46+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.256233,
+      "maximum_fusion_score": 0.390573,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 5,
+        "low": 5,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 47,
+      "timestamp": "2026-01-01T00:00:47+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.221712,
+      "maximum_fusion_score": 0.294757,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 6,
+        "low": 4,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 48,
+      "timestamp": "2026-01-01T00:00:48+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.266987,
+      "maximum_fusion_score": 0.408663,
+      "adaptive_detections": 1,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 6,
+        "low": 4,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 49,
+      "timestamp": "2026-01-01T00:00:49+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.230401,
+      "maximum_fusion_score": 0.402366,
+      "adaptive_detections": 1,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 6,
+        "low": 4,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 50,
+      "timestamp": "2026-01-01T00:00:50+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.276043,
+      "maximum_fusion_score": 0.373264,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 3,
+        "low": 7,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 51,
+      "timestamp": "2026-01-01T00:00:51+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.46476,
+      "maximum_fusion_score": 0.987444,
+      "adaptive_detections": 4,
+      "high_priority_nodes": [
+        "api",
+        "firewall",
+        "gateway"
+      ],
+      "priority_counts": {
+        "normal": 4,
+        "low": 3,
+        "medium": 0,
+        "high": 0,
+        "critical": 3
+      },
+      "human_approval_required": 3,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 52,
+      "timestamp": "2026-01-01T00:00:52+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.33202,
+      "maximum_fusion_score": 0.493014,
+      "adaptive_detections": 1,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 2,
+        "low": 8,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 53,
+      "timestamp": "2026-01-01T00:00:53+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.299176,
+      "maximum_fusion_score": 0.425479,
+      "adaptive_detections": 1,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 4,
+        "low": 6,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 54,
+      "timestamp": "2026-01-01T00:00:54+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.279956,
+      "maximum_fusion_score": 0.463121,
+      "adaptive_detections": 4,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 6,
+        "low": 4,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 55,
+      "timestamp": "2026-01-01T00:00:55+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.234234,
+      "maximum_fusion_score": 0.415312,
+      "adaptive_detections": 1,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 7,
+        "low": 3,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 56,
+      "timestamp": "2026-01-01T00:00:56+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.246601,
+      "maximum_fusion_score": 0.374015,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 4,
+        "low": 6,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 57,
+      "timestamp": "2026-01-01T00:00:57+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.248803,
+      "maximum_fusion_score": 0.396249,
+      "adaptive_detections": 2,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 5,
+        "low": 5,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 58,
+      "timestamp": "2026-01-01T00:00:58+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.188242,
+      "maximum_fusion_score": 0.26837,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 9,
+        "low": 1,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 59,
+      "timestamp": "2026-01-01T00:00:59+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.200927,
+      "maximum_fusion_score": 0.30885,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 9,
+        "low": 1,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 60,
+      "timestamp": "2026-01-01T00:01:00+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.245198,
+      "maximum_fusion_score": 0.398453,
+      "adaptive_detections": 2,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 6,
+        "low": 4,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 61,
+      "timestamp": "2026-01-01T00:01:01+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.198523,
+      "maximum_fusion_score": 0.352502,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 7,
+        "low": 3,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 62,
+      "timestamp": "2026-01-01T00:01:02+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.185475,
+      "maximum_fusion_score": 0.3254,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 9,
+        "low": 1,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 63,
+      "timestamp": "2026-01-01T00:01:03+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.240525,
+      "maximum_fusion_score": 0.389047,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 5,
+        "low": 5,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 64,
+      "timestamp": "2026-01-01T00:01:04+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.205447,
+      "maximum_fusion_score": 0.328619,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 7,
+        "low": 3,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 65,
+      "timestamp": "2026-01-01T00:01:05+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.194277,
+      "maximum_fusion_score": 0.32313,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 8,
+        "low": 2,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 66,
+      "timestamp": "2026-01-01T00:01:06+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.172996,
+      "maximum_fusion_score": 0.332739,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 8,
+        "low": 2,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 67,
+      "timestamp": "2026-01-01T00:01:07+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.190585,
+      "maximum_fusion_score": 0.359385,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 8,
+        "low": 2,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 68,
+      "timestamp": "2026-01-01T00:01:08+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.445788,
+      "maximum_fusion_score": 0.978256,
+      "adaptive_detections": 4,
+      "high_priority_nodes": [
+        "api",
+        "firewall",
+        "gateway"
+      ],
+      "priority_counts": {
+        "normal": 4,
+        "low": 3,
+        "medium": 0,
+        "high": 0,
+        "critical": 3
+      },
+      "human_approval_required": 3,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 69,
+      "timestamp": "2026-01-01T00:01:09+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.209281,
+      "maximum_fusion_score": 0.365422,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 6,
+        "low": 4,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 70,
+      "timestamp": "2026-01-01T00:01:10+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.17448,
+      "maximum_fusion_score": 0.298007,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 9,
+        "low": 1,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 71,
+      "timestamp": "2026-01-01T00:01:11+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.178776,
+      "maximum_fusion_score": 0.34329,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 9,
+        "low": 1,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 72,
+      "timestamp": "2026-01-01T00:01:12+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.163724,
+      "maximum_fusion_score": 0.307448,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 8,
+        "low": 2,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 73,
+      "timestamp": "2026-01-01T00:01:13+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.121481,
+      "maximum_fusion_score": 0.157038,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 74,
+      "timestamp": "2026-01-01T00:01:14+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.130538,
+      "maximum_fusion_score": 0.22576,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 75,
+      "timestamp": "2026-01-01T00:01:15+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.12643,
+      "maximum_fusion_score": 0.24158,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 76,
+      "timestamp": "2026-01-01T00:01:16+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.12949,
+      "maximum_fusion_score": 0.209913,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 77,
+      "timestamp": "2026-01-01T00:01:17+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.132266,
+      "maximum_fusion_score": 0.24964,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 78,
+      "timestamp": "2026-01-01T00:01:18+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.136691,
+      "maximum_fusion_score": 0.213576,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 79,
+      "timestamp": "2026-01-01T00:01:19+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.126463,
+      "maximum_fusion_score": 0.209646,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 80,
+      "timestamp": "2026-01-01T00:01:20+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.109438,
+      "maximum_fusion_score": 0.145821,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 81,
+      "timestamp": "2026-01-01T00:01:21+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.116998,
+      "maximum_fusion_score": 0.195326,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 82,
+      "timestamp": "2026-01-01T00:01:22+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.137935,
+      "maximum_fusion_score": 0.209305,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 83,
+      "timestamp": "2026-01-01T00:01:23+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.116547,
+      "maximum_fusion_score": 0.164194,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 84,
+      "timestamp": "2026-01-01T00:01:24+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.135169,
+      "maximum_fusion_score": 0.203065,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 85,
+      "timestamp": "2026-01-01T00:01:25+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.401523,
+      "maximum_fusion_score": 0.952059,
+      "adaptive_detections": 4,
+      "high_priority_nodes": [
+        "api",
+        "firewall",
+        "gateway"
+      ],
+      "priority_counts": {
+        "normal": 5,
+        "low": 2,
+        "medium": 0,
+        "high": 0,
+        "critical": 3
+      },
+      "human_approval_required": 3,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 86,
+      "timestamp": "2026-01-01T00:01:26+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.205476,
+      "maximum_fusion_score": 0.363329,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 6,
+        "low": 4,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 87,
+      "timestamp": "2026-01-01T00:01:27+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.168147,
+      "maximum_fusion_score": 0.240834,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 10,
+        "low": 0,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 88,
+      "timestamp": "2026-01-01T00:01:28+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.153577,
+      "maximum_fusion_score": 0.319551,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 9,
+        "low": 1,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 89,
+      "timestamp": "2026-01-01T00:01:29+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.173301,
+      "maximum_fusion_score": 0.346192,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 9,
+        "low": 1,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 90,
+      "timestamp": "2026-01-01T00:01:30+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.227316,
+      "maximum_fusion_score": 0.404939,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 6,
+        "low": 4,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 91,
+      "timestamp": "2026-01-01T00:01:31+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.199175,
+      "maximum_fusion_score": 0.392136,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 8,
+        "low": 2,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 92,
+      "timestamp": "2026-01-01T00:01:32+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.217355,
+      "maximum_fusion_score": 0.318158,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 8,
+        "low": 2,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 93,
+      "timestamp": "2026-01-01T00:01:33+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.175376,
+      "maximum_fusion_score": 0.275716,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 7,
+        "low": 3,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 94,
+      "timestamp": "2026-01-01T00:01:34+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.215192,
+      "maximum_fusion_score": 0.346444,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 7,
+        "low": 3,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 95,
+      "timestamp": "2026-01-01T00:01:35+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.162083,
+      "maximum_fusion_score": 0.331334,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 8,
+        "low": 2,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 96,
+      "timestamp": "2026-01-01T00:01:36+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.271741,
+      "maximum_fusion_score": 0.387674,
+      "adaptive_detections": 1,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 3,
+        "low": 7,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 97,
+      "timestamp": "2026-01-01T00:01:37+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.201931,
+      "maximum_fusion_score": 0.293902,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 7,
+        "low": 3,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 98,
+      "timestamp": "2026-01-01T00:01:38+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.265506,
+      "maximum_fusion_score": 0.402502,
+      "adaptive_detections": 1,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 6,
+        "low": 4,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 99,
+      "timestamp": "2026-01-01T00:01:39+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.20742,
+      "maximum_fusion_score": 0.362678,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 8,
+        "low": 2,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 100,
+      "timestamp": "2026-01-01T00:01:40+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.229567,
+      "maximum_fusion_score": 0.345347,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 7,
+        "low": 3,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 101,
+      "timestamp": "2026-01-01T00:01:41+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.267588,
+      "maximum_fusion_score": 0.427174,
+      "adaptive_detections": 3,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 5,
+        "low": 5,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 102,
+      "timestamp": "2026-01-01T00:01:42+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.474201,
+      "maximum_fusion_score": 0.987591,
+      "adaptive_detections": 5,
+      "high_priority_nodes": [
+        "api",
+        "firewall",
+        "gateway"
+      ],
+      "priority_counts": {
+        "normal": 4,
+        "low": 3,
+        "medium": 0,
+        "high": 0,
+        "critical": 3
+      },
+      "human_approval_required": 3,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 103,
+      "timestamp": "2026-01-01T00:01:43+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.281264,
+      "maximum_fusion_score": 0.393336,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 3,
+        "low": 7,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 104,
+      "timestamp": "2026-01-01T00:01:44+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.272327,
+      "maximum_fusion_score": 0.399317,
+      "adaptive_detections": 1,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 5,
+        "low": 5,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 105,
+      "timestamp": "2026-01-01T00:01:45+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.280272,
+      "maximum_fusion_score": 0.457924,
+      "adaptive_detections": 2,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 4,
+        "low": 6,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 106,
+      "timestamp": "2026-01-01T00:01:46+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.219295,
+      "maximum_fusion_score": 0.405329,
+      "adaptive_detections": 1,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 7,
+        "low": 3,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 107,
+      "timestamp": "2026-01-01T00:01:47+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.207804,
+      "maximum_fusion_score": 0.353233,
+      "adaptive_detections": 1,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 7,
+        "low": 3,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 108,
+      "timestamp": "2026-01-01T00:01:48+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.268977,
+      "maximum_fusion_score": 0.426116,
+      "adaptive_detections": 1,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 5,
+        "low": 5,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 109,
+      "timestamp": "2026-01-01T00:01:49+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.243931,
+      "maximum_fusion_score": 0.423872,
+      "adaptive_detections": 1,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 7,
+        "low": 3,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 110,
+      "timestamp": "2026-01-01T00:01:50+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.238564,
+      "maximum_fusion_score": 0.398973,
+      "adaptive_detections": 1,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 7,
+        "low": 3,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 111,
+      "timestamp": "2026-01-01T00:01:51+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.250196,
+      "maximum_fusion_score": 0.329412,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 5,
+        "low": 5,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 112,
+      "timestamp": "2026-01-01T00:01:52+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.247332,
+      "maximum_fusion_score": 0.310845,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 5,
+        "low": 5,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 113,
+      "timestamp": "2026-01-01T00:01:53+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.215683,
+      "maximum_fusion_score": 0.334139,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 7,
+        "low": 3,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 114,
+      "timestamp": "2026-01-01T00:01:54+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.253402,
+      "maximum_fusion_score": 0.400973,
+      "adaptive_detections": 1,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 6,
+        "low": 4,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 115,
+      "timestamp": "2026-01-01T00:01:55+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.196794,
+      "maximum_fusion_score": 0.383394,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 7,
+        "low": 3,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 116,
+      "timestamp": "2026-01-01T00:01:56+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.236513,
+      "maximum_fusion_score": 0.370562,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 7,
+        "low": 3,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 117,
+      "timestamp": "2026-01-01T00:01:57+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.206818,
+      "maximum_fusion_score": 0.33391,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 6,
+        "low": 4,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 118,
+      "timestamp": "2026-01-01T00:01:58+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.187571,
+      "maximum_fusion_score": 0.324529,
+      "adaptive_detections": 0,
+      "high_priority_nodes": [],
+      "priority_counts": {
+        "normal": 8,
+        "low": 2,
+        "medium": 0,
+        "high": 0,
+        "critical": 0
+      },
+      "human_approval_required": 0,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    },
+    {
+      "tick": 119,
+      "timestamp": "2026-01-01T00:01:59+00:00",
+      "evaluated_nodes": 10,
+      "mean_fusion_score": 0.432524,
+      "maximum_fusion_score": 0.98035,
+      "adaptive_detections": 4,
+      "high_priority_nodes": [
+        "api",
+        "firewall",
+        "gateway"
+      ],
+      "priority_counts": {
+        "normal": 6,
+        "low": 1,
+        "medium": 0,
+        "high": 0,
+        "critical": 3
+      },
+      "human_approval_required": 3,
+      "simulation_mode": true,
+      "real_actions_executed": 0
+    }
+  ]
+}

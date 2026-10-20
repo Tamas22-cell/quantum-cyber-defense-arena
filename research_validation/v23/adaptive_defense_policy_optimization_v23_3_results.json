@@ -1,0 +1,261 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V23.3",
+  "module": "Adaptive Defense Policy Optimization",
+  "created_utc": "2026-10-20T13:16:14.985523+00:00",
+  "status": "DEFENSE_POLICY_OPTIMIZATION_PASS",
+  "simulation_mode": true,
+  "is_live": false,
+  "trained_ai_model_used": false,
+  "external_actions_enabled": false,
+  "effects_empirically_verified": false,
+  "configuration": {
+    "profiles": {
+      "balanced": {
+        "risk_weight": 0.7,
+        "service_weight": 0.3
+      },
+      "service_first": {
+        "risk_weight": 0.4,
+        "service_weight": 0.6
+      },
+      "risk_first": {
+        "risk_weight": 0.9,
+        "service_weight": 0.1
+      }
+    },
+    "holdout_start": 90,
+    "strategies": {
+      "observe": {
+        "risk_reduction_fraction": 0.0,
+        "service_impact": 0.0
+      },
+      "increase_monitoring": {
+        "risk_reduction_fraction": 0.05,
+        "service_impact": 0.02
+      },
+      "rate_limit": {
+        "risk_reduction_fraction": 0.35,
+        "service_impact": 0.25
+      },
+      "isolate_node": {
+        "risk_reduction_fraction": 0.75,
+        "service_impact": 0.85
+      },
+      "request_review": {
+        "risk_reduction_fraction": 0.0,
+        "service_impact": 0.03
+      }
+    },
+    "optimization_method": "deterministic_weighted_cost_minimization"
+  },
+  "metrics": {
+    "simulation_ticks": 120,
+    "network_nodes": 10,
+    "optimized_observations": 1200,
+    "policy_profiles": 3,
+    "actions_per_profile": 5,
+    "real_actions_executed": 0
+  },
+  "evaluation": {
+    "balanced": {
+      "holdout_observations": 300,
+      "mean_modelled_weighted_cost": 0.162747,
+      "mean_v22_baseline_weighted_cost": 0.166118,
+      "mean_modelled_residual_risk": 0.204124,
+      "mean_modelled_service_impact": 0.0662,
+      "approval_required": 52,
+      "action_counts": {
+        "increase_monitoring": 163,
+        "isolate_node": 6,
+        "observe": 85,
+        "rate_limit": 46
+      },
+      "outcomes_empirically_verified": false
+    },
+    "service_first": {
+      "holdout_observations": 300,
+      "mean_modelled_weighted_cost": 0.097904,
+      "mean_v22_baseline_weighted_cost": 0.102696,
+      "mean_modelled_residual_risk": 0.244159,
+      "mean_modelled_service_impact": 0.0004,
+      "approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 6,
+        "observe": 294
+      },
+      "outcomes_empirically_verified": false
+    },
+    "risk_first": {
+      "holdout_observations": 300,
+      "mean_modelled_weighted_cost": 0.136515,
+      "mean_v22_baseline_weighted_cost": 0.208399,
+      "mean_modelled_residual_risk": 0.075135,
+      "mean_modelled_service_impact": 0.688933,
+      "approval_required": 296,
+      "action_counts": {
+        "increase_monitoring": 4,
+        "isolate_node": 221,
+        "rate_limit": 75
+      },
+      "outcomes_empirically_verified": false
+    }
+  },
+  "source_sha256": {
+    "architecture": "62b9c0b20f9c3b0b65642698cc68ceb6f146f4047dfab033efe4ae964b617cb9",
+    "fusion_report": "7ce4e62d17afb2ae30b322e2d7fdb6d5574853b7642adbc3eeff8f7969f3c3f1",
+    "fusion_events": "58f067ff963da02de6b2c6a3d14dca584f28f4de92bb9f5d232b95b4e62b8504",
+    "strategy_report": "c06e517c07a77c69f407dc1df3bc45197e7c9460422c6ad9261cf750813c508d",
+    "decision_events": "12658471b394762705b9c573f36722bceebda379a279788b8994b833111b34d2"
+  },
+  "checks": [
+    {
+      "name": "V23.1 architecture passed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V23.2 fusion engine passed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.4 strategy simulation passed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V23.2 architecture fingerprint valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V23.2 decision fingerprint valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All research sources simulation-only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Real actions prohibited",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Strategy effects are hypothetical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Three policy profiles configured",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Five strategy types available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "1200 fused observations available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "1200 matching decisions available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "120 complete simulation ticks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Fusion CSV count matches V23.2 report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "1200 optimization records generated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "One record per node and tick",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All selected actions recognized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All model residual risks bounded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All modeled service impacts bounded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Approval required for relevant actions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Optimized cost no greater than baseline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All outcomes hypothetical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "120 ordered timeline records",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ten node decisions per tick",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Three profiles available on every tick",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Chronological holdout contains 300 records",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Every profile evaluation is finite",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Optimization is reproducible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Earlier decisions independent of future ticks",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "checks_passed": 29,
+  "checks_failed": 0,
+  "next_stage": "V23.4 Multi-Agent Defense Orchestration Simulation"
+}

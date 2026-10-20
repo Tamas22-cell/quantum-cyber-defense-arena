@@ -1,0 +1,5769 @@
+{
+  "version": "V23.4",
+  "status": "DEFENSE_ORCHESTRATION_PASS",
+  "simulation_mode": true,
+  "is_live": false,
+  "ticks": 120,
+  "timeline": [
+    {
+      "tick": 0,
+      "timestamp": "2026-01-01T00:00:00+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.126261,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.126261,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.126261,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 0,
+            "rate_limit": 10,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 1,
+      "timestamp": "2026-01-01T00:00:01+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.134578,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.134578,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.134578,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 0,
+            "rate_limit": 10,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 2,
+      "timestamp": "2026-01-01T00:00:02+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.134751,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.134751,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.134751,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 0,
+            "rate_limit": 10,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 3,
+      "timestamp": "2026-01-01T00:00:03+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.135848,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.135848,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.135848,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 0,
+            "rate_limit": 10,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 4,
+      "timestamp": "2026-01-01T00:00:04+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.134981,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.134981,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.134981,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 0,
+            "rate_limit": 10,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 5,
+      "timestamp": "2026-01-01T00:00:05+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.133663,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.133663,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.133663,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 0,
+            "rate_limit": 10,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 6,
+      "timestamp": "2026-01-01T00:00:06+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.137927,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.137927,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.137927,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 0,
+            "rate_limit": 10,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 7,
+      "timestamp": "2026-01-01T00:00:07+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.136042,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.136042,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.136042,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 0,
+            "rate_limit": 10,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 8,
+      "timestamp": "2026-01-01T00:00:08+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.133678,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.133678,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.133678,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 2,
+            "observe": 0,
+            "rate_limit": 8,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 9,
+      "timestamp": "2026-01-01T00:00:09+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.131988,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.131988,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.131988,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 0,
+            "observe": 0,
+            "rate_limit": 9,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 10,
+      "timestamp": "2026-01-01T00:00:10+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.130049,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.130049,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.130049,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 0,
+            "rate_limit": 10,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 11,
+      "timestamp": "2026-01-01T00:00:11+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.125739,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.125739,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.125739,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 0,
+            "observe": 0,
+            "rate_limit": 9,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 12,
+      "timestamp": "2026-01-01T00:00:12+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.177402,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 5,
+            "isolate_node": 0,
+            "observe": 5,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.177402,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.177402,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 5,
+            "observe": 0,
+            "rate_limit": 4,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 13,
+      "timestamp": "2026-01-01T00:00:13+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.160606,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 3,
+            "isolate_node": 0,
+            "observe": 7,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.160606,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.160606,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 3,
+            "observe": 0,
+            "rate_limit": 7,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 14,
+      "timestamp": "2026-01-01T00:00:14+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.190373,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 5,
+            "isolate_node": 0,
+            "observe": 5,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.190373,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.190373,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 5,
+            "observe": 0,
+            "rate_limit": 5,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 15,
+      "timestamp": "2026-01-01T00:00:15+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.13788,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 3,
+            "isolate_node": 0,
+            "observe": 7,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.13788,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.13788,
+          "approval_pending": 8,
+          "validated_simulation_plans": 2,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 3,
+            "observe": 0,
+            "rate_limit": 5,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 16,
+      "timestamp": "2026-01-01T00:00:16+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.154787,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 3,
+            "isolate_node": 0,
+            "observe": 7,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.154787,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.154787,
+          "approval_pending": 8,
+          "validated_simulation_plans": 2,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 3,
+            "observe": 0,
+            "rate_limit": 5,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 17,
+      "timestamp": "2026-01-01T00:00:17+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.423686,
+          "approval_pending": 3,
+          "validated_simulation_plans": 7,
+          "proposed_actions": {
+            "increase_monitoring": 4,
+            "isolate_node": 3,
+            "observe": 3,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.423686,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 3,
+            "isolate_node": 0,
+            "observe": 7,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.423686,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 7,
+            "observe": 0,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 18,
+      "timestamp": "2026-01-01T00:00:18+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.189082,
+          "approval_pending": 1,
+          "validated_simulation_plans": 9,
+          "proposed_actions": {
+            "increase_monitoring": 4,
+            "isolate_node": 0,
+            "observe": 5,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.189082,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.189082,
+          "approval_pending": 8,
+          "validated_simulation_plans": 2,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 5,
+            "observe": 0,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 19,
+      "timestamp": "2026-01-01T00:00:19+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.145057,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 4,
+            "isolate_node": 0,
+            "observe": 6,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.145057,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.145057,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 4,
+            "observe": 0,
+            "rate_limit": 5,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 20,
+      "timestamp": "2026-01-01T00:00:20+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.141248,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 3,
+            "isolate_node": 0,
+            "observe": 7,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.141248,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.141248,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 3,
+            "observe": 0,
+            "rate_limit": 6,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 21,
+      "timestamp": "2026-01-01T00:00:21+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.141059,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 0,
+            "observe": 9,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.141059,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.141059,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 1,
+            "observe": 0,
+            "rate_limit": 8,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 22,
+      "timestamp": "2026-01-01T00:00:22+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.141796,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 0,
+            "observe": 8,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.141796,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.141796,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 2,
+            "observe": 0,
+            "rate_limit": 7,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 23,
+      "timestamp": "2026-01-01T00:00:23+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.132703,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 0,
+            "observe": 9,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.132703,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.132703,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 1,
+            "observe": 0,
+            "rate_limit": 8,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 24,
+      "timestamp": "2026-01-01T00:00:24+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.153192,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 3,
+            "isolate_node": 0,
+            "observe": 7,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.153192,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.153192,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 3,
+            "observe": 0,
+            "rate_limit": 6,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 25,
+      "timestamp": "2026-01-01T00:00:25+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.139366,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 0,
+            "observe": 9,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.139366,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.139366,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 1,
+            "observe": 0,
+            "rate_limit": 8,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 26,
+      "timestamp": "2026-01-01T00:00:26+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.135367,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 0,
+            "observe": 8,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.135367,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.135367,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 2,
+            "observe": 0,
+            "rate_limit": 7,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 27,
+      "timestamp": "2026-01-01T00:00:27+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.115679,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.115679,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.115679,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 0,
+            "observe": 0,
+            "rate_limit": 9,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 28,
+      "timestamp": "2026-01-01T00:00:28+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.136307,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 3,
+            "isolate_node": 0,
+            "observe": 7,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.136307,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.136307,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 3,
+            "observe": 0,
+            "rate_limit": 6,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 29,
+      "timestamp": "2026-01-01T00:00:29+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.156633,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 4,
+            "isolate_node": 0,
+            "observe": 6,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.156633,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.156633,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 4,
+            "observe": 0,
+            "rate_limit": 5,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 30,
+      "timestamp": "2026-01-01T00:00:30+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.143,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 3,
+            "isolate_node": 0,
+            "observe": 7,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.143,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.143,
+          "approval_pending": 8,
+          "validated_simulation_plans": 2,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 3,
+            "observe": 0,
+            "rate_limit": 5,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 31,
+      "timestamp": "2026-01-01T00:00:31+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.136639,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 0,
+            "observe": 8,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.136639,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.136639,
+          "approval_pending": 8,
+          "validated_simulation_plans": 2,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 2,
+            "observe": 0,
+            "rate_limit": 6,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 32,
+      "timestamp": "2026-01-01T00:00:32+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.14428,
+          "approval_pending": 1,
+          "validated_simulation_plans": 9,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 0,
+            "observe": 7,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.14428,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.14428,
+          "approval_pending": 8,
+          "validated_simulation_plans": 2,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 3,
+            "observe": 0,
+            "rate_limit": 5,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 33,
+      "timestamp": "2026-01-01T00:00:33+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.140657,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 4,
+            "isolate_node": 0,
+            "observe": 6,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.140657,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.140657,
+          "approval_pending": 8,
+          "validated_simulation_plans": 2,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 4,
+            "observe": 0,
+            "rate_limit": 4,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 34,
+      "timestamp": "2026-01-01T00:00:34+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.406394,
+          "approval_pending": 3,
+          "validated_simulation_plans": 7,
+          "proposed_actions": {
+            "increase_monitoring": 3,
+            "isolate_node": 3,
+            "observe": 4,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.406394,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 3,
+            "isolate_node": 0,
+            "observe": 7,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.406394,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 6,
+            "observe": 0,
+            "rate_limit": 4,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 35,
+      "timestamp": "2026-01-01T00:00:35+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.204798,
+          "approval_pending": 2,
+          "validated_simulation_plans": 8,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 0,
+            "observe": 6,
+            "rate_limit": 2,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.204798,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.204798,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 7,
+            "observe": 0,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 36,
+      "timestamp": "2026-01-01T00:00:36+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.175179,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 5,
+            "isolate_node": 0,
+            "observe": 5,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.175179,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.175179,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 5,
+            "observe": 0,
+            "rate_limit": 4,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 37,
+      "timestamp": "2026-01-01T00:00:37+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.183601,
+          "approval_pending": 1,
+          "validated_simulation_plans": 9,
+          "proposed_actions": {
+            "increase_monitoring": 4,
+            "isolate_node": 0,
+            "observe": 5,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.183601,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.183601,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 5,
+            "observe": 0,
+            "rate_limit": 4,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 38,
+      "timestamp": "2026-01-01T00:00:38+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.170722,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 5,
+            "isolate_node": 0,
+            "observe": 5,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.170722,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.170722,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 5,
+            "observe": 0,
+            "rate_limit": 4,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 39,
+      "timestamp": "2026-01-01T00:00:39+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.179723,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 5,
+            "isolate_node": 0,
+            "observe": 5,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.179723,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.179723,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 5,
+            "observe": 0,
+            "rate_limit": 5,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 40,
+      "timestamp": "2026-01-01T00:00:40+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.204105,
+          "approval_pending": 1,
+          "validated_simulation_plans": 9,
+          "proposed_actions": {
+            "increase_monitoring": 4,
+            "isolate_node": 0,
+            "observe": 5,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.204105,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.204105,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 5,
+            "observe": 0,
+            "rate_limit": 4,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 41,
+      "timestamp": "2026-01-01T00:00:41+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.21022,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 7,
+            "isolate_node": 0,
+            "observe": 3,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.21022,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.21022,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 8,
+            "observe": 0,
+            "rate_limit": 2,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 42,
+      "timestamp": "2026-01-01T00:00:42+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.233996,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 8,
+            "isolate_node": 0,
+            "observe": 2,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.233996,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.233996,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 8,
+            "observe": 0,
+            "rate_limit": 2,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 43,
+      "timestamp": "2026-01-01T00:00:43+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.207308,
+          "approval_pending": 1,
+          "validated_simulation_plans": 9,
+          "proposed_actions": {
+            "increase_monitoring": 5,
+            "isolate_node": 0,
+            "observe": 4,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.207308,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.207308,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 6,
+            "observe": 0,
+            "rate_limit": 4,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 44,
+      "timestamp": "2026-01-01T00:00:44+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.209101,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 8,
+            "isolate_node": 0,
+            "observe": 2,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.209101,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.209101,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 8,
+            "observe": 0,
+            "rate_limit": 2,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 45,
+      "timestamp": "2026-01-01T00:00:45+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.211298,
+          "approval_pending": 2,
+          "validated_simulation_plans": 8,
+          "proposed_actions": {
+            "increase_monitoring": 5,
+            "isolate_node": 0,
+            "observe": 3,
+            "rate_limit": 2,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.211298,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.211298,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 7,
+            "observe": 0,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 46,
+      "timestamp": "2026-01-01T00:00:46+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.256233,
+          "approval_pending": 2,
+          "validated_simulation_plans": 8,
+          "proposed_actions": {
+            "increase_monitoring": 5,
+            "isolate_node": 0,
+            "observe": 3,
+            "rate_limit": 2,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.256233,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.256233,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 7,
+            "observe": 0,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 47,
+      "timestamp": "2026-01-01T00:00:47+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.221712,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 7,
+            "isolate_node": 0,
+            "observe": 3,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.221712,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.221712,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 8,
+            "observe": 0,
+            "rate_limit": 2,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 48,
+      "timestamp": "2026-01-01T00:00:48+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.266987,
+          "approval_pending": 3,
+          "validated_simulation_plans": 7,
+          "proposed_actions": {
+            "increase_monitoring": 7,
+            "isolate_node": 0,
+            "observe": 0,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.266987,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.266987,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 10,
+            "observe": 0,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 49,
+      "timestamp": "2026-01-01T00:00:49+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.230401,
+          "approval_pending": 2,
+          "validated_simulation_plans": 8,
+          "proposed_actions": {
+            "increase_monitoring": 5,
+            "isolate_node": 0,
+            "observe": 3,
+            "rate_limit": 2,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.230401,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.230401,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 7,
+            "observe": 0,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 50,
+      "timestamp": "2026-01-01T00:00:50+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.276043,
+          "approval_pending": 3,
+          "validated_simulation_plans": 7,
+          "proposed_actions": {
+            "increase_monitoring": 6,
+            "isolate_node": 0,
+            "observe": 1,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.276043,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.276043,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 9,
+            "observe": 0,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 51,
+      "timestamp": "2026-01-01T00:00:51+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.46476,
+          "approval_pending": 6,
+          "validated_simulation_plans": 4,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 3,
+            "observe": 3,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.46476,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 3,
+            "isolate_node": 0,
+            "observe": 7,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.46476,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 7,
+            "observe": 0,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 52,
+      "timestamp": "2026-01-01T00:00:52+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.33202,
+          "approval_pending": 7,
+          "validated_simulation_plans": 3,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 0,
+            "observe": 1,
+            "rate_limit": 7,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.33202,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.33202,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 9,
+            "observe": 0,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 53,
+      "timestamp": "2026-01-01T00:00:53+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.299176,
+          "approval_pending": 4,
+          "validated_simulation_plans": 6,
+          "proposed_actions": {
+            "increase_monitoring": 6,
+            "isolate_node": 0,
+            "observe": 0,
+            "rate_limit": 4,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.299176,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.299176,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 10,
+            "observe": 0,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 54,
+      "timestamp": "2026-01-01T00:00:54+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.279956,
+          "approval_pending": 4,
+          "validated_simulation_plans": 6,
+          "proposed_actions": {
+            "increase_monitoring": 4,
+            "isolate_node": 0,
+            "observe": 2,
+            "rate_limit": 4,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.279956,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.279956,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 9,
+            "observe": 0,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 55,
+      "timestamp": "2026-01-01T00:00:55+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.234234,
+          "approval_pending": 2,
+          "validated_simulation_plans": 8,
+          "proposed_actions": {
+            "increase_monitoring": 5,
+            "isolate_node": 0,
+            "observe": 3,
+            "rate_limit": 2,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.234234,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.234234,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 7,
+            "observe": 0,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 56,
+      "timestamp": "2026-01-01T00:00:56+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.246601,
+          "approval_pending": 2,
+          "validated_simulation_plans": 8,
+          "proposed_actions": {
+            "increase_monitoring": 6,
+            "isolate_node": 0,
+            "observe": 2,
+            "rate_limit": 2,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.246601,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.246601,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 8,
+            "observe": 0,
+            "rate_limit": 2,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 57,
+      "timestamp": "2026-01-01T00:00:57+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.248803,
+          "approval_pending": 3,
+          "validated_simulation_plans": 7,
+          "proposed_actions": {
+            "increase_monitoring": 4,
+            "isolate_node": 0,
+            "observe": 3,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.248803,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.248803,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 7,
+            "observe": 0,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 58,
+      "timestamp": "2026-01-01T00:00:58+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.188242,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 7,
+            "isolate_node": 0,
+            "observe": 3,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.188242,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.188242,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 7,
+            "observe": 0,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 59,
+      "timestamp": "2026-01-01T00:00:59+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.200927,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 7,
+            "isolate_node": 0,
+            "observe": 3,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.200927,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.200927,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 7,
+            "observe": 0,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 60,
+      "timestamp": "2026-01-01T00:01:00+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.245198,
+          "approval_pending": 3,
+          "validated_simulation_plans": 7,
+          "proposed_actions": {
+            "increase_monitoring": 4,
+            "isolate_node": 0,
+            "observe": 3,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.245198,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.245198,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 7,
+            "observe": 0,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 61,
+      "timestamp": "2026-01-01T00:01:01+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.198523,
+          "approval_pending": 1,
+          "validated_simulation_plans": 9,
+          "proposed_actions": {
+            "increase_monitoring": 5,
+            "isolate_node": 0,
+            "observe": 4,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.198523,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.198523,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 7,
+            "observe": 0,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 62,
+      "timestamp": "2026-01-01T00:01:02+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.185476,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 5,
+            "isolate_node": 0,
+            "observe": 5,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.185476,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.185476,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 5,
+            "observe": 0,
+            "rate_limit": 5,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 63,
+      "timestamp": "2026-01-01T00:01:03+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.240525,
+          "approval_pending": 2,
+          "validated_simulation_plans": 8,
+          "proposed_actions": {
+            "increase_monitoring": 6,
+            "isolate_node": 0,
+            "observe": 2,
+            "rate_limit": 2,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.240525,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.240525,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 8,
+            "observe": 0,
+            "rate_limit": 2,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 64,
+      "timestamp": "2026-01-01T00:01:04+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.205447,
+          "approval_pending": 1,
+          "validated_simulation_plans": 9,
+          "proposed_actions": {
+            "increase_monitoring": 5,
+            "isolate_node": 0,
+            "observe": 4,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.205447,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.205447,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 6,
+            "observe": 0,
+            "rate_limit": 4,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 65,
+      "timestamp": "2026-01-01T00:01:05+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.194277,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 6,
+            "isolate_node": 0,
+            "observe": 4,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.194277,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.194277,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 6,
+            "observe": 0,
+            "rate_limit": 4,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 66,
+      "timestamp": "2026-01-01T00:01:06+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.172996,
+          "approval_pending": 1,
+          "validated_simulation_plans": 9,
+          "proposed_actions": {
+            "increase_monitoring": 3,
+            "isolate_node": 0,
+            "observe": 6,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.172996,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.172996,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 4,
+            "observe": 0,
+            "rate_limit": 6,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 67,
+      "timestamp": "2026-01-01T00:01:07+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.190585,
+          "approval_pending": 1,
+          "validated_simulation_plans": 9,
+          "proposed_actions": {
+            "increase_monitoring": 4,
+            "isolate_node": 0,
+            "observe": 5,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.190585,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.190585,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 5,
+            "observe": 0,
+            "rate_limit": 5,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 68,
+      "timestamp": "2026-01-01T00:01:08+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.445788,
+          "approval_pending": 6,
+          "validated_simulation_plans": 4,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 3,
+            "observe": 3,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.445788,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 3,
+            "isolate_node": 0,
+            "observe": 7,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.445788,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 7,
+            "observe": 0,
+            "rate_limit": 2,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 69,
+      "timestamp": "2026-01-01T00:01:09+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.209281,
+          "approval_pending": 1,
+          "validated_simulation_plans": 9,
+          "proposed_actions": {
+            "increase_monitoring": 5,
+            "isolate_node": 0,
+            "observe": 4,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.209281,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.209281,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 6,
+            "observe": 0,
+            "rate_limit": 4,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 70,
+      "timestamp": "2026-01-01T00:01:10+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.17448,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 5,
+            "isolate_node": 0,
+            "observe": 5,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.17448,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.17448,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 6,
+            "observe": 0,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 71,
+      "timestamp": "2026-01-01T00:01:11+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.178776,
+          "approval_pending": 1,
+          "validated_simulation_plans": 9,
+          "proposed_actions": {
+            "increase_monitoring": 5,
+            "isolate_node": 0,
+            "observe": 4,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.178776,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.178776,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 6,
+            "observe": 0,
+            "rate_limit": 4,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 72,
+      "timestamp": "2026-01-01T00:01:12+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.163724,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 5,
+            "isolate_node": 0,
+            "observe": 5,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.163724,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.163724,
+          "approval_pending": 8,
+          "validated_simulation_plans": 2,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 5,
+            "observe": 0,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 73,
+      "timestamp": "2026-01-01T00:01:13+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.121481,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.121481,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.121481,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 0,
+            "observe": 0,
+            "rate_limit": 9,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 74,
+      "timestamp": "2026-01-01T00:01:14+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.130538,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 0,
+            "observe": 8,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.130538,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.130538,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 2,
+            "observe": 0,
+            "rate_limit": 7,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 75,
+      "timestamp": "2026-01-01T00:01:15+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.12643,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 0,
+            "observe": 9,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.12643,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.12643,
+          "approval_pending": 7,
+          "validated_simulation_plans": 3,
+          "proposed_actions": {
+            "increase_monitoring": 3,
+            "isolate_node": 1,
+            "observe": 0,
+            "rate_limit": 6,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 76,
+      "timestamp": "2026-01-01T00:01:16+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.12949,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 0,
+            "observe": 8,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.12949,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.12949,
+          "approval_pending": 8,
+          "validated_simulation_plans": 2,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 2,
+            "observe": 0,
+            "rate_limit": 6,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 77,
+      "timestamp": "2026-01-01T00:01:17+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.132266,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 0,
+            "observe": 9,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.132266,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.132266,
+          "approval_pending": 8,
+          "validated_simulation_plans": 2,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 1,
+            "observe": 0,
+            "rate_limit": 7,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 78,
+      "timestamp": "2026-01-01T00:01:18+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.136691,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 0,
+            "observe": 8,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.136691,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.136691,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 2,
+            "observe": 0,
+            "rate_limit": 7,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 79,
+      "timestamp": "2026-01-01T00:01:19+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.126463,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 0,
+            "observe": 8,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.126463,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.126463,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 2,
+            "observe": 0,
+            "rate_limit": 7,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 80,
+      "timestamp": "2026-01-01T00:01:20+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.109438,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.109438,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.109438,
+          "approval_pending": 8,
+          "validated_simulation_plans": 2,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 0,
+            "observe": 0,
+            "rate_limit": 8,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 81,
+      "timestamp": "2026-01-01T00:01:21+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.116998,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 0,
+            "observe": 8,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.116998,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.116998,
+          "approval_pending": 8,
+          "validated_simulation_plans": 2,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 2,
+            "observe": 0,
+            "rate_limit": 6,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 82,
+      "timestamp": "2026-01-01T00:01:22+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.137935,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 3,
+            "isolate_node": 0,
+            "observe": 7,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.137935,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.137935,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 3,
+            "observe": 0,
+            "rate_limit": 6,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 83,
+      "timestamp": "2026-01-01T00:01:23+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.116547,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.116547,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.116547,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 0,
+            "observe": 0,
+            "rate_limit": 9,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 84,
+      "timestamp": "2026-01-01T00:01:24+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.135169,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 0,
+            "observe": 8,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.135169,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.135169,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 2,
+            "observe": 0,
+            "rate_limit": 7,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 85,
+      "timestamp": "2026-01-01T00:01:25+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.401523,
+          "approval_pending": 3,
+          "validated_simulation_plans": 7,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 3,
+            "observe": 5,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.401523,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 3,
+            "isolate_node": 0,
+            "observe": 7,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.401523,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 5,
+            "observe": 0,
+            "rate_limit": 5,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 86,
+      "timestamp": "2026-01-01T00:01:26+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.205476,
+          "approval_pending": 2,
+          "validated_simulation_plans": 8,
+          "proposed_actions": {
+            "increase_monitoring": 4,
+            "isolate_node": 0,
+            "observe": 4,
+            "rate_limit": 2,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.205476,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.205476,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 6,
+            "observe": 0,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 87,
+      "timestamp": "2026-01-01T00:01:27+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.168147,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 6,
+            "isolate_node": 0,
+            "observe": 4,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.168147,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.168147,
+          "approval_pending": 8,
+          "validated_simulation_plans": 2,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 6,
+            "observe": 0,
+            "rate_limit": 2,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 88,
+      "timestamp": "2026-01-01T00:01:28+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.153578,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 0,
+            "observe": 8,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.153578,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.153578,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 3,
+            "observe": 0,
+            "rate_limit": 6,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 89,
+      "timestamp": "2026-01-01T00:01:29+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.1733,
+          "approval_pending": 1,
+          "validated_simulation_plans": 9,
+          "proposed_actions": {
+            "increase_monitoring": 3,
+            "isolate_node": 0,
+            "observe": 6,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.1733,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.1733,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 4,
+            "observe": 0,
+            "rate_limit": 5,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 90,
+      "timestamp": "2026-01-01T00:01:30+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.227316,
+          "approval_pending": 2,
+          "validated_simulation_plans": 8,
+          "proposed_actions": {
+            "increase_monitoring": 5,
+            "isolate_node": 0,
+            "observe": 3,
+            "rate_limit": 2,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.227316,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.227316,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 7,
+            "observe": 0,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 91,
+      "timestamp": "2026-01-01T00:01:31+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.199175,
+          "approval_pending": 1,
+          "validated_simulation_plans": 9,
+          "proposed_actions": {
+            "increase_monitoring": 4,
+            "isolate_node": 0,
+            "observe": 5,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.199175,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.199175,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 5,
+            "observe": 0,
+            "rate_limit": 5,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 92,
+      "timestamp": "2026-01-01T00:01:32+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.217355,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 7,
+            "isolate_node": 0,
+            "observe": 3,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.217355,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.217355,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 8,
+            "observe": 0,
+            "rate_limit": 2,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 93,
+      "timestamp": "2026-01-01T00:01:33+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.175376,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 5,
+            "isolate_node": 0,
+            "observe": 5,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.175376,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.175376,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 5,
+            "observe": 0,
+            "rate_limit": 4,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 94,
+      "timestamp": "2026-01-01T00:01:34+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.215192,
+          "approval_pending": 2,
+          "validated_simulation_plans": 8,
+          "proposed_actions": {
+            "increase_monitoring": 5,
+            "isolate_node": 0,
+            "observe": 3,
+            "rate_limit": 2,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.215192,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.215192,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 7,
+            "observe": 0,
+            "rate_limit": 2,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 95,
+      "timestamp": "2026-01-01T00:01:35+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.162083,
+          "approval_pending": 1,
+          "validated_simulation_plans": 9,
+          "proposed_actions": {
+            "increase_monitoring": 2,
+            "isolate_node": 0,
+            "observe": 7,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.162083,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.162083,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 3,
+            "observe": 0,
+            "rate_limit": 6,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 96,
+      "timestamp": "2026-01-01T00:01:36+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.271741,
+          "approval_pending": 3,
+          "validated_simulation_plans": 7,
+          "proposed_actions": {
+            "increase_monitoring": 6,
+            "isolate_node": 0,
+            "observe": 1,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.271741,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.271741,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 9,
+            "observe": 0,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 97,
+      "timestamp": "2026-01-01T00:01:37+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.201931,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 6,
+            "isolate_node": 0,
+            "observe": 4,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.201931,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.201931,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 6,
+            "observe": 0,
+            "rate_limit": 4,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 98,
+      "timestamp": "2026-01-01T00:01:38+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.265506,
+          "approval_pending": 4,
+          "validated_simulation_plans": 6,
+          "proposed_actions": {
+            "increase_monitoring": 4,
+            "isolate_node": 0,
+            "observe": 2,
+            "rate_limit": 4,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.265506,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.265506,
+          "approval_pending": 9,
+          "validated_simulation_plans": 1,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 9,
+            "observe": 0,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 99,
+      "timestamp": "2026-01-01T00:01:39+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.20742,
+          "approval_pending": 1,
+          "validated_simulation_plans": 9,
+          "proposed_actions": {
+            "increase_monitoring": 5,
+            "isolate_node": 0,
+            "observe": 4,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.20742,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.20742,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 6,
+            "observe": 0,
+            "rate_limit": 4,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 100,
+      "timestamp": "2026-01-01T00:01:40+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.229567,
+          "approval_pending": 1,
+          "validated_simulation_plans": 9,
+          "proposed_actions": {
+            "increase_monitoring": 7,
+            "isolate_node": 0,
+            "observe": 2,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.229567,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.229567,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 8,
+            "observe": 0,
+            "rate_limit": 2,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 101,
+      "timestamp": "2026-01-01T00:01:41+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.267588,
+          "approval_pending": 3,
+          "validated_simulation_plans": 7,
+          "proposed_actions": {
+            "increase_monitoring": 5,
+            "isolate_node": 0,
+            "observe": 2,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.267588,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.267588,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 9,
+            "observe": 0,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 102,
+      "timestamp": "2026-01-01T00:01:42+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.474201,
+          "approval_pending": 5,
+          "validated_simulation_plans": 5,
+          "proposed_actions": {
+            "increase_monitoring": 4,
+            "isolate_node": 3,
+            "observe": 1,
+            "rate_limit": 2,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.474201,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 3,
+            "isolate_node": 0,
+            "observe": 7,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.474201,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 9,
+            "observe": 0,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 103,
+      "timestamp": "2026-01-01T00:01:43+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.281264,
+          "approval_pending": 3,
+          "validated_simulation_plans": 7,
+          "proposed_actions": {
+            "increase_monitoring": 6,
+            "isolate_node": 0,
+            "observe": 1,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.281264,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.281264,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 9,
+            "observe": 0,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 104,
+      "timestamp": "2026-01-01T00:01:44+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.272327,
+          "approval_pending": 3,
+          "validated_simulation_plans": 7,
+          "proposed_actions": {
+            "increase_monitoring": 6,
+            "isolate_node": 0,
+            "observe": 1,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.272327,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.272327,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 9,
+            "observe": 0,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 105,
+      "timestamp": "2026-01-01T00:01:45+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.280272,
+          "approval_pending": 3,
+          "validated_simulation_plans": 7,
+          "proposed_actions": {
+            "increase_monitoring": 6,
+            "isolate_node": 0,
+            "observe": 1,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.280272,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.280272,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 10,
+            "observe": 0,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 106,
+      "timestamp": "2026-01-01T00:01:46+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.219295,
+          "approval_pending": 1,
+          "validated_simulation_plans": 9,
+          "proposed_actions": {
+            "increase_monitoring": 6,
+            "isolate_node": 0,
+            "observe": 3,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.219295,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.219295,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 7,
+            "observe": 0,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 107,
+      "timestamp": "2026-01-01T00:01:47+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.207804,
+          "approval_pending": 1,
+          "validated_simulation_plans": 9,
+          "proposed_actions": {
+            "increase_monitoring": 4,
+            "isolate_node": 0,
+            "observe": 5,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.207804,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.207804,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 6,
+            "observe": 0,
+            "rate_limit": 4,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 108,
+      "timestamp": "2026-01-01T00:01:48+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.268977,
+          "approval_pending": 1,
+          "validated_simulation_plans": 9,
+          "proposed_actions": {
+            "increase_monitoring": 8,
+            "isolate_node": 0,
+            "observe": 1,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.268977,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.268977,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 9,
+            "observe": 0,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 109,
+      "timestamp": "2026-01-01T00:01:49+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.243931,
+          "approval_pending": 2,
+          "validated_simulation_plans": 8,
+          "proposed_actions": {
+            "increase_monitoring": 7,
+            "isolate_node": 0,
+            "observe": 1,
+            "rate_limit": 2,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.243931,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.243931,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 9,
+            "observe": 0,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 110,
+      "timestamp": "2026-01-01T00:01:50+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.238564,
+          "approval_pending": 1,
+          "validated_simulation_plans": 9,
+          "proposed_actions": {
+            "increase_monitoring": 7,
+            "isolate_node": 0,
+            "observe": 2,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.238564,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.238564,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 8,
+            "observe": 0,
+            "rate_limit": 2,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 111,
+      "timestamp": "2026-01-01T00:01:51+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.250196,
+          "approval_pending": 1,
+          "validated_simulation_plans": 9,
+          "proposed_actions": {
+            "increase_monitoring": 8,
+            "isolate_node": 0,
+            "observe": 1,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.250196,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.250196,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 9,
+            "observe": 0,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 112,
+      "timestamp": "2026-01-01T00:01:52+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.247332,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 10,
+            "isolate_node": 0,
+            "observe": 0,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.247332,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.247332,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 10,
+            "observe": 0,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 113,
+      "timestamp": "2026-01-01T00:01:53+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.215683,
+          "approval_pending": 1,
+          "validated_simulation_plans": 9,
+          "proposed_actions": {
+            "increase_monitoring": 6,
+            "isolate_node": 0,
+            "observe": 3,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.215683,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.215683,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 7,
+            "observe": 0,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 114,
+      "timestamp": "2026-01-01T00:01:54+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.253402,
+          "approval_pending": 2,
+          "validated_simulation_plans": 8,
+          "proposed_actions": {
+            "increase_monitoring": 7,
+            "isolate_node": 0,
+            "observe": 1,
+            "rate_limit": 2,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.253402,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.253402,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 9,
+            "observe": 0,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 115,
+      "timestamp": "2026-01-01T00:01:55+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.196794,
+          "approval_pending": 2,
+          "validated_simulation_plans": 8,
+          "proposed_actions": {
+            "increase_monitoring": 1,
+            "isolate_node": 0,
+            "observe": 7,
+            "rate_limit": 2,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.196794,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.196794,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 3,
+            "observe": 0,
+            "rate_limit": 7,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 116,
+      "timestamp": "2026-01-01T00:01:56+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.236513,
+          "approval_pending": 3,
+          "validated_simulation_plans": 7,
+          "proposed_actions": {
+            "increase_monitoring": 4,
+            "isolate_node": 0,
+            "observe": 3,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.236513,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.236513,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 7,
+            "observe": 0,
+            "rate_limit": 3,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 117,
+      "timestamp": "2026-01-01T00:01:57+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.206818,
+          "approval_pending": 1,
+          "validated_simulation_plans": 9,
+          "proposed_actions": {
+            "increase_monitoring": 4,
+            "isolate_node": 0,
+            "observe": 5,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.206818,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.206818,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 5,
+            "observe": 0,
+            "rate_limit": 5,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 118,
+      "timestamp": "2026-01-01T00:01:58+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.187571,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 5,
+            "isolate_node": 0,
+            "observe": 5,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.187571,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 0,
+            "observe": 10,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.187571,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 5,
+            "observe": 0,
+            "rate_limit": 5,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 119,
+      "timestamp": "2026-01-01T00:01:59+00:00",
+      "total_proposals": 30,
+      "profiles": {
+        "balanced": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.432524,
+          "approval_pending": 4,
+          "validated_simulation_plans": 6,
+          "proposed_actions": {
+            "increase_monitoring": 3,
+            "isolate_node": 3,
+            "observe": 3,
+            "rate_limit": 1,
+            "request_review": 0
+          }
+        },
+        "service_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.432524,
+          "approval_pending": 0,
+          "validated_simulation_plans": 10,
+          "proposed_actions": {
+            "increase_monitoring": 3,
+            "isolate_node": 0,
+            "observe": 7,
+            "rate_limit": 0,
+            "request_review": 0
+          }
+        },
+        "risk_first": {
+          "evaluated_nodes": 10,
+          "mean_fusion_score": 0.432524,
+          "approval_pending": 10,
+          "validated_simulation_plans": 0,
+          "proposed_actions": {
+            "increase_monitoring": 0,
+            "isolate_node": 8,
+            "observe": 0,
+            "rate_limit": 2,
+            "request_review": 0
+          }
+        }
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    }
+  ]
+}

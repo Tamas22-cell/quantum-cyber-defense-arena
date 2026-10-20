@@ -1,0 +1,288 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V23.5",
+  "module": "Advanced Cyber Defense Dashboard",
+  "created_utc": "2026-10-20T13:27:16.857692+00:00",
+  "status": "ADVANCED_DEFENSE_DASHBOARD_PASS",
+  "simulation_mode": true,
+  "is_live": false,
+  "trained_ai_model_used": false,
+  "external_actions_enabled": false,
+  "effects_empirically_verified": false,
+  "metrics": {
+    "ticks": 120,
+    "nodes": 10,
+    "links": 11,
+    "fusion_observations": 1200,
+    "orchestration_events": 3600,
+    "profiles": 3,
+    "real_actions_executed": 0
+  },
+  "source_sha256": {
+    "network": "0da3c6cfb9fda88ee9e01e6e268dd9f517667792a08b4875b5ec3c3fb9c45ecc",
+    "fusion_report": "7ce4e62d17afb2ae30b322e2d7fdb6d5574853b7642adbc3eeff8f7969f3c3f1",
+    "fusion_events": "58f067ff963da02de6b2c6a3d14dca584f28f4de92bb9f5d232b95b4e62b8504",
+    "fusion_timeline": "cde19f24f2f9de5e37f23f21f730a24a25ee8012464af4179de56739d3b787ab",
+    "policy_report": "b4244ac71293f8c1cefed00e7a27177de127a78ac569d5129e5f3ed78acd3302",
+    "policy_timeline": "b4b618bc6692d4516e0d89ef89e9371da471f68f5ace984682181763cf312517",
+    "orchestration_report": "bdf5e551b88923e386fee3e8ad4b5f2d372e81f5d32e2844cc59a0bf8674d3cd",
+    "orchestration_events": "333c3175d500723a55943a56c9fec41ad5101702ab68c49ac72f117aa3a84aff",
+    "orchestration_timeline": "0fdd95852dc758d0924b7d9c9111523b346f09e10838713a969c36a0e0e0c68a"
+  },
+  "checks": [
+    {
+      "name": "Source available: network",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\frontend\\public\\v22\\defense_data.json"
+    },
+    {
+      "name": "Source readable: network",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source available: fusion_report",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v23\\intelligent_threat_fusion_v23_2_results.json"
+    },
+    {
+      "name": "Source readable: fusion_report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source available: fusion_events",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v23\\intelligent_threat_fusion_v23_2_events.csv"
+    },
+    {
+      "name": "Source readable: fusion_events",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source available: fusion_timeline",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v23\\intelligent_threat_fusion_v23_2_timeline.json"
+    },
+    {
+      "name": "Source readable: fusion_timeline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source available: policy_report",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v23\\adaptive_defense_policy_optimization_v23_3_results.json"
+    },
+    {
+      "name": "Source readable: policy_report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source available: policy_timeline",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v23\\adaptive_defense_policy_optimization_v23_3_timeline.json"
+    },
+    {
+      "name": "Source readable: policy_timeline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source available: orchestration_report",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v23\\multi_agent_defense_orchestration_v23_4_results.json"
+    },
+    {
+      "name": "Source readable: orchestration_report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source available: orchestration_events",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v23\\multi_agent_defense_orchestration_v23_4_events.csv"
+    },
+    {
+      "name": "Source readable: orchestration_events",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source available: orchestration_timeline",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v23\\multi_agent_defense_orchestration_v23_4_timeline.json"
+    },
+    {
+      "name": "Source readable: orchestration_timeline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "network: validated version and status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "fusion_report: validated version and status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "fusion_timeline: validated version and status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "policy_report: validated version and status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "policy_timeline: validated version and status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "orchestration_report: validated version and status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "orchestration_timeline: validated version and status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "fusion_report: zero failed checks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "policy_report: zero failed checks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "orchestration_report: zero failed checks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source network is replay-only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All three policy profiles available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No external orchestration actions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Orchestration source fingerprint valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Policy source fingerprint valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "1200 fused observations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3600 orchestration events",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Exactly 120 combined frames",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Every frame contains ten threat nodes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Every frame contains 30 profile decisions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All profile keys present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All fusion scores bounded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All modeled service impacts bounded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All approvals remain proposals",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No real network actions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All frames have stable node/link topology",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard assembly reproducible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "HTML includes D3 library",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "HTML includes network graph",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "HTML includes policy selector",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "HTML includes risk chart",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "HTML includes replay controls",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "checks_passed": 50,
+  "checks_failed": 0,
+  "error": null,
+  "next_stage": "V23.6 Final Research Validation and Release"
+}

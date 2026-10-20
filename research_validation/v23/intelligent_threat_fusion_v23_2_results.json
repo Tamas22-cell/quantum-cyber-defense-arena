@@ -1,0 +1,190 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V23.2",
+  "module": "Intelligent Threat Fusion Engine",
+  "created_utc": "2026-10-20T13:12:29.382612+00:00",
+  "status": "INTELLIGENT_THREAT_FUSION_PASS",
+  "simulation_mode": true,
+  "external_actions_enabled": false,
+  "trained_ai_model_used": false,
+  "fusion_weights": {
+    "node_risk": 0.55,
+    "adaptive_anomaly": 0.25,
+    "same_node_alert": 0.2
+  },
+  "metrics": {
+    "ticks": 120,
+    "nodes": 10,
+    "fused_observations": 1200,
+    "adaptive_detections": 56,
+    "high_priority_observations": 1,
+    "critical_priority_observations": 20,
+    "priority_counts": {
+      "normal": 919,
+      "low": 260,
+      "critical": 20,
+      "high": 1
+    },
+    "same_node_alert_matches": 21,
+    "real_actions_executed": 0,
+    "trained_ai_model_used": false
+  },
+  "source_sha256": {
+    "architecture": "62b9c0b20f9c3b0b65642698cc68ceb6f146f4047dfab033efe4ae964b617cb9",
+    "frames": "0da3c6cfb9fda88ee9e01e6e268dd9f517667792a08b4875b5ec3c3fb9c45ecc",
+    "detector_report": "9dc7022a44da2697de83b3d3ecb74f182707472e2e25c9ac10c69a2251bfbddc",
+    "detector_scores": "9c0b3eaf0e263417f9896356cb4353582314a6dc77c4495e18d9b02f1281f4ef",
+    "decision_report": "36f14494d597e15b2346202ab09081f6050f69d312c2c49f502daa16a12737fb",
+    "decision_events": "12658471b394762705b9c573f36722bceebda379a279788b8994b833111b34d2"
+  },
+  "checks": [
+    {
+      "name": "V23.1 architecture passed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.5 dashboard source passed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.2 detector passed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.3 decision engine passed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V23.1 source data fingerprint valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.3 detector score fingerprint valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.2 input is synthetic only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.3 input is synthetic only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "120 simulation frames available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulation ticks continuous",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Network topology consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All 1200 detector keys available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All 1200 decision keys available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Detector source count matches report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Decision source count matches report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "1200 fused node observations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All fusion IDs unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Fusion scores bounded to zero and one",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Every fused priority matches score",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All events have source provenance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No real actions executed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No trained AI model falsely claimed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "120 timeline frames",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ten nodes per timeline tick",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Priority totals consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Detection totals match source dashboard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Approval totals match source dashboard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Fusion results reproducible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No future frames needed for earlier fusion",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "checks_passed": 29,
+  "checks_failed": 0,
+  "next_stage": "V23.3 Adaptive Defense Policy Optimization"
+}

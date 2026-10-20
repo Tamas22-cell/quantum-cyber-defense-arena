@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quantum Cyber Defense Arena — V23</title>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<style>
+:root{
+ --bg:#040816;--panel:#101d34;--border:#29415c;
+ --cyan:#26e6ff;--green:#46edab;--red:#ff6486;
+ --gold:#ffd36c;--muted:#8faac7
+}
+*{box-sizing:border-box}
+body{
+ margin:0;background:var(--bg);color:#e7f5ff;
+ font:14px Segoe UI,Arial,sans-serif
+}
+header{
+ padding:28px 4%;
+ background:linear-gradient(120deg,#16315a,#050b1a);
+ border-bottom:1px solid var(--border)
+}
+header small{
+ color:var(--cyan);letter-spacing:2px
+}
+h1{
+ font-size:clamp(24px,3.2vw,40px);
+ margin:10px 0
+}
+header p{color:var(--muted)}
+main{max-width:1500px;margin:auto;padding:18px}
+.metrics{
+ display:grid;
+ grid-template-columns:repeat(5,minmax(0,1fr));
+ gap:12px;margin-bottom:16px
+}
+.card,.panel{
+ background:var(--panel);
+ border:1px solid var(--border);
+ border-radius:14px
+}
+.card{padding:16px}
+.card small{color:var(--muted)}
+.card strong{
+ display:block;font-size:25px;margin-top:9px
+}
+.layout{
+ display:grid;
+ grid-template-columns:minmax(0,1.8fr) minmax(285px,1fr);
+ gap:16px
+}
+.panel{overflow:hidden}
+.panel h2{
+ margin:0;padding:15px;
+ border-bottom:1px solid var(--border);
+ font-size:15px
+}
+#network{
+ width:100%;height:470px;display:block;
+ background:radial-gradient(ellipse,#163457,#060c1c 75%)
+}
+#chart{
+ width:100%;height:270px;display:block
+}
+.controls{
+ display:flex;gap:12px;
+ align-items:center;padding:15px;flex-wrap:wrap
+}
+button,select{
+ padding:9px 13px;border-radius:8px;
+ border:1px solid #44728e;
+ background:#173453;color:#fff;cursor:pointer
+}
+input[type=range]{
+ flex:1;min-width:100px;accent-color:var(--cyan)
+}
+.sidebar{
+ display:flex;flex-direction:column;gap:15px
+}
+.section{padding:16px}
+.big{
+ font-size:36px;font-weight:bold;color:var(--cyan)
+}
+.muted,.legend,#status{
+ color:var(--muted);font-size:12px;line-height:1.6
+}
+.legend,#status{padding:12px}
+#feed{
+ padding:12px;max-height:390px;overflow:auto
+}
+.event{
+ background:#182f4d;
+ padding:10px;margin-bottom:8px;
+ border-left:3px solid var(--cyan);
+ border-radius:5px;font-size:12px
+}
+.profileGrid{
+ display:grid;grid-template-columns:1fr 1fr;
+ gap:10px;margin-top:12px
+}
+.profileGrid div{
+ padding:12px;border:1px solid var(--border);
+ border-radius:8px
+}
+.profileGrid strong{
+ display:block;margin-top:6px
+}
+@media(max-width:960px){
+ .layout{grid-template-columns:1fr}
+ .metrics{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:600px){
+ main{padding:10px}
+ .metrics{grid-template-columns:repeat(2,1fr)}
+ #network{height:340px}
+ .profileGrid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header>
+<small>QUANTUM CYBER DEFENSE ARENA / V23.5</small>
+<h1>Advanced Autonomous Cyber Defense</h1>
+<p>Threat Fusion · Policy Optimization · Multi-Agent Orchestration</p>
+<p style="color:#ffd36c">
+SIMULATED REPLAY — NO REAL NETWORK ACTIONS
+</p>
+</header>
+
+<main>
+<div class="metrics">
+<div class="card"><small>Simulation tick</small><strong id="tickCard">--</strong></div>
+<div class="card"><small>Fusion risk</small><strong id="fusionCard">--</strong></div>
+<div class="card"><small>Adaptive detections</small><strong id="detectCard">--</strong></div>
+<div class="card"><small>Pending approvals</small><strong id="approvalCard">--</strong></div>
+<div class="card"><small>Traffic</small><strong id="trafficCard">--</strong></div>
+</div>
+
+<div class="layout">
+<div>
+<div class="panel">
+<h2>Dynamic Cyber Threat Network</h2>
+<svg id="network" viewBox="0 0 900 470"></svg>
+<div class="legend">
+● Cyan: normal · ● Gold: elevated priority ·
+● Red: high-priority node · ● Green: moving traffic
+</div>
+<div class="controls">
+<button id="play">Pause</button>
+<button id="restart">Restart</button>
+<select id="speed">
+<option value="1000">1×</option>
+<option value="500" selected>2×</option>
+<option value="250">4×</option>
+</select>
+<input type="range" id="slider" min="0" max="119" value="0">
+<span id="tickText">1 / 120</span>
+</div>
+</div>
+
+<div class="panel" style="margin-top:15px">
+<h2>Simulated Policy Comparison</h2>
+<svg id="chart" viewBox="0 0 800 270"></svg>
+<div class="legend">
+Cyan: threat fusion score ·
+Green: balanced residual risk ·
+Gold: service-first residual risk ·
+Red: risk-first residual risk
+</div>
+</div>
+</div>
+
+<div class="sidebar">
+<div class="panel">
+<h2>Defense Policy Profiles</h2>
+<div class="section">
+<label for="profile">Selected policy</label>
+<select id="profile">
+<option value="balanced">Balanced</option>
+<option value="service_first">Service First</option>
+<option value="risk_first">Risk First</option>
+</select>
+<div class="profileGrid">
+<div><span class="muted">Residual risk</span>
+<strong id="residual">--</strong></div>
+<div><span class="muted">Service impact</span>
+<strong id="impact">--</strong></div>
+<div><span class="muted">Weighted cost</span>
+<strong id="cost">--</strong></div>
+<div><span class="muted">Pending reviews</span>
+<strong id="pending">--</strong></div>
+</div>
+<p class="muted">
+All effects are hypothetical model estimates,
+not verified real-world defense outcomes.
+</p>
+</div>
+</div>
+
+<div class="panel">
+<h2>Proposed Defense Actions</h2>
+<div class="section" id="actions"></div>
+</div>
+
+<div class="panel">
+<h2>Multi-Agent Decision Feed</h2>
+<div id="feed"></div>
+</div>
+</div>
+</div>
+
+<div id="status">Loading V23 simulated research data...</div>
+</main>
+
+<script>
+"use strict";
+
+const $=id=>document.getElementById(id);
+const svg=d3.select("#network");
+const linksLayer=svg.append("g");
+const particlesLayer=svg.append("g");
+const nodesLayer=svg.append("g");
+
+let frames=[];
+let tickIndex=0;
+let playing=true;
+let delay=500;
+let timer=null;
+let current=null;
+let points=null;
+let cursor=null;
+let positions=new Map();
+
+const colors={
+ normal:"#26e6ff",
+ low:"#26e6ff",
+ medium:"#ffd36c",
+ high:"#ff6486",
+ critical:"#ff6486"
+};
+
+const fmt=value=>Number(value).toFixed(3);
+
+function initNetwork(frame){
+ const nodes=frame.nodes;
+
+ nodes.forEach((node,i)=>{
+  const angle=i*2*Math.PI/nodes.length-Math.PI/2;
+  positions.set(node.id,{
+   x:450+330*Math.cos(angle),
+   y:230+155*Math.sin(angle)
+  });
+ });
+
+ linksLayer.selectAll("line")
+  .data(frame.links,d=>d.id)
+  .join("line")
+  .attr("x1",d=>positions.get(d.source).x)
+  .attr("y1",d=>positions.get(d.source).y)
+  .attr("x2",d=>positions.get(d.target).x)
+  .attr("y2",d=>positions.get(d.target).y)
+  .attr("stroke","#26e6ff")
+  .attr("opacity",.32)
+  .attr("stroke-width",2);
+
+ const groups=nodesLayer.selectAll("g")
+  .data(nodes,d=>d.id)
+  .join("g")
+  .attr("transform",d=>{
+   const p=positions.get(d.id);
+   return `translate(${p.x},${p.y})`;
+  });
+
+ groups.append("circle")
+  .attr("class","core")
+  .attr("r",13)
+  .attr("fill","#102744")
+  .attr("stroke","#26e6ff")
+  .attr("stroke-width",3);
+
+ groups.append("text")
+  .attr("text-anchor","middle")
+  .attr("y",32)
+  .attr("fill","#eaf7ff")
+  .attr("font-size",11)
+  .text(d=>d.id.toUpperCase());
+
+ groups.append("title");
+
+ const dots=frame.links.flatMap(link=>
+  [0,1,2].map(i=>({
+   id:link.id+"-"+i,
+   linkId:link.id,
+   phase:i/3
+  }))
+ );
+
+ points=particlesLayer.selectAll("circle")
+  .data(dots)
+  .join("circle")
+  .attr("r",3)
+  .attr("fill","#46edab");
+}
+
+function drawChart(){
+ const chart=d3.select("#chart");
+ const x=d3.scaleLinear()
+  .domain([0,119]).range([45,775]);
+ const y=d3.scaleLinear()
+  .domain([0,1]).range([230,15]);
+
+ [0,.25,.5,.75,1].forEach(value=>{
+  chart.append("line")
+   .attr("x1",45).attr("x2",775)
+   .attr("y1",y(value)).attr("y2",y(value))
+   .attr("stroke","#29415c");
+
+  chart.append("text")
+   .attr("x",8).attr("y",y(value)+4)
+   .attr("fill","#8faac7")
+   .attr("font-size",11)
+   .text(value);
+ });
+
+ const series=[
+  [f=>f.mean_fusion_score,"#26e6ff"],
+  [f=>f.profiles.balanced.mean_residual_risk,"#46edab"],
+  [f=>f.profiles.service_first.mean_residual_risk,"#ffd36c"],
+  [f=>f.profiles.risk_first.mean_residual_risk,"#ff6486"]
+ ];
+
+ series.forEach(([getter,color])=>{
+  const line=d3.line()
+   .x(d=>x(d.tick))
+   .y(d=>y(getter(d)));
+
+  chart.append("path")
+   .datum(frames)
+   .attr("d",line)
+   .attr("fill","none")
+   .attr("stroke",color)
+   .attr("stroke-width",2);
+ });
+
+ cursor=chart.append("line")
+  .attr("y1",15).attr("y2",230)
+  .attr("stroke","#fff")
+  .attr("stroke-dasharray","4 4");
+}
+
+function render(index){
+ tickIndex=index;
+ current=frames[index];
+
+ const f=current;
+ const selected=$("profile").value;
+ const profile=f.profiles[selected];
+
+ $("tickCard").textContent=index+1;
+ $("fusionCard").textContent=fmt(f.mean_fusion_score);
+ $("detectCard").textContent=f.adaptive_detections;
+ $("approvalCard").textContent=profile.approval_pending;
+ $("trafficCard").textContent=
+  Number(f.traffic_mbps).toFixed(1)+" Mbps";
+
+ $("residual").textContent=fmt(profile.mean_residual_risk);
+ $("impact").textContent=fmt(profile.mean_service_impact);
+ $("cost").textContent=fmt(profile.mean_weighted_cost);
+ $("pending").textContent=profile.approval_pending;
+ $("tickText").textContent=(index+1)+" / 120";
+ $("slider").value=index;
+
+ const threats=new Map(
+  f.threat_nodes.map(t=>[t.node_id,t])
+ );
+ const networkNodes=new Map(
+  f.nodes.map(n=>[n.id,n])
+ );
+
+ nodesLayer.selectAll("g").each(function(d){
+  const threat=threats.get(d.id);
+  const node=networkNodes.get(d.id);
+
+  d3.select(this).select(".core")
+   .attr("stroke",colors[threat.priority]||"#26e6ff")
+   .attr("r",11+Number(node.load)*9);
+
+  d3.select(this).select("title").text(
+   d.id+" | Fusion "+fmt(threat.score)+
+   " | Priority "+threat.priority
+  );
+ });
+
+ const actions=$("actions");
+ actions.replaceChildren();
+
+ Object.entries(profile.action_counts).forEach(([action,count])=>{
+  const p=document.createElement("p");
+  p.textContent=action.replaceAll("_"," ")+": "+count;
+  actions.appendChild(p);
+ });
+
+ const feed=$("feed");
+ feed.replaceChildren();
+
+ const selectedEvents=f.decisions
+  .filter(d=>d.profile===selected)
+  .filter(d=>
+   d.proposed_action!=="observe"
+  );
+
+ selectedEvents.forEach(event=>{
+  const el=document.createElement("div");
+  el.className="event";
+  el.textContent=
+   event.node_id+" · "+
+   event.proposed_action.replaceAll("_"," ")+
+   " · "+event.status.replaceAll("_"," ")+
+   " · Risk "+fmt(event.residual_risk);
+  feed.appendChild(el);
+ });
+
+ if(!selectedEvents.length){
+  feed.textContent="No intervention proposals at this tick.";
+ }
+
+ const xpos=45+index/119*730;
+ cursor.attr("x1",xpos).attr("x2",xpos);
+}
+
+function animate(time){
+ if(current&&points&&playing){
+  const linkMap=new Map(
+   current.links.map(link=>[link.id,link])
+  );
+
+  points.each(function(point){
+   const link=linkMap.get(point.linkId);
+   if(!link)return;
+
+   const a=positions.get(link.source);
+   const b=positions.get(link.target);
+
+   const speed=.00023+
+    Number(link.traffic_mbps)/700000;
+
+   const t=(point.phase+time*speed)%1;
+
+   d3.select(this)
+    .attr("cx",a.x+(b.x-a.x)*t)
+    .attr("cy",a.y+(b.y-a.y)*t);
+  });
+ }
+
+ requestAnimationFrame(animate);
+}
+
+function schedule(){
+ clearInterval(timer);
+
+ if(playing&&frames.length){
+  timer=setInterval(()=>{
+   render((tickIndex+1)%frames.length);
+  },delay);
+ }
+}
+
+$("play").onclick=()=>{
+ playing=!playing;
+ $("play").textContent=playing?"Pause":"Play";
+ schedule();
+};
+
+$("restart").onclick=()=>{
+ playing=true;
+ $("play").textContent="Pause";
+ render(0);
+ schedule();
+};
+
+$("speed").onchange=e=>{
+ delay=Number(e.target.value);
+ schedule();
+};
+
+$("slider").oninput=e=>{
+ playing=false;
+ $("play").textContent="Play";
+ schedule();
+ render(Number(e.target.value));
+};
+
+$("profile").onchange=()=>{
+ if(frames.length)render(tickIndex);
+};
+
+async function main(){
+ try{
+  if(typeof d3==="undefined"){
+   throw Error("D3 library unavailable");
+  }
+
+  const response=await fetch(
+   "./defense_data.json",
+   {cache:"no-store"}
+  );
+
+  if(!response.ok){
+   throw Error("Cannot load V23 defense_data.json");
+  }
+
+  const data=await response.json();
+
+  if(
+   data.version!=="V23.5"||
+   data.status!=="ADVANCED_DEFENSE_DASHBOARD_PASS"||
+   data.simulation_mode!==true||
+   !Array.isArray(data.frames)||
+   data.frames.length!==120
+  ){
+   throw Error("Invalid V23.5 research data");
+  }
+
+  frames=data.frames;
+
+  if(frames.some((f,i)=>
+   f.tick!==i||
+   f.nodes.length!==10||
+   f.links.length!==11||
+   f.threat_nodes.length!==10||
+   f.decisions.length!==30
+  )){
+   throw Error("Invalid timeline or topology");
+  }
+
+  initNetwork(frames[0]);
+  drawChart();
+  render(0);
+  schedule();
+
+  $("status").textContent=
+   "V23.5 READY · 120 ticks · "+
+   "3600 simulated proposals · "+
+   "NO REAL NETWORK ACTIONS";
+
+ }catch(error){
+  $("status").textContent="ERROR: "+error.message;
+  $("status").style.color="#ff6486";
+  console.error(error);
+ }
+}
+
+requestAnimationFrame(animate);
+main();
+</script>
+</body>
+</html>

@@ -1,0 +1,503 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V23.1",
+  "status": "ADVANCED_CYBER_DEFENSE_ARCHITECTURE_PASS",
+  "created_utc": "2026-10-20T13:09:33.818496+00:00",
+  "simulation_mode": true,
+  "real_network_actions_enabled": false,
+  "architecture": {
+    "version": "V23.1",
+    "name": "Advanced Cyber Defense Research Architecture",
+    "status": "architecture_specification",
+    "source_release": "V22.6",
+    "simulation_mode": true,
+    "live_operations": false,
+    "trained_ai_model_deployed": false,
+    "network": {
+      "nodes": 10,
+      "links": 11,
+      "ticks": 120,
+      "decisions": 1200
+    },
+    "components": [
+      {
+        "id": "telemetry",
+        "version": "V22.5",
+        "status": "source_available",
+        "role": "Validated synthetic network telemetry"
+      },
+      {
+        "id": "threat_fusion",
+        "version": "V23.2",
+        "status": "planned",
+        "role": "Fuse detections, alerts and risk with timestamp and provenance"
+      },
+      {
+        "id": "policy_optimizer",
+        "version": "V23.3",
+        "status": "planned",
+        "role": "Compare simulated defense policies under risk and service constraints"
+      },
+      {
+        "id": "orchestration",
+        "version": "V23.4",
+        "status": "planned",
+        "role": "Coordinate simulated multi-role decision and approval workflows"
+      },
+      {
+        "id": "dashboard",
+        "version": "V23.5",
+        "status": "planned",
+        "role": "Visualize fusion, strategy comparisons and replayable simulated decisions"
+      },
+      {
+        "id": "release",
+        "version": "V23.6",
+        "status": "planned",
+        "role": "Validate artifacts, evidence, reproducibility and limitations"
+      }
+    ],
+    "pipeline": [
+      {
+        "id": "ingest",
+        "depends_on": []
+      },
+      {
+        "id": "fuse",
+        "depends_on": [
+          "ingest"
+        ]
+      },
+      {
+        "id": "optimize",
+        "depends_on": [
+          "fuse"
+        ]
+      },
+      {
+        "id": "orchestrate",
+        "depends_on": [
+          "optimize"
+        ]
+      },
+      {
+        "id": "visualize",
+        "depends_on": [
+          "orchestrate"
+        ]
+      },
+      {
+        "id": "validate",
+        "depends_on": [
+          "visualize"
+        ]
+      }
+    ],
+    "actions": [
+      "observe",
+      "increase_monitoring",
+      "rate_limit",
+      "isolate_node",
+      "request_review"
+    ],
+    "safety_policy": {
+      "real_network_access": false,
+      "real_firewall_changes": false,
+      "real_node_isolation": false,
+      "automated_disruptive_actions": false,
+      "approval_for_disruptive_proposals": true,
+      "decision_audit": true,
+      "simulation_rollback": true
+    },
+    "evaluation_policy": {
+      "chronological_holdout": true,
+      "compare_baselines": true,
+      "measure_service_impact": true,
+      "record_uncertainty": true,
+      "prevent_future_data_leakage": true,
+      "separate_synthetic_markers_from_real_labels": true,
+      "preserve_input_sha256": true
+    },
+    "limitations": [
+      "Synthetic network telemetry only.",
+      "No verified real cyberattack labels.",
+      "No actual autonomous network defense.",
+      "Strategy effects are model assumptions.",
+      "Future V23 modules are not yet implemented."
+    ]
+  },
+  "architecture_sha256": "ebf7f23323982e7951e8bac5acced7e2a58f7d7a9737bddfd78b3b9b4dcc559a",
+  "source_manifest": {
+    "release": {
+      "path": "research_validation\\v22\\autonomous_defense_release_v22_6_results.json",
+      "sha256": "10924c876eb296e917eb5249dafe51b02d30cee4e2eb0a061555dadc31c1f601",
+      "size_bytes": 20296
+    },
+    "architecture": {
+      "path": "research_validation\\v22\\autonomous_defense_architecture_v22_1_results.json",
+      "sha256": "0c649ccaaa9455c3573f054f215b6c5aadf9fe48f90570e76cc1f9095df351b3",
+      "size_bytes": 14180
+    },
+    "detector": {
+      "path": "research_validation\\v22\\adaptive_threat_detection_v22_2_results.json",
+      "sha256": "9dc7022a44da2697de83b3d3ecb74f182707472e2e25c9ac10c69a2251bfbddc",
+      "size_bytes": 4563
+    },
+    "decision": {
+      "path": "research_validation\\v22\\multi_agent_defense_decision_v22_3_results.json",
+      "sha256": "36f14494d597e15b2346202ab09081f6050f69d312c2c49f502daa16a12737fb",
+      "size_bytes": 5171
+    },
+    "strategy": {
+      "path": "research_validation\\v22\\defense_strategy_simulation_v22_4_results.json",
+      "sha256": "c06e517c07a77c69f407dc1df3bc45197e7c9460422c6ad9261cf750813c508d",
+      "size_bytes": 5678
+    },
+    "dashboard": {
+      "path": "research_validation\\v22\\autonomous_defense_dashboard_v22_5_results.json",
+      "sha256": "d3a3e0cffece659987d9eb116eca8a4a5ebb56450d631e523dc743eed4ad94f5",
+      "size_bytes": 5078
+    },
+    "frames": {
+      "path": "frontend\\public\\v22\\defense_data.json",
+      "sha256": "0da3c6cfb9fda88ee9e01e6e268dd9f517667792a08b4875b5ec3c3fb9c45ecc",
+      "size_bytes": 938122
+    }
+  },
+  "checks": [
+    {
+      "name": "Source exists: release",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v22\\autonomous_defense_release_v22_6_results.json"
+    },
+    {
+      "name": "Source readable: release",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source exists: architecture",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v22\\autonomous_defense_architecture_v22_1_results.json"
+    },
+    {
+      "name": "Source readable: architecture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source exists: detector",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v22\\adaptive_threat_detection_v22_2_results.json"
+    },
+    {
+      "name": "Source readable: detector",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source exists: decision",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v22\\multi_agent_defense_decision_v22_3_results.json"
+    },
+    {
+      "name": "Source readable: decision",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source exists: strategy",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v22\\defense_strategy_simulation_v22_4_results.json"
+    },
+    {
+      "name": "Source readable: strategy",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source exists: dashboard",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v22\\autonomous_defense_dashboard_v22_5_results.json"
+    },
+    {
+      "name": "Source readable: dashboard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source exists: frames",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\frontend\\public\\v22\\defense_data.json"
+    },
+    {
+      "name": "Source readable: frames",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "release: version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "release: PASS status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "release: synthetic only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "architecture: version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "architecture: PASS status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "architecture: synthetic only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "detector: version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "detector: PASS status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "detector: synthetic only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decision: version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decision: PASS status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decision: synthetic only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "strategy: version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "strategy: PASS status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "strategy: synthetic only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard: version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard: PASS status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard: synthetic only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "frames: version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "frames: PASS status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "frames: synthetic only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.6 validated with zero failures",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.6 validation records consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Release SHA-256: architecture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Release SHA-256: detector",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Release SHA-256: decision",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Release SHA-256: strategy",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Release SHA-256: dashboard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Release SHA-256: frames",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22 network topology verified",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22 simulation duration verified",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22 decision records verified",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22 performed no real actions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard has 120 ordered frames",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Network topology stable across frames",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulated risk values bounded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No real dashboard actions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All decision records represented",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Six research components",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Five future components planned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Six unique processing stages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Pipeline dependency order valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Five defense action types",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All real security operations disabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Human approval required",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Decision audit enabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulation rollback specified",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All scientific controls specified",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source network size preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source research sample counts preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No trained AI model claimed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Architecture deterministic",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "checks_passed": 66,
+  "checks_failed": 0,
+  "error": null,
+  "next_stage": "V23.2 Intelligent Threat Fusion"
+}
