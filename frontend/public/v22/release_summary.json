@@ -1,0 +1,31 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V22.6",
+  "status": "AUTONOMOUS_DEFENSE_RELEASE_PASS",
+  "simulation_mode": true,
+  "is_live": false,
+  "metrics": {
+    "network_nodes": 10,
+    "network_links": 11,
+    "simulation_ticks": 120,
+    "node_observations": 1200,
+    "defense_decisions": 1200,
+    "strategy_simulations": 1200,
+    "adaptive_detections": 56,
+    "human_approval_required": 21,
+    "action_counts": {
+      "increase_monitoring": 36,
+      "isolate_node": 21,
+      "observe": 1143,
+      "rate_limit": 0,
+      "request_review": 0
+    },
+    "mean_original_risk": 0.248355,
+    "mean_simulated_residual_risk": 0.235404,
+    "mean_modelled_service_impact": 0.015475,
+    "real_actions_executed": 0,
+    "dashboard_frames": 120
+  },
+  "checks_passed": 133,
+  "checks_failed": 0
+}

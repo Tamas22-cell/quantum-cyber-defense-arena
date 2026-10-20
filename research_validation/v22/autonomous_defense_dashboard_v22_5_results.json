@@ -1,0 +1,205 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V22.5",
+  "status": "DEFENSE_DASHBOARD_PASS",
+  "created_utc": "2026-10-20T12:56:22.982552+00:00",
+  "simulation_mode": true,
+  "is_live": false,
+  "effects_empirically_verified": false,
+  "metrics": {
+    "ticks": 120,
+    "nodes": 10,
+    "links": 11,
+    "decisions": 1200,
+    "intervention_proposals": 21,
+    "real_actions_executed": 0
+  },
+  "checks": [
+    {
+      "name": "Source available: network",
+      "passed": true
+    },
+    {
+      "name": "Source readable: network",
+      "passed": true
+    },
+    {
+      "name": "Source available: detector",
+      "passed": true
+    },
+    {
+      "name": "Source readable: detector",
+      "passed": true
+    },
+    {
+      "name": "Source available: detector_timeline",
+      "passed": true
+    },
+    {
+      "name": "Source readable: detector_timeline",
+      "passed": true
+    },
+    {
+      "name": "Source available: decisions",
+      "passed": true
+    },
+    {
+      "name": "Source readable: decisions",
+      "passed": true
+    },
+    {
+      "name": "Source available: decision_timeline",
+      "passed": true
+    },
+    {
+      "name": "Source readable: decision_timeline",
+      "passed": true
+    },
+    {
+      "name": "Source available: strategy",
+      "passed": true
+    },
+    {
+      "name": "Source readable: strategy",
+      "passed": true
+    },
+    {
+      "name": "Source available: strategy_timeline",
+      "passed": true
+    },
+    {
+      "name": "Source readable: strategy_timeline",
+      "passed": true
+    },
+    {
+      "name": "Source available: strategy_events",
+      "passed": true
+    },
+    {
+      "name": "Source readable: strategy_events",
+      "passed": true
+    },
+    {
+      "name": "network: version and status",
+      "passed": true
+    },
+    {
+      "name": "detector: version and status",
+      "passed": true
+    },
+    {
+      "name": "detector_timeline: version and status",
+      "passed": true
+    },
+    {
+      "name": "decisions: version and status",
+      "passed": true
+    },
+    {
+      "name": "decision_timeline: version and status",
+      "passed": true
+    },
+    {
+      "name": "strategy: version and status",
+      "passed": true
+    },
+    {
+      "name": "strategy_timeline: version and status",
+      "passed": true
+    },
+    {
+      "name": "detector: zero failed validation checks",
+      "passed": true
+    },
+    {
+      "name": "decisions: zero failed validation checks",
+      "passed": true
+    },
+    {
+      "name": "strategy: zero failed validation checks",
+      "passed": true
+    },
+    {
+      "name": "network: simulation only",
+      "passed": true
+    },
+    {
+      "name": "detector_timeline: simulation only",
+      "passed": true
+    },
+    {
+      "name": "decision_timeline: simulation only",
+      "passed": true
+    },
+    {
+      "name": "strategy_timeline: simulation only",
+      "passed": true
+    },
+    {
+      "name": "V22.4 decision source fingerprint",
+      "passed": true
+    },
+    {
+      "name": "V22.4 network source fingerprint",
+      "passed": true
+    },
+    {
+      "name": "V22.4 strategy effects are hypothetical",
+      "passed": true
+    },
+    {
+      "name": "No real actions in decision report",
+      "passed": true
+    },
+    {
+      "name": "No real actions in strategy report",
+      "passed": true
+    },
+    {
+      "name": "Four aligned 120-tick timelines",
+      "passed": true
+    },
+    {
+      "name": "1200 simulated strategy records",
+      "passed": true
+    },
+    {
+      "name": "120 dashboard frames assembled",
+      "passed": true
+    },
+    {
+      "name": "Four aligned 120-tick timelines",
+      "passed": true
+    },
+    {
+      "name": "1200 simulated strategy records",
+      "passed": true
+    },
+    {
+      "name": "Dashboard generation reproducible",
+      "passed": true
+    },
+    {
+      "name": "All real action counts zero",
+      "passed": true
+    },
+    {
+      "name": "HTML contains D3 chart and network",
+      "passed": true
+    }
+  ],
+  "checks_passed": 43,
+  "checks_failed": 0,
+  "error": null,
+  "source_sha256": {
+    "network": "1257aeca132613026ae4e29b16de80e41adff476661fa76b93411ecd30bb7efc",
+    "detector": "9dc7022a44da2697de83b3d3ecb74f182707472e2e25c9ac10c69a2251bfbddc",
+    "detector_timeline": "808707d54ac96ab47344a5a4caa7f82593446d298f0e23cba09c8f1c44c84b4b",
+    "decisions": "36f14494d597e15b2346202ab09081f6050f69d312c2c49f502daa16a12737fb",
+    "decision_timeline": "9740676af9e5a2bee1027ab87a259790c8757aa19c97da6ba0287c3128e99a8f",
+    "strategy": "c06e517c07a77c69f407dc1df3bc45197e7c9460422c6ad9261cf750813c508d",
+    "strategy_timeline": "61b9f57f5d6733fd9f85d10166e64c5cd62a3d818321a844909288c850a3f4dd",
+    "strategy_events": "083e9116b5e5703532b4a197d6f3cc841842dd1a73d1533b0501cfd0df50fd01"
+  },
+  "next_stage": "V22.6 Research Validation and Release"
+}

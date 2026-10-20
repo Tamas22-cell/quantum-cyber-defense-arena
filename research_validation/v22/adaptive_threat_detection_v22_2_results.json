@@ -1,0 +1,187 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V22.2",
+  "module": "Adaptive Threat Detection Engine",
+  "created_utc": "2026-10-20T12:46:27.506163+00:00",
+  "status": "ADAPTIVE_THREAT_DETECTION_PASS",
+  "simulation_mode": true,
+  "external_actions_enabled": false,
+  "trained_ai_model_used": false,
+  "configuration": {
+    "minimum_history": 12,
+    "history_window": 24,
+    "adaptation_window": 24,
+    "adaptation_minimum": 12,
+    "ewma_alpha": 0.2,
+    "holdout_start": 90
+  },
+  "metrics": {
+    "simulation_ticks": 120,
+    "network_nodes": 10,
+    "node_observations": 1200,
+    "adaptive_detections": 56,
+    "affected_nodes": 10,
+    "detections_by_node": {
+      "api": 9,
+      "external": 7,
+      "firewall": 11,
+      "gateway": 7,
+      "web": 5,
+      "switch": 4,
+      "database": 5,
+      "analyst": 3,
+      "telemetry": 3,
+      "ai_engine": 2
+    },
+    "maximum_anomaly_score": 21.940412,
+    "detector": "adaptive_ewma_zscore",
+    "trained_ai_model_used": false,
+    "live_security_actions": false
+  },
+  "evaluation": {
+    "start_tick": 90,
+    "eligible_observations": 300,
+    "adaptive_detector": {
+      "tp": 6,
+      "fp": 17,
+      "fn": 0,
+      "tn": 277,
+      "detections": 23,
+      "precision": 0.26087,
+      "recall": 1.0
+    },
+    "v21_baseline_detector": {
+      "tp": 6,
+      "fp": 13,
+      "fn": 0,
+      "tn": 281,
+      "detections": 19,
+      "precision": 0.315789,
+      "recall": 1.0
+    },
+    "label_type": "synthetic_node_injection_marker",
+    "real_attack_labels": false,
+    "thresholds_selected_independently": false
+  },
+  "source_sha256": {
+    "architecture": "0c649ccaaa9455c3573f054f215b6c5aadf9fe48f90570e76cc1f9095df351b3",
+    "data": "1257aeca132613026ae4e29b16de80e41adff476661fa76b93411ecd30bb7efc",
+    "baseline_report": "13a5ec8062805c33b45999b84abe92489efe995d17d4ebdce6fd1d12252b0d9b",
+    "baseline_scores": "ae12cb603349e59bb9686bbaeb20c0bf1bd978a53c94d9ec3fa98e19c1e2f44d"
+  },
+  "checks": [
+    {
+      "name": "V22.1 architecture passed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V21.2 baseline report passed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V21.5 synthetic export passed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.1 input fingerprint valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Real security actions disabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "120 ordered frames available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ten nodes per frame",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Eleven links per frame",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "1200 node observations generated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Every node/tick identity unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Baseline covers identical node/tick keys",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Injected labels agree with V21.2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Adaptive scores finite and nonnegative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Adaptive thresholds bounded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No detections before baseline warmup",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Every detection satisfies threshold",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Timeline contains all 120 ticks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Timeline detection totals consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Holdout comparison has 300 node observations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Confusion matrices sum to holdout size",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Detection is reproducible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No future-data leakage in first 60 ticks",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "checks_passed": 22,
+  "checks_failed": 0,
+  "next_stage": "V22.3 Multi-Agent Defense Decision Engine"
+}

@@ -1,0 +1,1291 @@
+{
+  "version": "V22.2",
+  "status": "ADAPTIVE_THREAT_DETECTION_PASS",
+  "simulation_mode": true,
+  "is_live": false,
+  "ticks": 120,
+  "timeline": [
+    {
+      "tick": 0,
+      "timestamp": "2026-01-01T00:00:00+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.0,
+      "mean_adaptive_threshold": 2.5,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 1,
+      "timestamp": "2026-01-01T00:00:01+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.0,
+      "mean_adaptive_threshold": 2.5,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 2,
+      "timestamp": "2026-01-01T00:00:02+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.0,
+      "mean_adaptive_threshold": 2.5,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 3,
+      "timestamp": "2026-01-01T00:00:03+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.0,
+      "mean_adaptive_threshold": 2.5,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 4,
+      "timestamp": "2026-01-01T00:00:04+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.0,
+      "mean_adaptive_threshold": 2.5,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 5,
+      "timestamp": "2026-01-01T00:00:05+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.0,
+      "mean_adaptive_threshold": 2.5,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 6,
+      "timestamp": "2026-01-01T00:00:06+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.0,
+      "mean_adaptive_threshold": 2.5,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 7,
+      "timestamp": "2026-01-01T00:00:07+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.0,
+      "mean_adaptive_threshold": 2.5,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 8,
+      "timestamp": "2026-01-01T00:00:08+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.0,
+      "mean_adaptive_threshold": 2.5,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 9,
+      "timestamp": "2026-01-01T00:00:09+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.0,
+      "mean_adaptive_threshold": 2.5,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 10,
+      "timestamp": "2026-01-01T00:00:10+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.0,
+      "mean_adaptive_threshold": 2.5,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 11,
+      "timestamp": "2026-01-01T00:00:11+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.0,
+      "mean_adaptive_threshold": 2.5,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 12,
+      "timestamp": "2026-01-01T00:00:12+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.323163,
+      "mean_adaptive_threshold": 2.5,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 13,
+      "timestamp": "2026-01-01T00:00:13+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.40414,
+      "mean_adaptive_threshold": 2.5,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 14,
+      "timestamp": "2026-01-01T00:00:14+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.50013,
+      "mean_adaptive_threshold": 2.5,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 15,
+      "timestamp": "2026-01-01T00:00:15+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.578356,
+      "mean_adaptive_threshold": 2.5,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 16,
+      "timestamp": "2026-01-01T00:00:16+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.122931,
+      "mean_adaptive_threshold": 2.5,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 17,
+      "timestamp": "2026-01-01T00:00:17+00:00",
+      "evaluated_nodes": 10,
+      "detections": 4,
+      "detected_nodes": [
+        "api",
+        "external",
+        "firewall",
+        "gateway"
+      ],
+      "max_adaptive_score": 21.940412,
+      "mean_adaptive_threshold": 2.5,
+      "injected_node_markers": 3
+    },
+    {
+      "tick": 18,
+      "timestamp": "2026-01-01T00:00:18+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.827872,
+      "mean_adaptive_threshold": 2.5,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 19,
+      "timestamp": "2026-01-01T00:00:19+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.891983,
+      "mean_adaptive_threshold": 2.5,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 20,
+      "timestamp": "2026-01-01T00:00:20+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.01051,
+      "mean_adaptive_threshold": 2.5,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 21,
+      "timestamp": "2026-01-01T00:00:21+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.302775,
+      "mean_adaptive_threshold": 2.5,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 22,
+      "timestamp": "2026-01-01T00:00:22+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.338424,
+      "mean_adaptive_threshold": 2.5,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 23,
+      "timestamp": "2026-01-01T00:00:23+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.393458,
+      "mean_adaptive_threshold": 2.5,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 24,
+      "timestamp": "2026-01-01T00:00:24+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.249987,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 25,
+      "timestamp": "2026-01-01T00:00:25+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.584305,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 26,
+      "timestamp": "2026-01-01T00:00:26+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.751423,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 27,
+      "timestamp": "2026-01-01T00:00:27+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.439401,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 28,
+      "timestamp": "2026-01-01T00:00:28+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.947893,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 29,
+      "timestamp": "2026-01-01T00:00:29+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.138661,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 30,
+      "timestamp": "2026-01-01T00:00:30+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.129402,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 31,
+      "timestamp": "2026-01-01T00:00:31+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.156588,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 32,
+      "timestamp": "2026-01-01T00:00:32+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.617801,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 33,
+      "timestamp": "2026-01-01T00:00:33+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.006429,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 34,
+      "timestamp": "2026-01-01T00:00:34+00:00",
+      "evaluated_nodes": 10,
+      "detections": 4,
+      "detected_nodes": [
+        "api",
+        "external",
+        "firewall",
+        "gateway"
+      ],
+      "max_adaptive_score": 11.115764,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 3
+    },
+    {
+      "tick": 35,
+      "timestamp": "2026-01-01T00:00:35+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.925052,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 36,
+      "timestamp": "2026-01-01T00:00:36+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.285599,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 37,
+      "timestamp": "2026-01-01T00:00:37+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.791664,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 38,
+      "timestamp": "2026-01-01T00:00:38+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.155014,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 39,
+      "timestamp": "2026-01-01T00:00:39+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.185769,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 40,
+      "timestamp": "2026-01-01T00:00:40+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.730257,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 41,
+      "timestamp": "2026-01-01T00:00:41+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.390447,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 42,
+      "timestamp": "2026-01-01T00:00:42+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.744307,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 43,
+      "timestamp": "2026-01-01T00:00:43+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.634186,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 44,
+      "timestamp": "2026-01-01T00:00:44+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.205244,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 45,
+      "timestamp": "2026-01-01T00:00:45+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.492394,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 46,
+      "timestamp": "2026-01-01T00:00:46+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.776691,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 47,
+      "timestamp": "2026-01-01T00:00:47+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.053962,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 48,
+      "timestamp": "2026-01-01T00:00:48+00:00",
+      "evaluated_nodes": 10,
+      "detections": 1,
+      "detected_nodes": [
+        "web"
+      ],
+      "max_adaptive_score": 2.366835,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 49,
+      "timestamp": "2026-01-01T00:00:49+00:00",
+      "evaluated_nodes": 10,
+      "detections": 1,
+      "detected_nodes": [
+        "firewall"
+      ],
+      "max_adaptive_score": 2.420493,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 50,
+      "timestamp": "2026-01-01T00:00:50+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.731843,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 51,
+      "timestamp": "2026-01-01T00:00:51+00:00",
+      "evaluated_nodes": 10,
+      "detections": 4,
+      "detected_nodes": [
+        "api",
+        "external",
+        "firewall",
+        "gateway"
+      ],
+      "max_adaptive_score": 14.057761,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 3
+    },
+    {
+      "tick": 52,
+      "timestamp": "2026-01-01T00:00:52+00:00",
+      "evaluated_nodes": 10,
+      "detections": 1,
+      "detected_nodes": [
+        "switch"
+      ],
+      "max_adaptive_score": 2.881286,
+      "mean_adaptive_threshold": 2.012773,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 53,
+      "timestamp": "2026-01-01T00:00:53+00:00",
+      "evaluated_nodes": 10,
+      "detections": 1,
+      "detected_nodes": [
+        "database"
+      ],
+      "max_adaptive_score": 2.002769,
+      "mean_adaptive_threshold": 2.019707,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 54,
+      "timestamp": "2026-01-01T00:00:54+00:00",
+      "evaluated_nodes": 10,
+      "detections": 4,
+      "detected_nodes": [
+        "analyst",
+        "firewall",
+        "switch",
+        "telemetry"
+      ],
+      "max_adaptive_score": 3.188112,
+      "mean_adaptive_threshold": 2.019707,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 55,
+      "timestamp": "2026-01-01T00:00:55+00:00",
+      "evaluated_nodes": 10,
+      "detections": 1,
+      "detected_nodes": [
+        "database"
+      ],
+      "max_adaptive_score": 2.539281,
+      "mean_adaptive_threshold": 2.0658,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 56,
+      "timestamp": "2026-01-01T00:00:56+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.724501,
+      "mean_adaptive_threshold": 2.0658,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 57,
+      "timestamp": "2026-01-01T00:00:57+00:00",
+      "evaluated_nodes": 10,
+      "detections": 2,
+      "detected_nodes": [
+        "api",
+        "web"
+      ],
+      "max_adaptive_score": 3.343776,
+      "mean_adaptive_threshold": 2.0658,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 58,
+      "timestamp": "2026-01-01T00:00:58+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.830677,
+      "mean_adaptive_threshold": 2.112288,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 59,
+      "timestamp": "2026-01-01T00:00:59+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.381777,
+      "mean_adaptive_threshold": 2.029143,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 60,
+      "timestamp": "2026-01-01T00:01:00+00:00",
+      "evaluated_nodes": 10,
+      "detections": 2,
+      "detected_nodes": [
+        "analyst",
+        "telemetry"
+      ],
+      "max_adaptive_score": 2.811818,
+      "mean_adaptive_threshold": 2.029143,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 61,
+      "timestamp": "2026-01-01T00:01:01+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.774989,
+      "mean_adaptive_threshold": 2.029143,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 62,
+      "timestamp": "2026-01-01T00:01:02+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.497341,
+      "mean_adaptive_threshold": 2.029143,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 63,
+      "timestamp": "2026-01-01T00:01:03+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.941779,
+      "mean_adaptive_threshold": 2.029143,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 64,
+      "timestamp": "2026-01-01T00:01:04+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.329253,
+      "mean_adaptive_threshold": 2.029143,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 65,
+      "timestamp": "2026-01-01T00:01:05+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.349923,
+      "mean_adaptive_threshold": 2.029143,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 66,
+      "timestamp": "2026-01-01T00:01:06+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.452941,
+      "mean_adaptive_threshold": 2.029143,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 67,
+      "timestamp": "2026-01-01T00:01:07+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.562213,
+      "mean_adaptive_threshold": 2.029143,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 68,
+      "timestamp": "2026-01-01T00:01:08+00:00",
+      "evaluated_nodes": 10,
+      "detections": 4,
+      "detected_nodes": [
+        "api",
+        "external",
+        "firewall",
+        "gateway"
+      ],
+      "max_adaptive_score": 11.479302,
+      "mean_adaptive_threshold": 2.029143,
+      "injected_node_markers": 3
+    },
+    {
+      "tick": 69,
+      "timestamp": "2026-01-01T00:01:09+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.353712,
+      "mean_adaptive_threshold": 2.126046,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 70,
+      "timestamp": "2026-01-01T00:01:10+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.030664,
+      "mean_adaptive_threshold": 2.126046,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 71,
+      "timestamp": "2026-01-01T00:01:11+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.46858,
+      "mean_adaptive_threshold": 2.126046,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 72,
+      "timestamp": "2026-01-01T00:01:12+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.493798,
+      "mean_adaptive_threshold": 2.126046,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 73,
+      "timestamp": "2026-01-01T00:01:13+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.156272,
+      "mean_adaptive_threshold": 2.126046,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 74,
+      "timestamp": "2026-01-01T00:01:14+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.709511,
+      "mean_adaptive_threshold": 2.11314,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 75,
+      "timestamp": "2026-01-01T00:01:15+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.868655,
+      "mean_adaptive_threshold": 2.11314,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 76,
+      "timestamp": "2026-01-01T00:01:16+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.72726,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 77,
+      "timestamp": "2026-01-01T00:01:17+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.656219,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 78,
+      "timestamp": "2026-01-01T00:01:18+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.943345,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 79,
+      "timestamp": "2026-01-01T00:01:19+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.720147,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 80,
+      "timestamp": "2026-01-01T00:01:20+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.157205,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 81,
+      "timestamp": "2026-01-01T00:01:21+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.599148,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 82,
+      "timestamp": "2026-01-01T00:01:22+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.846971,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 83,
+      "timestamp": "2026-01-01T00:01:23+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.494266,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 84,
+      "timestamp": "2026-01-01T00:01:24+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 0.845505,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 85,
+      "timestamp": "2026-01-01T00:01:25+00:00",
+      "evaluated_nodes": 10,
+      "detections": 4,
+      "detected_nodes": [
+        "api",
+        "external",
+        "firewall",
+        "gateway"
+      ],
+      "max_adaptive_score": 11.440946,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 3
+    },
+    {
+      "tick": 86,
+      "timestamp": "2026-01-01T00:01:26+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.57161,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 87,
+      "timestamp": "2026-01-01T00:01:27+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.132732,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 88,
+      "timestamp": "2026-01-01T00:01:28+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.565466,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 89,
+      "timestamp": "2026-01-01T00:01:29+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.710859,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 90,
+      "timestamp": "2026-01-01T00:01:30+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.994471,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 91,
+      "timestamp": "2026-01-01T00:01:31+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.883456,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 92,
+      "timestamp": "2026-01-01T00:01:32+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.335856,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 93,
+      "timestamp": "2026-01-01T00:01:33+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.173685,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 94,
+      "timestamp": "2026-01-01T00:01:34+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.728898,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 95,
+      "timestamp": "2026-01-01T00:01:35+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.356156,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 96,
+      "timestamp": "2026-01-01T00:01:36+00:00",
+      "evaluated_nodes": 10,
+      "detections": 1,
+      "detected_nodes": [
+        "switch"
+      ],
+      "max_adaptive_score": 3.425089,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 97,
+      "timestamp": "2026-01-01T00:01:37+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.169304,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 98,
+      "timestamp": "2026-01-01T00:01:38+00:00",
+      "evaluated_nodes": 10,
+      "detections": 1,
+      "detected_nodes": [
+        "web"
+      ],
+      "max_adaptive_score": 2.152452,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 99,
+      "timestamp": "2026-01-01T00:01:39+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.573057,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 100,
+      "timestamp": "2026-01-01T00:01:40+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.481497,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 101,
+      "timestamp": "2026-01-01T00:01:41+00:00",
+      "evaluated_nodes": 10,
+      "detections": 3,
+      "detected_nodes": [
+        "ai_engine",
+        "database",
+        "switch"
+      ],
+      "max_adaptive_score": 2.701802,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 102,
+      "timestamp": "2026-01-01T00:01:42+00:00",
+      "evaluated_nodes": 10,
+      "detections": 5,
+      "detected_nodes": [
+        "api",
+        "external",
+        "firewall",
+        "gateway",
+        "web"
+      ],
+      "max_adaptive_score": 20.939664,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 3
+    },
+    {
+      "tick": 103,
+      "timestamp": "2026-01-01T00:01:43+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.307541,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 104,
+      "timestamp": "2026-01-01T00:01:44+00:00",
+      "evaluated_nodes": 10,
+      "detections": 1,
+      "detected_nodes": [
+        "database"
+      ],
+      "max_adaptive_score": 2.014263,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 105,
+      "timestamp": "2026-01-01T00:01:45+00:00",
+      "evaluated_nodes": 10,
+      "detections": 2,
+      "detected_nodes": [
+        "api",
+        "web"
+      ],
+      "max_adaptive_score": 3.446434,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 106,
+      "timestamp": "2026-01-01T00:01:46+00:00",
+      "evaluated_nodes": 10,
+      "detections": 1,
+      "detected_nodes": [
+        "telemetry"
+      ],
+      "max_adaptive_score": 2.659041,
+      "mean_adaptive_threshold": 2.103082,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 107,
+      "timestamp": "2026-01-01T00:01:47+00:00",
+      "evaluated_nodes": 10,
+      "detections": 1,
+      "detected_nodes": [
+        "analyst"
+      ],
+      "max_adaptive_score": 2.117963,
+      "mean_adaptive_threshold": 2.103082,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 108,
+      "timestamp": "2026-01-01T00:01:48+00:00",
+      "evaluated_nodes": 10,
+      "detections": 1,
+      "detected_nodes": [
+        "firewall"
+      ],
+      "max_adaptive_score": 2.015241,
+      "mean_adaptive_threshold": 2.103082,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 109,
+      "timestamp": "2026-01-01T00:01:49+00:00",
+      "evaluated_nodes": 10,
+      "detections": 1,
+      "detected_nodes": [
+        "firewall"
+      ],
+      "max_adaptive_score": 2.817044,
+      "mean_adaptive_threshold": 2.103082,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 110,
+      "timestamp": "2026-01-01T00:01:50+00:00",
+      "evaluated_nodes": 10,
+      "detections": 1,
+      "detected_nodes": [
+        "database"
+      ],
+      "max_adaptive_score": 2.226359,
+      "mean_adaptive_threshold": 2.001997,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 111,
+      "timestamp": "2026-01-01T00:01:51+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.642984,
+      "mean_adaptive_threshold": 2.001997,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 112,
+      "timestamp": "2026-01-01T00:01:52+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.336722,
+      "mean_adaptive_threshold": 2.001997,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 113,
+      "timestamp": "2026-01-01T00:01:53+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.303708,
+      "mean_adaptive_threshold": 2.001997,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 114,
+      "timestamp": "2026-01-01T00:01:54+00:00",
+      "evaluated_nodes": 10,
+      "detections": 1,
+      "detected_nodes": [
+        "ai_engine"
+      ],
+      "max_adaptive_score": 2.07785,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 115,
+      "timestamp": "2026-01-01T00:01:55+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.852597,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 116,
+      "timestamp": "2026-01-01T00:01:56+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.684253,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 117,
+      "timestamp": "2026-01-01T00:01:57+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.352932,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 118,
+      "timestamp": "2026-01-01T00:01:58+00:00",
+      "evaluated_nodes": 10,
+      "detections": 0,
+      "detected_nodes": [],
+      "max_adaptive_score": 1.538796,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 0
+    },
+    {
+      "tick": 119,
+      "timestamp": "2026-01-01T00:01:59+00:00",
+      "evaluated_nodes": 10,
+      "detections": 4,
+      "detected_nodes": [
+        "api",
+        "external",
+        "firewall",
+        "gateway"
+      ],
+      "max_adaptive_score": 10.993365,
+      "mean_adaptive_threshold": 2.0,
+      "injected_node_markers": 3
+    }
+  ]
+}

@@ -1,0 +1,2409 @@
+{
+  "version": "V22.4",
+  "status": "DEFENSE_STRATEGY_SIMULATION_PASS",
+  "simulation_mode": true,
+  "is_live": false,
+  "ticks": 120,
+  "timeline": [
+    {
+      "tick": 0,
+      "timestamp": "2026-01-01T00:00:00+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.229565,
+      "mean_simulated_residual_risk": 0.229565,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.020347,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 1,
+      "timestamp": "2026-01-01T00:00:01+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.244687,
+      "mean_simulated_residual_risk": 0.244687,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.02564,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 2,
+      "timestamp": "2026-01-01T00:00:02+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.245003,
+      "mean_simulated_residual_risk": 0.245003,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.025752,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 3,
+      "timestamp": "2026-01-01T00:00:03+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.246997,
+      "mean_simulated_residual_risk": 0.246997,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.026449,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 4,
+      "timestamp": "2026-01-01T00:00:04+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.245421,
+      "mean_simulated_residual_risk": 0.245421,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.025898,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 5,
+      "timestamp": "2026-01-01T00:00:05+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.243024,
+      "mean_simulated_residual_risk": 0.243024,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.025058,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 6,
+      "timestamp": "2026-01-01T00:00:06+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.250777,
+      "mean_simulated_residual_risk": 0.250777,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.027774,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 7,
+      "timestamp": "2026-01-01T00:00:07+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.247349,
+      "mean_simulated_residual_risk": 0.247349,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.026574,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 8,
+      "timestamp": "2026-01-01T00:00:08+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.24305,
+      "mean_simulated_residual_risk": 0.24305,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.025644,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 9,
+      "timestamp": "2026-01-01T00:00:09+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.239978,
+      "mean_simulated_residual_risk": 0.239978,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.025134,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 10,
+      "timestamp": "2026-01-01T00:00:10+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.236452,
+      "mean_simulated_residual_risk": 0.236452,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.023034,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 11,
+      "timestamp": "2026-01-01T00:00:11+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.228617,
+      "mean_simulated_residual_risk": 0.228617,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.020749,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 12,
+      "timestamp": "2026-01-01T00:00:12+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.222227,
+      "mean_simulated_residual_risk": 0.222227,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.019317,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 13,
+      "timestamp": "2026-01-01T00:00:13+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.23068,
+      "mean_simulated_residual_risk": 0.23068,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.021293,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 14,
+      "timestamp": "2026-01-01T00:00:14+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.227141,
+      "mean_simulated_residual_risk": 0.227141,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.021013,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 15,
+      "timestamp": "2026-01-01T00:00:15+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.211362,
+      "mean_simulated_residual_risk": 0.211362,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.016215,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 16,
+      "timestamp": "2026-01-01T00:00:16+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.209685,
+      "mean_simulated_residual_risk": 0.209685,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.015351,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 17,
+      "timestamp": "2026-01-01T00:00:17+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.428566,
+      "mean_simulated_residual_risk": 0.214716,
+      "total_simulated_risk_reduction": 2.138504,
+      "mean_simulated_service_impact": 0.257,
+      "total_model_regret": 0.012422,
+      "human_approval_required": 3,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 3,
+        "observe": 6,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 18,
+      "timestamp": "2026-01-01T00:00:18+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.280911,
+      "mean_simulated_residual_risk": 0.280911,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.121599,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 19,
+      "timestamp": "2026-01-01T00:00:19+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.23593,
+      "mean_simulated_residual_risk": 0.23593,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.041548,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 20,
+      "timestamp": "2026-01-01T00:00:20+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.221686,
+      "mean_simulated_residual_risk": 0.221686,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.019243,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 21,
+      "timestamp": "2026-01-01T00:00:21+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.216034,
+      "mean_simulated_residual_risk": 0.216034,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.01628,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 22,
+      "timestamp": "2026-01-01T00:00:22+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.206344,
+      "mean_simulated_residual_risk": 0.206344,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.013208,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 23,
+      "timestamp": "2026-01-01T00:00:23+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.202026,
+      "mean_simulated_residual_risk": 0.202026,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.012722,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 24,
+      "timestamp": "2026-01-01T00:00:24+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.205903,
+      "mean_simulated_residual_risk": 0.205903,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.013481,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 25,
+      "timestamp": "2026-01-01T00:00:25+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.204876,
+      "mean_simulated_residual_risk": 0.204876,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.013263,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 26,
+      "timestamp": "2026-01-01T00:00:26+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.206559,
+      "mean_simulated_residual_risk": 0.206559,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.013645,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 27,
+      "timestamp": "2026-01-01T00:00:27+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.196165,
+      "mean_simulated_residual_risk": 0.196165,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.010934,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 28,
+      "timestamp": "2026-01-01T00:00:28+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.20084,
+      "mean_simulated_residual_risk": 0.20084,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.012302,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 29,
+      "timestamp": "2026-01-01T00:00:29+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.203592,
+      "mean_simulated_residual_risk": 0.203592,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.013023,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 30,
+      "timestamp": "2026-01-01T00:00:30+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.198732,
+      "mean_simulated_residual_risk": 0.198732,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.012771,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 31,
+      "timestamp": "2026-01-01T00:00:31+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.194202,
+      "mean_simulated_residual_risk": 0.194202,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.010902,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 32,
+      "timestamp": "2026-01-01T00:00:32+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.197887,
+      "mean_simulated_residual_risk": 0.197887,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.013387,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 33,
+      "timestamp": "2026-01-01T00:00:33+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.195351,
+      "mean_simulated_residual_risk": 0.195351,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.011793,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 34,
+      "timestamp": "2026-01-01T00:00:34+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.417365,
+      "mean_simulated_residual_risk": 0.209914,
+      "total_simulated_risk_reduction": 2.07451,
+      "mean_simulated_service_impact": 0.257,
+      "total_model_regret": 0.01131,
+      "human_approval_required": 3,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 3,
+        "observe": 6,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 35,
+      "timestamp": "2026-01-01T00:00:35+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.269917,
+      "mean_simulated_residual_risk": 0.269917,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.104592,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 36,
+      "timestamp": "2026-01-01T00:00:36+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.244493,
+      "mean_simulated_residual_risk": 0.244493,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.043629,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 37,
+      "timestamp": "2026-01-01T00:00:37+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.230719,
+      "mean_simulated_residual_risk": 0.230719,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.022777,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 38,
+      "timestamp": "2026-01-01T00:00:38+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.219974,
+      "mean_simulated_residual_risk": 0.219974,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.018806,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 39,
+      "timestamp": "2026-01-01T00:00:39+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.219675,
+      "mean_simulated_residual_risk": 0.219675,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.01825,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 40,
+      "timestamp": "2026-01-01T00:00:40+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.223184,
+      "mean_simulated_residual_risk": 0.223184,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.01927,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 41,
+      "timestamp": "2026-01-01T00:00:41+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.226828,
+      "mean_simulated_residual_risk": 0.226828,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.020251,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 42,
+      "timestamp": "2026-01-01T00:00:42+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.226235,
+      "mean_simulated_residual_risk": 0.226235,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.020454,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 43,
+      "timestamp": "2026-01-01T00:00:43+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.227518,
+      "mean_simulated_residual_risk": 0.227518,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.020404,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 44,
+      "timestamp": "2026-01-01T00:00:44+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.237785,
+      "mean_simulated_residual_risk": 0.237785,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.023445,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 45,
+      "timestamp": "2026-01-01T00:00:45+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.24649,
+      "mean_simulated_residual_risk": 0.24649,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.026302,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 46,
+      "timestamp": "2026-01-01T00:00:46+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.253177,
+      "mean_simulated_residual_risk": 0.253177,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.028614,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 47,
+      "timestamp": "2026-01-01T00:00:47+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.252936,
+      "mean_simulated_residual_risk": 0.252936,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.028526,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 48,
+      "timestamp": "2026-01-01T00:00:48+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.256983,
+      "mean_simulated_residual_risk": 0.255541,
+      "total_simulated_risk_reduction": 0.014424,
+      "mean_simulated_service_impact": 0.002,
+      "total_model_regret": 0.028454,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 0,
+        "observe": 9,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 49,
+      "timestamp": "2026-01-01T00:00:49+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.255768,
+      "mean_simulated_residual_risk": 0.254383,
+      "total_simulated_risk_reduction": 0.013851,
+      "mean_simulated_service_impact": 0.002,
+      "total_model_regret": 0.026348,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 0,
+        "observe": 9,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 50,
+      "timestamp": "2026-01-01T00:00:50+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.251514,
+      "mean_simulated_residual_risk": 0.251514,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.028297,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 51,
+      "timestamp": "2026-01-01T00:00:51+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.467055,
+      "mean_simulated_residual_risk": 0.244544,
+      "total_simulated_risk_reduction": 2.225105,
+      "mean_simulated_service_impact": 0.257,
+      "total_model_regret": 0.016049,
+      "human_approval_required": 3,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 3,
+        "observe": 6,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 52,
+      "timestamp": "2026-01-01T00:00:52+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.327534,
+      "mean_simulated_residual_risk": 0.3239,
+      "total_simulated_risk_reduction": 0.036337,
+      "mean_simulated_service_impact": 0.004,
+      "total_model_regret": 0.15706,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 2,
+        "isolate_node": 0,
+        "observe": 8,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 53,
+      "timestamp": "2026-01-01T00:00:53+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.304597,
+      "mean_simulated_residual_risk": 0.303001,
+      "total_simulated_risk_reduction": 0.015953,
+      "mean_simulated_service_impact": 0.002,
+      "total_model_regret": 0.093818,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 0,
+        "observe": 9,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 54,
+      "timestamp": "2026-01-01T00:00:54+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.285274,
+      "mean_simulated_residual_risk": 0.279597,
+      "total_simulated_risk_reduction": 0.056768,
+      "mean_simulated_service_impact": 0.008,
+      "total_model_regret": 0.036957,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 4,
+        "isolate_node": 0,
+        "observe": 6,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 55,
+      "timestamp": "2026-01-01T00:00:55+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.272946,
+      "mean_simulated_residual_risk": 0.271443,
+      "total_simulated_risk_reduction": 0.015028,
+      "mean_simulated_service_impact": 0.002,
+      "total_model_regret": 0.034427,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 0,
+        "observe": 9,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 56,
+      "timestamp": "2026-01-01T00:00:56+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.271025,
+      "mean_simulated_residual_risk": 0.271025,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.034859,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 57,
+      "timestamp": "2026-01-01T00:00:57+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.260213,
+      "mean_simulated_residual_risk": 0.257863,
+      "total_simulated_risk_reduction": 0.023499,
+      "mean_simulated_service_impact": 0.004,
+      "total_model_regret": 0.026625,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 2,
+        "isolate_node": 0,
+        "observe": 8,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 58,
+      "timestamp": "2026-01-01T00:00:58+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.256504,
+      "mean_simulated_residual_risk": 0.256504,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.029775,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 59,
+      "timestamp": "2026-01-01T00:00:59+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.248919,
+      "mean_simulated_residual_risk": 0.248919,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.027122,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 60,
+      "timestamp": "2026-01-01T00:01:00+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.259757,
+      "mean_simulated_residual_risk": 0.257239,
+      "total_simulated_risk_reduction": 0.025181,
+      "mean_simulated_service_impact": 0.004,
+      "total_model_regret": 0.025287,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 2,
+        "isolate_node": 0,
+        "observe": 8,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 61,
+      "timestamp": "2026-01-01T00:01:01+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.252864,
+      "mean_simulated_residual_risk": 0.252864,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.028502,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 62,
+      "timestamp": "2026-01-01T00:01:02+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.259386,
+      "mean_simulated_residual_risk": 0.259386,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.030786,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 63,
+      "timestamp": "2026-01-01T00:01:03+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.256684,
+      "mean_simulated_residual_risk": 0.256684,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.02984,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 64,
+      "timestamp": "2026-01-01T00:01:04+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.249569,
+      "mean_simulated_residual_risk": 0.249569,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.02735,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 65,
+      "timestamp": "2026-01-01T00:01:05+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.245773,
+      "mean_simulated_residual_risk": 0.245773,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.026021,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 66,
+      "timestamp": "2026-01-01T00:01:06+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.238458,
+      "mean_simulated_residual_risk": 0.238458,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.023625,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 67,
+      "timestamp": "2026-01-01T00:01:07+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.234868,
+      "mean_simulated_residual_risk": 0.234868,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.022205,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 68,
+      "timestamp": "2026-01-01T00:01:08+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.449703,
+      "mean_simulated_residual_risk": 0.231742,
+      "total_simulated_risk_reduction": 2.179615,
+      "mean_simulated_service_impact": 0.257,
+      "total_model_regret": 0.014045,
+      "human_approval_required": 3,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 3,
+        "observe": 6,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 69,
+      "timestamp": "2026-01-01T00:01:09+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.289811,
+      "mean_simulated_residual_risk": 0.289811,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.125211,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 70,
+      "timestamp": "2026-01-01T00:01:10+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.262188,
+      "mean_simulated_residual_risk": 0.262188,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.059885,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 71,
+      "timestamp": "2026-01-01T00:01:11+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.243521,
+      "mean_simulated_residual_risk": 0.243521,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.03372,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 72,
+      "timestamp": "2026-01-01T00:01:12+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.228127,
+      "mean_simulated_residual_risk": 0.228127,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.022655,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 73,
+      "timestamp": "2026-01-01T00:01:13+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.217322,
+      "mean_simulated_residual_risk": 0.217322,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.017617,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 74,
+      "timestamp": "2026-01-01T00:01:14+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.214993,
+      "mean_simulated_residual_risk": 0.214993,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.016887,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 75,
+      "timestamp": "2026-01-01T00:01:15+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.204038,
+      "mean_simulated_residual_risk": 0.204038,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.014554,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 76,
+      "timestamp": "2026-01-01T00:01:16+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.205914,
+      "mean_simulated_residual_risk": 0.205914,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.014927,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 77,
+      "timestamp": "2026-01-01T00:01:17+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.211758,
+      "mean_simulated_residual_risk": 0.211758,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.016725,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 78,
+      "timestamp": "2026-01-01T00:01:18+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.200728,
+      "mean_simulated_residual_risk": 0.200728,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.01211,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 79,
+      "timestamp": "2026-01-01T00:01:19+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.196615,
+      "mean_simulated_residual_risk": 0.196615,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.010846,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 80,
+      "timestamp": "2026-01-01T00:01:20+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.194128,
+      "mean_simulated_residual_risk": 0.194128,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.010112,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 81,
+      "timestamp": "2026-01-01T00:01:21+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.192892,
+      "mean_simulated_residual_risk": 0.192892,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.01043,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 82,
+      "timestamp": "2026-01-01T00:01:22+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.189236,
+      "mean_simulated_residual_risk": 0.189236,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.008994,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 83,
+      "timestamp": "2026-01-01T00:01:23+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.190144,
+      "mean_simulated_residual_risk": 0.190144,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.009133,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 84,
+      "timestamp": "2026-01-01T00:01:24+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.195492,
+      "mean_simulated_residual_risk": 0.195492,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.011217,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 85,
+      "timestamp": "2026-01-01T00:01:25+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.407926,
+      "mean_simulated_residual_risk": 0.197263,
+      "total_simulated_risk_reduction": 2.106636,
+      "mean_simulated_service_impact": 0.257,
+      "total_model_regret": 0.008,
+      "human_approval_required": 3,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 3,
+        "observe": 6,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 86,
+      "timestamp": "2026-01-01T00:01:26+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.257063,
+      "mean_simulated_residual_risk": 0.257063,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.102919,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 87,
+      "timestamp": "2026-01-01T00:01:27+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.225131,
+      "mean_simulated_residual_risk": 0.225131,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.027178,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 88,
+      "timestamp": "2026-01-01T00:01:28+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.212064,
+      "mean_simulated_residual_risk": 0.212064,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.01648,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 89,
+      "timestamp": "2026-01-01T00:01:29+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.214367,
+      "mean_simulated_residual_risk": 0.214367,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.017175,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 90,
+      "timestamp": "2026-01-01T00:01:30+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.216896,
+      "mean_simulated_residual_risk": 0.216896,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.016989,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 91,
+      "timestamp": "2026-01-01T00:01:31+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.219384,
+      "mean_simulated_residual_risk": 0.219384,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.018148,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 92,
+      "timestamp": "2026-01-01T00:01:32+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.220541,
+      "mean_simulated_residual_risk": 0.220541,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.018082,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 93,
+      "timestamp": "2026-01-01T00:01:33+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.215229,
+      "mean_simulated_residual_risk": 0.215229,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.017869,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 94,
+      "timestamp": "2026-01-01T00:01:34+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.209335,
+      "mean_simulated_residual_risk": 0.209335,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.016682,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 95,
+      "timestamp": "2026-01-01T00:01:35+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.216835,
+      "mean_simulated_residual_risk": 0.216835,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.018308,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 96,
+      "timestamp": "2026-01-01T00:01:36+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.227621,
+      "mean_simulated_residual_risk": 0.226621,
+      "total_simulated_risk_reduction": 0.010004,
+      "mean_simulated_service_impact": 0.002,
+      "total_model_regret": 0.021394,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 0,
+        "observe": 9,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 97,
+      "timestamp": "2026-01-01T00:01:37+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.224586,
+      "mean_simulated_residual_risk": 0.224586,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.020079,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 98,
+      "timestamp": "2026-01-01T00:01:38+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.231554,
+      "mean_simulated_residual_risk": 0.230167,
+      "total_simulated_risk_reduction": 0.013864,
+      "mean_simulated_service_impact": 0.002,
+      "total_model_regret": 0.018451,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 0,
+        "observe": 9,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 99,
+      "timestamp": "2026-01-01T00:01:39+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.237466,
+      "mean_simulated_residual_risk": 0.237466,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.023994,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 100,
+      "timestamp": "2026-01-01T00:01:40+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.241985,
+      "mean_simulated_residual_risk": 0.241985,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.024697,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 101,
+      "timestamp": "2026-01-01T00:01:41+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.24101,
+      "mean_simulated_residual_risk": 0.237378,
+      "total_simulated_risk_reduction": 0.036318,
+      "mean_simulated_service_impact": 0.006,
+      "total_model_regret": 0.017533,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 3,
+        "isolate_node": 0,
+        "observe": 7,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 102,
+      "timestamp": "2026-01-01T00:01:42+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.464769,
+      "mean_simulated_residual_risk": 0.243501,
+      "total_simulated_risk_reduction": 2.212689,
+      "mean_simulated_service_impact": 0.259,
+      "total_model_regret": 0.013971,
+      "human_approval_required": 3,
+      "action_counts": {
+        "increase_monitoring": 2,
+        "isolate_node": 3,
+        "observe": 5,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 103,
+      "timestamp": "2026-01-01T00:01:43+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.317939,
+      "mean_simulated_residual_risk": 0.317939,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.153663,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 104,
+      "timestamp": "2026-01-01T00:01:44+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.289362,
+      "mean_simulated_residual_risk": 0.288004,
+      "total_simulated_risk_reduction": 0.013574,
+      "mean_simulated_service_impact": 0.002,
+      "total_model_regret": 0.082797,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 0,
+        "observe": 9,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 105,
+      "timestamp": "2026-01-01T00:01:45+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.271213,
+      "mean_simulated_residual_risk": 0.26805,
+      "total_simulated_risk_reduction": 0.031628,
+      "mean_simulated_service_impact": 0.004,
+      "total_model_regret": 0.042029,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 2,
+        "isolate_node": 0,
+        "observe": 8,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 106,
+      "timestamp": "2026-01-01T00:01:46+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.257244,
+      "mean_simulated_residual_risk": 0.255831,
+      "total_simulated_risk_reduction": 0.014121,
+      "mean_simulated_service_impact": 0.002,
+      "total_model_regret": 0.033121,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 0,
+        "observe": 9,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 107,
+      "timestamp": "2026-01-01T00:01:47+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.258889,
+      "mean_simulated_residual_risk": 0.257951,
+      "total_simulated_risk_reduction": 0.009385,
+      "mean_simulated_service_impact": 0.002,
+      "total_model_regret": 0.032689,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 0,
+        "observe": 9,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 108,
+      "timestamp": "2026-01-01T00:01:48+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.257589,
+      "mean_simulated_residual_risk": 0.255988,
+      "total_simulated_risk_reduction": 0.016011,
+      "mean_simulated_service_impact": 0.002,
+      "total_model_regret": 0.025045,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 0,
+        "observe": 9,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 109,
+      "timestamp": "2026-01-01T00:01:49+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.251753,
+      "mean_simulated_residual_risk": 0.250172,
+      "total_simulated_risk_reduction": 0.015807,
+      "mean_simulated_service_impact": 0.002,
+      "total_model_regret": 0.023048,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 0,
+        "observe": 9,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 110,
+      "timestamp": "2026-01-01T00:01:50+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.250692,
+      "mean_simulated_residual_risk": 0.249338,
+      "total_simulated_risk_reduction": 0.013543,
+      "mean_simulated_service_impact": 0.002,
+      "total_model_regret": 0.024262,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 0,
+        "observe": 9,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 111,
+      "timestamp": "2026-01-01T00:01:51+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.256474,
+      "mean_simulated_residual_risk": 0.256474,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.029765,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 112,
+      "timestamp": "2026-01-01T00:01:52+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.260942,
+      "mean_simulated_residual_risk": 0.260942,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.031961,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 113,
+      "timestamp": "2026-01-01T00:01:53+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.264611,
+      "mean_simulated_residual_risk": 0.264611,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.033927,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 114,
+      "timestamp": "2026-01-01T00:01:54+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.255797,
+      "mean_simulated_residual_risk": 0.254476,
+      "total_simulated_risk_reduction": 0.013208,
+      "mean_simulated_service_impact": 0.002,
+      "total_model_regret": 0.026283,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 0,
+        "observe": 9,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 115,
+      "timestamp": "2026-01-01T00:01:55+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.257702,
+      "mean_simulated_residual_risk": 0.257702,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.032405,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 116,
+      "timestamp": "2026-01-01T00:01:56+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.258108,
+      "mean_simulated_residual_risk": 0.258108,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.031236,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 117,
+      "timestamp": "2026-01-01T00:01:57+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.25729,
+      "mean_simulated_residual_risk": 0.25729,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.030187,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 118,
+      "timestamp": "2026-01-01T00:01:58+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.254365,
+      "mean_simulated_residual_risk": 0.254365,
+      "total_simulated_risk_reduction": 0.0,
+      "mean_simulated_service_impact": 0.0,
+      "total_model_regret": 0.029028,
+      "human_approval_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 119,
+      "timestamp": "2026-01-01T00:01:59+00:00",
+      "evaluated_nodes": 10,
+      "mean_original_risk": 0.462628,
+      "mean_simulated_residual_risk": 0.241058,
+      "total_simulated_risk_reduction": 2.2157,
+      "mean_simulated_service_impact": 0.257,
+      "total_model_regret": 0.01615,
+      "human_approval_required": 3,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 3,
+        "observe": 6,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    }
+  ]
+}

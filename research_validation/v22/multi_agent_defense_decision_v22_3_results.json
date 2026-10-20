@@ -1,0 +1,218 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V22.3",
+  "module": "Multi-Agent Defense Decision Engine",
+  "created_utc": "2026-10-20T12:49:33.744760+00:00",
+  "status": "DEFENSE_DECISION_PASS",
+  "simulation_mode": true,
+  "real_actions_executed": 0,
+  "trained_ai_agents_used": false,
+  "agent_roles": [
+    "threat_assessment_agent",
+    "defense_strategy_agent",
+    "decision_validation_supervisor"
+  ],
+  "metrics": {
+    "ticks": 120,
+    "nodes": 10,
+    "decisions": 1200,
+    "adaptive_detections": 56,
+    "human_approval_required": 21,
+    "action_counts": {
+      "increase_monitoring": 36,
+      "isolate_node": 21,
+      "observe": 1143,
+      "rate_limit": 0,
+      "request_review": 0
+    },
+    "agent_roles": 3,
+    "real_actions_executed": 0,
+    "trained_ai_agents_used": false
+  },
+  "source_sha256": {
+    "architecture": "0c649ccaaa9455c3573f054f215b6c5aadf9fe48f90570e76cc1f9095df351b3",
+    "detector_report": "9dc7022a44da2697de83b3d3ecb74f182707472e2e25c9ac10c69a2251bfbddc",
+    "detector_scores": "9c0b3eaf0e263417f9896356cb4353582314a6dc77c4495e18d9b02f1281f4ef",
+    "intelligence": "1257aeca132613026ae4e29b16de80e41adff476661fa76b93411ecd30bb7efc"
+  },
+  "checks": [
+    {
+      "name": "V22.1 architecture passed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.2 adaptive detector passed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V21.5 intelligence export passed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.2 architecture fingerprint valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.2 intelligence fingerprint valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Architecture simulation mode enforced",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Real network modifications disabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Real traffic blocking disabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Real node isolation disabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Human approval policy enabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Five documented defense actions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All documented actions are simulations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "120 intelligence frames available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ten nodes per frame",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "1200 node observations available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All node observations unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Every frame/node has an adaptive score",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.2 observation count agrees",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.2 detection total agrees",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Decision per node observation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All decision IDs unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All actions belong to V22.1 policy",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Every disruptive proposal requires approval",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No real network actions executed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All decisions remain simulations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All evidence scores bounded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All severity levels recognized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Every decision reviewed by supervisor",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Timeline contains 120 ticks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ten evaluated nodes per tick",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Timeline decision counts consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Timeline review totals consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Detection flags preserve V22.2 output",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Decision process deterministic",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No future data required for earlier decisions",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "checks_passed": 35,
+  "checks_failed": 0,
+  "next_stage": "V22.4 Defense Strategy Simulation"
+}

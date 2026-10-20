@@ -1,0 +1,785 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V22.6",
+  "module": "Autonomous Defense Research Release",
+  "created_utc": "2026-10-20T13:02:11.588062+00:00",
+  "status": "AUTONOMOUS_DEFENSE_RELEASE_PASS",
+  "simulation_mode": true,
+  "is_live": false,
+  "trained_ai_defense_agents": false,
+  "real_network_actions_enabled": false,
+  "effects_empirically_verified": false,
+  "metrics": {
+    "network_nodes": 10,
+    "network_links": 11,
+    "simulation_ticks": 120,
+    "node_observations": 1200,
+    "defense_decisions": 1200,
+    "strategy_simulations": 1200,
+    "adaptive_detections": 56,
+    "human_approval_required": 21,
+    "action_counts": {
+      "increase_monitoring": 36,
+      "isolate_node": 21,
+      "observe": 1143,
+      "rate_limit": 0,
+      "request_review": 0
+    },
+    "mean_original_risk": 0.248355,
+    "mean_simulated_residual_risk": 0.235404,
+    "mean_modelled_service_impact": 0.015475,
+    "real_actions_executed": 0,
+    "dashboard_frames": 120
+  },
+  "source_manifest": {
+    "architecture": {
+      "path": "research_validation\\v22\\autonomous_defense_architecture_v22_1_results.json",
+      "sha256": "0c649ccaaa9455c3573f054f215b6c5aadf9fe48f90570e76cc1f9095df351b3",
+      "size_bytes": 14180
+    },
+    "detector": {
+      "path": "research_validation\\v22\\adaptive_threat_detection_v22_2_results.json",
+      "sha256": "9dc7022a44da2697de83b3d3ecb74f182707472e2e25c9ac10c69a2251bfbddc",
+      "size_bytes": 4563
+    },
+    "detector_scores": {
+      "path": "research_validation\\v22\\adaptive_threat_detection_v22_2_scores.csv",
+      "sha256": "9c0b3eaf0e263417f9896356cb4353582314a6dc77c4495e18d9b02f1281f4ef",
+      "size_bytes": 159908
+    },
+    "detector_timeline": {
+      "path": "research_validation\\v22\\adaptive_threat_detection_v22_2_timeline.json",
+      "sha256": "808707d54ac96ab47344a5a4caa7f82593446d298f0e23cba09c8f1c44c84b4b",
+      "size_bytes": 34898
+    },
+    "decision": {
+      "path": "research_validation\\v22\\multi_agent_defense_decision_v22_3_results.json",
+      "sha256": "36f14494d597e15b2346202ab09081f6050f69d312c2c49f502daa16a12737fb",
+      "size_bytes": 5171
+    },
+    "decision_events": {
+      "path": "research_validation\\v22\\multi_agent_defense_decision_v22_3_decisions.csv",
+      "sha256": "12658471b394762705b9c573f36722bceebda379a279788b8994b833111b34d2",
+      "size_bytes": 296297
+    },
+    "decision_timeline": {
+      "path": "research_validation\\v22\\multi_agent_defense_decision_v22_3_timeline.json",
+      "sha256": "9740676af9e5a2bee1027ab87a259790c8757aa19c97da6ba0287c3128e99a8f",
+      "size_bytes": 56282
+    },
+    "strategy": {
+      "path": "research_validation\\v22\\defense_strategy_simulation_v22_4_results.json",
+      "sha256": "c06e517c07a77c69f407dc1df3bc45197e7c9460422c6ad9261cf750813c508d",
+      "size_bytes": 5678
+    },
+    "strategy_events": {
+      "path": "research_validation\\v22\\defense_strategy_simulation_v22_4_events.csv",
+      "sha256": "083e9116b5e5703532b4a197d6f3cc841842dd1a73d1533b0501cfd0df50fd01",
+      "size_bytes": 250994
+    },
+    "strategy_timeline": {
+      "path": "research_validation\\v22\\defense_strategy_simulation_v22_4_timeline.json",
+      "sha256": "61b9f57f5d6733fd9f85d10166e64c5cd62a3d818321a844909288c850a3f4dd",
+      "size_bytes": 73734
+    },
+    "dashboard": {
+      "path": "research_validation\\v22\\autonomous_defense_dashboard_v22_5_results.json",
+      "sha256": "d3a3e0cffece659987d9eb116eca8a4a5ebb56450d631e523dc743eed4ad94f5",
+      "size_bytes": 5078
+    },
+    "dashboard_data": {
+      "path": "frontend\\public\\v22\\defense_data.json",
+      "sha256": "0da3c6cfb9fda88ee9e01e6e268dd9f517667792a08b4875b5ec3c3fb9c45ecc",
+      "size_bytes": 938122
+    },
+    "dashboard_html": {
+      "path": "frontend\\public\\v22\\dashboard.html",
+      "sha256": "9997b8513f8e7a5f89f93480da2cac7875b6a0f51caf0030c5421d595ca9a370",
+      "size_bytes": 11687
+    },
+    "v21_intelligence": {
+      "path": "frontend\\public\\v21\\intelligence_data.json",
+      "sha256": "1257aeca132613026ae4e29b16de80e41adff476661fa76b93411ecd30bb7efc",
+      "size_bytes": 650991
+    }
+  },
+  "checks": [
+    {
+      "name": "File exists: architecture",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v22\\autonomous_defense_architecture_v22_1_results.json"
+    },
+    {
+      "name": "File readable: architecture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File exists: detector",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v22\\adaptive_threat_detection_v22_2_results.json"
+    },
+    {
+      "name": "File readable: detector",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File exists: detector_scores",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v22\\adaptive_threat_detection_v22_2_scores.csv"
+    },
+    {
+      "name": "File readable: detector_scores",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File exists: detector_timeline",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v22\\adaptive_threat_detection_v22_2_timeline.json"
+    },
+    {
+      "name": "File readable: detector_timeline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File exists: decision",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v22\\multi_agent_defense_decision_v22_3_results.json"
+    },
+    {
+      "name": "File readable: decision",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File exists: decision_events",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v22\\multi_agent_defense_decision_v22_3_decisions.csv"
+    },
+    {
+      "name": "File readable: decision_events",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File exists: decision_timeline",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v22\\multi_agent_defense_decision_v22_3_timeline.json"
+    },
+    {
+      "name": "File readable: decision_timeline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File exists: strategy",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v22\\defense_strategy_simulation_v22_4_results.json"
+    },
+    {
+      "name": "File readable: strategy",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File exists: strategy_events",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v22\\defense_strategy_simulation_v22_4_events.csv"
+    },
+    {
+      "name": "File readable: strategy_events",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File exists: strategy_timeline",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v22\\defense_strategy_simulation_v22_4_timeline.json"
+    },
+    {
+      "name": "File readable: strategy_timeline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File exists: dashboard",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v22\\autonomous_defense_dashboard_v22_5_results.json"
+    },
+    {
+      "name": "File readable: dashboard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File exists: dashboard_data",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\frontend\\public\\v22\\defense_data.json"
+    },
+    {
+      "name": "File readable: dashboard_data",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File exists: dashboard_html",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\frontend\\public\\v22\\dashboard.html"
+    },
+    {
+      "name": "File readable: dashboard_html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File exists: v21_intelligence",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\frontend\\public\\v21\\intelligence_data.json"
+    },
+    {
+      "name": "File readable: v21_intelligence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "architecture: expected version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "architecture: successful result",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "architecture: internal checks consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "architecture: simulation only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "detector: expected version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "detector: successful result",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "detector: internal checks consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "detector: simulation only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decision: expected version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decision: successful result",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decision: internal checks consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decision: simulation only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "strategy: expected version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "strategy: successful result",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "strategy: internal checks consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "strategy: simulation only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard: expected version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard: successful result",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard: internal checks consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard: simulation only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "detector_timeline: version and PASS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "detector_timeline: 120 ticks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decision_timeline: version and PASS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "decision_timeline: 120 ticks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "strategy_timeline: version and PASS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "strategy_timeline: 120 ticks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.1 architecture SHA-256",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.2 fingerprint: architecture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.2 fingerprint: data",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.3 fingerprint: architecture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.3 fingerprint: detector_report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.3 fingerprint: detector_scores",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.3 fingerprint: intelligence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.4 fingerprint: architecture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.4 fingerprint: decision_report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.4 fingerprint: decision_csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.4 fingerprint: intelligence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.5 fingerprint: network",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.5 fingerprint: detector",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.5 fingerprint: detector_timeline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.5 fingerprint: decisions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.5 fingerprint: decision_timeline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.5 fingerprint: strategy",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.5 fingerprint: strategy_timeline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.5 fingerprint: strategy_events",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulation policy enforced",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Real network changes disabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Firewall access disabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Automatic isolation disabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Human approval requirement preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.2 no external actions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.3 no real actions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.4 no external actions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.4 effectiveness not empirically verified",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.5 effects not empirically verified",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Five complete 120-tick series",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All tick indices aligned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All timestamps aligned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ten nodes and eleven links per tick",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Network nodes preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Network links preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Detector counts aligned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Decision approval totals aligned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Strategy action totals aligned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Original and residual risk aligned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Service impact values aligned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulated risk and impact bounded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "1200 decision events",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "1200 strategy events",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "1200 detector observations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All node-tick keys consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All decision identifiers unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All defense action IDs recognized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All strategy action IDs recognized",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Strategy proposals match decision engine",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All restrictive actions require approval",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No decision reports an executed action",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No strategy reports an executed action",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Every strategy remains hypothetical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No approval falsely granted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All strategy results bounded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All dashboard decisions are simulations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard decisions agree with strategy CSV",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard export successful",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard is simulated and not live",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard HTML: HTML document",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard HTML: D3 library",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard HTML: Network visualization",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard HTML: Risk chart",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard HTML: Play/Pause control",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard HTML: Restart control",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard HTML: Speed control",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard HTML: Timeline slider",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard HTML: Decision feed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard HTML: Data loader",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard HTML: Simulation warning",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard HTML: Closing HTML tag",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V20 dashboard still present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V21 dashboard still present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Detector counts match validated report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Decision totals match validated report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Approval totals match validated report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Strategy totals match validated report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard frames match validated report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Action totals sum to 1200",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "checks_passed": 133,
+  "checks_failed": 0,
+  "error": null,
+  "limitations": [
+    "Synthetic network research only.",
+    "No real-world attack ground truth.",
+    "Deterministic defense decision roles.",
+    "Hypothetical defense effectiveness assumptions.",
+    "No real network modifications.",
+    "No production security certification."
+  ],
+  "next_stage": "V23 Advanced Cyber Defense Research"
+}

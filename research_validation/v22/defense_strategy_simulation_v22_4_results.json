@@ -1,0 +1,228 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V22.4",
+  "module": "Defense Strategy Simulation",
+  "created_utc": "2026-10-20T12:52:35.511074+00:00",
+  "status": "DEFENSE_STRATEGY_SIMULATION_PASS",
+  "simulation_mode": true,
+  "effects_empirically_verified": false,
+  "external_actions_enabled": false,
+  "configuration": {
+    "strategies": {
+      "observe": {
+        "risk_reduction_fraction": 0.0,
+        "service_impact": 0.0
+      },
+      "increase_monitoring": {
+        "risk_reduction_fraction": 0.05,
+        "service_impact": 0.02
+      },
+      "rate_limit": {
+        "risk_reduction_fraction": 0.35,
+        "service_impact": 0.25
+      },
+      "isolate_node": {
+        "risk_reduction_fraction": 0.75,
+        "service_impact": 0.85
+      },
+      "request_review": {
+        "risk_reduction_fraction": 0.0,
+        "service_impact": 0.03
+      }
+    },
+    "risk_weight": 0.7,
+    "service_weight": 0.3,
+    "evaluation_method": "hypothetical_counterfactual_model"
+  },
+  "evaluation": {
+    "evaluated_decisions": 1200,
+    "mean_original_risk": 0.248355,
+    "mean_simulated_residual_risk": 0.235404,
+    "total_modelled_risk_reduction": 15.541263,
+    "mean_modelled_service_impact": 0.015475,
+    "mean_modelled_weighted_cost": 0.169425,
+    "mean_observe_weighted_cost": 0.173848,
+    "mean_model_regret": 0.002849,
+    "approval_required": 21,
+    "action_counts": {
+      "increase_monitoring": 36,
+      "isolate_node": 21,
+      "observe": 1143,
+      "rate_limit": 0,
+      "request_review": 0
+    },
+    "real_actions_executed": 0,
+    "effectiveness_empirically_verified": false
+  },
+  "source_sha256": {
+    "architecture": "0c649ccaaa9455c3573f054f215b6c5aadf9fe48f90570e76cc1f9095df351b3",
+    "decision_report": "36f14494d597e15b2346202ab09081f6050f69d312c2c49f502daa16a12737fb",
+    "decision_csv": "12658471b394762705b9c573f36722bceebda379a279788b8994b833111b34d2",
+    "intelligence": "1257aeca132613026ae4e29b16de80e41adff476661fa76b93411ecd30bb7efc"
+  },
+  "checks": [
+    {
+      "name": "V22.1 architecture passed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V22.3 decision engine passed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V21.5 intelligence export passed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Decision architecture fingerprint valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Decision intelligence fingerprint valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Decision output contains no real actions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Real network changes prohibited",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Disruptive action approval policy",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Five documented strategy identifiers match",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All documented actions simulated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "120 simulation frames available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ten nodes in each simulation frame",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "1200 decision observations loaded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "One decision for every node and tick",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Decision count matches V22.3 report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Action distribution matches V22.3 report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All decisions simulated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Every simulation ID unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Residual risks bounded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Service impact bounded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Risk reductions nonnegative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Risk reduction arithmetic consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Model regret is nonnegative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Disruptive actions require approval",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Approval not falsely granted",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No real actions executed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All outcomes explicitly hypothetical",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Timeline contains 120 ticks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ten simulated decisions per tick",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Timeline action totals consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulation deterministic",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Earlier simulations independent of future ticks",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "checks_passed": 32,
+  "checks_failed": 0,
+  "next_stage": "V22.5 Autonomous Defense Dashboard"
+}

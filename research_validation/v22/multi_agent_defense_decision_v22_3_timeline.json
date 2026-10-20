@@ -1,0 +1,2049 @@
+{
+  "version": "V22.3",
+  "status": "DEFENSE_DECISION_PASS",
+  "simulation_mode": true,
+  "is_live": false,
+  "ticks": 120,
+  "timeline": [
+    {
+      "tick": 0,
+      "timestamp": "2026-01-01T00:00:00+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.187922,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 1,
+      "timestamp": "2026-01-01T00:00:01+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.193068,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 2,
+      "timestamp": "2026-01-01T00:00:02+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.194537,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 3,
+      "timestamp": "2026-01-01T00:00:03+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.196762,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 4,
+      "timestamp": "2026-01-01T00:00:04+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.19678,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 5,
+      "timestamp": "2026-01-01T00:00:05+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.194167,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 6,
+      "timestamp": "2026-01-01T00:00:06+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.196008,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 7,
+      "timestamp": "2026-01-01T00:00:07+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.195957,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 8,
+      "timestamp": "2026-01-01T00:00:08+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.199824,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 9,
+      "timestamp": "2026-01-01T00:00:09+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.194388,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 10,
+      "timestamp": "2026-01-01T00:00:10+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.184755,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 11,
+      "timestamp": "2026-01-01T00:00:11+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.18843,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 12,
+      "timestamp": "2026-01-01T00:00:12+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.327214,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 13,
+      "timestamp": "2026-01-01T00:00:13+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.345867,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 14,
+      "timestamp": "2026-01-01T00:00:14+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.332069,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 15,
+      "timestamp": "2026-01-01T00:00:15+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.258318,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 16,
+      "timestamp": "2026-01-01T00:00:16+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.278909,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 17,
+      "timestamp": "2026-01-01T00:00:17+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.992049,
+      "adaptive_detections": 4,
+      "human_review_required": 3,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 3,
+        "observe": 6,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 18,
+      "timestamp": "2026-01-01T00:00:18+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.429434,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 19,
+      "timestamp": "2026-01-01T00:00:19+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.266565,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 20,
+      "timestamp": "2026-01-01T00:00:20+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.251437,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 21,
+      "timestamp": "2026-01-01T00:00:21+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.268172,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 22,
+      "timestamp": "2026-01-01T00:00:22+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.274689,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 23,
+      "timestamp": "2026-01-01T00:00:23+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.281642,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 24,
+      "timestamp": "2026-01-01T00:00:24+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.342211,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 25,
+      "timestamp": "2026-01-01T00:00:25+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.326192,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 26,
+      "timestamp": "2026-01-01T00:00:26+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.230245,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 27,
+      "timestamp": "2026-01-01T00:00:27+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.178747,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 28,
+      "timestamp": "2026-01-01T00:00:28+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.254904,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 29,
+      "timestamp": "2026-01-01T00:00:29+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.286748,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 30,
+      "timestamp": "2026-01-01T00:00:30+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.290232,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 31,
+      "timestamp": "2026-01-01T00:00:31+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.292141,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 32,
+      "timestamp": "2026-01-01T00:00:32+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.364426,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 33,
+      "timestamp": "2026-01-01T00:00:33+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.281819,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 34,
+      "timestamp": "2026-01-01T00:00:34+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.96176,
+      "adaptive_detections": 4,
+      "human_review_required": 3,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 3,
+        "observe": 6,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 35,
+      "timestamp": "2026-01-01T00:00:35+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.435938,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 36,
+      "timestamp": "2026-01-01T00:00:36+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.336333,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 37,
+      "timestamp": "2026-01-01T00:00:37+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.415735,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 38,
+      "timestamp": "2026-01-01T00:00:38+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.295432,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 39,
+      "timestamp": "2026-01-01T00:00:39+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.32302,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 40,
+      "timestamp": "2026-01-01T00:00:40+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.397791,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 41,
+      "timestamp": "2026-01-01T00:00:41+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.347712,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 42,
+      "timestamp": "2026-01-01T00:00:42+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.345539,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 43,
+      "timestamp": "2026-01-01T00:00:43+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.372558,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 44,
+      "timestamp": "2026-01-01T00:00:44+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.324557,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 45,
+      "timestamp": "2026-01-01T00:00:45+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.392814,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 46,
+      "timestamp": "2026-01-01T00:00:46+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.423326,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 47,
+      "timestamp": "2026-01-01T00:00:47+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.324396,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 48,
+      "timestamp": "2026-01-01T00:00:48+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.437511,
+      "adaptive_detections": 1,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 0,
+        "observe": 9,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 49,
+      "timestamp": "2026-01-01T00:00:49+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.430069,
+      "adaptive_detections": 1,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 0,
+        "observe": 9,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 50,
+      "timestamp": "2026-01-01T00:00:50+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.40177,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 51,
+      "timestamp": "2026-01-01T00:00:51+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.994977,
+      "adaptive_detections": 4,
+      "human_review_required": 3,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 3,
+        "observe": 6,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 52,
+      "timestamp": "2026-01-01T00:00:52+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.546853,
+      "adaptive_detections": 1,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 2,
+        "isolate_node": 0,
+        "observe": 8,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 53,
+      "timestamp": "2026-01-01T00:00:53+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.457384,
+      "adaptive_detections": 1,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 0,
+        "observe": 9,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 54,
+      "timestamp": "2026-01-01T00:00:54+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.50187,
+      "adaptive_detections": 4,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 4,
+        "isolate_node": 0,
+        "observe": 6,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 55,
+      "timestamp": "2026-01-01T00:00:55+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.445369,
+      "adaptive_detections": 1,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 0,
+        "observe": 9,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 56,
+      "timestamp": "2026-01-01T00:00:56+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.402825,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 57,
+      "timestamp": "2026-01-01T00:00:57+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.42284,
+      "adaptive_detections": 2,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 2,
+        "isolate_node": 0,
+        "observe": 8,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 58,
+      "timestamp": "2026-01-01T00:00:58+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.298285,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 59,
+      "timestamp": "2026-01-01T00:00:59+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.3336,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 60,
+      "timestamp": "2026-01-01T00:01:00+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.425445,
+      "adaptive_detections": 2,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 2,
+        "isolate_node": 0,
+        "observe": 8,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 61,
+      "timestamp": "2026-01-01T00:01:01+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.376253,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 62,
+      "timestamp": "2026-01-01T00:01:02+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.350533,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 63,
+      "timestamp": "2026-01-01T00:01:03+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.415652,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 64,
+      "timestamp": "2026-01-01T00:01:04+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.35884,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 65,
+      "timestamp": "2026-01-01T00:01:05+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.351201,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 66,
+      "timestamp": "2026-01-01T00:01:06+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.360216,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 67,
+      "timestamp": "2026-01-01T00:01:07+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.389223,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 68,
+      "timestamp": "2026-01-01T00:01:08+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.991375,
+      "adaptive_detections": 4,
+      "human_review_required": 3,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 3,
+        "observe": 6,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 69,
+      "timestamp": "2026-01-01T00:01:09+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.415879,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 70,
+      "timestamp": "2026-01-01T00:01:10+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.328766,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 71,
+      "timestamp": "2026-01-01T00:01:11+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.372329,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 72,
+      "timestamp": "2026-01-01T00:01:12+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.337802,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 73,
+      "timestamp": "2026-01-01T00:01:13+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.185591,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 74,
+      "timestamp": "2026-01-01T00:01:14+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.250682,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 75,
+      "timestamp": "2026-01-01T00:01:15+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.265761,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 76,
+      "timestamp": "2026-01-01T00:01:16+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.239254,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 77,
+      "timestamp": "2026-01-01T00:01:17+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.280115,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 78,
+      "timestamp": "2026-01-01T00:01:18+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.234405,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 79,
+      "timestamp": "2026-01-01T00:01:19+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.239371,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 80,
+      "timestamp": "2026-01-01T00:01:20+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.172335,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 81,
+      "timestamp": "2026-01-01T00:01:21+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.217223,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 82,
+      "timestamp": "2026-01-01T00:01:22+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.228111,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 83,
+      "timestamp": "2026-01-01T00:01:23+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.182814,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 84,
+      "timestamp": "2026-01-01T00:01:24+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.22077,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 85,
+      "timestamp": "2026-01-01T00:01:25+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.960361,
+      "adaptive_detections": 4,
+      "human_review_required": 3,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 3,
+        "observe": 6,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 86,
+      "timestamp": "2026-01-01T00:01:26+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.409824,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 87,
+      "timestamp": "2026-01-01T00:01:27+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.258878,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 88,
+      "timestamp": "2026-01-01T00:01:28+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.342073,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 89,
+      "timestamp": "2026-01-01T00:01:29+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.370253,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 90,
+      "timestamp": "2026-01-01T00:01:30+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.433235,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 91,
+      "timestamp": "2026-01-01T00:01:31+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.420628,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 92,
+      "timestamp": "2026-01-01T00:01:32+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.345644,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 93,
+      "timestamp": "2026-01-01T00:01:33+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.299172,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 94,
+      "timestamp": "2026-01-01T00:01:34+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.372067,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 95,
+      "timestamp": "2026-01-01T00:01:35+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.360755,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 96,
+      "timestamp": "2026-01-01T00:01:36+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.41624,
+      "adaptive_detections": 1,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 0,
+        "observe": 9,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 97,
+      "timestamp": "2026-01-01T00:01:37+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.321898,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 98,
+      "timestamp": "2026-01-01T00:01:38+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.430229,
+      "adaptive_detections": 1,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 0,
+        "observe": 9,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 99,
+      "timestamp": "2026-01-01T00:01:39+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.392868,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 100,
+      "timestamp": "2026-01-01T00:01:40+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.374466,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 101,
+      "timestamp": "2026-01-01T00:01:41+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.459388,
+      "adaptive_detections": 3,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 3,
+        "isolate_node": 0,
+        "observe": 7,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 102,
+      "timestamp": "2026-01-01T00:01:42+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.995037,
+      "adaptive_detections": 5,
+      "human_review_required": 3,
+      "action_counts": {
+        "increase_monitoring": 2,
+        "isolate_node": 3,
+        "observe": 5,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 103,
+      "timestamp": "2026-01-01T00:01:43+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.446739,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 104,
+      "timestamp": "2026-01-01T00:01:44+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.426466,
+      "adaptive_detections": 1,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 0,
+        "observe": 9,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 105,
+      "timestamp": "2026-01-01T00:01:45+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.495728,
+      "adaptive_detections": 2,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 2,
+        "isolate_node": 0,
+        "observe": 8,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 106,
+      "timestamp": "2026-01-01T00:01:46+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.433571,
+      "adaptive_detections": 1,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 0,
+        "observe": 9,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 107,
+      "timestamp": "2026-01-01T00:01:47+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.372002,
+      "adaptive_detections": 1,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 0,
+        "observe": 9,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 108,
+      "timestamp": "2026-01-01T00:01:48+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.458137,
+      "adaptive_detections": 1,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 0,
+        "observe": 9,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 109,
+      "timestamp": "2026-01-01T00:01:49+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.455485,
+      "adaptive_detections": 1,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 0,
+        "observe": 9,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 110,
+      "timestamp": "2026-01-01T00:01:50+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.426059,
+      "adaptive_detections": 1,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 0,
+        "observe": 9,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 111,
+      "timestamp": "2026-01-01T00:01:51+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.360241,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 112,
+      "timestamp": "2026-01-01T00:01:52+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.337626,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 113,
+      "timestamp": "2026-01-01T00:01:53+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.366324,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 114,
+      "timestamp": "2026-01-01T00:01:54+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.433004,
+      "adaptive_detections": 1,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 0,
+        "observe": 9,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 115,
+      "timestamp": "2026-01-01T00:01:55+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.410997,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 116,
+      "timestamp": "2026-01-01T00:01:56+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.403847,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 117,
+      "timestamp": "2026-01-01T00:01:57+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.363873,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 118,
+      "timestamp": "2026-01-01T00:01:58+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.35091,
+      "adaptive_detections": 0,
+      "human_review_required": 0,
+      "action_counts": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 10,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    },
+    {
+      "tick": 119,
+      "timestamp": "2026-01-01T00:01:59+00:00",
+      "evaluated_nodes": 10,
+      "maximum_evidence_score": 0.99214,
+      "adaptive_detections": 4,
+      "human_review_required": 3,
+      "action_counts": {
+        "increase_monitoring": 1,
+        "isolate_node": 3,
+        "observe": 6,
+        "rate_limit": 0,
+        "request_review": 0
+      },
+      "real_actions_executed": 0,
+      "simulation_mode": true
+    }
+  ]
+}

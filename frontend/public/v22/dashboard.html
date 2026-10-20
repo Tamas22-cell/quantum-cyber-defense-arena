@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quantum Cyber Defense Arena V22</title>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<style>
+:root{
+ --bg:#050918;--panel:#101c32;--border:#243d59;
+ --cyan:#30dbf4;--green:#36e9a0;--red:#ff5d81;
+ --gold:#f5c96b;--muted:#91abc8
+}
+*{box-sizing:border-box}
+body{
+ margin:0;background:var(--bg);color:#eaf7ff;
+ font:14px Segoe UI,Arial,sans-serif
+}
+header{
+ padding:28px 4%;
+ background:linear-gradient(115deg,#152e55,#050b18);
+ border-bottom:1px solid var(--border)
+}
+header small{letter-spacing:2px;color:var(--cyan)}
+h1{font-size:clamp(23px,3vw,38px);margin:10px 0}
+header p,.muted{color:var(--muted)}
+main{max-width:1500px;margin:auto;padding:18px}
+.metrics{
+ display:grid;grid-template-columns:repeat(5,minmax(0,1fr));
+ gap:12px;margin-bottom:16px
+}
+.card,.panel{
+ background:var(--panel);border:1px solid var(--border);
+ border-radius:13px
+}
+.card{padding:17px}
+.card small{color:var(--muted)}
+.card strong{display:block;font-size:24px;margin-top:9px}
+.layout{
+ display:grid;grid-template-columns:minmax(0,1.8fr) minmax(295px,1fr);
+ gap:16px
+}
+.panel{overflow:hidden}
+.panel h2{
+ margin:0;padding:15px;
+ border-bottom:1px solid var(--border);
+ font-size:15px
+}
+#network{
+ display:block;width:100%;height:460px;
+ background:radial-gradient(#153353,#061020 72%)
+}
+#chart{width:100%;height:240px;display:block}
+.sidebar{display:flex;flex-direction:column;gap:15px}
+.section{padding:16px}
+.big{font-size:34px;font-weight:bold;color:var(--cyan)}
+.controls{
+ display:flex;align-items:center;gap:12px;
+ padding:15px;flex-wrap:wrap
+}
+button,select{
+ color:white;background:#193651;border:1px solid #416580;
+ padding:9px 14px;border-radius:8px;cursor:pointer
+}
+input[type=range]{flex:1;accent-color:var(--cyan)}
+#decisions{padding:12px;max-height:330px;overflow:auto}
+.decision{
+ padding:10px;margin-bottom:8px;background:#182b47;
+ border-left:3px solid var(--cyan);border-radius:5px;
+ font-size:12px
+}
+.legend,#status{
+ padding:12px;color:var(--muted);font-size:12px
+}
+@media(max-width:980px){
+ .layout{grid-template-columns:1fr}
+ .metrics{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:580px){
+ main{padding:10px}
+ .metrics{grid-template-columns:repeat(2,1fr)}
+ #network{height:335px}
+}
+</style>
+</head>
+<body>
+<header>
+<small>QUANTUM CYBER DEFENSE ARENA / V22.5</small>
+<h1>Autonomous Defense Research Dashboard</h1>
+<p>Adaptive detection · Defense decisions · Strategy simulation</p>
+<p style="color:#f5c96b">SIMULATED REPLAY — NO REAL DEFENSE ACTIONS</p>
+</header>
+<main>
+<div class="metrics">
+<div class="card"><small>Simulation tick</small><strong id="tickCard">--</strong></div>
+<div class="card"><small>Adaptive detections</small><strong id="detCard">--</strong></div>
+<div class="card"><small>Original risk</small><strong id="riskCard">--</strong></div>
+<div class="card"><small>Residual risk</small><strong id="resCard">--</strong></div>
+<div class="card"><small>Service impact</small><strong id="impCard">--</strong></div>
+</div>
+
+<div class="layout">
+<div>
+<div class="panel">
+<h2>Dynamic Cyber Defense Network</h2>
+<svg id="network" viewBox="0 0 900 460"></svg>
+<div class="legend">
+Cyan: normal node · Red: adaptive detection ·
+Green: simulated moving traffic
+</div>
+<div class="controls">
+<button id="play">Pause</button>
+<button id="restart">Restart</button>
+<select id="speed">
+<option value="1000">1×</option>
+<option value="500" selected>2×</option>
+<option value="250">4×</option>
+</select>
+<input type="range" id="slider" min="0" max="119" value="0">
+<span id="tickText">1 / 120</span>
+</div>
+</div>
+
+<div class="panel" style="margin-top:15px">
+<h2>Simulated Risk &amp; Service Impact</h2>
+<svg id="chart" viewBox="0 0 800 240"></svg>
+<div class="legend">
+Cyan: original risk · Green: modeled residual risk ·
+Gold: modeled service impact
+</div>
+</div>
+</div>
+
+<div class="sidebar">
+<div class="panel">
+<h2>Defense Decision Overview</h2>
+<div class="section">
+<div class="muted">Human approval required</div>
+<div class="big" id="approval">--</div>
+<p>Simulated traffic: <strong id="traffic">--</strong></p>
+<p>Mean adaptive threshold: <strong id="threshold">--</strong></p>
+<p class="muted">
+Actions are recommendations evaluated under a hypothetical
+effect model. No network operations are executed.
+</p>
+</div>
+</div>
+
+<div class="panel">
+<h2>Defense Action Distribution</h2>
+<div class="section" id="actions"></div>
+</div>
+
+<div class="panel">
+<h2>Simulated Node Decisions</h2>
+<div id="decisions"></div>
+</div>
+</div>
+</div>
+<div id="status">Loading synthetic V22 research data...</div>
+</main>
+
+<script>
+"use strict";
+const $=id=>document.getElementById(id);
+const graph=d3.select("#network");
+const linkLayer=graph.append("g");
+const particleLayer=graph.append("g");
+const nodeLayer=graph.append("g");
+
+let frames=[],index=0,playing=true,delay=500,timer=null;
+let positions=new Map(),particles=null,current=null,cursor=null;
+
+const fmt=value=>Number(value).toFixed(3);
+
+function initGraph(frame){
+ const ns=frame.nodes;
+ ns.forEach((node,i)=>{
+  const a=i*2*Math.PI/ns.length-Math.PI/2;
+  positions.set(node.id,{
+   x:450+325*Math.cos(a),
+   y:225+155*Math.sin(a)
+  });
+ });
+
+ linkLayer.selectAll("line")
+ .data(frame.links,d=>d.id)
+ .join("line")
+ .attr("x1",d=>positions.get(d.source).x)
+ .attr("y1",d=>positions.get(d.source).y)
+ .attr("x2",d=>positions.get(d.target).x)
+ .attr("y2",d=>positions.get(d.target).y)
+ .attr("stroke","#30dbf4")
+ .attr("opacity",.33)
+ .attr("stroke-width",2);
+
+ const nodes=nodeLayer.selectAll("g")
+ .data(ns,d=>d.id).join("g")
+ .attr("transform",d=>{
+  const p=positions.get(d.id);
+  return `translate(${p.x},${p.y})`;
+ });
+
+ nodes.append("circle")
+ .attr("class","core")
+ .attr("r",13)
+ .attr("fill","#102942")
+ .attr("stroke","#30dbf4")
+ .attr("stroke-width",3);
+
+ nodes.append("text")
+ .attr("text-anchor","middle")
+ .attr("y",32)
+ .attr("fill","#eaf7ff")
+ .attr("font-size",11)
+ .text(d=>d.id.toUpperCase());
+
+ nodes.append("title");
+
+ const dots=frame.links.flatMap(l=>
+  [0,1,2].map(i=>({
+   id:l.id+"-"+i,linkId:l.id,phase:i/3
+  }))
+ );
+
+ particles=particleLayer.selectAll("circle")
+ .data(dots).join("circle")
+ .attr("r",3).attr("fill","#36e9a0");
+}
+
+function drawChart(){
+ const svg=d3.select("#chart");
+ const x=d3.scaleLinear().domain([0,119]).range([45,780]);
+ const y=d3.scaleLinear().domain([0,1]).range([215,15]);
+
+ [0,.25,.5,.75,1].forEach(v=>{
+  svg.append("line")
+   .attr("x1",45).attr("x2",780)
+   .attr("y1",y(v)).attr("y2",y(v))
+   .attr("stroke","#284561");
+  svg.append("text")
+   .attr("x",8).attr("y",y(v)+4)
+   .attr("fill","#91abc8")
+   .attr("font-size",11).text(v);
+ });
+
+ const lines=[
+  ["original_risk","#30dbf4"],
+  ["residual_risk","#36e9a0"],
+  ["service_impact","#f5c96b"]
+ ];
+
+ lines.forEach(([field,color])=>{
+  svg.append("path").datum(frames)
+   .attr("d",d3.line()
+    .x(d=>x(d.tick))
+    .y(d=>y(d[field])))
+   .attr("fill","none")
+   .attr("stroke",color)
+   .attr("stroke-width",2);
+ });
+
+ cursor=svg.append("line")
+ .attr("y1",15).attr("y2",215)
+ .attr("stroke","#ff6485")
+ .attr("stroke-dasharray","4 4");
+}
+
+function render(i){
+ index=i;
+ current=frames[i];
+ const f=current;
+
+ $("tickCard").textContent=i+1;
+ $("detCard").textContent=f.adaptive_detections;
+ $("riskCard").textContent=fmt(f.original_risk);
+ $("resCard").textContent=fmt(f.residual_risk);
+ $("impCard").textContent=fmt(f.service_impact);
+ $("approval").textContent=f.human_approval_required;
+ $("traffic").textContent=
+  Number(f.traffic_mbps).toFixed(1)+" Mbps";
+ $("threshold").textContent=fmt(f.mean_threshold);
+ $("tickText").textContent=(i+1)+" / 120";
+ $("slider").value=i;
+
+ const detected=new Set(f.detected_nodes);
+ const byId=new Map(f.nodes.map(n=>[n.id,n]));
+ const decisionMap=new Map(
+  f.decisions.map(d=>[d.node_id,d])
+ );
+
+ nodeLayer.selectAll("g").each(function(d){
+  const n=byId.get(d.id);
+  const selected=detected.has(d.id);
+  d3.select(this).select(".core")
+   .attr("stroke",selected?"#ff5d81":"#30dbf4")
+   .attr("r",11+Number(n.load)*9);
+  const decision=decisionMap.get(d.id);
+  d3.select(this).select("title")
+   .text(
+    d.id+" | Risk "+fmt(n.risk_score)+
+    " | Strategy "+(decision?.action||"observe")
+   );
+ });
+
+ const actions=$("actions");
+ actions.replaceChildren();
+ Object.entries(f.action_counts).forEach(([name,count])=>{
+  const div=document.createElement("p");
+  div.textContent=name.replaceAll("_"," ")+": "+count;
+  actions.appendChild(div);
+ });
+
+ const feed=$("decisions");
+ feed.replaceChildren();
+
+ f.decisions
+  .filter(d=>d.action!=="observe")
+  .slice(0,15)
+  .forEach(d=>{
+   const div=document.createElement("div");
+   div.className="decision";
+   div.textContent=
+    d.node_id+" · "+d.action.replaceAll("_"," ")+
+    " · Risk "+fmt(d.original_risk)+
+    " → "+fmt(d.residual_risk)+
+    (d.approval_required?" · Approval required":"");
+   feed.appendChild(div);
+  });
+
+ if(!feed.children.length)
+  feed.textContent="No intervention proposals at this tick.";
+
+ const x=45+i/119*735;
+ cursor.attr("x1",x).attr("x2",x);
+}
+
+function animate(time){
+ if(current&&particles&&playing){
+  const links=new Map(
+   current.links.map(l=>[l.id,l])
+  );
+  particles.each(function(dot){
+   const link=links.get(dot.linkId);
+   if(!link)return;
+   const a=positions.get(link.source);
+   const b=positions.get(link.target);
+   const speed=.00022+
+    Number(link.traffic_mbps)/650000;
+   const t=(dot.phase+time*speed)%1;
+   d3.select(this)
+    .attr("cx",a.x+(b.x-a.x)*t)
+    .attr("cy",a.y+(b.y-a.y)*t);
+  });
+ }
+ requestAnimationFrame(animate);
+}
+
+function schedule(){
+ clearInterval(timer);
+ if(playing&&frames.length){
+  timer=setInterval(()=>{
+   render((index+1)%frames.length);
+  },delay);
+ }
+}
+
+$("play").onclick=()=>{
+ playing=!playing;
+ $("play").textContent=playing?"Pause":"Play";
+ schedule();
+};
+
+$("restart").onclick=()=>{
+ playing=true;
+ $("play").textContent="Pause";
+ render(0);
+ schedule();
+};
+
+$("speed").onchange=e=>{
+ delay=Number(e.target.value);
+ schedule();
+};
+
+$("slider").oninput=e=>{
+ playing=false;
+ $("play").textContent="Play";
+ schedule();
+ render(Number(e.target.value));
+};
+
+async function main(){
+ try{
+  if(typeof d3==="undefined")
+   throw Error("D3 library unavailable");
+
+  const response=await fetch(
+   "./defense_data.json",{cache:"no-store"}
+  );
+
+  if(!response.ok)
+   throw Error("Cannot load defense_data.json");
+
+  const data=await response.json();
+
+  if(
+   data.version!=="V22.5"||
+   data.status!=="DEFENSE_DASHBOARD_PASS"||
+   data.simulation_mode!==true||
+   !Array.isArray(data.frames)||
+   data.frames.length!==120
+  )throw Error("Invalid V22.5 dataset");
+
+  frames=data.frames;
+
+  if(frames.some((f,i)=>
+   f.tick!==i||
+   f.nodes.length!==10||
+   f.links.length!==11
+  ))throw Error("Invalid network topology");
+
+  initGraph(frames[0]);
+  drawChart();
+  render(0);
+  schedule();
+
+  $("status").textContent=
+   "V22.5 ready · 120 simulated frames · "+
+   "No real network actions";
+
+ }catch(error){
+  $("status").textContent=
+   "ERROR: "+error.message;
+  $("status").style.color="#ff5d81";
+  console.error(error);
+ }
+}
+
+requestAnimationFrame(animate);
+main();
+</script>
+</body>
+</html>
