@@ -1,0 +1,230 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V20.3",
+  "module": "AI Threat Scenario Engine",
+  "created_utc": "2026-10-20T11:48:24.817838+00:00",
+  "status": "THREAT_SCENARIO_PASS",
+  "execution_mode": "deterministic_read_only",
+  "simulation_mode": true,
+  "trained_ai_model_used": false,
+  "real_network_access": false,
+  "external_actions_enabled": false,
+  "source_sha256": {
+    "architecture": "7e5d02e5a3005a0738aba0deb0f3dbd40575c5eaf5258853993f2fea6ea4ee5d",
+    "simulation": "8dfaed4b00ccaa7016a450a17b53764fd9f51e470193b1a4d89644b32b0e015f",
+    "events": "cc434f7e11d12e186cb91f6213c623e911b63b8f1803b817d21abac361e28abb",
+    "nodes_csv": "de46af62dcf0160fe420eacc3ba2365e8f9b96efc5483a832c527bf9325fbdda",
+    "links_csv": "294995ad68c29d02fb4ed6757739cc2462ee8b34906472d62d4242ce164afcde"
+  },
+  "metrics": {
+    "total_alerts": 21,
+    "simulation_ticks": 120,
+    "configured_scenarios": 5,
+    "scenarios_matched_by_alerts": 3,
+    "unmapped_alerts": 0,
+    "synthetically_injected_alerts": 21,
+    "alert_categories": {
+      "traffic_anomaly": 7,
+      "reconnaissance": 7,
+      "application_anomaly": 7
+    },
+    "enriched_risk_levels": {
+      "critical": 4,
+      "high": 17
+    },
+    "maximum_enriched_risk": 0.937957,
+    "classification_type": "rule_based",
+    "trained_ai_model_used": false,
+    "real_world_detection_accuracy_measured": false
+  },
+  "scenarios": [
+    {
+      "id": "scenario_001",
+      "name": "Traffic Spike",
+      "category": "traffic_anomaly",
+      "target": "gateway",
+      "severity": "medium",
+      "synthetic": true
+    },
+    {
+      "id": "scenario_002",
+      "name": "Simulated Port Scan",
+      "category": "reconnaissance",
+      "target": "firewall",
+      "severity": "medium",
+      "synthetic": true
+    },
+    {
+      "id": "scenario_003",
+      "name": "Suspicious API Requests",
+      "category": "application_anomaly",
+      "target": "api",
+      "severity": "high",
+      "synthetic": true
+    },
+    {
+      "id": "scenario_004",
+      "name": "Unusual Database Access",
+      "category": "access_anomaly",
+      "target": "database",
+      "severity": "high",
+      "synthetic": true
+    },
+    {
+      "id": "scenario_005",
+      "name": "AI Anomaly Alert",
+      "category": "model_alert",
+      "target": "ai_engine",
+      "severity": "medium",
+      "synthetic": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "V20.1 architecture passed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V20.2 simulation passed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Architecture fingerprint verified",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V20.2 uses current architecture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulation-only operation enforced",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Event export version verified",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Event count matches source metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source simulation has no failed checks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Five scenarios available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Scenario identifiers unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Scenario categories supported",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All scenarios are synthetic",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Scenario severity values valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All source events classified",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Unique classified event IDs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All classifications remain synthetic",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Classification is explicitly rule-based",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Risk scores are finite and bounded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Enriched risk levels consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Only configured or unmapped scenarios used",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Traffic context nonnegative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Timeline covers all simulation ticks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Timeline tick sequence continuous",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Timeline alert counts consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Classified events retain source IDs",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Threat scenarios do not require real attacks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Classification reproducible",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "checks_passed": 27,
+  "checks_failed": 0,
+  "limitations": [
+    "Synthetic observations only.",
+    "Rule-based scenario matching.",
+    "No trained model executed.",
+    "No verified attack labels.",
+    "No validated real-world accuracy.",
+    "No external security actions."
+  ],
+  "next_stage": "V20.4 Event Streaming Engine"
+}

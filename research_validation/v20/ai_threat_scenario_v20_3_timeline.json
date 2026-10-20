@@ -1,0 +1,1236 @@
+{
+  "version": "V20.3",
+  "simulation_mode": true,
+  "is_live": false,
+  "ticks": 120,
+  "timeline": [
+    {
+      "tick": 0,
+      "timestamp": "2026-01-01T00:00:00+00:00",
+      "total_traffic_mbps": 616.960655,
+      "mean_latency_ms": 2.769259,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 1,
+      "timestamp": "2026-01-01T00:00:01+00:00",
+      "total_traffic_mbps": 610.192431,
+      "mean_latency_ms": 2.969815,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 2,
+      "timestamp": "2026-01-01T00:00:02+00:00",
+      "total_traffic_mbps": 654.869833,
+      "mean_latency_ms": 2.954181,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 3,
+      "timestamp": "2026-01-01T00:00:03+00:00",
+      "total_traffic_mbps": 677.988103,
+      "mean_latency_ms": 3.212082,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 4,
+      "timestamp": "2026-01-01T00:00:04+00:00",
+      "total_traffic_mbps": 653.616884,
+      "mean_latency_ms": 3.099899,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 5,
+      "timestamp": "2026-01-01T00:00:05+00:00",
+      "total_traffic_mbps": 673.776456,
+      "mean_latency_ms": 3.059832,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 6,
+      "timestamp": "2026-01-01T00:00:06+00:00",
+      "total_traffic_mbps": 718.497713,
+      "mean_latency_ms": 3.175955,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 7,
+      "timestamp": "2026-01-01T00:00:07+00:00",
+      "total_traffic_mbps": 670.858523,
+      "mean_latency_ms": 3.188404,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 8,
+      "timestamp": "2026-01-01T00:00:08+00:00",
+      "total_traffic_mbps": 718.606525,
+      "mean_latency_ms": 3.116047,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 9,
+      "timestamp": "2026-01-01T00:00:09+00:00",
+      "total_traffic_mbps": 722.979343,
+      "mean_latency_ms": 3.115369,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 10,
+      "timestamp": "2026-01-01T00:00:10+00:00",
+      "total_traffic_mbps": 778.103565,
+      "mean_latency_ms": 3.304402,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 11,
+      "timestamp": "2026-01-01T00:00:11+00:00",
+      "total_traffic_mbps": 764.310098,
+      "mean_latency_ms": 3.086511,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 12,
+      "timestamp": "2026-01-01T00:00:12+00:00",
+      "total_traffic_mbps": 741.185204,
+      "mean_latency_ms": 3.042357,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 13,
+      "timestamp": "2026-01-01T00:00:13+00:00",
+      "total_traffic_mbps": 714.40418,
+      "mean_latency_ms": 3.030456,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 14,
+      "timestamp": "2026-01-01T00:00:14+00:00",
+      "total_traffic_mbps": 745.972546,
+      "mean_latency_ms": 2.950842,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 15,
+      "timestamp": "2026-01-01T00:00:15+00:00",
+      "total_traffic_mbps": 721.167232,
+      "mean_latency_ms": 2.915639,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 16,
+      "timestamp": "2026-01-01T00:00:16+00:00",
+      "total_traffic_mbps": 738.674407,
+      "mean_latency_ms": 3.011711,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 17,
+      "timestamp": "2026-01-01T00:00:17+00:00",
+      "total_traffic_mbps": 987.649352,
+      "mean_latency_ms": 4.905565,
+      "alert_count": 3,
+      "highest_enriched_risk": 0.900614,
+      "anomaly_injected": true,
+      "scenario_ids": [
+        "scenario_001",
+        "scenario_002",
+        "scenario_003"
+      ]
+    },
+    {
+      "tick": 18,
+      "timestamp": "2026-01-01T00:00:18+00:00",
+      "total_traffic_mbps": 726.498002,
+      "mean_latency_ms": 3.035507,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 19,
+      "timestamp": "2026-01-01T00:00:19+00:00",
+      "total_traffic_mbps": 685.411613,
+      "mean_latency_ms": 2.853139,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 20,
+      "timestamp": "2026-01-01T00:00:20+00:00",
+      "total_traffic_mbps": 723.170334,
+      "mean_latency_ms": 2.901079,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 21,
+      "timestamp": "2026-01-01T00:00:21+00:00",
+      "total_traffic_mbps": 679.377412,
+      "mean_latency_ms": 3.008682,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 22,
+      "timestamp": "2026-01-01T00:00:22+00:00",
+      "total_traffic_mbps": 663.152776,
+      "mean_latency_ms": 3.051556,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 23,
+      "timestamp": "2026-01-01T00:00:23+00:00",
+      "total_traffic_mbps": 650.36992,
+      "mean_latency_ms": 3.160366,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 24,
+      "timestamp": "2026-01-01T00:00:24+00:00",
+      "total_traffic_mbps": 653.822185,
+      "mean_latency_ms": 3.02758,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 25,
+      "timestamp": "2026-01-01T00:00:25+00:00",
+      "total_traffic_mbps": 629.103281,
+      "mean_latency_ms": 2.92992,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 26,
+      "timestamp": "2026-01-01T00:00:26+00:00",
+      "total_traffic_mbps": 621.065152,
+      "mean_latency_ms": 3.119221,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 27,
+      "timestamp": "2026-01-01T00:00:27+00:00",
+      "total_traffic_mbps": 518.596198,
+      "mean_latency_ms": 3.095484,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 28,
+      "timestamp": "2026-01-01T00:00:28+00:00",
+      "total_traffic_mbps": 582.732573,
+      "mean_latency_ms": 3.131975,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 29,
+      "timestamp": "2026-01-01T00:00:29+00:00",
+      "total_traffic_mbps": 598.749853,
+      "mean_latency_ms": 3.016186,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 30,
+      "timestamp": "2026-01-01T00:00:30+00:00",
+      "total_traffic_mbps": 488.13723,
+      "mean_latency_ms": 3.212591,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 31,
+      "timestamp": "2026-01-01T00:00:31+00:00",
+      "total_traffic_mbps": 540.69131,
+      "mean_latency_ms": 2.933214,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 32,
+      "timestamp": "2026-01-01T00:00:32+00:00",
+      "total_traffic_mbps": 457.776597,
+      "mean_latency_ms": 2.858662,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 33,
+      "timestamp": "2026-01-01T00:00:33+00:00",
+      "total_traffic_mbps": 506.174881,
+      "mean_latency_ms": 2.989124,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 34,
+      "timestamp": "2026-01-01T00:00:34+00:00",
+      "total_traffic_mbps": 683.811893,
+      "mean_latency_ms": 4.648841,
+      "alert_count": 3,
+      "highest_enriched_risk": 0.892873,
+      "anomaly_injected": true,
+      "scenario_ids": [
+        "scenario_001",
+        "scenario_002",
+        "scenario_003"
+      ]
+    },
+    {
+      "tick": 35,
+      "timestamp": "2026-01-01T00:00:35+00:00",
+      "total_traffic_mbps": 541.885697,
+      "mean_latency_ms": 2.77722,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 36,
+      "timestamp": "2026-01-01T00:00:36+00:00",
+      "total_traffic_mbps": 470.844352,
+      "mean_latency_ms": 2.667586,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 37,
+      "timestamp": "2026-01-01T00:00:37+00:00",
+      "total_traffic_mbps": 497.341207,
+      "mean_latency_ms": 2.86586,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 38,
+      "timestamp": "2026-01-01T00:00:38+00:00",
+      "total_traffic_mbps": 497.736837,
+      "mean_latency_ms": 2.995575,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 39,
+      "timestamp": "2026-01-01T00:00:39+00:00",
+      "total_traffic_mbps": 473.443038,
+      "mean_latency_ms": 2.996888,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 40,
+      "timestamp": "2026-01-01T00:00:40+00:00",
+      "total_traffic_mbps": 511.532394,
+      "mean_latency_ms": 3.03787,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 41,
+      "timestamp": "2026-01-01T00:00:41+00:00",
+      "total_traffic_mbps": 487.811493,
+      "mean_latency_ms": 2.917239,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 42,
+      "timestamp": "2026-01-01T00:00:42+00:00",
+      "total_traffic_mbps": 554.353079,
+      "mean_latency_ms": 3.03147,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 43,
+      "timestamp": "2026-01-01T00:00:43+00:00",
+      "total_traffic_mbps": 502.725353,
+      "mean_latency_ms": 3.00299,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 44,
+      "timestamp": "2026-01-01T00:00:44+00:00",
+      "total_traffic_mbps": 512.793825,
+      "mean_latency_ms": 2.829341,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 45,
+      "timestamp": "2026-01-01T00:00:45+00:00",
+      "total_traffic_mbps": 481.796389,
+      "mean_latency_ms": 3.133028,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 46,
+      "timestamp": "2026-01-01T00:00:46+00:00",
+      "total_traffic_mbps": 557.406549,
+      "mean_latency_ms": 3.013009,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 47,
+      "timestamp": "2026-01-01T00:00:47+00:00",
+      "total_traffic_mbps": 547.458321,
+      "mean_latency_ms": 3.048803,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 48,
+      "timestamp": "2026-01-01T00:00:48+00:00",
+      "total_traffic_mbps": 576.273453,
+      "mean_latency_ms": 3.053743,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 49,
+      "timestamp": "2026-01-01T00:00:49+00:00",
+      "total_traffic_mbps": 568.657953,
+      "mean_latency_ms": 3.176206,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 50,
+      "timestamp": "2026-01-01T00:00:50+00:00",
+      "total_traffic_mbps": 615.271089,
+      "mean_latency_ms": 3.228661,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 51,
+      "timestamp": "2026-01-01T00:00:51+00:00",
+      "total_traffic_mbps": 860.000371,
+      "mean_latency_ms": 4.733214,
+      "alert_count": 3,
+      "highest_enriched_risk": 0.937218,
+      "anomaly_injected": true,
+      "scenario_ids": [
+        "scenario_001",
+        "scenario_002",
+        "scenario_003"
+      ]
+    },
+    {
+      "tick": 52,
+      "timestamp": "2026-01-01T00:00:52+00:00",
+      "total_traffic_mbps": 648.733059,
+      "mean_latency_ms": 3.165899,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 53,
+      "timestamp": "2026-01-01T00:00:53+00:00",
+      "total_traffic_mbps": 637.044454,
+      "mean_latency_ms": 3.219394,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 54,
+      "timestamp": "2026-01-01T00:00:54+00:00",
+      "total_traffic_mbps": 688.314355,
+      "mean_latency_ms": 2.858474,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 55,
+      "timestamp": "2026-01-01T00:00:55+00:00",
+      "total_traffic_mbps": 681.189884,
+      "mean_latency_ms": 3.11073,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 56,
+      "timestamp": "2026-01-01T00:00:56+00:00",
+      "total_traffic_mbps": 713.728852,
+      "mean_latency_ms": 3.11881,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 57,
+      "timestamp": "2026-01-01T00:00:57+00:00",
+      "total_traffic_mbps": 753.758133,
+      "mean_latency_ms": 3.374523,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 58,
+      "timestamp": "2026-01-01T00:00:58+00:00",
+      "total_traffic_mbps": 704.502326,
+      "mean_latency_ms": 3.039407,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 59,
+      "timestamp": "2026-01-01T00:00:59+00:00",
+      "total_traffic_mbps": 703.024256,
+      "mean_latency_ms": 2.992567,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 60,
+      "timestamp": "2026-01-01T00:01:00+00:00",
+      "total_traffic_mbps": 741.398466,
+      "mean_latency_ms": 3.11414,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 61,
+      "timestamp": "2026-01-01T00:01:01+00:00",
+      "total_traffic_mbps": 713.370232,
+      "mean_latency_ms": 3.035838,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 62,
+      "timestamp": "2026-01-01T00:01:02+00:00",
+      "total_traffic_mbps": 662.233261,
+      "mean_latency_ms": 3.168387,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 63,
+      "timestamp": "2026-01-01T00:01:03+00:00",
+      "total_traffic_mbps": 757.4453,
+      "mean_latency_ms": 3.146886,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 64,
+      "timestamp": "2026-01-01T00:01:04+00:00",
+      "total_traffic_mbps": 713.391104,
+      "mean_latency_ms": 3.286896,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 65,
+      "timestamp": "2026-01-01T00:01:05+00:00",
+      "total_traffic_mbps": 725.365615,
+      "mean_latency_ms": 3.287508,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 66,
+      "timestamp": "2026-01-01T00:01:06+00:00",
+      "total_traffic_mbps": 667.035097,
+      "mean_latency_ms": 3.143432,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 67,
+      "timestamp": "2026-01-01T00:01:07+00:00",
+      "total_traffic_mbps": 698.912722,
+      "mean_latency_ms": 3.153742,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 68,
+      "timestamp": "2026-01-01T00:01:08+00:00",
+      "total_traffic_mbps": 969.703796,
+      "mean_latency_ms": 5.024925,
+      "alert_count": 3,
+      "highest_enriched_risk": 0.892181,
+      "anomaly_injected": true,
+      "scenario_ids": [
+        "scenario_001",
+        "scenario_002",
+        "scenario_003"
+      ]
+    },
+    {
+      "tick": 69,
+      "timestamp": "2026-01-01T00:01:09+00:00",
+      "total_traffic_mbps": 672.947111,
+      "mean_latency_ms": 2.912936,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 70,
+      "timestamp": "2026-01-01T00:01:10+00:00",
+      "total_traffic_mbps": 663.808538,
+      "mean_latency_ms": 2.902793,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 71,
+      "timestamp": "2026-01-01T00:01:11+00:00",
+      "total_traffic_mbps": 697.817711,
+      "mean_latency_ms": 3.119334,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 72,
+      "timestamp": "2026-01-01T00:01:12+00:00",
+      "total_traffic_mbps": 711.56979,
+      "mean_latency_ms": 3.130939,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 73,
+      "timestamp": "2026-01-01T00:01:13+00:00",
+      "total_traffic_mbps": 603.683372,
+      "mean_latency_ms": 3.000346,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 74,
+      "timestamp": "2026-01-01T00:01:14+00:00",
+      "total_traffic_mbps": 627.91568,
+      "mean_latency_ms": 2.882705,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 75,
+      "timestamp": "2026-01-01T00:01:15+00:00",
+      "total_traffic_mbps": 584.53861,
+      "mean_latency_ms": 2.979039,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 76,
+      "timestamp": "2026-01-01T00:01:16+00:00",
+      "total_traffic_mbps": 612.582892,
+      "mean_latency_ms": 2.862755,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 77,
+      "timestamp": "2026-01-01T00:01:17+00:00",
+      "total_traffic_mbps": 556.934183,
+      "mean_latency_ms": 2.96442,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 78,
+      "timestamp": "2026-01-01T00:01:18+00:00",
+      "total_traffic_mbps": 612.342716,
+      "mean_latency_ms": 2.990359,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 79,
+      "timestamp": "2026-01-01T00:01:19+00:00",
+      "total_traffic_mbps": 543.508512,
+      "mean_latency_ms": 2.858621,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 80,
+      "timestamp": "2026-01-01T00:01:20+00:00",
+      "total_traffic_mbps": 493.862733,
+      "mean_latency_ms": 2.964273,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 81,
+      "timestamp": "2026-01-01T00:01:21+00:00",
+      "total_traffic_mbps": 514.301647,
+      "mean_latency_ms": 3.007986,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 82,
+      "timestamp": "2026-01-01T00:01:22+00:00",
+      "total_traffic_mbps": 556.0928,
+      "mean_latency_ms": 2.961851,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 83,
+      "timestamp": "2026-01-01T00:01:23+00:00",
+      "total_traffic_mbps": 514.931065,
+      "mean_latency_ms": 3.002906,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 84,
+      "timestamp": "2026-01-01T00:01:24+00:00",
+      "total_traffic_mbps": 492.377995,
+      "mean_latency_ms": 2.730724,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 85,
+      "timestamp": "2026-01-01T00:01:25+00:00",
+      "total_traffic_mbps": 655.511342,
+      "mean_latency_ms": 4.507788,
+      "alert_count": 3,
+      "highest_enriched_risk": 0.891163,
+      "anomaly_injected": true,
+      "scenario_ids": [
+        "scenario_001",
+        "scenario_002",
+        "scenario_003"
+      ]
+    },
+    {
+      "tick": 86,
+      "timestamp": "2026-01-01T00:01:26+00:00",
+      "total_traffic_mbps": 560.327134,
+      "mean_latency_ms": 2.901025,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 87,
+      "timestamp": "2026-01-01T00:01:27+00:00",
+      "total_traffic_mbps": 471.054728,
+      "mean_latency_ms": 2.82604,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 88,
+      "timestamp": "2026-01-01T00:01:28+00:00",
+      "total_traffic_mbps": 462.120645,
+      "mean_latency_ms": 2.952564,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 89,
+      "timestamp": "2026-01-01T00:01:29+00:00",
+      "total_traffic_mbps": 448.73477,
+      "mean_latency_ms": 2.746538,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 90,
+      "timestamp": "2026-01-01T00:01:30+00:00",
+      "total_traffic_mbps": 514.283755,
+      "mean_latency_ms": 3.09066,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 91,
+      "timestamp": "2026-01-01T00:01:31+00:00",
+      "total_traffic_mbps": 439.604827,
+      "mean_latency_ms": 3.041213,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 92,
+      "timestamp": "2026-01-01T00:01:32+00:00",
+      "total_traffic_mbps": 513.554737,
+      "mean_latency_ms": 3.222754,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 93,
+      "timestamp": "2026-01-01T00:01:33+00:00",
+      "total_traffic_mbps": 457.056869,
+      "mean_latency_ms": 3.06664,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 94,
+      "timestamp": "2026-01-01T00:01:34+00:00",
+      "total_traffic_mbps": 553.062171,
+      "mean_latency_ms": 2.754474,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 95,
+      "timestamp": "2026-01-01T00:01:35+00:00",
+      "total_traffic_mbps": 445.384397,
+      "mean_latency_ms": 2.942773,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 96,
+      "timestamp": "2026-01-01T00:01:36+00:00",
+      "total_traffic_mbps": 611.633029,
+      "mean_latency_ms": 3.086644,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 97,
+      "timestamp": "2026-01-01T00:01:37+00:00",
+      "total_traffic_mbps": 557.945902,
+      "mean_latency_ms": 2.999343,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 98,
+      "timestamp": "2026-01-01T00:01:38+00:00",
+      "total_traffic_mbps": 620.313027,
+      "mean_latency_ms": 2.796788,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 99,
+      "timestamp": "2026-01-01T00:01:39+00:00",
+      "total_traffic_mbps": 566.272857,
+      "mean_latency_ms": 3.126568,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 100,
+      "timestamp": "2026-01-01T00:01:40+00:00",
+      "total_traffic_mbps": 586.757258,
+      "mean_latency_ms": 3.022648,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 101,
+      "timestamp": "2026-01-01T00:01:41+00:00",
+      "total_traffic_mbps": 647.528453,
+      "mean_latency_ms": 3.212653,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 102,
+      "timestamp": "2026-01-01T00:01:42+00:00",
+      "total_traffic_mbps": 898.710931,
+      "mean_latency_ms": 4.873254,
+      "alert_count": 3,
+      "highest_enriched_risk": 0.937957,
+      "anomaly_injected": true,
+      "scenario_ids": [
+        "scenario_001",
+        "scenario_002",
+        "scenario_003"
+      ]
+    },
+    {
+      "tick": 103,
+      "timestamp": "2026-01-01T00:01:43+00:00",
+      "total_traffic_mbps": 623.928079,
+      "mean_latency_ms": 3.005012,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 104,
+      "timestamp": "2026-01-01T00:01:44+00:00",
+      "total_traffic_mbps": 666.711809,
+      "mean_latency_ms": 2.98857,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 105,
+      "timestamp": "2026-01-01T00:01:45+00:00",
+      "total_traffic_mbps": 725.102954,
+      "mean_latency_ms": 2.837851,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 106,
+      "timestamp": "2026-01-01T00:01:46+00:00",
+      "total_traffic_mbps": 650.011665,
+      "mean_latency_ms": 2.878825,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 107,
+      "timestamp": "2026-01-01T00:01:47+00:00",
+      "total_traffic_mbps": 656.834089,
+      "mean_latency_ms": 3.249737,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 108,
+      "timestamp": "2026-01-01T00:01:48+00:00",
+      "total_traffic_mbps": 753.903972,
+      "mean_latency_ms": 2.992016,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 109,
+      "timestamp": "2026-01-01T00:01:49+00:00",
+      "total_traffic_mbps": 781.116359,
+      "mean_latency_ms": 2.97196,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 110,
+      "timestamp": "2026-01-01T00:01:50+00:00",
+      "total_traffic_mbps": 755.811454,
+      "mean_latency_ms": 2.985156,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 111,
+      "timestamp": "2026-01-01T00:01:51+00:00",
+      "total_traffic_mbps": 783.194008,
+      "mean_latency_ms": 3.187647,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 112,
+      "timestamp": "2026-01-01T00:01:52+00:00",
+      "total_traffic_mbps": 801.811875,
+      "mean_latency_ms": 3.217054,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 113,
+      "timestamp": "2026-01-01T00:01:53+00:00",
+      "total_traffic_mbps": 739.467904,
+      "mean_latency_ms": 3.105736,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 114,
+      "timestamp": "2026-01-01T00:01:54+00:00",
+      "total_traffic_mbps": 806.65936,
+      "mean_latency_ms": 3.304238,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 115,
+      "timestamp": "2026-01-01T00:01:55+00:00",
+      "total_traffic_mbps": 695.138961,
+      "mean_latency_ms": 2.937108,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 116,
+      "timestamp": "2026-01-01T00:01:56+00:00",
+      "total_traffic_mbps": 765.697137,
+      "mean_latency_ms": 3.210278,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 117,
+      "timestamp": "2026-01-01T00:01:57+00:00",
+      "total_traffic_mbps": 748.104404,
+      "mean_latency_ms": 2.976614,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 118,
+      "timestamp": "2026-01-01T00:01:58+00:00",
+      "total_traffic_mbps": 727.761722,
+      "mean_latency_ms": 3.173394,
+      "alert_count": 0,
+      "highest_enriched_risk": 0.0,
+      "anomaly_injected": false,
+      "scenario_ids": []
+    },
+    {
+      "tick": 119,
+      "timestamp": "2026-01-01T00:01:59+00:00",
+      "total_traffic_mbps": 938.105044,
+      "mean_latency_ms": 4.834477,
+      "alert_count": 3,
+      "highest_enriched_risk": 0.901751,
+      "anomaly_injected": true,
+      "scenario_ids": [
+        "scenario_001",
+        "scenario_002",
+        "scenario_003"
+      ]
+    }
+  ]
+}

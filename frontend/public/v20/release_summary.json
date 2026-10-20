@@ -1,0 +1,25 @@
+{
+  "version": "V20.6",
+  "status": "CYBER_DIGITAL_TWIN_RELEASE_PASS",
+  "simulation_mode": true,
+  "is_live": false,
+  "metrics": {
+    "ticks": 120,
+    "nodes": 10,
+    "links": 11,
+    "node_observations": 1200,
+    "link_observations": 1320,
+    "events": 21,
+    "classified_alerts": 21,
+    "frames": 120,
+    "stream_messages": 120,
+    "maximum_risk": 0.937957,
+    "categories": {
+      "traffic_anomaly": 7,
+      "reconnaissance": 7,
+      "application_anomaly": 7
+    }
+  },
+  "checks_passed": 80,
+  "checks_failed": 0
+}

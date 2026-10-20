@@ -1,0 +1,805 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quantum Cyber Defense Arena | V20.5</title>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+
+<style>
+:root {
+  --bg: #050b17;
+  --panel: #0b1930;
+  --border: #25405e;
+  --text: #e7f5ff;
+  --muted: #8ea8c2;
+  --cyan: #02e4ff;
+  --green: #46e9a0;
+  --red: #ff537a;
+  --orange: #ffc35b;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, Segoe UI, Arial, sans-serif;
+}
+header {
+  padding: 24px;
+  background: linear-gradient(110deg,#10294a,#071020);
+  border-bottom: 1px solid var(--border);
+}
+header h1 {
+  margin: 8px 0;
+  font-size: clamp(23px,3vw,36px);
+}
+.eyebrow {
+  color: var(--cyan);
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.subtitle { color: var(--muted); font-size: 13px; }
+main { max-width: 1500px; margin: auto; padding: 20px; }
+.stats {
+  display: grid;
+  grid-template-columns: repeat(5,minmax(0,1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.stat,.panel {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--panel);
+}
+.stat { padding: 16px; min-width: 0; }
+.stat label {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.stat strong {
+  display: block;
+  margin-top: 8px;
+  font-size: clamp(18px,2.5vw,28px);
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0,1.8fr) minmax(280px,.8fr);
+  gap: 16px;
+}
+.panel { overflow: hidden; min-width: 0; }
+.panel-head {
+  padding: 14px 17px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.panel-head h2 { margin: 0; font-size: 15px; }
+.pill {
+  border: 1px solid #187988;
+  color: var(--cyan);
+  border-radius: 18px;
+  font-size: 10px;
+  padding: 6px 10px;
+}
+#network {
+  width: 100%;
+  height: 530px;
+  display: block;
+  background:
+    radial-gradient(ellipse at 50% 45%,#123251,#060c19 72%);
+}
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--border);
+}
+button,select {
+  padding: 9px 14px;
+  background: #153450;
+  border: 1px solid #39738f;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+button:hover { background: #245474; }
+input[type=range] {
+  flex: 1;
+  min-width: 100px;
+  accent-color: var(--cyan);
+}
+.small { font-size: 12px; color: var(--muted); }
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+.risk-body { padding: 18px; }
+#riskValue { font-size: 48px; font-weight: bold; }
+.risk-track {
+  background: #1d3550;
+  height: 10px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 14px 0;
+}
+#riskFill {
+  height: 100%;
+  width: 0%;
+  background: var(--green);
+  transition: width .3s ease;
+}
+#alerts {
+  height: 360px;
+  overflow: auto;
+  padding: 12px;
+}
+.alert {
+  margin-bottom: 9px;
+  padding: 12px;
+  border-left: 3px solid var(--red);
+  background: #12223b;
+  border-radius: 6px;
+  font-size: 12px;
+}
+.alert strong { color: #fff; }
+.alert small {
+  display: block;
+  color: var(--muted);
+  margin-top: 5px;
+}
+#status {
+  margin: 14px 0;
+  font-size: 12px;
+  color: var(--cyan);
+  white-space: pre-wrap;
+}
+.legend {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  color: var(--muted);
+  font-size: 12px;
+  padding: 14px 18px;
+}
+.dot {
+  display: inline-block;
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+footer {
+  padding: 20px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 11px;
+}
+@media(max-width:950px) {
+  .layout { grid-template-columns: 1fr; }
+  .stats { grid-template-columns: repeat(3,minmax(0,1fr)); }
+  #network { height: 450px; }
+}
+@media(max-width:560px) {
+  main { padding: 10px; }
+  header { padding: 18px; }
+  .stats { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  #network { height: 330px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="eyebrow">QUANTUM CYBER DEFENSE ARENA / V20.5</div>
+  <h1>Cyber Digital Twin</h1>
+  <p class="subtitle">
+    Interactive network simulation • D3 visualization •
+    Synthetic security research data
+  </p>
+</header>
+
+<main>
+
+<section class="stats">
+  <div class="stat">
+    <label>Network Nodes</label>
+    <strong id="nodesCount">--</strong>
+  </div>
+  <div class="stat">
+    <label>Connections</label>
+    <strong id="linksCount">--</strong>
+  </div>
+  <div class="stat">
+    <label>Traffic</label>
+    <strong id="traffic">--</strong>
+  </div>
+  <div class="stat">
+    <label>Latency</label>
+    <strong id="latency">--</strong>
+  </div>
+  <div class="stat">
+    <label>Current Alerts</label>
+    <strong id="alertCount">--</strong>
+  </div>
+</section>
+
+<div class="layout">
+
+  <section class="panel">
+    <div class="panel-head">
+      <h2>Digital Twin Network Topology</h2>
+      <span class="pill">SIMULATED REPLAY</span>
+    </div>
+
+    <svg id="network"
+         viewBox="0 0 900 530"
+         role="img"
+         aria-label="Interactive simulated network"></svg>
+
+    <div class="legend">
+      <span><i class="dot" style="background:#02e4ff"></i>Normal</span>
+      <span><i class="dot" style="background:#ffc35b"></i>Elevated risk</span>
+      <span><i class="dot" style="background:#ff537a"></i>High risk</span>
+      <span><i class="dot" style="background:#46e9a0"></i>Moving data</span>
+    </div>
+
+    <div class="controls">
+      <button id="playPause">Pause</button>
+      <button id="restart">Restart</button>
+
+      <select id="speed" aria-label="Playback speed">
+        <option value="2000">0.5×</option>
+        <option value="1000">1×</option>
+        <option value="500" selected>2×</option>
+        <option value="250">4×</option>
+      </select>
+
+      <input id="timeline"
+             type="range"
+             min="0" max="0" value="0"
+             aria-label="Simulation timeline">
+
+      <span class="small" id="tickText">0 / 0</span>
+    </div>
+  </section>
+
+  <aside class="sidebar">
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Threat Risk Monitor</h2>
+      </div>
+
+      <div class="risk-body">
+        <div id="riskValue">0.000</div>
+        <div class="risk-track">
+          <div id="riskFill"></div>
+        </div>
+        <div class="small" id="riskLevel">Initializing...</div>
+        <p class="small" id="timestamp">--</p>
+        <p class="small">
+          Synthetic risk score. Not a probability
+          of a real cyberattack.
+        </p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Security Event Feed</h2>
+        <span class="pill" id="feedCount">0 EVENTS</span>
+      </div>
+      <div id="alerts">
+        <div class="small">Waiting for simulation data...</div>
+      </div>
+    </section>
+  </aside>
+
+</div>
+
+<div id="status">Loading V20.4 simulation...</div>
+
+</main>
+
+<footer>
+  Quantum Cyber Defense Arena • V20.5 Research Dashboard •
+  Simulated data only • No live network monitoring
+</footer>
+
+<script>
+"use strict";
+
+const svg = d3.select("#network");
+const width = 900;
+const height = 530;
+
+const $ = id => document.getElementById(id);
+
+let frames = [];
+let currentIndex = 0;
+let playing = true;
+let playbackDelay = 500;
+let playbackTimer = null;
+let latestFrame = null;
+let nodeSelection = null;
+let linkSelection = null;
+let particleSelection = null;
+let nodePositions = new Map();
+let alertHistory = [];
+let animationStart = performance.now();
+let initialized = false;
+
+const colorNormal = "#02e4ff";
+const colorMedium = "#ffc35b";
+const colorHigh = "#ff537a";
+const colorParticle = "#46e9a0";
+
+function riskColor(score) {
+  if (score >= 0.75) return colorHigh;
+  if (score >= 0.50) return colorMedium;
+  return colorNormal;
+}
+
+function validNumber(value) {
+  const n = Number(value);
+  return Number.isFinite(n) ? n : 0;
+}
+
+function text(id, value) {
+  $(id).textContent = value;
+}
+
+function setStatus(value, isError = false) {
+  const element = $("status");
+  element.textContent = value;
+  element.style.color = isError ? colorHigh : colorNormal;
+}
+
+function getNodes(frame) {
+  return frame.network.nodes;
+}
+
+function getLinks(frame) {
+  return frame.network.links;
+}
+
+function getAlerts(frame) {
+  return frame.alerts || [];
+}
+
+function makeLayout(frame) {
+  const nodes = getNodes(frame);
+  const cx = width / 2;
+  const cy = height / 2;
+  const radiusX = 330;
+  const radiusY = 185;
+
+  nodes.forEach((node, index) => {
+    const angle = -Math.PI / 2 +
+      (index * Math.PI * 2 / nodes.length);
+
+    nodePositions.set(node.id, {
+      x: cx + radiusX * Math.cos(angle),
+      y: cy + radiusY * Math.sin(angle)
+    });
+  });
+}
+
+const defs = svg.append("defs");
+
+const glow = defs.append("filter")
+  .attr("id", "cyberGlow")
+  .attr("x", "-100%")
+  .attr("y", "-100%")
+  .attr("width", "300%")
+  .attr("height", "300%");
+
+glow.append("feGaussianBlur")
+  .attr("stdDeviation", 5)
+  .attr("result", "blur");
+
+const merge = glow.append("feMerge");
+merge.append("feMergeNode").attr("in", "blur");
+merge.append("feMergeNode").attr("in", "SourceGraphic");
+
+const linksLayer = svg.append("g");
+const particlesLayer = svg.append("g");
+const nodesLayer = svg.append("g");
+
+function initializeNetwork(frame) {
+  makeLayout(frame);
+
+  linkSelection = linksLayer
+    .selectAll("line")
+    .data(getLinks(frame), d => d.id)
+    .join("line")
+    .attr("x1", d => nodePositions.get(d.source).x)
+    .attr("y1", d => nodePositions.get(d.source).y)
+    .attr("x2", d => nodePositions.get(d.target).x)
+    .attr("y2", d => nodePositions.get(d.target).y)
+    .attr("stroke", colorNormal)
+    .attr("stroke-width", 2)
+    .attr("opacity", 0.5);
+
+  const groups = nodesLayer
+    .selectAll("g.node")
+    .data(getNodes(frame), d => d.id)
+    .join("g")
+    .attr("class", "node")
+    .attr("transform", d => {
+      const p = nodePositions.get(d.id);
+      return `translate(${p.x},${p.y})`;
+    });
+
+  groups.append("circle")
+    .attr("class", "halo")
+    .attr("r", 23)
+    .attr("fill", colorNormal)
+    .attr("opacity", 0.08);
+
+  groups.append("circle")
+    .attr("class", "core")
+    .attr("r", 10)
+    .attr("stroke-width", 2)
+    .attr("stroke", colorNormal)
+    .attr("fill", "#0c1930")
+    .style("filter", "url(#cyberGlow)");
+
+  groups.append("text")
+    .attr("text-anchor", "middle")
+    .attr("y", 35)
+    .attr("fill", "#e7f5ff")
+    .attr("font-size", 12)
+    .text(d => d.id.replaceAll("_", " ").toUpperCase());
+
+  groups.append("text")
+    .attr("class", "risk-text")
+    .attr("text-anchor", "middle")
+    .attr("y", -29)
+    .attr("fill", "#8ea8c2")
+    .attr("font-size", 10);
+
+  groups.append("title");
+
+  nodeSelection = groups;
+
+  // Three moving particles on every connection.
+  const particles = [];
+
+  getLinks(frame).forEach(link => {
+    for (let i = 0; i < 3; i++) {
+      particles.push({
+        key: `${link.id}-${i}`,
+        linkId: link.id,
+        phase: i / 3
+      });
+    }
+  });
+
+  particleSelection = particlesLayer
+    .selectAll("circle")
+    .data(particles, d => d.key)
+    .join("circle")
+    .attr("r", 3.2)
+    .attr("fill", colorParticle)
+    .attr("opacity", 0.9)
+    .style("filter", "url(#cyberGlow)");
+
+  initialized = true;
+}
+
+function renderFrame(frame, index) {
+  if (!initialized) initializeNetwork(frame);
+
+  latestFrame = frame;
+  currentIndex = index;
+
+  const nodes = getNodes(frame);
+  const links = getLinks(frame);
+  const alerts = getAlerts(frame);
+  const metrics = frame.metrics || {};
+
+  text("nodesCount", nodes.length);
+  text("linksCount", links.length);
+  text(
+    "traffic",
+    validNumber(metrics.total_traffic_mbps).toFixed(1) + " Mbps"
+  );
+  text(
+    "latency",
+    validNumber(metrics.mean_latency_ms).toFixed(2) + " ms"
+  );
+  text("alertCount", alerts.length);
+
+  const risk = validNumber(metrics.maximum_enriched_risk);
+  const color = riskColor(risk);
+
+  text("riskValue", risk.toFixed(3));
+  $("riskValue").style.color = color;
+  $("riskFill").style.width = `${risk * 100}%`;
+  $("riskFill").style.background = color;
+
+  text(
+    "riskLevel",
+    risk >= 0.75 ? "HIGH RISK" :
+    risk >= 0.50 ? "ELEVATED RISK" :
+    "LOW / NORMAL RISK"
+  );
+
+  text("timestamp", frame.timestamp || "--");
+  text("tickText", `${index + 1} / ${frames.length}`);
+  $("timeline").value = index;
+
+  const nodeData = new Map(nodes.map(node => [node.id, node]));
+  const linkData = new Map(links.map(link => [link.id, link]));
+
+  nodeSelection.each(function(d) {
+    const item = nodeData.get(d.id);
+    if (!item) return;
+
+    const score = validNumber(item.risk_score);
+    const c = riskColor(score);
+    const group = d3.select(this);
+
+    group.select(".core")
+      .attr("stroke", c)
+      .attr("r", 9 + validNumber(item.load) * 7);
+
+    group.select(".halo")
+      .attr("fill", c)
+      .attr("opacity", 0.08 + score * 0.22);
+
+    group.select(".risk-text")
+      .text(`RISK ${score.toFixed(2)}`);
+
+    group.select("title")
+      .text(
+        `${d.id}\nLoad: ${item.load}\nRisk: ${score.toFixed(3)}`
+      );
+  });
+
+  linkSelection.each(function(d) {
+    const item = linkData.get(d.id);
+    if (!item) return;
+
+    const utilization = validNumber(item.utilization);
+    const anomaly = item.injected_anomaly === true;
+
+    d3.select(this)
+      .attr("stroke", anomaly ? colorHigh : colorNormal)
+      .attr("opacity", anomaly ? 0.95 : 0.32 + utilization)
+      .attr("stroke-width", anomaly ? 3.8 : 1.5 + utilization * 7);
+  });
+
+  renderAlerts(index);
+}
+
+function renderAlerts(index) {
+  // Timeline scrubbing remains consistent and never shows future alerts.
+  alertHistory = frames
+    .slice(Math.max(0, index - 24), index + 1)
+    .flatMap(frame => getAlerts(frame).map(alert => ({
+      ...alert,
+      tick: frame.sequence
+    })))
+    .slice(-30)
+    .reverse();
+
+  text("feedCount", `${alertHistory.length} EVENTS`);
+
+  const container = $("alerts");
+  container.replaceChildren();
+
+  if (!alertHistory.length) {
+    const empty = document.createElement("p");
+    empty.className = "small";
+    empty.textContent = "No alerts in this playback window.";
+    container.appendChild(empty);
+    return;
+  }
+
+  for (const alert of alertHistory) {
+    const el = document.createElement("div");
+    el.className = "alert";
+
+    const title = document.createElement("strong");
+    title.textContent =
+      `${alert.category || "Risk alert"} — ${alert.node_id}`;
+
+    const details = document.createElement("small");
+    details.textContent =
+      `Tick ${alert.tick} | Risk ${
+        validNumber(alert.risk_score).toFixed(3)
+      } | Scenario ${alert.scenario_id || "N/A"}`;
+
+    el.append(title, details);
+    container.appendChild(el);
+  }
+}
+
+// Continuous particles are animated independently of the replay ticks.
+// The network graph remains in a fixed position.
+function animateParticles(now) {
+  if (particleSelection && latestFrame && playing) {
+    const links = new Map(
+      getLinks(latestFrame).map(link => [link.id, link])
+    );
+
+    particleSelection.each(function(d) {
+      const link = links.get(d.linkId);
+      if (!link) return;
+
+      const a = nodePositions.get(link.source);
+      const b = nodePositions.get(link.target);
+      if (!a || !b) return;
+
+      const traffic = validNumber(link.traffic_mbps);
+      const speed = Math.min(0.00035 + traffic / 500000, 0.003);
+      const progress = (now * speed + d.phase) % 1;
+
+      d3.select(this)
+        .attr("cx", a.x + (b.x - a.x) * progress)
+        .attr("cy", a.y + (b.y - a.y) * progress)
+        .attr(
+          "fill",
+          link.injected_anomaly ? colorHigh : colorParticle
+        );
+    });
+  }
+
+  requestAnimationFrame(animateParticles);
+}
+
+function stopTimer() {
+  if (playbackTimer !== null) {
+    clearInterval(playbackTimer);
+    playbackTimer = null;
+  }
+}
+
+function startTimer() {
+  stopTimer();
+
+  if (!playing || !frames.length) return;
+
+  playbackTimer = setInterval(() => {
+    const next = (currentIndex + 1) % frames.length;
+    renderFrame(frames[next], next);
+  }, playbackDelay);
+}
+
+function setPlaying(value) {
+  playing = Boolean(value);
+  text("playPause", playing ? "Pause" : "Play");
+  startTimer();
+}
+
+$("playPause").addEventListener("click", () => {
+  setPlaying(!playing);
+});
+
+$("restart").addEventListener("click", () => {
+  if (!frames.length) return;
+  renderFrame(frames[0], 0);
+  setPlaying(true);
+});
+
+$("speed").addEventListener("change", event => {
+  playbackDelay = Number(event.target.value);
+  startTimer();
+});
+
+$("timeline").addEventListener("input", event => {
+  if (!frames.length) return;
+
+  const index = Number(event.target.value);
+  setPlaying(false);
+  renderFrame(frames[index], index);
+});
+
+async function loadSimulation() {
+  if (typeof d3 === "undefined") {
+    setStatus(
+      "D3.js could not load. Check your internet connection.",
+      true
+    );
+    return;
+  }
+
+  try {
+    const response = await fetch("./frames.json", {
+      cache: "no-store"
+    });
+
+    if (!response.ok) {
+      throw new Error(
+        `frames.json could not be loaded (HTTP ${response.status})`
+      );
+    }
+
+    const data = await response.json();
+
+    if (
+      data.version !== "V20.4" ||
+      data.status !== "EVENT_STREAMING_PASS" ||
+      data.simulation_mode !== true ||
+      !Array.isArray(data.frames) ||
+      data.frames.length === 0
+    ) {
+      throw new Error(
+        "Invalid V20.4 data. Check the exported frames.json file."
+      );
+    }
+
+    frames = data.frames;
+
+    for (let i = 0; i < frames.length; i++) {
+      const frame = frames[i];
+
+      if (
+        frame.sequence !== i ||
+        !Array.isArray(frame.network?.nodes) ||
+        !Array.isArray(frame.network?.links) ||
+        !Array.isArray(frame.alerts)
+      ) {
+        throw new Error(`Invalid simulation frame: ${i}`);
+      }
+    }
+
+    const first = frames[0];
+    const nodeIds = new Set(getNodes(first).map(n => n.id));
+
+    for (const link of getLinks(first)) {
+      if (
+        !nodeIds.has(link.source) ||
+        !nodeIds.has(link.target)
+      ) {
+        throw new Error("Invalid network link endpoints");
+      }
+    }
+
+    $("timeline").max = frames.length - 1;
+
+    renderFrame(first, 0);
+    startTimer();
+
+    setStatus(
+      `V20.4 simulation loaded successfully: ` +
+      `${frames.length} frames, ` +
+      `${getNodes(first).length} nodes, ` +
+      `${getLinks(first).length} links. ` +
+      `SIMULATED DATA — NOT LIVE.`
+    );
+
+  } catch (error) {
+    console.error(error);
+    setStatus(
+      `Unable to load simulation: ${error.message}\n` +
+      `Check that frames.json is in the same folder ` +
+      `and the dashboard is served over HTTP.`,
+      true
+    );
+  }
+}
+
+requestAnimationFrame(animateParticles);
+loadSimulation();
+</script>
+
+</body>
+</html>

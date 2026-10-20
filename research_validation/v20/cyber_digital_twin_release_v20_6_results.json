@@ -1,0 +1,505 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V20.6",
+  "module": "Cyber Digital Twin Research Release",
+  "created_utc": "2026-10-20T12:07:10.102008+00:00",
+  "status": "CYBER_DIGITAL_TWIN_RELEASE_PASS",
+  "simulation_mode": true,
+  "real_network_monitoring": false,
+  "trained_threat_detector_in_v20_3": false,
+  "metrics": {
+    "ticks": 120,
+    "nodes": 10,
+    "links": 11,
+    "node_observations": 1200,
+    "link_observations": 1320,
+    "events": 21,
+    "classified_alerts": 21,
+    "frames": 120,
+    "stream_messages": 120,
+    "maximum_risk": 0.937957,
+    "categories": {
+      "traffic_anomaly": 7,
+      "reconnaissance": 7,
+      "application_anomaly": 7
+    }
+  },
+  "source_manifest": {
+    "architecture": {
+      "path": "research_validation\\v20\\digital_twin_architecture_v20_1_results.json",
+      "sha256": "7e5d02e5a3005a0738aba0deb0f3dbd40575c5eaf5258853993f2fea6ea4ee5d",
+      "size_bytes": 12466
+    },
+    "simulation": {
+      "path": "research_validation\\v20\\network_simulation_v20_2_results.json",
+      "sha256": "8dfaed4b00ccaa7016a450a17b53764fd9f51e470193b1a4d89644b32b0e015f",
+      "size_bytes": 31168
+    },
+    "threat": {
+      "path": "research_validation\\v20\\ai_threat_scenario_v20_3_results.json",
+      "sha256": "75e41c8ef594885b307d38e6da8eb271011308ac63cd858e4151ec2cac5ac2fa",
+      "size_bytes": 5763
+    },
+    "streaming": {
+      "path": "research_validation\\v20\\event_streaming_v20_4_results.json",
+      "sha256": "d1361fc10cef2d4bf614ac4cda5ac42d5c994dc6a8af2810004026784ff4da2a",
+      "size_bytes": 4677
+    },
+    "nodes": {
+      "path": "research_validation\\v20\\network_simulation_v20_2_nodes.csv",
+      "sha256": "de46af62dcf0160fe420eacc3ba2365e8f9b96efc5483a832c527bf9325fbdda",
+      "size_bytes": 101347
+    },
+    "links": {
+      "path": "research_validation\\v20\\network_simulation_v20_2_links.csv",
+      "sha256": "294995ad68c29d02fb4ed6757739cc2462ee8b34906472d62d4242ce164afcde",
+      "size_bytes": 116286
+    },
+    "events": {
+      "path": "research_validation\\v20\\network_simulation_v20_2_events.json",
+      "sha256": "cc434f7e11d12e186cb91f6213c623e911b63b8f1803b817d21abac361e28abb",
+      "size_bytes": 7686
+    },
+    "classified": {
+      "path": "research_validation\\v20\\ai_threat_scenario_v20_3_events.csv",
+      "sha256": "a03ef1fefc62a6f51d57518a4c8f41a3d7b873be75f68249819f1b343e4b377c",
+      "size_bytes": 4514
+    },
+    "timeline": {
+      "path": "research_validation\\v20\\ai_threat_scenario_v20_3_timeline.json",
+      "sha256": "b7a4e48dae62d2fdb1f031fb3130a704b3eae270a605494df5b465d31243cd37",
+      "size_bytes": 34537
+    },
+    "frames": {
+      "path": "research_validation\\v20\\event_streaming_v20_4_frames.json",
+      "sha256": "5eb51f4fdce42c13df4d03b82ed5efb1204cd4703086e251eb65a3ad695abc7b",
+      "size_bytes": 671816
+    },
+    "stream": {
+      "path": "research_validation\\v20\\event_streaming_v20_4_stream.jsonl",
+      "sha256": "69ba157c2b4a0f74a445fe34c4cc1b4d03c45c31e73f83e51644dd23a9031f51",
+      "size_bytes": 393081
+    },
+    "dashboard": {
+      "path": "frontend\\public\\v20\\dashboard.html",
+      "sha256": "e5fe5d289dbf53d04a28fbf6bbe2822377c15412dbec569e0309ed2d45642560",
+      "size_bytes": 19677
+    },
+    "dashboard_frames": {
+      "path": "frontend\\public\\v20\\frames.json",
+      "sha256": "5eb51f4fdce42c13df4d03b82ed5efb1204cd4703086e251eb65a3ad695abc7b",
+      "size_bytes": 671816
+    }
+  },
+  "checks": [
+    {
+      "name": "Required file: architecture",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v20\\digital_twin_architecture_v20_1_results.json"
+    },
+    {
+      "name": "Required file: simulation",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v20\\network_simulation_v20_2_results.json"
+    },
+    {
+      "name": "Required file: threat",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v20\\ai_threat_scenario_v20_3_results.json"
+    },
+    {
+      "name": "Required file: streaming",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v20\\event_streaming_v20_4_results.json"
+    },
+    {
+      "name": "Required file: nodes",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v20\\network_simulation_v20_2_nodes.csv"
+    },
+    {
+      "name": "Required file: links",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v20\\network_simulation_v20_2_links.csv"
+    },
+    {
+      "name": "Required file: events",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v20\\network_simulation_v20_2_events.json"
+    },
+    {
+      "name": "Required file: classified",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v20\\ai_threat_scenario_v20_3_events.csv"
+    },
+    {
+      "name": "Required file: timeline",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v20\\ai_threat_scenario_v20_3_timeline.json"
+    },
+    {
+      "name": "Required file: frames",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v20\\event_streaming_v20_4_frames.json"
+    },
+    {
+      "name": "Required file: stream",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v20\\event_streaming_v20_4_stream.jsonl"
+    },
+    {
+      "name": "Required file: dashboard",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\frontend\\public\\v20\\dashboard.html"
+    },
+    {
+      "name": "Required file: dashboard_frames",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\frontend\\public\\v20\\frames.json"
+    },
+    {
+      "name": "architecture: version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "architecture: status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "architecture: internal checks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "simulation: version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "simulation: status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "simulation: internal checks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "threat: version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "threat: status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "threat: internal checks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "streaming: version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "streaming: status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "streaming: internal checks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V20.1 model fingerprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V20.2 source architecture fingerprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V20.2 model fingerprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V20.3 fingerprint: architecture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V20.3 fingerprint: simulation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V20.3 fingerprint: events",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V20.3 fingerprint: nodes_csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V20.3 fingerprint: links_csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V20.4 fingerprint: architecture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V20.4 fingerprint: simulation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V20.4 fingerprint: threat",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V20.4 fingerprint: timeline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V20.4 fingerprint: nodes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V20.4 fingerprint: links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V20.4 fingerprint: classified",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Architecture simulation-only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Simulation uses no real network",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Threat engine is rule-based",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Event stream is replay-only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Network has 10 nodes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Network has 11 links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "120 simulation ticks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Node observation count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Link observation count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Node identities and ticks valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Link identities and ticks valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Node risk measurements bounded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Node load measurements bounded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Link traffic and latency valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source events match simulation count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Classified events match source alerts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Event classifications are synthetic",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Threat timeline complete",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "120 dashboard frames",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "120 stream messages",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Frame and message sequences complete",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Frames contain complete topology",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "JSONL messages reproduce frames",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Frame alerts match source counts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Frame and timeline timestamps match",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All frames explicitly simulated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V20.4 reported metrics match exports",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Frontend uses current V20.4 frame export",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard explicitly labeled simulated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard feature: D3 dependency",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard feature: Network visualization",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard feature: Play/Pause",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard feature: Restart",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard feature: Speed control",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard feature: Timeline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard feature: Simulation data loader",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard feature: Risk monitoring",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard feature: Alerts panel",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard feature: Simulated data label",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard HTML structure present",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "checks_passed": 80,
+  "checks_failed": 0,
+  "error": null,
+  "outputs": {
+    "release_json": "research_validation\\v20\\cyber_digital_twin_release_v20_6_results.json",
+    "release_markdown": "research_validation\\v20\\V20_RESEARCH_RELEASE.md",
+    "dashboard_summary": "frontend\\public\\v20\\release_summary.json"
+  },
+  "next_stage": "V21 Advanced Cyber Defense Intelligence"
+}

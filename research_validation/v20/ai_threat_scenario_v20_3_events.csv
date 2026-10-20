@@ -1,0 +1,22 @@
+event_id,tick,timestamp,node_id,scenario_id,scenario_name,threat_category,match_type,original_severity,source_risk_score,enriched_risk_score,enriched_risk_level,node_load,related_traffic_mbps,related_injected_link_spikes,injected_anomaly,synthetic,classification_method
+EVT-000001,17,2026-01-01T00:00:17+00:00,gateway,scenario_001,Traffic Spike,traffic_anomaly,target_node_rule,critical,1.0,0.900614,critical,0.987425,378.315674,1,True,True,deterministic_rule_based
+EVT-000002,17,2026-01-01T00:00:17+00:00,firewall,scenario_002,Simulated Port Scan,reconnaissance,target_node_rule,critical,0.942788,0.840571,high,0.835059,278.183558,0,True,True,deterministic_rule_based
+EVT-000003,17,2026-01-01T00:00:17+00:00,api,scenario_003,Suspicious API Requests,application_anomaly,target_node_rule,high,0.899773,0.8448,high,0.799651,149.257627,0,True,True,deterministic_rule_based
+EVT-000004,34,2026-01-01T00:00:34+00:00,gateway,scenario_001,Traffic Spike,traffic_anomaly,target_node_rule,high,0.870692,0.781686,high,0.75491,261.778941,1,True,True,deterministic_rule_based
+EVT-000005,34,2026-01-01T00:00:34+00:00,firewall,scenario_002,Simulated Port Scan,reconnaissance,target_node_rule,critical,0.932715,0.831699,high,0.819562,200.922502,0,True,True,deterministic_rule_based
+EVT-000006,34,2026-01-01T00:00:34+00:00,api,scenario_003,Suspicious API Requests,application_anomaly,target_node_rule,critical,0.954354,0.892873,high,0.883621,79.060229,0,True,True,deterministic_rule_based
+EVT-000007,51,2026-01-01T00:00:51+00:00,gateway,scenario_001,Traffic Spike,traffic_anomaly,target_node_rule,critical,0.95139,0.852763,high,0.879062,393.931679,1,True,True,deterministic_rule_based
+EVT-000008,51,2026-01-01T00:00:51+00:00,firewall,scenario_002,Simulated Port Scan,reconnaissance,target_node_rule,critical,0.99989,0.890865,high,0.922907,224.173478,0,True,True,deterministic_rule_based
+EVT-000009,51,2026-01-01T00:00:51+00:00,api,scenario_003,Suspicious API Requests,application_anomaly,target_node_rule,critical,1.0,0.937218,critical,0.981454,93.926067,0,True,True,deterministic_rule_based
+EVT-000010,68,2026-01-01T00:01:08+00:00,gateway,scenario_001,Traffic Spike,traffic_anomaly,target_node_rule,critical,0.996145,0.892181,high,0.947915,411.871506,1,True,True,deterministic_rule_based
+EVT-000011,68,2026-01-01T00:01:08+00:00,firewall,scenario_002,Simulated Port Scan,reconnaissance,target_node_rule,critical,1.0,0.891279,high,0.925192,241.163546,0,True,True,deterministic_rule_based
+EVT-000012,68,2026-01-01T00:01:08+00:00,api,scenario_003,Suspicious API Requests,application_anomaly,target_node_rule,high,0.896641,0.842041,high,0.794832,116.046358,0,True,True,deterministic_rule_based
+EVT-000013,85,2026-01-01T00:01:25+00:00,gateway,scenario_001,Traffic Spike,traffic_anomaly,target_node_rule,critical,0.944462,0.846661,high,0.868404,223.947627,1,True,True,deterministic_rule_based
+EVT-000014,85,2026-01-01T00:01:25+00:00,firewall,scenario_002,Simulated Port Scan,reconnaissance,target_node_rule,critical,0.905474,0.807706,high,0.777652,211.35276,0,True,True,deterministic_rule_based
+EVT-000015,85,2026-01-01T00:01:25+00:00,api,scenario_003,Suspicious API Requests,application_anomaly,target_node_rule,critical,0.952412,0.891163,high,0.880633,97.520394,0,True,True,deterministic_rule_based
+EVT-000016,102,2026-01-01T00:01:42+00:00,gateway,scenario_001,Traffic Spike,traffic_anomaly,target_node_rule,critical,0.936247,0.839425,high,0.855764,413.465401,1,True,True,deterministic_rule_based
+EVT-000017,102,2026-01-01T00:01:42+00:00,firewall,scenario_002,Simulated Port Scan,reconnaissance,target_node_rule,critical,0.982498,0.875546,high,0.896151,219.446866,0,True,True,deterministic_rule_based
+EVT-000018,102,2026-01-01T00:01:42+00:00,api,scenario_003,Suspicious API Requests,application_anomaly,target_node_rule,critical,1.0,0.937957,critical,0.986382,115.03521,0,True,True,deterministic_rule_based
+EVT-000019,119,2026-01-01T00:01:59+00:00,gateway,scenario_001,Traffic Spike,traffic_anomaly,target_node_rule,critical,1.0,0.901751,critical,0.995006,365.326075,1,True,True,deterministic_rule_based
+EVT-000020,119,2026-01-01T00:01:59+00:00,firewall,scenario_002,Simulated Port Scan,reconnaissance,target_node_rule,critical,0.990811,0.882868,high,0.90894,251.675285,0,True,True,deterministic_rule_based
+EVT-000021,119,2026-01-01T00:01:59+00:00,api,scenario_003,Suspicious API Requests,application_anomaly,target_node_rule,critical,0.950456,0.88944,high,0.877625,151.429255,0,True,True,deterministic_rule_based
