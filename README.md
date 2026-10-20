@@ -17,13 +17,13 @@ Quantum Cyber Defense Arena combines **AI-driven anomaly detection**, **quantum-
 
 ---
 
-### Full Interactive 3D Dashboard
+### Animated Portfolio Demo (Separate from the Full React Dashboard)
 
-[![Open the complete Cyber Defense 3D Dashboard](./41b6932f-f350-4721-94e4-51bf157ae3a8.png)](https://quantum-cyber-defense-live-demo.vercel.app)
+[![Open the animated Cyber Defense portfolio demonstration](./41b6932f-f350-4721-94e4-51bf157ae3a8.png)](https://quantum-cyber-defense-live-demo-tamas-quantum-lab.vercel.app)
 
-**[▶ OPEN FULL INTERACTIVE 3D DASHBOARD — VERCEL](https://quantum-cyber-defense-live-demo.vercel.app)**
+**[▶ OPEN ANIMATED PORTFOLIO DEMO — VERCEL](https://quantum-cyber-defense-live-demo-tamas-quantum-lab.vercel.app)**
 
-*Click the dashboard image to launch the complete interactive React/Three.js platform on Vercel. The standalone demonstration uses synthetic telemetry, not live threat intelligence.*
+*This Vercel URL runs a separate animated portfolio demo, not the complete PyCharm React/FastAPI platform. It displays synthetic events and historical research figures. The full dashboard, including V15.4, currently runs in the local development environment.*
 
 
 **AI-Powered Cybersecurity Research | Quantum Simulation | Hybrid Threat Detection | Multi-Agent Investigation**
@@ -32,7 +32,7 @@ Quantum Cyber Defense Arena is a research-oriented cybersecurity platform combin
 
 The project explores how different detection architectures perform under synthetic security simulations and on labeled blockchain transaction data.
 
-**Release:** V14.0 – Professional Research Prototype  
+**Research development:** V15.5 completed and locally validated (following the V14 research release)  
 **Status:** Research and demonstration environment  
 **Technology:** Python, FastAPI, React, TypeScript, Qiskit, scikit-learn
 
@@ -294,57 +294,6 @@ The original large external dataset files are not included in the documented Git
 
 The Elliptic dataset must be obtained separately from a legitimate source, subject to its applicable licensing and access terms.
 
-## V15 — Autonomous Quantum AI Cyber Defense (Completed)
-
-**Status:** V15.1–V15.5 implemented and committed to the `feature/cyber-network-v2` branch. Research-simulation validation: **PASS (0 failed checks)**. Production readiness has **not** been established.
-
-The V15 development cycle extends the earlier V3–V14 research platform without replacing existing modules.
-
-| Release | Module | What it does |
-| --- | --- | --- |
-| **V15.1** | Intelligent Threat Orchestrator | Combines synthetic Classical AI and Quantum AI score inputs using an explainable hybrid policy; assigns risk and priorities. |
-| **V15.2** | Multi-Agent Decision Engine | Runs three sequential, deterministic rule-based assessment roles: Threat Analysis, Investigation, and Decision. |
-| **V15.3** | Autonomous Response Simulation | Produces priority-aware simulated response plans, human-approval requirements, and local audit trails; performs no external security actions. |
-| **V15.4** | Live Command Center | Adds an animated React dashboard panel showing saved V15.1–V15.3 JSON results, event playback, risk distribution, decisions, and proposed response states. |
-| **V15.5** | Validation & Release | Checks saved JSON structure, cross-version event consistency, decision/response rules, safety conditions, and static frontend integration. Result: **PASS**. |
-
-### V15 source files
-
-```text
-research_validation/v15/
-  threat_orchestrator_v15_1.py
-  threat_orchestrator_v15_1_results.json
-  multi_agent_decision_v15_2.py
-  multi_agent_decision_v15_2_results.json
-  autonomous_response_v15_3.py
-  autonomous_response_v15_3_results.json
-  validation_release_v15_5.py
-  validation_release_v15_5_results.json
-
-frontend/src/components/LiveCommandCenterV15_4.tsx
-frontend/public/v15/
-  threat_orchestrator_v15_1_results.json
-  multi_agent_decision_v15_2_results.json
-  autonomous_response_v15_3_results.json
-```
-
-### Run V15 locally
-
-From the repository root, run the research scripts in order:
-
-```powershell
-python research_validation/v15/threat_orchestrator_v15_1.py
-python research_validation/v15/multi_agent_decision_v15_2.py
-python research_validation/v15/autonomous_response_v15_3.py
-python research_validation/v15/validation_release_v15_5.py
-```
-
-Start the original backend and Vite frontend in separate terminals (with dependencies installed). The V15.4 React panel is integrated into `frontend/src/App.tsx` and reads JSON exports from `frontend/public/v15/`. When the JSON files are missing, the panel explicitly switches to illustrative demo data. Exported JSON files are historical snapshots: animated playback is **not** a live model-inference or blockchain stream.
-
-**Scientific and safety limitations:** V15.1 uses synthetic model scores; V15.2 is a deterministic rule-based pipeline rather than independent LLM agents; V15.3 proposes or simulates responses but never applies real firewall, wallet, blockchain, or network changes. The V15.5 PASS verifies saved simulation data and static integration, not real-world detection accuracy, quantum advantage, production security, live API health, browser end-to-end operation, or a Vercel deployment.
-
----
-
 ## 13. Research Limitations
 
 - The original synthetic benchmark results do not generalize reliably to the tested real dataset.
@@ -387,6 +336,49 @@ The project represents the completion of the planned V14 research-prototype deve
 - `research_validation/v15/*_results.json`
 - `frontend/src/components/LiveCommandCenterV15_4.tsx`
 - `frontend/public/v15/*_results.json`
+
+### V15 execution pipeline
+
+```text
+Synthetic detector scores (V15.1)
+   |
+   v
+Threat Orchestrator: classical + quantum inputs -> hybrid decision -> priority
+   |
+   v
+Multi-Agent Decision Engine (V15.2)
+   |-- Threat Analysis role
+   |-- Investigation role
+   '-- Decision role
+   |
+   v
+Autonomous Response Simulator (V15.3)
+   |-- Proposed action & human-approval gate
+   '-- Audit trail (no actual security action)
+   |
+   v
+JSON exports -> React V15.4 Live Command Center (animated saved-event playback)
+   |
+   v
+V15.5 saved-result validation (local PASS; not production certification)
+```
+
+### Local full-dashboard workflow
+
+Run the FastAPI backend from the repository root and the React/Vite frontend from `frontend/` in **separate terminals**. Use the repository's current backend entry point and configured Python environment. The developer dashboard runs at `http://127.0.0.1:5173`; its local API uses `http://127.0.0.1:8000`. A browser loading a public Vercel URL cannot reach a developer's `127.0.0.1` backend. A public full-stack deployment will require a hosted API, configuration for its address, and separate browser/integration tests.
+
+The V15.4 component loads the three JSON snapshots from `frontend/public/v15/` and checks their event IDs and versions. If these files are unavailable, it explicitly shows labeled **sample demo data**. Stored results can be played back with animation, but are not real-time inference.
+
+### Release checklist and verified scope
+
+| Item | Status |
+|---|---|
+| V15.1 / V15.2 / V15.3 Python execution | Completed locally on synthetic inputs |
+| V15.4 React integration and Vite production build | Completed locally |
+| V15.5 saved-result research validation | **PASS; 0 failed checks** |
+| Code pushed to GitHub | `feature/cyber-network-v2` |
+| Full original dashboard publicly deployed | **Not yet verified or completed** |
+| Live blockchain ingestion / production defense | **Not implemented in V15** |
 
 ### Run V15 validation
 
