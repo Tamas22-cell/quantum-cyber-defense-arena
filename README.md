@@ -1,7 +1,5 @@
 # Quantum Cyber Defense Arena
 
-![Quantum Cyber Defense Arena — Cyber Threat Command Center](./41b6932f-f350-4721-94e4-51bf157ae3a8.png)
-
 ## Quantum Cyber Defense Arena — Full Visual Showcase
 
 ![Quantum Cyber Defense Arena — AI, Quantum and Cyber Defense command center](https://raw.githubusercontent.com/Tamas22-cell/quantum-cyber-defense-arena/feature/cyber-network-v2/1ba63f4a-9a52-4d7d-abe1-471c0d9038b4.png)
@@ -22,18 +20,6 @@ Quantum Cyber Defense Arena combines **AI-driven anomaly detection**, **quantum-
 **🔗 Hybrid Fusion** — Classical and quantum-inspired signals combined for decision support.
 
 **🌐 Interactive 3D** — Animated cyber network visualization and synthetic dashboard telemetry.
-
-
----
-
-### Animated Portfolio Demo (Separate from the Full React Dashboard)
-
-[![Open the animated Cyber Defense portfolio demonstration](./41b6932f-f350-4721-94e4-51bf157ae3a8.png)](https://quantum-cyber-defense-live-demo-tamas-quantum-lab.vercel.app)
-
-**[▶ OPEN ANIMATED PORTFOLIO DEMO — VERCEL](https://quantum-cyber-defense-live-demo-tamas-quantum-lab.vercel.app)**
-
-*This Vercel URL runs a separate animated portfolio demo, not the complete PyCharm React/FastAPI platform. It displays synthetic events and historical research figures. The full dashboard, including V15.4, currently runs in the local development environment.*
-
 
 **AI-Powered Cybersecurity Research | Quantum Simulation | Hybrid Threat Detection | Multi-Agent Investigation**
 
