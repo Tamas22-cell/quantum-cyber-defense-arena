@@ -1,0 +1,684 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V23.6",
+  "module": "Final Advanced Cyber Defense Research Release",
+  "created_utc": "2026-10-20T13:48:18.185436+00:00",
+  "status": "ADVANCED_CYBER_DEFENSE_RELEASE_PASS",
+  "simulation_mode": true,
+  "is_live": false,
+  "real_network_actions_enabled": false,
+  "effects_empirically_verified": false,
+  "metrics": {
+    "fused_observations": 1200,
+    "optimized_observations": 1200,
+    "orchestration_events": 3600,
+    "pending_approvals": 1265,
+    "network_nodes": 10,
+    "network_links": 11,
+    "simulation_ticks": 120,
+    "policy_profiles": 3,
+    "real_actions_executed": 0
+  },
+  "source_manifest": {
+    "architecture": {
+      "path": "research_validation\\v23\\advanced_cyber_defense_architecture_v23_1_results.json",
+      "sha256": "62b9c0b20f9c3b0b65642698cc68ceb6f146f4047dfab033efe4ae964b617cb9",
+      "size_bytes": 12790
+    },
+    "fusion": {
+      "path": "research_validation\\v23\\intelligent_threat_fusion_v23_2_results.json",
+      "sha256": "7ce4e62d17afb2ae30b322e2d7fdb6d5574853b7642adbc3eeff8f7969f3c3f1",
+      "size_bytes": 4674
+    },
+    "fusion_events": {
+      "path": "research_validation\\v23\\intelligent_threat_fusion_v23_2_events.csv",
+      "sha256": "58f067ff963da02de6b2c6a3d14dca584f28f4de92bb9f5d232b95b4e62b8504",
+      "size_bytes": 252565
+    },
+    "fusion_timeline": {
+      "path": "research_validation\\v23\\intelligent_threat_fusion_v23_2_timeline.json",
+      "sha256": "cde19f24f2f9de5e37f23f21f730a24a25ee8012464af4179de56739d3b787ab",
+      "size_bytes": 61339
+    },
+    "optimization": {
+      "path": "research_validation\\v23\\adaptive_defense_policy_optimization_v23_3_results.json",
+      "sha256": "b4244ac71293f8c1cefed00e7a27177de127a78ac569d5129e5f3ed78acd3302",
+      "size_bytes": 6805
+    },
+    "optimization_events": {
+      "path": "research_validation\\v23\\adaptive_defense_policy_optimization_v23_3_policies.csv",
+      "sha256": "4d8fcf8d028160f2dc9edecf379e0b4b02aa965337db6448cb256aad6def3b05",
+      "size_bytes": 259963
+    },
+    "optimization_timeline": {
+      "path": "research_validation\\v23\\adaptive_defense_policy_optimization_v23_3_timeline.json",
+      "sha256": "b4b618bc6692d4516e0d89ef89e9371da471f68f5ace984682181763cf312517",
+      "size_bytes": 174802
+    },
+    "orchestration": {
+      "path": "research_validation\\v23\\multi_agent_defense_orchestration_v23_4_results.json",
+      "sha256": "bdf5e551b88923e386fee3e8ad4b5f2d372e81f5d32e2844cc59a0bf8674d3cd",
+      "size_bytes": 4587
+    },
+    "orchestration_events": {
+      "path": "research_validation\\v23\\multi_agent_defense_orchestration_v23_4_events.csv",
+      "sha256": "333c3175d500723a55943a56c9fec41ad5101702ab68c49ac72f117aa3a84aff",
+      "size_bytes": 744776
+    },
+    "orchestration_timeline": {
+      "path": "research_validation\\v23\\multi_agent_defense_orchestration_v23_4_timeline.json",
+      "sha256": "0fdd95852dc758d0924b7d9c9111523b346f09e10838713a969c36a0e0e0c68a",
+      "size_bytes": 169003
+    },
+    "dashboard": {
+      "path": "research_validation\\v23\\advanced_cyber_defense_dashboard_v23_5_results.json",
+      "sha256": "e59849501908235fb6eab7072b488c2d5cf4d46433c2e146e4c47b1252a29ab2",
+      "size_bytes": 8056
+    },
+    "dashboard_data": {
+      "path": "frontend\\public\\v23\\defense_data.json",
+      "sha256": "f8dab737b358ef7f480a17072a85f6cf68a03abc4e6d4d11317c8efcf1156d17",
+      "size_bytes": 2030235
+    },
+    "dashboard_html": {
+      "path": "frontend\\public\\v23\\dashboard.html",
+      "sha256": "c4a47b459f1045f3561eccfb75f4573849ac387dfd64d313c41215658d1a3c5a",
+      "size_bytes": 13414
+    },
+    "source_network": {
+      "path": "frontend\\public\\v22\\defense_data.json",
+      "sha256": "0da3c6cfb9fda88ee9e01e6e268dd9f517667792a08b4875b5ec3c3fb9c45ecc",
+      "size_bytes": 938122
+    }
+  },
+  "checks": [
+    {
+      "name": "Source exists: architecture",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v23\\advanced_cyber_defense_architecture_v23_1_results.json"
+    },
+    {
+      "name": "Source readable: architecture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source exists: fusion",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v23\\intelligent_threat_fusion_v23_2_results.json"
+    },
+    {
+      "name": "Source readable: fusion",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source exists: fusion_events",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v23\\intelligent_threat_fusion_v23_2_events.csv"
+    },
+    {
+      "name": "Source readable: fusion_events",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source exists: fusion_timeline",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v23\\intelligent_threat_fusion_v23_2_timeline.json"
+    },
+    {
+      "name": "Source readable: fusion_timeline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source exists: optimization",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v23\\adaptive_defense_policy_optimization_v23_3_results.json"
+    },
+    {
+      "name": "Source readable: optimization",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source exists: optimization_events",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v23\\adaptive_defense_policy_optimization_v23_3_policies.csv"
+    },
+    {
+      "name": "Source readable: optimization_events",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source exists: optimization_timeline",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v23\\adaptive_defense_policy_optimization_v23_3_timeline.json"
+    },
+    {
+      "name": "Source readable: optimization_timeline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source exists: orchestration",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v23\\multi_agent_defense_orchestration_v23_4_results.json"
+    },
+    {
+      "name": "Source readable: orchestration",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source exists: orchestration_events",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v23\\multi_agent_defense_orchestration_v23_4_events.csv"
+    },
+    {
+      "name": "Source readable: orchestration_events",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source exists: orchestration_timeline",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v23\\multi_agent_defense_orchestration_v23_4_timeline.json"
+    },
+    {
+      "name": "Source readable: orchestration_timeline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source exists: dashboard",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v23\\advanced_cyber_defense_dashboard_v23_5_results.json"
+    },
+    {
+      "name": "Source readable: dashboard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source exists: dashboard_data",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\frontend\\public\\v23\\defense_data.json"
+    },
+    {
+      "name": "Source readable: dashboard_data",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source exists: dashboard_html",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\frontend\\public\\v23\\dashboard.html"
+    },
+    {
+      "name": "Source readable: dashboard_html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source exists: source_network",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\frontend\\public\\v22\\defense_data.json"
+    },
+    {
+      "name": "Source readable: source_network",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "architecture: version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "architecture: successful status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "architecture: no validation failures",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "architecture: check records consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "architecture: simulation only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "fusion: version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "fusion: successful status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "fusion: no validation failures",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "fusion: check records consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "fusion: simulation only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "optimization: version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "optimization: successful status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "optimization: no validation failures",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "optimization: check records consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "optimization: simulation only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "orchestration: version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "orchestration: successful status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "orchestration: no validation failures",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "orchestration: check records consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "orchestration: simulation only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V23.5 dashboard version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V23.5 dashboard completed successfully",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V23.5 dashboard simulated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V23.5 validation records consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "fusion_timeline: version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "fusion_timeline: successful simulation export",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "fusion_timeline: 120 timeline records",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "optimization_timeline: version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "optimization_timeline: successful simulation export",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "optimization_timeline: 120 timeline records",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "orchestration_timeline: version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "orchestration_timeline: successful simulation export",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "orchestration_timeline: 120 timeline records",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V23.1 architecture SHA-256",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "fusion SHA-256: architecture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "optimization SHA-256: architecture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "optimization SHA-256: fusion_report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "optimization SHA-256: fusion_events",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "orchestration SHA-256: architecture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "orchestration SHA-256: fusion_report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "orchestration SHA-256: policy_report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "orchestration SHA-256: policy_events",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard SHA-256: fusion_report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard SHA-256: policy_report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard SHA-256: orchestration_report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Research inputs have source fingerprints",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Architecture forbids real actions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Fusion forbids external actions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Optimization forbids external actions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Orchestration forbids external actions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No trained orchestration agents claimed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Hypothetical strategy effects preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All source modules use synthetic data",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "1200 fused observations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "1200 optimized observations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "3600 orchestration events",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ten distinct research nodes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Fusion identities complete",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Optimization identities match fusion",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Orchestration identities complete",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Fusion scores bounded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Optimized action profiles available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Orchestration has no real actions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All approval-required proposals held",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No approvals invented",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Orchestration matches optimized proposals",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "fusion_timeline: tick sequence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "fusion_timeline: ten nodes per tick",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "optimization_timeline: tick sequence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "optimization_timeline: ten nodes per tick",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "orchestration_timeline: tick sequence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "orchestration_timeline: ten nodes per tick",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Orchestration timeline has 30 proposals per tick",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Three profiles on each orchestration tick",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V23 dashboard export version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V23 dashboard data reports success",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V23 dashboard simulated and not live",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard export has 120 frames",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard frame sequence",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard network contains ten nodes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard network contains eleven links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard HTML: HTML document",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard HTML: D3 library",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard HTML: Network visualization",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard HTML: Dashboard data loader",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard HTML: HTML closing tag",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Previous v20 dashboard preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Previous v21 dashboard preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Previous v22 dashboard preserved",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "checks_passed": 117,
+  "checks_failed": 0,
+  "error": null
+}
