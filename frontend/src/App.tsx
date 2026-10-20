@@ -1,3 +1,4 @@
+﻿import LiveCommandCenterV15_4 from "./components/LiveCommandCenterV15_4";
 
 import { useEffect, useMemo, useState } from "react";
 import type { CSSProperties, ReactNode } from "react";
@@ -344,7 +345,7 @@ export default function App() {
               color: online ? colors.green : colors.red,
             }}
           >
-            ● API {online ? "ONLINE" : "OFFLINE"}
+            â—Ź API {online ? "ONLINE" : "OFFLINE"}
           </strong>
 
           <button
@@ -402,7 +403,7 @@ export default function App() {
               margin: 0,
             }}
           >
-            Blockchain Security · AI Monitoring · Quantum Research
+            Blockchain Security Â· AI Monitoring Â· Quantum Research
           </p>
         </div>
 
@@ -619,7 +620,7 @@ export default function App() {
               fontSize: 12,
             }}
           >
-            Simulated threats · Click a row for details
+            Simulated threats Â· Click a row for details
           </p>
 
           <div style={{ overflowX: "auto" }}>
@@ -772,7 +773,7 @@ export default function App() {
               Destination: {selected.destination}
             </p>
 
-            <p>Data: SIMULATED — NOT REAL ATTACKS</p>
+            <p>Data: SIMULATED â€” NOT REAL ATTACKS</p>
           </section>
         )}
 
@@ -806,6 +807,8 @@ export default function App() {
         {/* V11.4 - ADVANCED RESEARCH DASHBOARD */}
         <ResearchDashboardV11_4 />
 
+                {/* V15.4 - LIVE COMMAND CENTER */}
+        <LiveCommandCenterV15_4 />
         {/* FOOTER */}
         <footer
           style={{
@@ -816,7 +819,7 @@ export default function App() {
             fontSize: 11,
           }}
         >
-          QUANTUM CYBER DEFENSE ARENA · RESEARCH ENVIRONMENT
+          QUANTUM CYBER DEFENSE ARENA Â· RESEARCH ENVIRONMENT
 
           <p>
             Simulated telemetry. No real attacks or verified
@@ -827,3 +830,4 @@ export default function App() {
     </div>
   );
 }
+
