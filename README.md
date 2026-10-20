@@ -294,6 +294,57 @@ The original large external dataset files are not included in the documented Git
 
 The Elliptic dataset must be obtained separately from a legitimate source, subject to its applicable licensing and access terms.
 
+## V15 — Autonomous Quantum AI Cyber Defense (Completed)
+
+**Status:** V15.1–V15.5 implemented and committed to the `feature/cyber-network-v2` branch. Research-simulation validation: **PASS (0 failed checks)**. Production readiness has **not** been established.
+
+The V15 development cycle extends the earlier V3–V14 research platform without replacing existing modules.
+
+| Release | Module | What it does |
+| --- | --- | --- |
+| **V15.1** | Intelligent Threat Orchestrator | Combines synthetic Classical AI and Quantum AI score inputs using an explainable hybrid policy; assigns risk and priorities. |
+| **V15.2** | Multi-Agent Decision Engine | Runs three sequential, deterministic rule-based assessment roles: Threat Analysis, Investigation, and Decision. |
+| **V15.3** | Autonomous Response Simulation | Produces priority-aware simulated response plans, human-approval requirements, and local audit trails; performs no external security actions. |
+| **V15.4** | Live Command Center | Adds an animated React dashboard panel showing saved V15.1–V15.3 JSON results, event playback, risk distribution, decisions, and proposed response states. |
+| **V15.5** | Validation & Release | Checks saved JSON structure, cross-version event consistency, decision/response rules, safety conditions, and static frontend integration. Result: **PASS**. |
+
+### V15 source files
+
+```text
+research_validation/v15/
+  threat_orchestrator_v15_1.py
+  threat_orchestrator_v15_1_results.json
+  multi_agent_decision_v15_2.py
+  multi_agent_decision_v15_2_results.json
+  autonomous_response_v15_3.py
+  autonomous_response_v15_3_results.json
+  validation_release_v15_5.py
+  validation_release_v15_5_results.json
+
+frontend/src/components/LiveCommandCenterV15_4.tsx
+frontend/public/v15/
+  threat_orchestrator_v15_1_results.json
+  multi_agent_decision_v15_2_results.json
+  autonomous_response_v15_3_results.json
+```
+
+### Run V15 locally
+
+From the repository root, run the research scripts in order:
+
+```powershell
+python research_validation/v15/threat_orchestrator_v15_1.py
+python research_validation/v15/multi_agent_decision_v15_2.py
+python research_validation/v15/autonomous_response_v15_3.py
+python research_validation/v15/validation_release_v15_5.py
+```
+
+Start the original backend and Vite frontend in separate terminals (with dependencies installed). The V15.4 React panel is integrated into `frontend/src/App.tsx` and reads JSON exports from `frontend/public/v15/`. When the JSON files are missing, the panel explicitly switches to illustrative demo data. Exported JSON files are historical snapshots: animated playback is **not** a live model-inference or blockchain stream.
+
+**Scientific and safety limitations:** V15.1 uses synthetic model scores; V15.2 is a deterministic rule-based pipeline rather than independent LLM agents; V15.3 proposes or simulates responses but never applies real firewall, wallet, blockchain, or network changes. The V15.5 PASS verifies saved simulation data and static integration, not real-world detection accuracy, quantum advantage, production security, live API health, browser end-to-end operation, or a Vercel deployment.
+
+---
+
 ## 13. Research Limitations
 
 - The original synthetic benchmark results do not generalize reliably to the tested real dataset.
