@@ -1,0 +1,205 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V21.2",
+  "module": "Behavioral Anomaly Detection",
+  "created_utc": "2026-10-20T12:23:18.050116+00:00",
+  "status": "BEHAVIORAL_ANOMALY_PASS",
+  "simulation_mode": true,
+  "execution_mode": "deterministic_read_only",
+  "external_actions_enabled": false,
+  "source_sha256": {
+    "architecture": "586f04c819f5b0dbeb5a6c7d9bc4b9acd68b3fa5d08c64b1a928f8d5c8b390e1",
+    "frames": "5eb51f4fdce42c13df4d03b82ed5efb1204cd4703086e251eb65a3ad695abc7b"
+  },
+  "metrics": {
+    "ticks": 120,
+    "nodes": 10,
+    "observations": 1200,
+    "detected_observations": 61,
+    "affected_nodes": 10,
+    "detections_by_node": {
+      "api": 11,
+      "firewall": 13,
+      "ai_engine": 2,
+      "gateway": 10,
+      "external": 7,
+      "web": 4,
+      "database": 4,
+      "switch": 4,
+      "analyst": 3,
+      "telemetry": 3
+    },
+    "maximum_anomaly_score": 32.157305,
+    "method": "historical_rolling_z_score",
+    "window": 12,
+    "minimum_history": 6,
+    "z_threshold": 2.5,
+    "trained_ai_model_used": false,
+    "real_attack_detection_accuracy_measured": false
+  },
+  "synthetic_evaluation": {
+    "evaluation_type": "synthetic_injection_marker_agreement",
+    "ground_truth_is_real_attack_labels": false,
+    "warmup_observations_excluded": true,
+    "eligible_observations": 1140,
+    "true_positive": 21,
+    "false_positive": 40,
+    "false_negative": 0,
+    "true_negative": 1079,
+    "synthetic_marker_precision": 0.344262,
+    "synthetic_marker_recall": 1.0,
+    "note": "In-simulation agreement only. Not production detection performance."
+  },
+  "checks": [
+    {
+      "name": "V21.1 architecture passed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V21.1 architecture fingerprint verified",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V21.1 simulation-only configuration",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V21.2 registered as planned component",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V20.4 frame source fingerprint matches V21.1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V20.4 frame export validated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Frame count agrees with metadata",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "120 research frames available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Frame sequences continuous",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All observations explicitly simulated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Topology has ten unique nodes",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Topology has eleven unique links",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All frame topologies and measurements valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All node observations scored",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "One score per node per tick",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All node identifiers valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Scores nonnegative and finite",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Every detection uses an initialized baseline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No detections before history warmup",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Every detection satisfies threshold",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Detection flags exactly match scoring rule",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All scores use declared method",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Timeline covers all 120 ticks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Timeline detections consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All historical node observations bounded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Anomaly detection is reproducible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No future-data leakage in rolling scores",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Synthetic confusion matrix sums correctly",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "checks_passed": 28,
+  "checks_failed": 0,
+  "limitations": [
+    "Synthetic network telemetry only.",
+    "Rolling statistical detector, not a trained AI.",
+    "Injected anomalies are not real attack labels.",
+    "No independent real-world accuracy evaluation.",
+    "No live security actions."
+  ],
+  "next_stage": "V21.3 Multi-Agent Threat Correlation"
+}

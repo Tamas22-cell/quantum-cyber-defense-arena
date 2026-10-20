@@ -1,0 +1,281 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V21.3",
+  "module": "Multi-Agent Threat Correlation",
+  "created_utc": "2026-10-20T12:30:41.576693+00:00",
+  "status": "THREAT_CORRELATION_PASS",
+  "simulation_mode": true,
+  "execution_mode": "deterministic_read_only",
+  "external_actions_enabled": false,
+  "agent_roles": [
+    "alert_evidence_agent",
+    "behavioral_evidence_agent",
+    "correlation_supervisor"
+  ],
+  "metrics": {
+    "ticks": 120,
+    "network_nodes": 10,
+    "source_alerts": 21,
+    "behavioral_detections": 61,
+    "same_tick_correlations": 21,
+    "nearby_tick_correlations": 0,
+    "alert_only": 0,
+    "maximum_correlation_score": 0.950366,
+    "temporal_window_ticks": 2,
+    "method": "rule_based_correlation",
+    "trained_ai_agents_used": false,
+    "real_attack_accuracy_measured": false
+  },
+  "source_sha256": {
+    "architecture": "586f04c819f5b0dbeb5a6c7d9bc4b9acd68b3fa5d08c64b1a928f8d5c8b390e1",
+    "behavior_report": "13a5ec8062805c33b45999b84abe92489efe995d17d4ebdce6fd1d12252b0d9b",
+    "behavior_scores": "ae12cb603349e59bb9686bbaeb20c0bf1bd978a53c94d9ec3fa98e19c1e2f44d",
+    "threat_report": "75e41c8ef594885b307d38e6da8eb271011308ac63cd858e4151ec2cac5ac2fa",
+    "threat_events": "a03ef1fefc62a6f51d57518a4c8f41a3d7b873be75f68249819f1b343e4b377c",
+    "frames": "5eb51f4fdce42c13df4d03b82ed5efb1204cd4703086e251eb65a3ad695abc7b"
+  },
+  "checks": [
+    {
+      "name": "Source available: architecture",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v21\\threat_intelligence_architecture_v21_1_results.json"
+    },
+    {
+      "name": "Source readable: architecture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source available: behavior_report",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v21\\behavioral_anomaly_detection_v21_2_results.json"
+    },
+    {
+      "name": "Source readable: behavior_report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source available: behavior_scores",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v21\\behavioral_anomaly_detection_v21_2_scores.csv"
+    },
+    {
+      "name": "Source readable: behavior_scores",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source available: threat_report",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v20\\ai_threat_scenario_v20_3_results.json"
+    },
+    {
+      "name": "Source readable: threat_report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source available: threat_events",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v20\\ai_threat_scenario_v20_3_events.csv"
+    },
+    {
+      "name": "Source readable: threat_events",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source available: frames",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v20\\event_streaming_v20_4_frames.json"
+    },
+    {
+      "name": "Source readable: frames",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "architecture: correct version and status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "architecture: zero failed checks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "behavior_report: correct version and status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "behavior_report: zero failed checks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "threat_report: correct version and status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "threat_report: zero failed checks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "frames: correct version and status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Behavioral source fingerprints",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V20 threat source is current",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Research mode is simulated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No autonomous external actions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "120 ordered source frames",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Ten nodes per frame",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Eleven links per frame",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All behavioral node observations present",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Detected behavior requires ready baseline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Behavior scores are nonnegative",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Alert identifiers unique",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All alert risks bounded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Behavioral record count matches V21.2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Alert record count matches V20.3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All source alerts preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Correlation scores bounded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Correlation levels supported",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Matched time differences valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Exactly matched rows use zero distance",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Every correlated record is synthetic",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Timeline includes 120 ticks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Timeline sequence continuous",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Timeline alert totals correct",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Timeline behavior totals correct",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Correlation outcome counts add up",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No non-finite correlation metrics",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Correlation reproducible",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "checks_passed": 46,
+  "checks_failed": 0,
+  "error": null,
+  "limitations": [
+    "Synthetic telemetry and alerts only.",
+    "Agents are deterministic analytical roles.",
+    "Temporal correlation is not causal evidence.",
+    "No verified real attack labels.",
+    "No real-world detection accuracy measured.",
+    "No external security actions."
+  ],
+  "next_stage": "V21.4 Predictive Risk Analytics"
+}

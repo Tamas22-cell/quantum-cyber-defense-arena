@@ -1,0 +1,163 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V21.5",
+  "status": "DASHBOARD_INTEGRATION_PASS",
+  "created_utc": "2026-10-20T12:36:19.516173+00:00",
+  "simulation_mode": true,
+  "live_network_monitoring": false,
+  "checks_passed": 33,
+  "checks_failed": 0,
+  "checks": [
+    {
+      "name": "Source available: frames",
+      "passed": true
+    },
+    {
+      "name": "Source readable: frames",
+      "passed": true
+    },
+    {
+      "name": "Source available: behavior_report",
+      "passed": true
+    },
+    {
+      "name": "Source readable: behavior_report",
+      "passed": true
+    },
+    {
+      "name": "Source available: behavior",
+      "passed": true
+    },
+    {
+      "name": "Source readable: behavior",
+      "passed": true
+    },
+    {
+      "name": "Source available: correlation_report",
+      "passed": true
+    },
+    {
+      "name": "Source readable: correlation_report",
+      "passed": true
+    },
+    {
+      "name": "Source available: correlation",
+      "passed": true
+    },
+    {
+      "name": "Source readable: correlation",
+      "passed": true
+    },
+    {
+      "name": "Source available: prediction_report",
+      "passed": true
+    },
+    {
+      "name": "Source readable: prediction_report",
+      "passed": true
+    },
+    {
+      "name": "Source available: prediction",
+      "passed": true
+    },
+    {
+      "name": "Source readable: prediction",
+      "passed": true
+    },
+    {
+      "name": "frames: version and PASS status",
+      "passed": true
+    },
+    {
+      "name": "behavior_report: version and PASS status",
+      "passed": true
+    },
+    {
+      "name": "behavior: version and PASS status",
+      "passed": true
+    },
+    {
+      "name": "correlation_report: version and PASS status",
+      "passed": true
+    },
+    {
+      "name": "correlation: version and PASS status",
+      "passed": true
+    },
+    {
+      "name": "prediction_report: version and PASS status",
+      "passed": true
+    },
+    {
+      "name": "prediction: version and PASS status",
+      "passed": true
+    },
+    {
+      "name": "behavior_report: zero failed checks",
+      "passed": true
+    },
+    {
+      "name": "correlation_report: zero failed checks",
+      "passed": true
+    },
+    {
+      "name": "prediction_report: zero failed checks",
+      "passed": true
+    },
+    {
+      "name": "V21.2 frame fingerprint",
+      "passed": true
+    },
+    {
+      "name": "V21.3 frame fingerprint",
+      "passed": true
+    },
+    {
+      "name": "V21.4 frame fingerprint",
+      "passed": true
+    },
+    {
+      "name": "V21.4 correlation fingerprint",
+      "passed": true
+    },
+    {
+      "name": "All inputs are simulation exports",
+      "passed": true
+    },
+    {
+      "name": "All 120 frames aligned",
+      "passed": true
+    },
+    {
+      "name": "No invalid observed risks",
+      "passed": true
+    },
+    {
+      "name": "Behavior and correlation counts nonnegative",
+      "passed": true
+    },
+    {
+      "name": "Combined data deterministic",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "metrics": {
+    "frames": 120,
+    "nodes": 10,
+    "links": 11,
+    "behavioral_detections": 61,
+    "same_tick_correlations": 21,
+    "forecasts_available": 108
+  },
+  "source_sha256": {
+    "frames": "5eb51f4fdce42c13df4d03b82ed5efb1204cd4703086e251eb65a3ad695abc7b",
+    "behavior_report": "13a5ec8062805c33b45999b84abe92489efe995d17d4ebdce6fd1d12252b0d9b",
+    "behavior": "37db26436810f5a9d2bd8209f55c881e4af08b0d16c0c1199129e35e1501e4ba",
+    "correlation_report": "13fb66f6f9dceeebf24f8cee0997d9b09f1fe4a7f12f2ac938119dd0f8ad6b58",
+    "correlation": "353a2ec282f339631947aa7844c04983f03d2a7bc3b9b5ffffd744c635a8cab2",
+    "prediction_report": "20980ce9f3521123b4ca6f760d61da47c39666929cfcbe2445b873950db7f7a6",
+    "prediction": "a3d4b307d2fb29e647acaf2930be09d46df5d745673764f30c8daaa9a7e22af6"
+  },
+  "next_stage": "V21.6 Research Validation and Release"
+}

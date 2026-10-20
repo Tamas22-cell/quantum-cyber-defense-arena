@@ -1,0 +1,20 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V21.6",
+  "status": "ADVANCED_THREAT_INTELLIGENCE_RELEASE_PASS",
+  "simulation_mode": true,
+  "is_live": false,
+  "metrics": {
+    "network_nodes": 10,
+    "network_links": 11,
+    "simulation_ticks": 120,
+    "source_alerts": 21,
+    "behavioral_detections": 61,
+    "same_tick_correlations": 21,
+    "nearby_correlations": 0,
+    "forecasts_available": 108,
+    "holdout_predictions": 30
+  },
+  "checks_passed": 92,
+  "checks_failed": 0
+}

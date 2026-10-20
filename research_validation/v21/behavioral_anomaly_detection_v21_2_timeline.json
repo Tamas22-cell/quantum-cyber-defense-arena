@@ -1,0 +1,1296 @@
+{
+  "version": "V21.2",
+  "status": "BEHAVIORAL_ANOMALY_PASS",
+  "simulation_mode": true,
+  "is_live": false,
+  "ticks": 120,
+  "timeline": [
+    {
+      "tick": 0,
+      "timestamp": "2026-01-01T00:00:00+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 0.0,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 616.960655
+    },
+    {
+      "tick": 1,
+      "timestamp": "2026-01-01T00:00:01+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 0.0,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 610.192431
+    },
+    {
+      "tick": 2,
+      "timestamp": "2026-01-01T00:00:02+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 0.0,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 654.869833
+    },
+    {
+      "tick": 3,
+      "timestamp": "2026-01-01T00:00:03+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 0.0,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 677.988103
+    },
+    {
+      "tick": 4,
+      "timestamp": "2026-01-01T00:00:04+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 0.0,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 653.616884
+    },
+    {
+      "tick": 5,
+      "timestamp": "2026-01-01T00:00:05+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 0.0,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 673.776456
+    },
+    {
+      "tick": 6,
+      "timestamp": "2026-01-01T00:00:06+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [
+        "api",
+        "firewall"
+      ],
+      "detections": 2,
+      "maximum_anomaly_score": 6.103877,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 718.497713
+    },
+    {
+      "tick": 7,
+      "timestamp": "2026-01-01T00:00:07+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.122932,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 670.858523
+    },
+    {
+      "tick": 8,
+      "timestamp": "2026-01-01T00:00:08+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.45448,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 718.606525
+    },
+    {
+      "tick": 9,
+      "timestamp": "2026-01-01T00:00:09+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [
+        "ai_engine"
+      ],
+      "detections": 1,
+      "maximum_anomaly_score": 2.969948,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 722.979343
+    },
+    {
+      "tick": 10,
+      "timestamp": "2026-01-01T00:00:10+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [
+        "gateway"
+      ],
+      "detections": 1,
+      "maximum_anomaly_score": 2.902848,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 778.103565
+    },
+    {
+      "tick": 11,
+      "timestamp": "2026-01-01T00:00:11+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [
+        "gateway"
+      ],
+      "detections": 1,
+      "maximum_anomaly_score": 2.589044,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 764.310098
+    },
+    {
+      "tick": 12,
+      "timestamp": "2026-01-01T00:00:12+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.968662,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 741.185204
+    },
+    {
+      "tick": 13,
+      "timestamp": "2026-01-01T00:00:13+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.191105,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 714.40418
+    },
+    {
+      "tick": 14,
+      "timestamp": "2026-01-01T00:00:14+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.073426,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 745.972546
+    },
+    {
+      "tick": 15,
+      "timestamp": "2026-01-01T00:00:15+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.23414,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 721.167232
+    },
+    {
+      "tick": 16,
+      "timestamp": "2026-01-01T00:00:16+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.118913,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 738.674407
+    },
+    {
+      "tick": 17,
+      "timestamp": "2026-01-01T00:00:17+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [
+        "api",
+        "external",
+        "firewall",
+        "gateway"
+      ],
+      "detections": 4,
+      "maximum_anomaly_score": 20.503864,
+      "synthetic_injection_present": true,
+      "total_traffic_mbps": 987.649352
+    },
+    {
+      "tick": 18,
+      "timestamp": "2026-01-01T00:00:18+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.746483,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 726.498002
+    },
+    {
+      "tick": 19,
+      "timestamp": "2026-01-01T00:00:19+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 0.776188,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 685.411613
+    },
+    {
+      "tick": 20,
+      "timestamp": "2026-01-01T00:00:20+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 0.778092,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 723.170334
+    },
+    {
+      "tick": 21,
+      "timestamp": "2026-01-01T00:00:21+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.087063,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 679.377412
+    },
+    {
+      "tick": 22,
+      "timestamp": "2026-01-01T00:00:22+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.398508,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 663.152776
+    },
+    {
+      "tick": 23,
+      "timestamp": "2026-01-01T00:00:23+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.756839,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 650.36992
+    },
+    {
+      "tick": 24,
+      "timestamp": "2026-01-01T00:00:24+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.321383,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 653.822185
+    },
+    {
+      "tick": 25,
+      "timestamp": "2026-01-01T00:00:25+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.21259,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 629.103281
+    },
+    {
+      "tick": 26,
+      "timestamp": "2026-01-01T00:00:26+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.001085,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 621.065152
+    },
+    {
+      "tick": 27,
+      "timestamp": "2026-01-01T00:00:27+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 0.673567,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 518.596198
+    },
+    {
+      "tick": 28,
+      "timestamp": "2026-01-01T00:00:28+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.167752,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 582.732573
+    },
+    {
+      "tick": 29,
+      "timestamp": "2026-01-01T00:00:29+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.400513,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 598.749853
+    },
+    {
+      "tick": 30,
+      "timestamp": "2026-01-01T00:00:30+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.473598,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 488.13723
+    },
+    {
+      "tick": 31,
+      "timestamp": "2026-01-01T00:00:31+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.346402,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 540.69131
+    },
+    {
+      "tick": 32,
+      "timestamp": "2026-01-01T00:00:32+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.868097,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 457.776597
+    },
+    {
+      "tick": 33,
+      "timestamp": "2026-01-01T00:00:33+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.346385,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 506.174881
+    },
+    {
+      "tick": 34,
+      "timestamp": "2026-01-01T00:00:34+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [
+        "api",
+        "external",
+        "firewall",
+        "gateway"
+      ],
+      "detections": 4,
+      "maximum_anomaly_score": 21.915509,
+      "synthetic_injection_present": true,
+      "total_traffic_mbps": 683.811893
+    },
+    {
+      "tick": 35,
+      "timestamp": "2026-01-01T00:00:35+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.964439,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 541.885697
+    },
+    {
+      "tick": 36,
+      "timestamp": "2026-01-01T00:00:36+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.493145,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 470.844352
+    },
+    {
+      "tick": 37,
+      "timestamp": "2026-01-01T00:00:37+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.074095,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 497.341207
+    },
+    {
+      "tick": 38,
+      "timestamp": "2026-01-01T00:00:38+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.311113,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 497.736837
+    },
+    {
+      "tick": 39,
+      "timestamp": "2026-01-01T00:00:39+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.412472,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 473.443038
+    },
+    {
+      "tick": 40,
+      "timestamp": "2026-01-01T00:00:40+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.738985,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 511.532394
+    },
+    {
+      "tick": 41,
+      "timestamp": "2026-01-01T00:00:41+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.650942,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 487.811493
+    },
+    {
+      "tick": 42,
+      "timestamp": "2026-01-01T00:00:42+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.146997,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 554.353079
+    },
+    {
+      "tick": 43,
+      "timestamp": "2026-01-01T00:00:43+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.968379,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 502.725353
+    },
+    {
+      "tick": 44,
+      "timestamp": "2026-01-01T00:00:44+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.755498,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 512.793825
+    },
+    {
+      "tick": 45,
+      "timestamp": "2026-01-01T00:00:45+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.093918,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 481.796389
+    },
+    {
+      "tick": 46,
+      "timestamp": "2026-01-01T00:00:46+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.259853,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 557.406549
+    },
+    {
+      "tick": 47,
+      "timestamp": "2026-01-01T00:00:47+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.325755,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 547.458321
+    },
+    {
+      "tick": 48,
+      "timestamp": "2026-01-01T00:00:48+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [
+        "web"
+      ],
+      "detections": 1,
+      "maximum_anomaly_score": 2.62807,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 576.273453
+    },
+    {
+      "tick": 49,
+      "timestamp": "2026-01-01T00:00:49+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [
+        "firewall",
+        "gateway"
+      ],
+      "detections": 2,
+      "maximum_anomaly_score": 3.445761,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 568.657953
+    },
+    {
+      "tick": 50,
+      "timestamp": "2026-01-01T00:00:50+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.0774,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 615.271089
+    },
+    {
+      "tick": 51,
+      "timestamp": "2026-01-01T00:00:51+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [
+        "api",
+        "external",
+        "firewall",
+        "gateway"
+      ],
+      "detections": 4,
+      "maximum_anomaly_score": 20.193327,
+      "synthetic_injection_present": true,
+      "total_traffic_mbps": 860.000371
+    },
+    {
+      "tick": 52,
+      "timestamp": "2026-01-01T00:00:52+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [
+        "database",
+        "switch"
+      ],
+      "detections": 2,
+      "maximum_anomaly_score": 3.044671,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 648.733059
+    },
+    {
+      "tick": 53,
+      "timestamp": "2026-01-01T00:00:53+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [
+        "database"
+      ],
+      "detections": 1,
+      "maximum_anomaly_score": 2.938412,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 637.044454
+    },
+    {
+      "tick": 54,
+      "timestamp": "2026-01-01T00:00:54+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [
+        "analyst",
+        "firewall",
+        "switch",
+        "telemetry"
+      ],
+      "detections": 4,
+      "maximum_anomaly_score": 3.826574,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 688.314355
+    },
+    {
+      "tick": 55,
+      "timestamp": "2026-01-01T00:00:55+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [
+        "database"
+      ],
+      "detections": 1,
+      "maximum_anomaly_score": 3.639737,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 681.189884
+    },
+    {
+      "tick": 56,
+      "timestamp": "2026-01-01T00:00:56+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.393963,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 713.728852
+    },
+    {
+      "tick": 57,
+      "timestamp": "2026-01-01T00:00:57+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [
+        "api",
+        "firewall",
+        "web"
+      ],
+      "detections": 3,
+      "maximum_anomaly_score": 3.453598,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 753.758133
+    },
+    {
+      "tick": 58,
+      "timestamp": "2026-01-01T00:00:58+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.367625,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 704.502326
+    },
+    {
+      "tick": 59,
+      "timestamp": "2026-01-01T00:00:59+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.054033,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 703.024256
+    },
+    {
+      "tick": 60,
+      "timestamp": "2026-01-01T00:01:00+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [
+        "analyst",
+        "api",
+        "telemetry"
+      ],
+      "detections": 3,
+      "maximum_anomaly_score": 2.966111,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 741.398466
+    },
+    {
+      "tick": 61,
+      "timestamp": "2026-01-01T00:01:01+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.000798,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 713.370232
+    },
+    {
+      "tick": 62,
+      "timestamp": "2026-01-01T00:01:02+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.642022,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 662.233261
+    },
+    {
+      "tick": 63,
+      "timestamp": "2026-01-01T00:01:03+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.318918,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 757.4453
+    },
+    {
+      "tick": 64,
+      "timestamp": "2026-01-01T00:01:04+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.676133,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 713.391104
+    },
+    {
+      "tick": 65,
+      "timestamp": "2026-01-01T00:01:05+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.873517,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 725.365615
+    },
+    {
+      "tick": 66,
+      "timestamp": "2026-01-01T00:01:06+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.68834,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 667.035097
+    },
+    {
+      "tick": 67,
+      "timestamp": "2026-01-01T00:01:07+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.452912,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 698.912722
+    },
+    {
+      "tick": 68,
+      "timestamp": "2026-01-01T00:01:08+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [
+        "api",
+        "external",
+        "firewall",
+        "gateway"
+      ],
+      "detections": 4,
+      "maximum_anomaly_score": 32.157305,
+      "synthetic_injection_present": true,
+      "total_traffic_mbps": 969.703796
+    },
+    {
+      "tick": 69,
+      "timestamp": "2026-01-01T00:01:09+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.578047,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 672.947111
+    },
+    {
+      "tick": 70,
+      "timestamp": "2026-01-01T00:01:10+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.577307,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 663.808538
+    },
+    {
+      "tick": 71,
+      "timestamp": "2026-01-01T00:01:11+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.196131,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 697.817711
+    },
+    {
+      "tick": 72,
+      "timestamp": "2026-01-01T00:01:12+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.374857,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 711.56979
+    },
+    {
+      "tick": 73,
+      "timestamp": "2026-01-01T00:01:13+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 0.0,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 603.683372
+    },
+    {
+      "tick": 74,
+      "timestamp": "2026-01-01T00:01:14+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 0.577051,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 627.91568
+    },
+    {
+      "tick": 75,
+      "timestamp": "2026-01-01T00:01:15+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 0.754933,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 584.53861
+    },
+    {
+      "tick": 76,
+      "timestamp": "2026-01-01T00:01:16+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 0.540069,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 612.582892
+    },
+    {
+      "tick": 77,
+      "timestamp": "2026-01-01T00:01:17+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 0.529038,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 556.934183
+    },
+    {
+      "tick": 78,
+      "timestamp": "2026-01-01T00:01:18+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 0.573103,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 612.342716
+    },
+    {
+      "tick": 79,
+      "timestamp": "2026-01-01T00:01:19+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 0.583307,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 543.508512
+    },
+    {
+      "tick": 80,
+      "timestamp": "2026-01-01T00:01:20+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 0.189967,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 493.862733
+    },
+    {
+      "tick": 81,
+      "timestamp": "2026-01-01T00:01:21+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 0.560848,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 514.301647
+    },
+    {
+      "tick": 82,
+      "timestamp": "2026-01-01T00:01:22+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 0.853223,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 556.0928
+    },
+    {
+      "tick": 83,
+      "timestamp": "2026-01-01T00:01:23+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 0.498138,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 514.931065
+    },
+    {
+      "tick": 84,
+      "timestamp": "2026-01-01T00:01:24+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.097198,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 492.377995
+    },
+    {
+      "tick": 85,
+      "timestamp": "2026-01-01T00:01:25+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [
+        "api",
+        "external",
+        "firewall",
+        "gateway"
+      ],
+      "detections": 4,
+      "maximum_anomaly_score": 15.416888,
+      "synthetic_injection_present": true,
+      "total_traffic_mbps": 655.511342
+    },
+    {
+      "tick": 86,
+      "timestamp": "2026-01-01T00:01:26+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.865012,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 560.327134
+    },
+    {
+      "tick": 87,
+      "timestamp": "2026-01-01T00:01:27+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.243028,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 471.054728
+    },
+    {
+      "tick": 88,
+      "timestamp": "2026-01-01T00:01:28+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.039672,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 462.120645
+    },
+    {
+      "tick": 89,
+      "timestamp": "2026-01-01T00:01:29+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.268543,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 448.73477
+    },
+    {
+      "tick": 90,
+      "timestamp": "2026-01-01T00:01:30+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.157507,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 514.283755
+    },
+    {
+      "tick": 91,
+      "timestamp": "2026-01-01T00:01:31+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.230458,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 439.604827
+    },
+    {
+      "tick": 92,
+      "timestamp": "2026-01-01T00:01:32+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.051841,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 513.554737
+    },
+    {
+      "tick": 93,
+      "timestamp": "2026-01-01T00:01:33+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.637287,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 457.056869
+    },
+    {
+      "tick": 94,
+      "timestamp": "2026-01-01T00:01:34+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.016085,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 553.062171
+    },
+    {
+      "tick": 95,
+      "timestamp": "2026-01-01T00:01:35+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.784913,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 445.384397
+    },
+    {
+      "tick": 96,
+      "timestamp": "2026-01-01T00:01:36+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [
+        "switch"
+      ],
+      "detections": 1,
+      "maximum_anomaly_score": 4.4902,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 611.633029
+    },
+    {
+      "tick": 97,
+      "timestamp": "2026-01-01T00:01:37+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.645155,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 557.945902
+    },
+    {
+      "tick": 98,
+      "timestamp": "2026-01-01T00:01:38+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.173449,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 620.313027
+    },
+    {
+      "tick": 99,
+      "timestamp": "2026-01-01T00:01:39+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.99626,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 566.272857
+    },
+    {
+      "tick": 100,
+      "timestamp": "2026-01-01T00:01:40+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.820863,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 586.757258
+    },
+    {
+      "tick": 101,
+      "timestamp": "2026-01-01T00:01:41+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [
+        "ai_engine",
+        "database",
+        "switch"
+      ],
+      "detections": 3,
+      "maximum_anomaly_score": 2.742433,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 647.528453
+    },
+    {
+      "tick": 102,
+      "timestamp": "2026-01-01T00:01:42+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [
+        "api",
+        "external",
+        "firewall",
+        "gateway",
+        "web"
+      ],
+      "detections": 5,
+      "maximum_anomaly_score": 29.283187,
+      "synthetic_injection_present": true,
+      "total_traffic_mbps": 898.710931
+    },
+    {
+      "tick": 103,
+      "timestamp": "2026-01-01T00:01:43+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.835978,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 623.928079
+    },
+    {
+      "tick": 104,
+      "timestamp": "2026-01-01T00:01:44+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.360171,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 666.711809
+    },
+    {
+      "tick": 105,
+      "timestamp": "2026-01-01T00:01:45+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [
+        "api",
+        "web"
+      ],
+      "detections": 2,
+      "maximum_anomaly_score": 3.852986,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 725.102954
+    },
+    {
+      "tick": 106,
+      "timestamp": "2026-01-01T00:01:46+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [
+        "telemetry"
+      ],
+      "detections": 1,
+      "maximum_anomaly_score": 2.706465,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 650.011665
+    },
+    {
+      "tick": 107,
+      "timestamp": "2026-01-01T00:01:47+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [
+        "analyst"
+      ],
+      "detections": 1,
+      "maximum_anomaly_score": 2.685673,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 656.834089
+    },
+    {
+      "tick": 108,
+      "timestamp": "2026-01-01T00:01:48+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [
+        "firewall"
+      ],
+      "detections": 1,
+      "maximum_anomaly_score": 3.425971,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 753.903972
+    },
+    {
+      "tick": 109,
+      "timestamp": "2026-01-01T00:01:49+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [
+        "firewall"
+      ],
+      "detections": 1,
+      "maximum_anomaly_score": 4.728357,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 781.116359
+    },
+    {
+      "tick": 110,
+      "timestamp": "2026-01-01T00:01:50+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.410752,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 755.811454
+    },
+    {
+      "tick": 111,
+      "timestamp": "2026-01-01T00:01:51+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.02349,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 783.194008
+    },
+    {
+      "tick": 112,
+      "timestamp": "2026-01-01T00:01:52+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.815278,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 801.811875
+    },
+    {
+      "tick": 113,
+      "timestamp": "2026-01-01T00:01:53+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 1.783814,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 739.467904
+    },
+    {
+      "tick": 114,
+      "timestamp": "2026-01-01T00:01:54+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.419075,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 806.65936
+    },
+    {
+      "tick": 115,
+      "timestamp": "2026-01-01T00:01:55+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.330512,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 695.138961
+    },
+    {
+      "tick": 116,
+      "timestamp": "2026-01-01T00:01:56+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.330114,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 765.697137
+    },
+    {
+      "tick": 117,
+      "timestamp": "2026-01-01T00:01:57+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.121204,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 748.104404
+    },
+    {
+      "tick": 118,
+      "timestamp": "2026-01-01T00:01:58+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [],
+      "detections": 0,
+      "maximum_anomaly_score": 2.141025,
+      "synthetic_injection_present": false,
+      "total_traffic_mbps": 727.761722
+    },
+    {
+      "tick": 119,
+      "timestamp": "2026-01-01T00:01:59+00:00",
+      "evaluated_nodes": 10,
+      "detected_nodes": [
+        "api",
+        "external",
+        "firewall",
+        "gateway"
+      ],
+      "detections": 4,
+      "maximum_anomaly_score": 21.402737,
+      "synthetic_injection_present": true,
+      "total_traffic_mbps": 938.105044
+    }
+  ]
+}

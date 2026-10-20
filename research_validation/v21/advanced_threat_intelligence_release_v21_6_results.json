@@ -1,0 +1,553 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V21.6",
+  "module": "Advanced Threat Intelligence Research Release",
+  "created_utc": "2026-10-20T12:38:47.279930+00:00",
+  "status": "ADVANCED_THREAT_INTELLIGENCE_RELEASE_PASS",
+  "simulation_mode": true,
+  "live_network_monitoring": false,
+  "trained_ai_threat_detector": false,
+  "external_actions_enabled": false,
+  "metrics": {
+    "network_nodes": 10,
+    "network_links": 11,
+    "simulation_ticks": 120,
+    "source_alerts": 21,
+    "behavioral_detections": 61,
+    "same_tick_correlations": 21,
+    "nearby_correlations": 0,
+    "forecasts_available": 108,
+    "holdout_predictions": 30
+  },
+  "source_manifest": {
+    "architecture": {
+      "path": "research_validation\\v21\\threat_intelligence_architecture_v21_1_results.json",
+      "sha256": "586f04c819f5b0dbeb5a6c7d9bc4b9acd68b3fa5d08c64b1a928f8d5c8b390e1",
+      "size_bytes": 12847
+    },
+    "behavior": {
+      "path": "research_validation\\v21\\behavioral_anomaly_detection_v21_2_results.json",
+      "sha256": "13a5ec8062805c33b45999b84abe92489efe995d17d4ebdce6fd1d12252b0d9b",
+      "size_bytes": 5157
+    },
+    "correlation": {
+      "path": "research_validation\\v21\\multi_agent_threat_correlation_v21_3_results.json",
+      "sha256": "13fb66f6f9dceeebf24f8cee0997d9b09f1fe4a7f12f2ac938119dd0f8ad6b58",
+      "size_bytes": 7427
+    },
+    "prediction": {
+      "path": "research_validation\\v21\\predictive_risk_analytics_v21_4_results.json",
+      "sha256": "20980ce9f3521123b4ca6f760d61da47c39666929cfcbe2445b873950db7f7a6",
+      "size_bytes": 3840
+    },
+    "dashboard": {
+      "path": "research_validation\\v21\\intelligence_dashboard_integration_v21_5_results.json",
+      "sha256": "b1f4286eaa6b425bf90477a8d99e6a99b309ac7a298bcd82089ba898ca3836e2",
+      "size_bytes": 4086
+    },
+    "behavior_timeline": {
+      "path": "research_validation\\v21\\behavioral_anomaly_detection_v21_2_timeline.json",
+      "sha256": "37db26436810f5a9d2bd8209f55c881e4af08b0d16c0c1199129e35e1501e4ba",
+      "size_bytes": 36637
+    },
+    "correlation_timeline": {
+      "path": "research_validation\\v21\\multi_agent_threat_correlation_v21_3_timeline.json",
+      "sha256": "353a2ec282f339631947aa7844c04983f03d2a7bc3b9b5ffffd744c635a8cab2",
+      "size_bytes": 38591
+    },
+    "prediction_timeline": {
+      "path": "research_validation\\v21\\predictive_risk_analytics_v21_4_timeline.json",
+      "sha256": "a3d4b307d2fb29e647acaf2930be09d46df5d745673764f30c8daaa9a7e22af6",
+      "size_bytes": 38454
+    },
+    "source_frames": {
+      "path": "research_validation\\v20\\event_streaming_v20_4_frames.json",
+      "sha256": "5eb51f4fdce42c13df4d03b82ed5efb1204cd4703086e251eb65a3ad695abc7b",
+      "size_bytes": 671816
+    },
+    "dashboard_data": {
+      "path": "frontend\\public\\v21\\intelligence_data.json",
+      "sha256": "1257aeca132613026ae4e29b16de80e41adff476661fa76b93411ecd30bb7efc",
+      "size_bytes": 650991
+    },
+    "dashboard_html": {
+      "path": "frontend\\public\\v21\\dashboard.html",
+      "sha256": "a60b41de02777bba6a0d93ba616b982dcd032c1b04e87ac1ca9ecae7c34c034b",
+      "size_bytes": 12011
+    }
+  },
+  "checks": [
+    {
+      "name": "Source available: architecture",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v21\\threat_intelligence_architecture_v21_1_results.json"
+    },
+    {
+      "name": "Source readable: architecture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source available: behavior",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v21\\behavioral_anomaly_detection_v21_2_results.json"
+    },
+    {
+      "name": "Source readable: behavior",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source available: correlation",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v21\\multi_agent_threat_correlation_v21_3_results.json"
+    },
+    {
+      "name": "Source readable: correlation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source available: prediction",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v21\\predictive_risk_analytics_v21_4_results.json"
+    },
+    {
+      "name": "Source readable: prediction",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source available: dashboard",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v21\\intelligence_dashboard_integration_v21_5_results.json"
+    },
+    {
+      "name": "Source readable: dashboard",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source available: behavior_timeline",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v21\\behavioral_anomaly_detection_v21_2_timeline.json"
+    },
+    {
+      "name": "Source readable: behavior_timeline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source available: correlation_timeline",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v21\\multi_agent_threat_correlation_v21_3_timeline.json"
+    },
+    {
+      "name": "Source readable: correlation_timeline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source available: prediction_timeline",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v21\\predictive_risk_analytics_v21_4_timeline.json"
+    },
+    {
+      "name": "Source readable: prediction_timeline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source available: source_frames",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v20\\event_streaming_v20_4_frames.json"
+    },
+    {
+      "name": "Source readable: source_frames",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source available: dashboard_data",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\frontend\\public\\v21\\intelligence_data.json"
+    },
+    {
+      "name": "Source readable: dashboard_data",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source available: dashboard_html",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\frontend\\public\\v21\\dashboard.html"
+    },
+    {
+      "name": "Source readable: dashboard_html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "architecture: version correct",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "architecture: PASS result",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "architecture: internal checks valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "behavior: version correct",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "behavior: PASS result",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "behavior: internal checks valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "correlation: version correct",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "correlation: PASS result",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "correlation: internal checks valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prediction: version correct",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prediction: PASS result",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prediction: internal checks valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard: version correct",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard: PASS result",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "dashboard: internal checks valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "behavior_timeline: validated export",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "correlation_timeline: validated export",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "prediction_timeline: validated export",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V20.4 source frames passed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V21.5 frontend data passed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V21.1 architecture fingerprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V21.2 architecture fingerprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V21.2 frame fingerprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V21.3 behavioral report fingerprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V21.3 frame fingerprint",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V21.4 fingerprint: correlation_report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V21.4 fingerprint: correlation_timeline",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V21.4 fingerprint: frames",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V21.5 fingerprint: frames",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V21.5 fingerprint: behavior_report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V21.5 fingerprint: behavior",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V21.5 fingerprint: correlation_report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V21.5 fingerprint: correlation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V21.5 fingerprint: prediction_report",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V21.5 fingerprint: prediction",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Synthetic-only architecture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Behavior analysis uses synthetic data",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Correlation uses no external actions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Prediction is not live monitoring",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard integration is synthetic",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Prediction reports holdout metrics",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Five complete 120-tick data series",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All timestamps and tick indices aligned",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Network topology preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard nodes match simulation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard links match simulation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard alerts match simulation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Behavioral detection totals align",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Threat correlations align",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Observed risk values align",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Forecast values align",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Forecast uncertainty intervals align",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Observed risk bounded to zero and one",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Forecast bounds valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Warmup and forecast windows valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "30 holdout observations preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Synthetic alerts preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard feature: HTML document",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard feature: D3 dependency",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard feature: Network graph",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard feature: Risk chart",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard feature: Play/Pause",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard feature: Restart",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard feature: Speed control",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard feature: Timeline slider",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard feature: Intelligence data loader",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard feature: Simulation label",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard feature: Threat event feed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Dashboard closes HTML document",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Existing V20 dashboard preserved",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "checks_passed": 92,
+  "checks_failed": 0,
+  "error": null,
+  "limitations": [
+    "Synthetic telemetry only.",
+    "No independently verified attack labels.",
+    "Rule-based correlation and forecasting.",
+    "No production threat detection validation.",
+    "No live security actions.",
+    "HTML marker validation is not a browser test."
+  ],
+  "next_stage": "V22 Next-Generation Cyber Defense Research"
+}

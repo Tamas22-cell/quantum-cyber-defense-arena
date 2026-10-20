@@ -1,0 +1,151 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V21.4",
+  "module": "Predictive Risk Analytics",
+  "created_utc": "2026-10-20T12:33:24.886238+00:00",
+  "status": "PREDICTIVE_RISK_PASS",
+  "simulation_mode": true,
+  "live_data": false,
+  "trained_ai_model_used": false,
+  "external_actions_enabled": false,
+  "configuration": {
+    "history_window": 6,
+    "minimum_history": 12,
+    "holdout_start": 90,
+    "horizon_ticks": 1,
+    "calibration_observations": 78,
+    "interval_alpha": 0.05,
+    "calibrated_interval_radius": 0.697457
+  },
+  "evaluation": {
+    "holdout_start_tick": 90,
+    "holdout_observations": 30,
+    "forecast_mae": 0.076364,
+    "forecast_rmse": 0.188957,
+    "persistence_baseline_mae": 0.074295,
+    "forecast_beats_persistence_baseline": false,
+    "nominal_interval_coverage": 0.95,
+    "observed_holdout_interval_coverage": 1.0,
+    "calibration_assumption": "Historical residual distribution is representative of future errors"
+  },
+  "source_sha256": {
+    "correlation_report": "13fb66f6f9dceeebf24f8cee0997d9b09f1fe4a7f12f2ac938119dd0f8ad6b58",
+    "correlation_timeline": "353a2ec282f339631947aa7844c04983f03d2a7bc3b9b5ffffd744c635a8cab2",
+    "frames": "5eb51f4fdce42c13df4d03b82ed5efb1204cd4703086e251eb65a3ad695abc7b"
+  },
+  "checks": [
+    {
+      "name": "V21.3 correlation successfully validated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V21.3 source fingerprints verified",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V21.3 timeline status valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V20.4 frame export validated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "120 source frames available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "120 correlation records available",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source timeline sequences match",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All source data is synthetic",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No external actions enabled",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Correct number of evaluated forecasts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Thirty chronological holdout forecasts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Every forecast uses a previous tick",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Forecast values bounded",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Prediction intervals bounded and ordered",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Metrics are finite",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Forecasts reproducible",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No future leakage into early predictions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Timeline covers 120 ticks",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Forecast warmup is explicitly marked",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Holdout errors are independently evaluated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Calibration excludes holdout observations",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Interval radius nonnegative and finite",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "checks_passed": 22,
+  "checks_failed": 0,
+  "next_stage": "V21.5 Intelligence Dashboard Integration"
+}
