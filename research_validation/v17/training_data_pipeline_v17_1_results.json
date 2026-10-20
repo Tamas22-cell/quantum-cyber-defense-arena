@@ -1,0 +1,45 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V17.1",
+  "module": "AI Training Data Pipeline",
+  "created_utc": "2026-10-20T10:05:44.672835+00:00",
+  "source": "research_validation\\v16\\transaction_features_v16_2.csv",
+  "source_rows": 20,
+  "source_columns": 19,
+  "prepared_rows": 20,
+  "selected_features": [
+    "value_eth",
+    "log_value_eth",
+    "gas_limit",
+    "log_gas_limit",
+    "gas_price_gwei",
+    "max_fee_per_gas_gwei",
+    "max_priority_fee_gwei",
+    "nonce",
+    "is_zero_value",
+    "sender_tx_count_in_sample"
+  ],
+  "feature_count": 10,
+  "rejected_columns": {
+    "transaction_hash": "excluded_metadata_or_label",
+    "network": "insufficient_numeric_values",
+    "block_number": "excluded_metadata_or_label",
+    "transaction_type": "constant_feature",
+    "is_contract_creation": "constant_feature",
+    "value_outlier_flag": "constant_feature",
+    "gas_outlier_flag": "constant_feature",
+    "exploratory_flag_count": "constant_feature",
+    "classification": "insufficient_numeric_values"
+  },
+  "missing_values_imputed": 0,
+  "imputation_method": "median",
+  "supervised_training_ready": false,
+  "verified_threat_labels": false,
+  "status": "FEATURE_PREPARATION_PASS",
+  "limitations": [
+    "No verified malicious transaction labels.",
+    "No model training performed.",
+    "No demonstrated threat detection accuracy.",
+    "Median imputation must be fitted on training data only during future model evaluation to avoid data leakage."
+  ]
+}

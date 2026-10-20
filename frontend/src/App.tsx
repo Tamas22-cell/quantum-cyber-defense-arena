@@ -1,4 +1,6 @@
-﻿import LiveCommandCenterV15_4 from "./components/LiveCommandCenterV15_4";
+﻿
+import LiveCommandCenterV15_4 from "./components/LiveCommandCenterV15_4";
+import BlockchainIntelligenceV16_5 from "./components/BlockchainIntelligenceV16_5";
 
 import { useEffect, useMemo, useState } from "react";
 import type { CSSProperties, ReactNode } from "react";
@@ -345,7 +347,7 @@ export default function App() {
               color: online ? colors.green : colors.red,
             }}
           >
-            â—Ź API {online ? "ONLINE" : "OFFLINE"}
+            ● API {online ? "ONLINE" : "OFFLINE"}
           </strong>
 
           <button
@@ -403,7 +405,7 @@ export default function App() {
               margin: 0,
             }}
           >
-            Blockchain Security Â· AI Monitoring Â· Quantum Research
+            Blockchain Security · AI Monitoring · Quantum Research
           </p>
         </div>
 
@@ -620,7 +622,7 @@ export default function App() {
               fontSize: 12,
             }}
           >
-            Simulated threats Â· Click a row for details
+            Simulated threats · Click a row for details
           </p>
 
           <div style={{ overflowX: "auto" }}>
@@ -773,7 +775,7 @@ export default function App() {
               Destination: {selected.destination}
             </p>
 
-            <p>Data: SIMULATED â€” NOT REAL ATTACKS</p>
+            <p>Data: SIMULATED — NOT REAL ATTACKS</p>
           </section>
         )}
 
@@ -807,8 +809,12 @@ export default function App() {
         {/* V11.4 - ADVANCED RESEARCH DASHBOARD */}
         <ResearchDashboardV11_4 />
 
-                {/* V15.4 - LIVE COMMAND CENTER */}
+        {/* V15.4 - LIVE COMMAND CENTER */}
         <LiveCommandCenterV15_4 />
+
+        {/* V16.5 - REAL BLOCKCHAIN INTELLIGENCE */}
+        <BlockchainIntelligenceV16_5 />
+
         {/* FOOTER */}
         <footer
           style={{
@@ -819,15 +825,15 @@ export default function App() {
             fontSize: 11,
           }}
         >
-          QUANTUM CYBER DEFENSE ARENA Â· RESEARCH ENVIRONMENT
+          QUANTUM CYBER DEFENSE ARENA · RESEARCH ENVIRONMENT
 
           <p>
-            Simulated telemetry. No real attacks or verified
-            cybersecurity incidents are represented.
+            Simulated security telemetry and historical
+            Ethereum research data. Statistical outliers
+            are not verified cybersecurity incidents.
           </p>
         </footer>
       </main>
     </div>
   );
 }
-

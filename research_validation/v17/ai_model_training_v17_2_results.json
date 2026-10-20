@@ -1,0 +1,52 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V17.2",
+  "module": "AI Model Training Engine",
+  "created_utc": "2026-10-20T10:08:58.201151+00:00",
+  "status": "MODEL_TRAINING_PASS",
+  "model": "IsolationForest",
+  "model_type": "unsupervised_anomaly_detection",
+  "dataset": "research_validation\\v17\\training_features_v17_1.csv",
+  "samples": 20,
+  "feature_count": 10,
+  "feature_names": [
+    "value_eth",
+    "log_value_eth",
+    "gas_limit",
+    "log_gas_limit",
+    "gas_price_gwei",
+    "max_fee_per_gas_gwei",
+    "max_priority_fee_gwei",
+    "nonce",
+    "is_zero_value",
+    "sender_tx_count_in_sample"
+  ],
+  "parameters": {
+    "n_estimators": 200,
+    "contamination": "auto",
+    "random_state": 42
+  },
+  "training_set_results": {
+    "anomalies": 5,
+    "normal": 15,
+    "anomaly_percentage": 25.0,
+    "mean_anomaly_score": 0.44918638,
+    "max_anomaly_score": 0.77828212,
+    "min_anomaly_score": 0.34066393
+  },
+  "outputs": {
+    "model": "research_validation\\v17\\isolation_forest_model_v17_2.joblib",
+    "scores": "research_validation\\v17\\anomaly_scores_v17_2.csv",
+    "report": "research_validation\\v17\\ai_model_training_v17_2_results.json"
+  },
+  "verified_threat_labels": false,
+  "classification_accuracy_available": false,
+  "out_of_sample_evaluation": false,
+  "limitations": [
+    "Anomalies are not confirmed cyberattacks.",
+    "Scores are calculated on the training dataset.",
+    "No independent test set is evaluated.",
+    "Small samples can produce unstable findings.",
+    "Temporal and cross-block validation are needed."
+  ]
+}

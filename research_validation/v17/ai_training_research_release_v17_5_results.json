@@ -1,0 +1,249 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V17.5",
+  "module": "AI Training Research Release",
+  "created_utc": "2026-10-20T10:16:51.450124+00:00",
+  "status": "RESEARCH_RELEASE_PASS",
+  "checks_passed": 34,
+  "checks_failed": 0,
+  "checks": [
+    {
+      "name": "Required artifact: v17_1",
+      "passed": true,
+      "detail": "training_data_pipeline_v17_1_results.json"
+    },
+    {
+      "name": "Required artifact: v17_2",
+      "passed": true,
+      "detail": "ai_model_training_v17_2_results.json"
+    },
+    {
+      "name": "Required artifact: v17_3",
+      "passed": true,
+      "detail": "ai_model_validation_v17_3_results.json"
+    },
+    {
+      "name": "Required artifact: v17_4",
+      "passed": true,
+      "detail": "ai_model_robustness_v17_4_results.json"
+    },
+    {
+      "name": "Required artifact: training_csv",
+      "passed": true,
+      "detail": "training_features_v17_1.csv"
+    },
+    {
+      "name": "Required artifact: model",
+      "passed": true,
+      "detail": "isolation_forest_model_v17_2.joblib"
+    },
+    {
+      "name": "Required artifact: scores_csv",
+      "passed": true,
+      "detail": "anomaly_scores_v17_2.csv"
+    },
+    {
+      "name": "Required artifact: robustness_csv",
+      "passed": true,
+      "detail": "ai_model_robustness_v17_4_scores.csv"
+    },
+    {
+      "name": "Readable JSON: v17_1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Readable JSON: v17_2",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Readable JSON: v17_3",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Readable JSON: v17_4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V17.1 version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V17.1 status",
+      "passed": true,
+      "detail": "Expected FEATURE_PREPARATION_PASS"
+    },
+    {
+      "name": "V17.2 version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V17.2 status",
+      "passed": true,
+      "detail": "Expected MODEL_TRAINING_PASS"
+    },
+    {
+      "name": "V17.3 version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V17.3 status",
+      "passed": true,
+      "detail": "Expected VALIDATION_PASS"
+    },
+    {
+      "name": "V17.4 version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V17.4 status",
+      "passed": true,
+      "detail": "Expected ROBUSTNESS_BENCHMARK_PASS"
+    },
+    {
+      "name": "Readable CSV: training_csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Readable CSV: scores_csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Readable CSV: robustness_csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V17.3 validation checks",
+      "passed": true,
+      "detail": "Passed=21, Failed=0"
+    },
+    {
+      "name": "V17.1 sample count consistency",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V17.2 sample count consistency",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V17.4 sample count consistency",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V17.2 feature consistency",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V17.4 feature consistency",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Model score row count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Model counts sum to samples",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Robustness run count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Pairwise comparison count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Robustness score row count",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "artifacts": {
+    "v17_1": {
+      "file": "training_data_pipeline_v17_1_results.json",
+      "size_bytes": 1534,
+      "sha256": "fa09d03f98c0fe8c16f6642ed19985edd0ad18985193bf83f18c2e5b1c2d7887"
+    },
+    "v17_2": {
+      "file": "ai_model_training_v17_2_results.json",
+      "size_bytes": 1639,
+      "sha256": "8c9ea13422d54bdc3a3aa7e0ff0f78c6ea8e40c1b13c9ef10ca132679fa571a8"
+    },
+    "v17_3": {
+      "file": "ai_model_validation_v17_3_results.json",
+      "size_bytes": 3662,
+      "sha256": "dc4791946f3423ef6989108743ed1942709745eec2ec0e4c126c8d7120aa8e7c"
+    },
+    "v17_4": {
+      "file": "ai_model_robustness_v17_4_results.json",
+      "size_bytes": 10389,
+      "sha256": "600edf7bd2aaaa10d023b430d841d6c8f971180ae06bf6c4e5910027e674702d"
+    },
+    "training_csv": {
+      "file": "training_features_v17_1.csv",
+      "size_bytes": 1497,
+      "sha256": "a675d916a012a1fd8f2df2a8c6d6f318c541848af541e8ebbaedf0bc962cb95e"
+    },
+    "model": {
+      "file": "isolation_forest_model_v17_2.joblib",
+      "size_bytes": 461069,
+      "sha256": "0e69d63e7c8df2af4b2879fc1156029fc09c20338b469717f4774ac592e67c68"
+    },
+    "scores_csv": {
+      "file": "anomaly_scores_v17_2.csv",
+      "size_bytes": 607,
+      "sha256": "7401c396fffdd78859333ad248c9138e9c0bf17618181f55e563d9afa650c8a3"
+    },
+    "robustness_csv": {
+      "file": "ai_model_robustness_v17_4_scores.csv",
+      "size_bytes": 3698,
+      "sha256": "3e3ca2453bbee1aecf7e45ece6e64a46c676d81c53092dddf6e9565719003073"
+    }
+  },
+  "research_results": {
+    "v17_1_prepared_rows": 20,
+    "v17_2_samples": 20,
+    "v17_2_features": 10,
+    "v17_2_training_anomalies": 5,
+    "v17_3_checks_passed": 21,
+    "v17_3_checks_failed": 0,
+    "v17_4_model_runs": 10,
+    "v17_4_pairwise_comparisons": 45,
+    "v17_4_mean_flag_agreement": 0.98,
+    "v17_4_mean_anomaly_jaccard": 0.942857,
+    "v17_4_mean_rank_correlation": 0.996553
+  },
+  "scientific_scope": "Small-sample, in-sample unsupervised anomaly detection research",
+  "verified_attack_labels": false,
+  "out_of_sample_performance_verified": false,
+  "production_ready": false,
+  "limitations": [
+    "Anomaly flags are not proven cyberattacks.",
+    "The source sample contains only 20 transactions.",
+    "No verified fraud or threat labels are available.",
+    "No independent test-set performance was measured.",
+    "Random-seed stability does not imply accuracy.",
+    "Model artifacts are research outputs, not a production threat detection system."
+  ],
+  "next_stage": "V18 - Quantum-Classical Benchmark Lab"
+}

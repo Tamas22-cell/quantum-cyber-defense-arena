@@ -1,0 +1,456 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V17.4",
+  "module": "AI Model Robustness Benchmark",
+  "created_utc": "2026-10-20T10:14:01.234340+00:00",
+  "status": "ROBUSTNESS_BENCHMARK_PASS",
+  "source": "research_validation\\v17\\training_features_v17_1.csv",
+  "model": "IsolationForest",
+  "samples": 20,
+  "features": 10,
+  "feature_names": [
+    "value_eth",
+    "log_value_eth",
+    "gas_limit",
+    "log_gas_limit",
+    "gas_price_gwei",
+    "max_fee_per_gas_gwei",
+    "max_priority_fee_gwei",
+    "nonce",
+    "is_zero_value",
+    "sender_tx_count_in_sample"
+  ],
+  "model_runs": 10,
+  "random_seeds": [
+    42,
+    7,
+    21,
+    99,
+    123,
+    2026,
+    314,
+    777,
+    1001,
+    1729
+  ],
+  "n_estimators": 200,
+  "contamination": "auto",
+  "evaluation_type": "In-sample random-seed stability",
+  "anomaly_counts": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    7,
+    5,
+    5
+  ],
+  "summary": {
+    "mean_anomaly_count": 5.2,
+    "min_anomaly_count": 5,
+    "max_anomaly_count": 7,
+    "pairwise_comparisons": 45,
+    "mean_flag_agreement": 0.98,
+    "min_flag_agreement": 0.9,
+    "mean_anomaly_jaccard": 0.942857,
+    "mean_score_rank_correlation": 0.996553,
+    "mean_per_sample_score_std": 0.005028,
+    "mean_reference_flag_agreement": 0.988889
+  },
+  "per_seed": [
+    {
+      "seed": 42,
+      "anomalies": 5,
+      "normal": 15,
+      "anomaly_percentage": 25.0
+    },
+    {
+      "seed": 7,
+      "anomalies": 5,
+      "normal": 15,
+      "anomaly_percentage": 25.0
+    },
+    {
+      "seed": 21,
+      "anomalies": 5,
+      "normal": 15,
+      "anomaly_percentage": 25.0
+    },
+    {
+      "seed": 99,
+      "anomalies": 5,
+      "normal": 15,
+      "anomaly_percentage": 25.0
+    },
+    {
+      "seed": 123,
+      "anomalies": 5,
+      "normal": 15,
+      "anomaly_percentage": 25.0
+    },
+    {
+      "seed": 2026,
+      "anomalies": 5,
+      "normal": 15,
+      "anomaly_percentage": 25.0
+    },
+    {
+      "seed": 314,
+      "anomalies": 5,
+      "normal": 15,
+      "anomaly_percentage": 25.0
+    },
+    {
+      "seed": 777,
+      "anomalies": 7,
+      "normal": 13,
+      "anomaly_percentage": 35.0
+    },
+    {
+      "seed": 1001,
+      "anomalies": 5,
+      "normal": 15,
+      "anomaly_percentage": 25.0
+    },
+    {
+      "seed": 1729,
+      "anomalies": 5,
+      "normal": 15,
+      "anomaly_percentage": 25.0
+    }
+  ],
+  "pairwise_results": [
+    {
+      "seed_a": 42,
+      "seed_b": 7,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.998494
+    },
+    {
+      "seed_a": 42,
+      "seed_b": 21,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.998494
+    },
+    {
+      "seed_a": 42,
+      "seed_b": 99,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.99247
+    },
+    {
+      "seed_a": 42,
+      "seed_b": 123,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 1.0
+    },
+    {
+      "seed_a": 42,
+      "seed_b": 2026,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.99247
+    },
+    {
+      "seed_a": 42,
+      "seed_b": 314,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 1.0
+    },
+    {
+      "seed_a": 42,
+      "seed_b": 777,
+      "flag_agreement": 0.9,
+      "anomaly_jaccard": 0.714286,
+      "score_rank_correlation": 0.993976
+    },
+    {
+      "seed_a": 42,
+      "seed_b": 1001,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 1.0
+    },
+    {
+      "seed_a": 42,
+      "seed_b": 1729,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.996988
+    },
+    {
+      "seed_a": 7,
+      "seed_b": 21,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 1.0
+    },
+    {
+      "seed_a": 7,
+      "seed_b": 99,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.993976
+    },
+    {
+      "seed_a": 7,
+      "seed_b": 123,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.998494
+    },
+    {
+      "seed_a": 7,
+      "seed_b": 2026,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.993976
+    },
+    {
+      "seed_a": 7,
+      "seed_b": 314,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.998494
+    },
+    {
+      "seed_a": 7,
+      "seed_b": 777,
+      "flag_agreement": 0.9,
+      "anomaly_jaccard": 0.714286,
+      "score_rank_correlation": 0.996988
+    },
+    {
+      "seed_a": 7,
+      "seed_b": 1001,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.998494
+    },
+    {
+      "seed_a": 7,
+      "seed_b": 1729,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.998494
+    },
+    {
+      "seed_a": 21,
+      "seed_b": 99,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.993976
+    },
+    {
+      "seed_a": 21,
+      "seed_b": 123,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.998494
+    },
+    {
+      "seed_a": 21,
+      "seed_b": 2026,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.993976
+    },
+    {
+      "seed_a": 21,
+      "seed_b": 314,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.998494
+    },
+    {
+      "seed_a": 21,
+      "seed_b": 777,
+      "flag_agreement": 0.9,
+      "anomaly_jaccard": 0.714286,
+      "score_rank_correlation": 0.996988
+    },
+    {
+      "seed_a": 21,
+      "seed_b": 1001,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.998494
+    },
+    {
+      "seed_a": 21,
+      "seed_b": 1729,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.998494
+    },
+    {
+      "seed_a": 99,
+      "seed_b": 123,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.99247
+    },
+    {
+      "seed_a": 99,
+      "seed_b": 2026,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 1.0
+    },
+    {
+      "seed_a": 99,
+      "seed_b": 314,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.99247
+    },
+    {
+      "seed_a": 99,
+      "seed_b": 777,
+      "flag_agreement": 0.9,
+      "anomaly_jaccard": 0.714286,
+      "score_rank_correlation": 0.998494
+    },
+    {
+      "seed_a": 99,
+      "seed_b": 1001,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.99247
+    },
+    {
+      "seed_a": 99,
+      "seed_b": 1729,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.995482
+    },
+    {
+      "seed_a": 123,
+      "seed_b": 2026,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.99247
+    },
+    {
+      "seed_a": 123,
+      "seed_b": 314,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 1.0
+    },
+    {
+      "seed_a": 123,
+      "seed_b": 777,
+      "flag_agreement": 0.9,
+      "anomaly_jaccard": 0.714286,
+      "score_rank_correlation": 0.993976
+    },
+    {
+      "seed_a": 123,
+      "seed_b": 1001,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 1.0
+    },
+    {
+      "seed_a": 123,
+      "seed_b": 1729,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.996988
+    },
+    {
+      "seed_a": 2026,
+      "seed_b": 314,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.99247
+    },
+    {
+      "seed_a": 2026,
+      "seed_b": 777,
+      "flag_agreement": 0.9,
+      "anomaly_jaccard": 0.714286,
+      "score_rank_correlation": 0.998494
+    },
+    {
+      "seed_a": 2026,
+      "seed_b": 1001,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.99247
+    },
+    {
+      "seed_a": 2026,
+      "seed_b": 1729,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.995482
+    },
+    {
+      "seed_a": 314,
+      "seed_b": 777,
+      "flag_agreement": 0.9,
+      "anomaly_jaccard": 0.714286,
+      "score_rank_correlation": 0.993976
+    },
+    {
+      "seed_a": 314,
+      "seed_b": 1001,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 1.0
+    },
+    {
+      "seed_a": 314,
+      "seed_b": 1729,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.996988
+    },
+    {
+      "seed_a": 777,
+      "seed_b": 1001,
+      "flag_agreement": 0.9,
+      "anomaly_jaccard": 0.714286,
+      "score_rank_correlation": 0.993976
+    },
+    {
+      "seed_a": 777,
+      "seed_b": 1729,
+      "flag_agreement": 0.9,
+      "anomaly_jaccard": 0.714286,
+      "score_rank_correlation": 0.998494
+    },
+    {
+      "seed_a": 1001,
+      "seed_b": 1729,
+      "flag_agreement": 1.0,
+      "anomaly_jaccard": 1.0,
+      "score_rank_correlation": 0.996988
+    }
+  ],
+  "verified_threat_labels": false,
+  "out_of_sample_validation": false,
+  "limitations": [
+    "Only 20 samples are expected from V17.1.",
+    "The same dataset is used in all runs.",
+    "Random-seed stability is not accuracy.",
+    "No independently verified attack labels.",
+    "No unseen transaction evaluation.",
+    "Results do not establish production readiness."
+  ],
+  "outputs": {
+    "scores_csv": "research_validation\\v17\\ai_model_robustness_v17_4_scores.csv",
+    "report_json": "research_validation\\v17\\ai_model_robustness_v17_4_results.json"
+  }
+}

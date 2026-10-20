@@ -1,0 +1,147 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V17.3",
+  "module": "AI Model Evaluation & Validation",
+  "created_utc": "2026-10-20T10:11:37.530844+00:00",
+  "model_type": "Isolation Forest",
+  "validation_scope": "Saved-artifact consistency and deterministic retraining on the same data",
+  "verified_threat_labels": false,
+  "out_of_sample_test": false,
+  "data_summary": {
+    "samples": 20,
+    "features": 10,
+    "feature_names": [
+      "value_eth",
+      "log_value_eth",
+      "gas_limit",
+      "log_gas_limit",
+      "gas_price_gwei",
+      "max_fee_per_gas_gwei",
+      "max_priority_fee_gwei",
+      "nonce",
+      "is_zero_value",
+      "sender_tx_count_in_sample"
+    ],
+    "normal_count": 15,
+    "statistical_anomalies": 5,
+    "anomaly_percentage": 25.0
+  },
+  "checks": [
+    {
+      "name": "File available: training_features_v17_1.csv",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "File available: isolation_forest_model_v17_2.joblib",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "File available: anomaly_scores_v17_2.csv",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "File available: ai_model_training_v17_2_results.json",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Model is a scikit-learn Pipeline",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Correct model steps",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Detector is Isolation Forest",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Training data has at least 10 samples",
+      "passed": true,
+      "details": "Samples: 20"
+    },
+    {
+      "name": "Training features match saved model",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Training features match V17.2 report",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Training sample count matches report",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Saved scores count matches samples",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Saved sample indexes are sequential",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Saved anomaly scores are consistent",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Saved decision values are consistent",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Saved anomaly flags are consistent",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Anomaly count matches report",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Normal count matches report",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Anomaly percentage matches report",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Deterministic retraining: anomaly scores",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Deterministic retraining: predictions",
+      "passed": true,
+      "details": ""
+    }
+  ],
+  "checks_passed": 21,
+  "checks_failed": 0,
+  "limitations": [
+    "No verified malicious transaction labels.",
+    "No precision, recall, F1 or accuracy evaluation.",
+    "No independent test dataset was used.",
+    "Validation uses the same training samples.",
+    "Small samples cannot establish operational reliability.",
+    "Anomaly flags are not confirmed cyberattacks."
+  ],
+  "status": "VALIDATION_PASS"
+}
