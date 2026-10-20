@@ -6,9 +6,9 @@
 
 ![Quantum Cyber Defense Arena — AI, Quantum and Cyber Defense command center](https://raw.githubusercontent.com/Tamas22-cell/quantum-cyber-defense-arena/feature/cyber-network-v2/1ba63f4a-9a52-4d7d-abe1-471c0d9038b4.png)
 
-**[▶ VIEW V23 INTERACTIVE D3 DASHBOARD (SOURCE)](./frontend/public/v23/dashboard.html)** · [Research data directory](./frontend/public/v23/)
+**[▶ OPEN FULL INTERACTIVE QUANTUM CYBER DEFENSE DASHBOARD](https://quantum-cyber-defense-full-dashboard-f3xh5pdib.vercel.app)** · [Research data directory](./frontend/public/v23/)
 
-The V23.5 D3 dashboard uses animated SVG network links and data particles, 120 simulation ticks, 10 nodes, 11 links and simulated response proposals. Open it via the local React/Vite frontend at `/v23/dashboard.html` (for example, `http://localhost:5174/v23/dashboard.html` if Vite uses port 5174). GitHub shows the HTML source and does not execute it as an interactive dashboard. A separately deployed public V23 URL has not been verified.
+The V23.5 D3 dashboard uses animated SVG network links and data particles, 120 simulation ticks, 10 nodes, 11 links and simulated response proposals. Open it via the local React/Vite frontend at `/v23/dashboard.html` (for example, `http://localhost:5174/v23/dashboard.html` if Vite uses port 5174). The link above opens the deployed React dashboard. The separate V23.5 D3 HTML file can also be viewed in the repository; its GitHub file view shows source code rather than running it.
 
 
 ## Research Platform Overview
