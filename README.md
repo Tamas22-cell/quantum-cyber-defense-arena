@@ -2,6 +2,15 @@
 
 ![Quantum Cyber Defense Arena — Cyber Threat Command Center](./41b6932f-f350-4721-94e4-51bf157ae3a8.png)
 
+## Quantum Cyber Defense Arena — Full Visual Showcase
+
+![Quantum Cyber Defense Arena — AI, Quantum and Cyber Defense command center](./1ba63f4a-9a52-4d7d-abe1-471c0d9038b4.png)
+
+**[▶ VIEW V23 INTERACTIVE D3 DASHBOARD (SOURCE)](./frontend/public/v23/dashboard.html)** · [Research data directory](./frontend/public/v23/)
+
+The V23.5 D3 dashboard uses animated SVG network links and data particles, 120 simulation ticks, 10 nodes, 11 links and simulated response proposals. Open it via the local React/Vite frontend at `/v23/dashboard.html` (for example, `http://localhost:5174/v23/dashboard.html` if Vite uses port 5174). GitHub shows the HTML source and does not execute it as an interactive dashboard. A separately deployed public V23 URL has not been verified.
+
+
 ## Research Platform Overview
 
 Quantum Cyber Defense Arena combines **AI-driven anomaly detection**, **quantum-inspired security research**, **hybrid decision-making**, and **interactive 3D network visualization** in one unified research platform.
