@@ -363,3 +363,38 @@ Quantum Cyber Defense Arena demonstrates an integrated research workflow spannin
 The project represents the completion of the planned V14 research-prototype development cycle.
 
 **Research prototype — not a certified production cybersecurity system.**
+
+---
+
+## 15. V15 — Autonomous Quantum AI Cyber Defense (Research Simulation)
+
+**Status:** V15.1–V15.5 implemented and locally validated. **Validation:** PASS (0 failed checks). The V15 features are research prototypes based on saved synthetic observations; they are not production cybersecurity controls.
+
+| Version | Module | What it provides |
+|---|---|---|
+| **V15.1** | Intelligent Threat Orchestrator | Combines normalized classical and quantum detector *inputs* using a deterministic hybrid fusion policy, prioritizes findings, and exports JSON reports. The standalone run uses synthetic scores; it does not execute trained detectors. |
+| **V15.2** | Multi-Agent Decision Engine | Three sequential, explainable, rule-based assessment stages: Threat Analysis, Investigation, and Decision. These are not independent LLM agents. |
+| **V15.3** | Autonomous Response Simulation | Produces policy-checked response plans, human-approval flags, and audit trails. No external action, blocking, or remediation is executed. |
+| **V15.4** | Live Command Center | React dashboard panel featuring animated playback, priority metrics, event stream, decision inspector, and response status. Reads saved V15.1–V15.3 JSON exports from `frontend/public/v15/`. |
+| **V15.5** | Validation & Release | Checks stored result structures, event consistency, deterministic decision rules, response safety, summary counts, and static React/JSON integration. Local report status: **PASS**. |
+
+### V15 source and artifacts
+
+- `research_validation/v15/threat_orchestrator_v15_1.py`
+- `research_validation/v15/multi_agent_decision_v15_2.py`
+- `research_validation/v15/autonomous_response_v15_3.py`
+- `research_validation/v15/validation_release_v15_5.py`
+- `research_validation/v15/*_results.json`
+- `frontend/src/components/LiveCommandCenterV15_4.tsx`
+- `frontend/public/v15/*_results.json`
+
+### Run V15 validation
+
+```powershell
+python research_validation/v15/validation_release_v15_5.py
+cd frontend
+npm run build
+```
+
+**Important distinction:** The V15 dashboard replays stored research events. Animated playback does not mean live threat detection. The V15.5 validation covers saved simulation outputs and static frontend integration; backend connectivity, browser end-to-end behavior, and production/Vercel deployment require separate testing. The existing V14 research findings and limitations remain applicable.
+
