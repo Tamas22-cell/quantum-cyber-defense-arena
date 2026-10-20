@@ -1,0 +1,64 @@
+{
+  "version": "23.8",
+  "name": "AI Defense Decision Benchmark",
+  "generated_at": "2026-10-20T14:19:33.519291+00:00",
+  "source": {
+    "dataset": "research_validation\\v23\\intelligent_threat_fusion_v23_2_events.csv",
+    "sha256": "58f067ff963da02de6b2c6a3d14dca584f28f4de92bb9f5d232b95b4e62b8504"
+  },
+  "benchmark": {
+    "total_events": 1200,
+    "valid_events": 1200,
+    "invalid_events": 0,
+    "validity_rate": 1.0,
+    "average_fusion_score": 0.202126,
+    "elevated_priority_events": 21,
+    "approval_required_events": 21,
+    "priority_distribution": {
+      "normal": 919,
+      "low": 260,
+      "critical": 20,
+      "high": 1
+    },
+    "action_distribution": {
+      "observe": 1143,
+      "isolate_node": 21,
+      "increase_monitoring": 36
+    },
+    "decision_matrix": {
+      "critical": {
+        "increase_monitoring": 0,
+        "isolate_node": 20,
+        "observe": 0
+      },
+      "high": {
+        "increase_monitoring": 0,
+        "isolate_node": 1,
+        "observe": 0
+      },
+      "low": {
+        "increase_monitoring": 36,
+        "isolate_node": 0,
+        "observe": 224
+      },
+      "normal": {
+        "increase_monitoring": 0,
+        "isolate_node": 0,
+        "observe": 919
+      }
+    },
+    "violations": {}
+  },
+  "methodology": {
+    "dataset_type": "simulation",
+    "policy_checks": "research assumptions",
+    "reproducible": true,
+    "input_hash_verified": true,
+    "ground_truth_labels_available": false,
+    "precision_recall_f1_computed": false,
+    "false_positive_rate_computed": false,
+    "production_accuracy_verified": false,
+    "autonomous_intervention_verified": false
+  },
+  "status": "AI_DEFENSE_BENCHMARK_PASS"
+}
