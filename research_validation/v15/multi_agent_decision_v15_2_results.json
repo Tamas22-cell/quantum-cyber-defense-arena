@@ -1,0 +1,1278 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "15.2.0",
+  "module": "Multi-Agent Decision Engine",
+  "mode": "RESEARCH_SIMULATION",
+  "generated_at": "2026-10-20T08:19:48.369394+00:00",
+  "source_file": "threat_orchestrator_v15_1_results.json",
+  "agents": [
+    "Threat Analysis Agent",
+    "Investigation Agent",
+    "Decision Agent"
+  ],
+  "execution_model": "Sequential deterministic rule-based agents",
+  "summary": {
+    "total_events": 30,
+    "decisions": {
+      "NORMAL": 6,
+      "REVIEW": 8,
+      "ANOMALY": 16
+    },
+    "priorities": {
+      "P1": 7,
+      "P2": 9,
+      "P3": 8,
+      "P4": 6
+    },
+    "manual_review_required": 8,
+    "unanimous_consensus": 30,
+    "consensus_breakdown": {
+      "UNANIMOUS_ANOMALY": 16,
+      "UNANIMOUS_REVIEW": 8,
+      "UNANIMOUS_NORMAL": 6
+    },
+    "average_risk_score": 59.97
+  },
+  "events": [
+    {
+      "event_id": "V15-EVENT-0001",
+      "network": "Polygon",
+      "event_type": "SMART_CONTRACT_ANOMALY",
+      "risk_score": 89,
+      "hybrid_decision": "ANOMALY",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0001",
+        "decision": "ANOMALY",
+        "priority": "P1",
+        "score": 0.89,
+        "explanation": "Both detection systems indicate an anomaly. The risk level determines incident urgency.",
+        "recommended_action": "Escalate for simulated analyst investigation."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0001",
+        "decision": "ANOMALY",
+        "priority": "P1",
+        "score": 0.0482,
+        "explanation": "Both models agree on an anomaly. Investigation is recommended according to the simulated incident priority.",
+        "recommended_action": "Prepare an analyst investigation case."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0001",
+        "decision": "ANOMALY",
+        "priority": "P1",
+        "score": 0.8898,
+        "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+        "recommended_action": "Recommend analyst investigation; do not execute automatic blocking."
+      },
+      "consensus": "UNANIMOUS_ANOMALY",
+      "final_priority": "P1",
+      "final_decision": "ANOMALY",
+      "manual_review_required": false,
+      "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+      "recommended_action": "Recommend analyst investigation; do not execute automatic blocking.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0002",
+      "network": "Base",
+      "event_type": "WALLET_BEHAVIOR_ANOMALY",
+      "risk_score": 100,
+      "hybrid_decision": "ANOMALY",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0002",
+        "decision": "ANOMALY",
+        "priority": "P1",
+        "score": 1.0,
+        "explanation": "Both detection systems indicate an anomaly. The risk level determines incident urgency.",
+        "recommended_action": "Escalate for simulated analyst investigation."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0002",
+        "decision": "ANOMALY",
+        "priority": "P1",
+        "score": 0.0,
+        "explanation": "Both models agree on an anomaly. Investigation is recommended according to the simulated incident priority.",
+        "recommended_action": "Prepare an analyst investigation case."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0002",
+        "decision": "ANOMALY",
+        "priority": "P1",
+        "score": 1.0,
+        "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+        "recommended_action": "Recommend analyst investigation; do not execute automatic blocking."
+      },
+      "consensus": "UNANIMOUS_ANOMALY",
+      "final_priority": "P1",
+      "final_decision": "ANOMALY",
+      "manual_review_required": false,
+      "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+      "recommended_action": "Recommend analyst investigation; do not execute automatic blocking.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0003",
+      "network": "Arbitrum",
+      "event_type": "UNUSUAL_TRANSACTION_FREQUENCY",
+      "risk_score": 63,
+      "hybrid_decision": "ANOMALY",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0003",
+        "decision": "ANOMALY",
+        "priority": "P2",
+        "score": 0.63,
+        "explanation": "Both detection systems indicate an anomaly. The risk level determines incident urgency.",
+        "recommended_action": "Escalate for simulated analyst investigation."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0003",
+        "decision": "ANOMALY",
+        "priority": "P2",
+        "score": 0.1605,
+        "explanation": "Both models agree on an anomaly. Investigation is recommended according to the simulated incident priority.",
+        "recommended_action": "Prepare an analyst investigation case."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0003",
+        "decision": "ANOMALY",
+        "priority": "P2",
+        "score": 0.6331,
+        "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+        "recommended_action": "Recommend analyst investigation; do not execute automatic blocking."
+      },
+      "consensus": "UNANIMOUS_ANOMALY",
+      "final_priority": "P2",
+      "final_decision": "ANOMALY",
+      "manual_review_required": false,
+      "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+      "recommended_action": "Recommend analyst investigation; do not execute automatic blocking.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0004",
+      "network": "Arbitrum",
+      "event_type": "UNUSUAL_TRANSACTION_FREQUENCY",
+      "risk_score": 51,
+      "hybrid_decision": "REVIEW",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0004",
+        "decision": "REVIEW",
+        "priority": "P3",
+        "score": 0.51,
+        "explanation": "The models disagree about this event. A combined risk score alone cannot resolve the conflicting classifications.",
+        "recommended_action": "Request human review of both model outputs."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0004",
+        "decision": "REVIEW",
+        "priority": "P3",
+        "score": 0.1956,
+        "explanation": "Detector disagreement identified. Absolute normalized score gap: 0.1956.",
+        "recommended_action": "Inspect both scores and request manual review."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0004",
+        "decision": "REVIEW",
+        "priority": "P3",
+        "score": 0.509,
+        "explanation": "At least one assessment requires manual review. Automatic clearance is withheld.",
+        "recommended_action": "Create a simulated review request."
+      },
+      "consensus": "UNANIMOUS_REVIEW",
+      "final_priority": "P3",
+      "final_decision": "REVIEW",
+      "manual_review_required": true,
+      "explanation": "At least one assessment requires manual review. Automatic clearance is withheld.",
+      "recommended_action": "Create a simulated review request.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0005",
+      "network": "Ethereum",
+      "event_type": "SMART_CONTRACT_ANOMALY",
+      "risk_score": 62,
+      "hybrid_decision": "ANOMALY",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0005",
+        "decision": "ANOMALY",
+        "priority": "P2",
+        "score": 0.62,
+        "explanation": "Both detection systems indicate an anomaly. The risk level determines incident urgency.",
+        "recommended_action": "Escalate for simulated analyst investigation."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0005",
+        "decision": "ANOMALY",
+        "priority": "P2",
+        "score": 0.0749,
+        "explanation": "Both models agree on an anomaly. Investigation is recommended according to the simulated incident priority.",
+        "recommended_action": "Prepare an analyst investigation case."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0005",
+        "decision": "ANOMALY",
+        "priority": "P2",
+        "score": 0.618,
+        "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+        "recommended_action": "Recommend analyst investigation; do not execute automatic blocking."
+      },
+      "consensus": "UNANIMOUS_ANOMALY",
+      "final_priority": "P2",
+      "final_decision": "ANOMALY",
+      "manual_review_required": false,
+      "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+      "recommended_action": "Recommend analyst investigation; do not execute automatic blocking.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0006",
+      "network": "Arbitrum",
+      "event_type": "UNUSUAL_TRANSACTION_FREQUENCY",
+      "risk_score": 50,
+      "hybrid_decision": "REVIEW",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0006",
+        "decision": "REVIEW",
+        "priority": "P3",
+        "score": 0.5,
+        "explanation": "The models disagree about this event. A combined risk score alone cannot resolve the conflicting classifications.",
+        "recommended_action": "Request human review of both model outputs."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0006",
+        "decision": "REVIEW",
+        "priority": "P3",
+        "score": 0.3169,
+        "explanation": "Detector disagreement identified. Absolute normalized score gap: 0.3169.",
+        "recommended_action": "Inspect both scores and request manual review."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0006",
+        "decision": "REVIEW",
+        "priority": "P3",
+        "score": 0.4956,
+        "explanation": "At least one assessment requires manual review. Automatic clearance is withheld.",
+        "recommended_action": "Create a simulated review request."
+      },
+      "consensus": "UNANIMOUS_REVIEW",
+      "final_priority": "P3",
+      "final_decision": "REVIEW",
+      "manual_review_required": true,
+      "explanation": "At least one assessment requires manual review. Automatic clearance is withheld.",
+      "recommended_action": "Create a simulated review request.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0007",
+      "network": "Base",
+      "event_type": "UNUSUAL_TRANSACTION_FREQUENCY",
+      "risk_score": 54,
+      "hybrid_decision": "REVIEW",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0007",
+        "decision": "REVIEW",
+        "priority": "P3",
+        "score": 0.54,
+        "explanation": "The models disagree about this event. A combined risk score alone cannot resolve the conflicting classifications.",
+        "recommended_action": "Request human review of both model outputs."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0007",
+        "decision": "REVIEW",
+        "priority": "P3",
+        "score": 0.0276,
+        "explanation": "Detector disagreement identified. Absolute normalized score gap: 0.0276.",
+        "recommended_action": "Inspect both scores and request manual review."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0007",
+        "decision": "REVIEW",
+        "priority": "P3",
+        "score": 0.5418,
+        "explanation": "At least one assessment requires manual review. Automatic clearance is withheld.",
+        "recommended_action": "Create a simulated review request."
+      },
+      "consensus": "UNANIMOUS_REVIEW",
+      "final_priority": "P3",
+      "final_decision": "REVIEW",
+      "manual_review_required": true,
+      "explanation": "At least one assessment requires manual review. Automatic clearance is withheld.",
+      "recommended_action": "Create a simulated review request.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0008",
+      "network": "Base",
+      "event_type": "LARGE_TOKEN_TRANSFER",
+      "risk_score": 17,
+      "hybrid_decision": "NORMAL",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0008",
+        "decision": "NORMAL",
+        "priority": "P4",
+        "score": 0.17,
+        "explanation": "Both models classify the event as normal under the V15.1 thresholds.",
+        "recommended_action": "Continue simulated monitoring."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0008",
+        "decision": "NORMAL",
+        "priority": "P4",
+        "score": 0.2118,
+        "explanation": "No detector disagreement or anomaly is present under the configured rules.",
+        "recommended_action": "Record and continue monitoring."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0008",
+        "decision": "NORMAL",
+        "priority": "P4",
+        "score": 0.1722,
+        "explanation": "Both assessments support continued monitoring under the research rules.",
+        "recommended_action": "Record the result and continue monitoring."
+      },
+      "consensus": "UNANIMOUS_NORMAL",
+      "final_priority": "P4",
+      "final_decision": "NORMAL",
+      "manual_review_required": false,
+      "explanation": "Both assessments support continued monitoring under the research rules.",
+      "recommended_action": "Record the result and continue monitoring.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0009",
+      "network": "Polygon",
+      "event_type": "LARGE_TOKEN_TRANSFER",
+      "risk_score": 68,
+      "hybrid_decision": "ANOMALY",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0009",
+        "decision": "ANOMALY",
+        "priority": "P2",
+        "score": 0.68,
+        "explanation": "Both detection systems indicate an anomaly. The risk level determines incident urgency.",
+        "recommended_action": "Escalate for simulated analyst investigation."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0009",
+        "decision": "ANOMALY",
+        "priority": "P2",
+        "score": 0.138,
+        "explanation": "Both models agree on an anomaly. Investigation is recommended according to the simulated incident priority.",
+        "recommended_action": "Prepare an analyst investigation case."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0009",
+        "decision": "ANOMALY",
+        "priority": "P2",
+        "score": 0.6832,
+        "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+        "recommended_action": "Recommend analyst investigation; do not execute automatic blocking."
+      },
+      "consensus": "UNANIMOUS_ANOMALY",
+      "final_priority": "P2",
+      "final_decision": "ANOMALY",
+      "manual_review_required": false,
+      "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+      "recommended_action": "Recommend analyst investigation; do not execute automatic blocking.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0010",
+      "network": "Base",
+      "event_type": "FAILED_TRANSACTION_SPIKE",
+      "risk_score": 78,
+      "hybrid_decision": "ANOMALY",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0010",
+        "decision": "ANOMALY",
+        "priority": "P2",
+        "score": 0.78,
+        "explanation": "Both detection systems indicate an anomaly. The risk level determines incident urgency.",
+        "recommended_action": "Escalate for simulated analyst investigation."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0010",
+        "decision": "ANOMALY",
+        "priority": "P2",
+        "score": 0.0919,
+        "explanation": "Both models agree on an anomaly. Investigation is recommended according to the simulated incident priority.",
+        "recommended_action": "Prepare an analyst investigation case."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0010",
+        "decision": "ANOMALY",
+        "priority": "P2",
+        "score": 0.7849,
+        "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+        "recommended_action": "Recommend analyst investigation; do not execute automatic blocking."
+      },
+      "consensus": "UNANIMOUS_ANOMALY",
+      "final_priority": "P2",
+      "final_decision": "ANOMALY",
+      "manual_review_required": false,
+      "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+      "recommended_action": "Recommend analyst investigation; do not execute automatic blocking.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0011",
+      "network": "Polygon",
+      "event_type": "UNUSUAL_TRANSACTION_FREQUENCY",
+      "risk_score": 16,
+      "hybrid_decision": "NORMAL",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0011",
+        "decision": "NORMAL",
+        "priority": "P4",
+        "score": 0.16,
+        "explanation": "Both models classify the event as normal under the V15.1 thresholds.",
+        "recommended_action": "Continue simulated monitoring."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0011",
+        "decision": "NORMAL",
+        "priority": "P4",
+        "score": 0.0626,
+        "explanation": "No detector disagreement or anomaly is present under the configured rules.",
+        "recommended_action": "Record and continue monitoring."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0011",
+        "decision": "NORMAL",
+        "priority": "P4",
+        "score": 0.1633,
+        "explanation": "Both assessments support continued monitoring under the research rules.",
+        "recommended_action": "Record the result and continue monitoring."
+      },
+      "consensus": "UNANIMOUS_NORMAL",
+      "final_priority": "P4",
+      "final_decision": "NORMAL",
+      "manual_review_required": false,
+      "explanation": "Both assessments support continued monitoring under the research rules.",
+      "recommended_action": "Record the result and continue monitoring.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0012",
+      "network": "Base",
+      "event_type": "LARGE_TOKEN_TRANSFER",
+      "risk_score": 29,
+      "hybrid_decision": "NORMAL",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0012",
+        "decision": "NORMAL",
+        "priority": "P4",
+        "score": 0.29,
+        "explanation": "Both models classify the event as normal under the V15.1 thresholds.",
+        "recommended_action": "Continue simulated monitoring."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0012",
+        "decision": "NORMAL",
+        "priority": "P4",
+        "score": 0.1291,
+        "explanation": "No detector disagreement or anomaly is present under the configured rules.",
+        "recommended_action": "Record and continue monitoring."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0012",
+        "decision": "NORMAL",
+        "priority": "P4",
+        "score": 0.2887,
+        "explanation": "Both assessments support continued monitoring under the research rules.",
+        "recommended_action": "Record the result and continue monitoring."
+      },
+      "consensus": "UNANIMOUS_NORMAL",
+      "final_priority": "P4",
+      "final_decision": "NORMAL",
+      "manual_review_required": false,
+      "explanation": "Both assessments support continued monitoring under the research rules.",
+      "recommended_action": "Record the result and continue monitoring.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0013",
+      "network": "Base",
+      "event_type": "FAILED_TRANSACTION_SPIKE",
+      "risk_score": 78,
+      "hybrid_decision": "ANOMALY",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0013",
+        "decision": "ANOMALY",
+        "priority": "P2",
+        "score": 0.78,
+        "explanation": "Both detection systems indicate an anomaly. The risk level determines incident urgency.",
+        "recommended_action": "Escalate for simulated analyst investigation."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0013",
+        "decision": "ANOMALY",
+        "priority": "P2",
+        "score": 0.1877,
+        "explanation": "Both models agree on an anomaly. Investigation is recommended according to the simulated incident priority.",
+        "recommended_action": "Prepare an analyst investigation case."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0013",
+        "decision": "ANOMALY",
+        "priority": "P2",
+        "score": 0.7767,
+        "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+        "recommended_action": "Recommend analyst investigation; do not execute automatic blocking."
+      },
+      "consensus": "UNANIMOUS_ANOMALY",
+      "final_priority": "P2",
+      "final_decision": "ANOMALY",
+      "manual_review_required": false,
+      "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+      "recommended_action": "Recommend analyst investigation; do not execute automatic blocking.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0014",
+      "network": "Base",
+      "event_type": "FAILED_TRANSACTION_SPIKE",
+      "risk_score": 37,
+      "hybrid_decision": "REVIEW",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0014",
+        "decision": "REVIEW",
+        "priority": "P3",
+        "score": 0.37,
+        "explanation": "The models disagree about this event. A combined risk score alone cannot resolve the conflicting classifications.",
+        "recommended_action": "Request human review of both model outputs."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0014",
+        "decision": "REVIEW",
+        "priority": "P3",
+        "score": 0.3678,
+        "explanation": "Detector disagreement identified. Absolute normalized score gap: 0.3678.",
+        "recommended_action": "Inspect both scores and request manual review."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0014",
+        "decision": "REVIEW",
+        "priority": "P3",
+        "score": 0.3687,
+        "explanation": "At least one assessment requires manual review. Automatic clearance is withheld.",
+        "recommended_action": "Create a simulated review request."
+      },
+      "consensus": "UNANIMOUS_REVIEW",
+      "final_priority": "P3",
+      "final_decision": "REVIEW",
+      "manual_review_required": true,
+      "explanation": "At least one assessment requires manual review. Automatic clearance is withheld.",
+      "recommended_action": "Create a simulated review request.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0015",
+      "network": "Ethereum",
+      "event_type": "FAILED_TRANSACTION_SPIKE",
+      "risk_score": 30,
+      "hybrid_decision": "NORMAL",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0015",
+        "decision": "NORMAL",
+        "priority": "P4",
+        "score": 0.3,
+        "explanation": "Both models classify the event as normal under the V15.1 thresholds.",
+        "recommended_action": "Continue simulated monitoring."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0015",
+        "decision": "NORMAL",
+        "priority": "P4",
+        "score": 0.4068,
+        "explanation": "No detector disagreement or anomaly is present under the configured rules.",
+        "recommended_action": "Record and continue monitoring."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0015",
+        "decision": "NORMAL",
+        "priority": "P4",
+        "score": 0.2967,
+        "explanation": "Both assessments support continued monitoring under the research rules.",
+        "recommended_action": "Record the result and continue monitoring."
+      },
+      "consensus": "UNANIMOUS_NORMAL",
+      "final_priority": "P4",
+      "final_decision": "NORMAL",
+      "manual_review_required": false,
+      "explanation": "Both assessments support continued monitoring under the research rules.",
+      "recommended_action": "Record the result and continue monitoring.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0016",
+      "network": "Base",
+      "event_type": "SMART_CONTRACT_ANOMALY",
+      "risk_score": 49,
+      "hybrid_decision": "REVIEW",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0016",
+        "decision": "REVIEW",
+        "priority": "P3",
+        "score": 0.49,
+        "explanation": "The models disagree about this event. A combined risk score alone cannot resolve the conflicting classifications.",
+        "recommended_action": "Request human review of both model outputs."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0016",
+        "decision": "REVIEW",
+        "priority": "P3",
+        "score": 0.1494,
+        "explanation": "Detector disagreement identified. Absolute normalized score gap: 0.1494.",
+        "recommended_action": "Inspect both scores and request manual review."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0016",
+        "decision": "REVIEW",
+        "priority": "P3",
+        "score": 0.4872,
+        "explanation": "At least one assessment requires manual review. Automatic clearance is withheld.",
+        "recommended_action": "Create a simulated review request."
+      },
+      "consensus": "UNANIMOUS_REVIEW",
+      "final_priority": "P3",
+      "final_decision": "REVIEW",
+      "manual_review_required": true,
+      "explanation": "At least one assessment requires manual review. Automatic clearance is withheld.",
+      "recommended_action": "Create a simulated review request.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0017",
+      "network": "Ethereum",
+      "event_type": "LARGE_TOKEN_TRANSFER",
+      "risk_score": 7,
+      "hybrid_decision": "NORMAL",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0017",
+        "decision": "NORMAL",
+        "priority": "P4",
+        "score": 0.07,
+        "explanation": "Both models classify the event as normal under the V15.1 thresholds.",
+        "recommended_action": "Continue simulated monitoring."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0017",
+        "decision": "NORMAL",
+        "priority": "P4",
+        "score": 0.1392,
+        "explanation": "No detector disagreement or anomaly is present under the configured rules.",
+        "recommended_action": "Record and continue monitoring."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0017",
+        "decision": "NORMAL",
+        "priority": "P4",
+        "score": 0.0696,
+        "explanation": "Both assessments support continued monitoring under the research rules.",
+        "recommended_action": "Record the result and continue monitoring."
+      },
+      "consensus": "UNANIMOUS_NORMAL",
+      "final_priority": "P4",
+      "final_decision": "NORMAL",
+      "manual_review_required": false,
+      "explanation": "Both assessments support continued monitoring under the research rules.",
+      "recommended_action": "Record the result and continue monitoring.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0018",
+      "network": "Arbitrum",
+      "event_type": "WALLET_BEHAVIOR_ANOMALY",
+      "risk_score": 78,
+      "hybrid_decision": "ANOMALY",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0018",
+        "decision": "ANOMALY",
+        "priority": "P2",
+        "score": 0.78,
+        "explanation": "Both detection systems indicate an anomaly. The risk level determines incident urgency.",
+        "recommended_action": "Escalate for simulated analyst investigation."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0018",
+        "decision": "ANOMALY",
+        "priority": "P2",
+        "score": 0.1393,
+        "explanation": "Both models agree on an anomaly. Investigation is recommended according to the simulated incident priority.",
+        "recommended_action": "Prepare an analyst investigation case."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0018",
+        "decision": "ANOMALY",
+        "priority": "P2",
+        "score": 0.7783,
+        "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+        "recommended_action": "Recommend analyst investigation; do not execute automatic blocking."
+      },
+      "consensus": "UNANIMOUS_ANOMALY",
+      "final_priority": "P2",
+      "final_decision": "ANOMALY",
+      "manual_review_required": false,
+      "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+      "recommended_action": "Recommend analyst investigation; do not execute automatic blocking.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0019",
+      "network": "Arbitrum",
+      "event_type": "WALLET_BEHAVIOR_ANOMALY",
+      "risk_score": 54,
+      "hybrid_decision": "REVIEW",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0019",
+        "decision": "REVIEW",
+        "priority": "P3",
+        "score": 0.54,
+        "explanation": "The models disagree about this event. A combined risk score alone cannot resolve the conflicting classifications.",
+        "recommended_action": "Request human review of both model outputs."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0019",
+        "decision": "REVIEW",
+        "priority": "P3",
+        "score": 0.2879,
+        "explanation": "Detector disagreement identified. Absolute normalized score gap: 0.2879.",
+        "recommended_action": "Inspect both scores and request manual review."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0019",
+        "decision": "REVIEW",
+        "priority": "P3",
+        "score": 0.5428,
+        "explanation": "At least one assessment requires manual review. Automatic clearance is withheld.",
+        "recommended_action": "Create a simulated review request."
+      },
+      "consensus": "UNANIMOUS_REVIEW",
+      "final_priority": "P3",
+      "final_decision": "REVIEW",
+      "manual_review_required": true,
+      "explanation": "At least one assessment requires manual review. Automatic clearance is withheld.",
+      "recommended_action": "Create a simulated review request.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0020",
+      "network": "Polygon",
+      "event_type": "UNUSUAL_TRANSACTION_FREQUENCY",
+      "risk_score": 69,
+      "hybrid_decision": "ANOMALY",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0020",
+        "decision": "ANOMALY",
+        "priority": "P2",
+        "score": 0.69,
+        "explanation": "Both detection systems indicate an anomaly. The risk level determines incident urgency.",
+        "recommended_action": "Escalate for simulated analyst investigation."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0020",
+        "decision": "ANOMALY",
+        "priority": "P2",
+        "score": 0.106,
+        "explanation": "Both models agree on an anomaly. Investigation is recommended according to the simulated incident priority.",
+        "recommended_action": "Prepare an analyst investigation case."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0020",
+        "decision": "ANOMALY",
+        "priority": "P2",
+        "score": 0.6932,
+        "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+        "recommended_action": "Recommend analyst investigation; do not execute automatic blocking."
+      },
+      "consensus": "UNANIMOUS_ANOMALY",
+      "final_priority": "P2",
+      "final_decision": "ANOMALY",
+      "manual_review_required": false,
+      "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+      "recommended_action": "Recommend analyst investigation; do not execute automatic blocking.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0021",
+      "network": "Ethereum",
+      "event_type": "LARGE_TOKEN_TRANSFER",
+      "risk_score": 66,
+      "hybrid_decision": "ANOMALY",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0021",
+        "decision": "ANOMALY",
+        "priority": "P2",
+        "score": 0.66,
+        "explanation": "Both detection systems indicate an anomaly. The risk level determines incident urgency.",
+        "recommended_action": "Escalate for simulated analyst investigation."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0021",
+        "decision": "ANOMALY",
+        "priority": "P2",
+        "score": 0.1606,
+        "explanation": "Both models agree on an anomaly. Investigation is recommended according to the simulated incident priority.",
+        "recommended_action": "Prepare an analyst investigation case."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0021",
+        "decision": "ANOMALY",
+        "priority": "P2",
+        "score": 0.6639,
+        "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+        "recommended_action": "Recommend analyst investigation; do not execute automatic blocking."
+      },
+      "consensus": "UNANIMOUS_ANOMALY",
+      "final_priority": "P2",
+      "final_decision": "ANOMALY",
+      "manual_review_required": false,
+      "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+      "recommended_action": "Recommend analyst investigation; do not execute automatic blocking.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0022",
+      "network": "Ethereum",
+      "event_type": "WALLET_BEHAVIOR_ANOMALY",
+      "risk_score": 65,
+      "hybrid_decision": "REVIEW",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0022",
+        "decision": "REVIEW",
+        "priority": "P3",
+        "score": 0.65,
+        "explanation": "The models disagree about this event. A combined risk score alone cannot resolve the conflicting classifications.",
+        "recommended_action": "Request human review of both model outputs."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0022",
+        "decision": "REVIEW",
+        "priority": "P3",
+        "score": 0.2421,
+        "explanation": "Detector disagreement identified. Absolute normalized score gap: 0.2421.",
+        "recommended_action": "Inspect both scores and request manual review."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0022",
+        "decision": "REVIEW",
+        "priority": "P3",
+        "score": 0.6515,
+        "explanation": "At least one assessment requires manual review. Automatic clearance is withheld.",
+        "recommended_action": "Create a simulated review request."
+      },
+      "consensus": "UNANIMOUS_REVIEW",
+      "final_priority": "P3",
+      "final_decision": "REVIEW",
+      "manual_review_required": true,
+      "explanation": "At least one assessment requires manual review. Automatic clearance is withheld.",
+      "recommended_action": "Create a simulated review request.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0023",
+      "network": "Arbitrum",
+      "event_type": "UNUSUAL_TRANSACTION_FREQUENCY",
+      "risk_score": 71,
+      "hybrid_decision": "ANOMALY",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0023",
+        "decision": "ANOMALY",
+        "priority": "P2",
+        "score": 0.71,
+        "explanation": "Both detection systems indicate an anomaly. The risk level determines incident urgency.",
+        "recommended_action": "Escalate for simulated analyst investigation."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0023",
+        "decision": "ANOMALY",
+        "priority": "P2",
+        "score": 0.2542,
+        "explanation": "Both models agree on an anomaly. Investigation is recommended according to the simulated incident priority.",
+        "recommended_action": "Prepare an analyst investigation case."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0023",
+        "decision": "ANOMALY",
+        "priority": "P2",
+        "score": 0.7124,
+        "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+        "recommended_action": "Recommend analyst investigation; do not execute automatic blocking."
+      },
+      "consensus": "UNANIMOUS_ANOMALY",
+      "final_priority": "P2",
+      "final_decision": "ANOMALY",
+      "manual_review_required": false,
+      "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+      "recommended_action": "Recommend analyst investigation; do not execute automatic blocking.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0024",
+      "network": "Polygon",
+      "event_type": "FAILED_TRANSACTION_SPIKE",
+      "risk_score": 85,
+      "hybrid_decision": "ANOMALY",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0024",
+        "decision": "ANOMALY",
+        "priority": "P1",
+        "score": 0.85,
+        "explanation": "Both detection systems indicate an anomaly. The risk level determines incident urgency.",
+        "recommended_action": "Escalate for simulated analyst investigation."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0024",
+        "decision": "ANOMALY",
+        "priority": "P1",
+        "score": 0.235,
+        "explanation": "Both models agree on an anomaly. Investigation is recommended according to the simulated incident priority.",
+        "recommended_action": "Prepare an analyst investigation case."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0024",
+        "decision": "ANOMALY",
+        "priority": "P1",
+        "score": 0.8519,
+        "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+        "recommended_action": "Recommend analyst investigation; do not execute automatic blocking."
+      },
+      "consensus": "UNANIMOUS_ANOMALY",
+      "final_priority": "P1",
+      "final_decision": "ANOMALY",
+      "manual_review_required": false,
+      "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+      "recommended_action": "Recommend analyst investigation; do not execute automatic blocking.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0025",
+      "network": "Ethereum",
+      "event_type": "WALLET_BEHAVIOR_ANOMALY",
+      "risk_score": 8,
+      "hybrid_decision": "NORMAL",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0025",
+        "decision": "NORMAL",
+        "priority": "P4",
+        "score": 0.08,
+        "explanation": "Both models classify the event as normal under the V15.1 thresholds.",
+        "recommended_action": "Continue simulated monitoring."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0025",
+        "decision": "NORMAL",
+        "priority": "P4",
+        "score": 0.1577,
+        "explanation": "No detector disagreement or anomaly is present under the configured rules.",
+        "recommended_action": "Record and continue monitoring."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0025",
+        "decision": "NORMAL",
+        "priority": "P4",
+        "score": 0.0789,
+        "explanation": "Both assessments support continued monitoring under the research rules.",
+        "recommended_action": "Record the result and continue monitoring."
+      },
+      "consensus": "UNANIMOUS_NORMAL",
+      "final_priority": "P4",
+      "final_decision": "NORMAL",
+      "manual_review_required": false,
+      "explanation": "Both assessments support continued monitoring under the research rules.",
+      "recommended_action": "Record the result and continue monitoring.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0026",
+      "network": "Polygon",
+      "event_type": "UNUSUAL_TRANSACTION_FREQUENCY",
+      "risk_score": 83,
+      "hybrid_decision": "ANOMALY",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0026",
+        "decision": "ANOMALY",
+        "priority": "P1",
+        "score": 0.83,
+        "explanation": "Both detection systems indicate an anomaly. The risk level determines incident urgency.",
+        "recommended_action": "Escalate for simulated analyst investigation."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0026",
+        "decision": "ANOMALY",
+        "priority": "P1",
+        "score": 0.0748,
+        "explanation": "Both models agree on an anomaly. Investigation is recommended according to the simulated incident priority.",
+        "recommended_action": "Prepare an analyst investigation case."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0026",
+        "decision": "ANOMALY",
+        "priority": "P1",
+        "score": 0.8347,
+        "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+        "recommended_action": "Recommend analyst investigation; do not execute automatic blocking."
+      },
+      "consensus": "UNANIMOUS_ANOMALY",
+      "final_priority": "P1",
+      "final_decision": "ANOMALY",
+      "manual_review_required": false,
+      "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+      "recommended_action": "Recommend analyst investigation; do not execute automatic blocking.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0027",
+      "network": "Base",
+      "event_type": "SMART_CONTRACT_ANOMALY",
+      "risk_score": 52,
+      "hybrid_decision": "REVIEW",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0027",
+        "decision": "REVIEW",
+        "priority": "P3",
+        "score": 0.52,
+        "explanation": "The models disagree about this event. A combined risk score alone cannot resolve the conflicting classifications.",
+        "recommended_action": "Request human review of both model outputs."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0027",
+        "decision": "REVIEW",
+        "priority": "P3",
+        "score": 0.3168,
+        "explanation": "Detector disagreement identified. Absolute normalized score gap: 0.3168.",
+        "recommended_action": "Inspect both scores and request manual review."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0027",
+        "decision": "REVIEW",
+        "priority": "P3",
+        "score": 0.5175,
+        "explanation": "At least one assessment requires manual review. Automatic clearance is withheld.",
+        "recommended_action": "Create a simulated review request."
+      },
+      "consensus": "UNANIMOUS_REVIEW",
+      "final_priority": "P3",
+      "final_decision": "REVIEW",
+      "manual_review_required": true,
+      "explanation": "At least one assessment requires manual review. Automatic clearance is withheld.",
+      "recommended_action": "Create a simulated review request.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0028",
+      "network": "Polygon",
+      "event_type": "LARGE_TOKEN_TRANSFER",
+      "risk_score": 95,
+      "hybrid_decision": "ANOMALY",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0028",
+        "decision": "ANOMALY",
+        "priority": "P1",
+        "score": 0.95,
+        "explanation": "Both detection systems indicate an anomaly. The risk level determines incident urgency.",
+        "recommended_action": "Escalate for simulated analyst investigation."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0028",
+        "decision": "ANOMALY",
+        "priority": "P1",
+        "score": 0.1044,
+        "explanation": "Both models agree on an anomaly. Investigation is recommended according to the simulated incident priority.",
+        "recommended_action": "Prepare an analyst investigation case."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0028",
+        "decision": "ANOMALY",
+        "priority": "P1",
+        "score": 0.9478,
+        "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+        "recommended_action": "Recommend analyst investigation; do not execute automatic blocking."
+      },
+      "consensus": "UNANIMOUS_ANOMALY",
+      "final_priority": "P1",
+      "final_decision": "ANOMALY",
+      "manual_review_required": false,
+      "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+      "recommended_action": "Recommend analyst investigation; do not execute automatic blocking.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0029",
+      "network": "Arbitrum",
+      "event_type": "WALLET_BEHAVIOR_ANOMALY",
+      "risk_score": 98,
+      "hybrid_decision": "ANOMALY",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0029",
+        "decision": "ANOMALY",
+        "priority": "P1",
+        "score": 0.98,
+        "explanation": "Both detection systems indicate an anomaly. The risk level determines incident urgency.",
+        "recommended_action": "Escalate for simulated analyst investigation."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0029",
+        "decision": "ANOMALY",
+        "priority": "P1",
+        "score": 0.0343,
+        "explanation": "Both models agree on an anomaly. Investigation is recommended according to the simulated incident priority.",
+        "recommended_action": "Prepare an analyst investigation case."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0029",
+        "decision": "ANOMALY",
+        "priority": "P1",
+        "score": 0.9829,
+        "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+        "recommended_action": "Recommend analyst investigation; do not execute automatic blocking."
+      },
+      "consensus": "UNANIMOUS_ANOMALY",
+      "final_priority": "P1",
+      "final_decision": "ANOMALY",
+      "manual_review_required": false,
+      "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+      "recommended_action": "Recommend analyst investigation; do not execute automatic blocking.",
+      "mode": "RESEARCH_SIMULATION"
+    },
+    {
+      "event_id": "V15-EVENT-0030",
+      "network": "Polygon",
+      "event_type": "UNUSUAL_TRANSACTION_FREQUENCY",
+      "risk_score": 97,
+      "hybrid_decision": "ANOMALY",
+      "threat_assessment": {
+        "agent": "Threat Analysis Agent",
+        "event_id": "V15-EVENT-0030",
+        "decision": "ANOMALY",
+        "priority": "P1",
+        "score": 0.97,
+        "explanation": "Both detection systems indicate an anomaly. The risk level determines incident urgency.",
+        "recommended_action": "Escalate for simulated analyst investigation."
+      },
+      "investigation_assessment": {
+        "agent": "Investigation Agent",
+        "event_id": "V15-EVENT-0030",
+        "decision": "ANOMALY",
+        "priority": "P1",
+        "score": 0.0648,
+        "explanation": "Both models agree on an anomaly. Investigation is recommended according to the simulated incident priority.",
+        "recommended_action": "Prepare an analyst investigation case."
+      },
+      "decision_assessment": {
+        "agent": "Decision Agent",
+        "event_id": "V15-EVENT-0030",
+        "decision": "ANOMALY",
+        "priority": "P1",
+        "score": 0.9676,
+        "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+        "recommended_action": "Recommend analyst investigation; do not execute automatic blocking."
+      },
+      "consensus": "UNANIMOUS_ANOMALY",
+      "final_priority": "P1",
+      "final_decision": "ANOMALY",
+      "manual_review_required": false,
+      "explanation": "Both earlier assessments agree on an anomaly. The event is escalated for investigation.",
+      "recommended_action": "Recommend analyst investigation; do not execute automatic blocking.",
+      "mode": "RESEARCH_SIMULATION"
+    }
+  ],
+  "limitations": [
+    "Input model scores originate from V15.1 synthetic data.",
+    "Agents use deterministic rules, not independent LLMs.",
+    "All assessments inherit the same V15.1 input.",
+    "Unanimous consensus is not independent confirmation.",
+    "No live threat intelligence feeds are used.",
+    "No external model inference is performed.",
+    "No automatic blocking or security remediation.",
+    "No real-world detection performance is established."
+  ]
+}
