@@ -1,0 +1,53 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V19.6",
+  "status": "RESEARCH_RELEASE_PASS",
+  "data_mode": "SAVED_RESEARCH_RESULTS",
+  "is_live": false,
+  "agent_type": "deterministic_rule_based",
+  "llm_enabled": false,
+  "external_actions_enabled": false,
+  "agents": [
+    {
+      "id": "research_agent",
+      "label": "Research Agent",
+      "status": "VALIDATED"
+    },
+    {
+      "id": "validation_agent",
+      "label": "Validation Agent",
+      "status": "VALIDATED"
+    },
+    {
+      "id": "benchmark_agent",
+      "label": "Benchmark Agent",
+      "status": "VALIDATED"
+    },
+    {
+      "id": "supervisor_agent",
+      "label": "Supervisor Agent",
+      "status": "VALIDATED"
+    }
+  ],
+  "research": {
+    "findings_generated": 7,
+    "findings_validated": 7,
+    "samples": 20,
+    "spearman": 0.79608751,
+    "top_k": 5,
+    "top_k_overlap": 3
+  },
+  "supervisor": {
+    "decision": "RESEARCH_APPROVED_FOR_RELEASE_VALIDATION",
+    "completed_tasks": 4,
+    "human_review_required": true
+  },
+  "scientific_disclaimers": [
+    "Research results are not live.",
+    "Only a small blockchain sample was used.",
+    "No independently verified attack labels.",
+    "No demonstrated quantum advantage.",
+    "No production security effectiveness established.",
+    "No external actions are performed."
+  ]
+}

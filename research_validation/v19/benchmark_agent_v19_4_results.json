@@ -1,0 +1,274 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V19.4",
+  "module": "Benchmark Agent",
+  "created_utc": "2026-10-20T10:59:56.199411+00:00",
+  "status": "BENCHMARK_AGENT_PASS",
+  "agent_id": "benchmark_agent",
+  "agent_type": "deterministic_benchmark_analysis",
+  "llm_enabled": false,
+  "external_actions_enabled": false,
+  "benchmark": {
+    "dataset_sha256": "a675d916a012a1fd8f2df2a8c6d6f318c541848af541e8ebbaedf0bc962cb95e",
+    "samples": 20,
+    "methods": {
+      "classical": "IsolationForest",
+      "quantum": "Qiskit simulated fidelity kernel"
+    },
+    "spearman": 0.79608751,
+    "top_k": 5,
+    "top_k_overlap": 3,
+    "top_k_jaccard": 0.42857143,
+    "bootstrap_95_percent_ci": [
+      0.45202401,
+      0.94082278
+    ],
+    "permutation_p_value": 0.00019996,
+    "top_k_exact_p_value": 0.07262642,
+    "classical_runtime_seconds": 0.211153,
+    "quantum_simulation_runtime_seconds": 0.150035,
+    "runtime_comparison_is_fair": false,
+    "verified_attack_labels": false,
+    "quantum_advantage_demonstrated": false
+  },
+  "checks": [
+    {
+      "name": "File available: multi_agent_architecture_v19_1_results.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File available: validation_agent_v19_3_results.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File available: classical_baseline_v18_2_results.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File available: quantum_kernel_v18_3_results.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File available: quantum_classical_comparison_v18_4_results.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File available: statistical_validation_v18_5_results.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File available: training_features_v17_1.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File available: classical_baseline_v18_2_scores.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File available: quantum_kernel_v18_3_scores.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "architecture: correct version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "architecture: validated status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "validation: correct version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "validation: validated status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "classical: correct version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "classical: validated status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "quantum: correct version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "quantum: validated status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "comparison: correct version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "comparison: validated status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "statistics: correct version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "statistics: validated status",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Benchmark Agent registered",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Seven research findings validated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "classical: source SHA-256",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "classical: sample count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "quantum: source SHA-256",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "quantum: sample count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "comparison: source SHA-256",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "comparison: sample count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "statistics: source SHA-256",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "statistics: sample count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Rank correlation reproduces V18.4",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Rank correlation reproduces V18.5",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Top-K overlap reproduced",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Classical Top-K reproduced",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Quantum Top-K reproduced",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Top-K Jaccard reproduced",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bootstrap interval valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Permutation p-value valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Top-K exact p-value valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Statistical Top-K consistency",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Quantum simulator, not physical hardware",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No quantum advantage claim",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Runtime observations valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Timing comparison explicitly not fair",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "checks_passed": 45,
+  "checks_failed": 0,
+  "error": null,
+  "limitations": [
+    "No independently verified attack labels.",
+    "No out-of-sample predictive evaluation.",
+    "Small blockchain transaction dataset.",
+    "Ranking agreement is not detection accuracy.",
+    "Runtime timings are not directly comparable.",
+    "No quantum computational advantage demonstrated.",
+    "The agent does not run external actions."
+  ],
+  "next_stage": "V19.5 Autonomous Supervisor"
+}

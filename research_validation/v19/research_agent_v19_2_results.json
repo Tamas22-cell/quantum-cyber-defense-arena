@@ -1,0 +1,311 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V19.2",
+  "module": "Research Agent",
+  "created_utc": "2026-10-20T10:51:56.638304+00:00",
+  "status": "RESEARCH_AGENT_PASS",
+  "agent_id": "research_agent",
+  "agent_type": "deterministic_evidence_analysis",
+  "llm_enabled": false,
+  "external_actions_enabled": false,
+  "source_artifacts": {
+    "v19_architecture": {
+      "file": "research_validation\\v19\\multi_agent_architecture_v19_1_results.json",
+      "sha256": "9be3a4eb37b779f5dec2afaab390bd1707b45c1930f1baed67d82c97e6458bf3"
+    },
+    "v17_release": {
+      "file": "research_validation\\v17\\ai_training_research_release_v17_5_results.json",
+      "sha256": "c722832a383b917921c089c683109cb6a9d7a122dc39870d73e6091a966c23aa"
+    },
+    "v18_release": {
+      "file": "research_validation\\v18\\research_release_v18_6_results.json",
+      "sha256": "368af5697d964351db5d1f2af1d817b9cd762727ad5980569c955f6af91ea4fe"
+    },
+    "v18_comparison": {
+      "file": "research_validation\\v18\\quantum_classical_comparison_v18_4_results.json",
+      "sha256": "c3e3c536ce515060f36bfe3fb111f7629ba74ecbd3dece445dd83a7a1ffeb463"
+    },
+    "v18_statistics": {
+      "file": "research_validation\\v18\\statistical_validation_v18_5_results.json",
+      "sha256": "608ee7a4ff2dd6686ff6efd59fda4854ae36625f92ffc5dc8e7f25a49b303a63"
+    }
+  },
+  "findings": [
+    {
+      "finding_id": "RESEARCH-001",
+      "title": "AI research dataset",
+      "statement": "The research used 20 blockchain-derived transaction samples with 10 numerical features.",
+      "confidence_scope": "artifact_verified",
+      "evidence": [
+        {
+          "source": "v18_release",
+          "json_path": "$.dataset.samples",
+          "file": "research_validation\\v18\\research_release_v18_6_results.json"
+        },
+        {
+          "source": "v18_release",
+          "json_path": "$.dataset.feature_count",
+          "file": "research_validation\\v18\\research_release_v18_6_results.json"
+        }
+      ]
+    },
+    {
+      "finding_id": "RESEARCH-002",
+      "title": "Classical AI training",
+      "statement": "The Isolation Forest research model was trained on 20 samples. It flagged 5 statistical anomalies in its training data.",
+      "confidence_scope": "artifact_verified",
+      "evidence": [
+        {
+          "source": "v17_release",
+          "json_path": "$.research_results.v17_2_samples",
+          "file": "research_validation\\v17\\ai_training_research_release_v17_5_results.json"
+        },
+        {
+          "source": "v17_release",
+          "json_path": "$.research_results.v17_2_training_anomalies",
+          "file": "research_validation\\v17\\ai_training_research_release_v17_5_results.json"
+        }
+      ]
+    },
+    {
+      "finding_id": "RESEARCH-003",
+      "title": "Cross-method rank association",
+      "statement": "The classical and simulated quantum novelty rankings had a Spearman correlation of 0.79608751. This is a ranking association, not detection accuracy.",
+      "confidence_scope": "artifact_verified",
+      "evidence": [
+        {
+          "source": "v18_comparison",
+          "json_path": "$.comparison.spearman_rank_correlation",
+          "file": "research_validation\\v18\\quantum_classical_comparison_v18_4_results.json"
+        }
+      ]
+    },
+    {
+      "finding_id": "RESEARCH-004",
+      "title": "Top-K overlap",
+      "statement": "The two methods shared 3 of their top 5 highest-scoring transaction samples. Overlap is not a ground-truth accuracy measure.",
+      "confidence_scope": "artifact_verified",
+      "evidence": [
+        {
+          "source": "v18_comparison",
+          "json_path": "$.comparison.top_k",
+          "file": "research_validation\\v18\\quantum_classical_comparison_v18_4_results.json"
+        },
+        {
+          "source": "v18_comparison",
+          "json_path": "$.comparison.top_k_overlap",
+          "file": "research_validation\\v18\\quantum_classical_comparison_v18_4_results.json"
+        }
+      ]
+    },
+    {
+      "finding_id": "RESEARCH-005",
+      "title": "Bootstrap uncertainty",
+      "statement": "The exploratory paired-bootstrap 95% interval for rank correlation was [0.45202401, 0.94082278]. Its interpretation depends on sampling assumptions.",
+      "confidence_scope": "exploratory_statistical_result",
+      "evidence": [
+        {
+          "source": "v18_statistics",
+          "json_path": "$.spearman.bootstrap.ci_lower",
+          "file": "research_validation\\v18\\statistical_validation_v18_5_results.json"
+        },
+        {
+          "source": "v18_statistics",
+          "json_path": "$.spearman.bootstrap.ci_upper",
+          "file": "research_validation\\v18\\statistical_validation_v18_5_results.json"
+        }
+      ]
+    },
+    {
+      "finding_id": "RESEARCH-006",
+      "title": "Exploratory significance tests",
+      "statement": "The permutation-test p-value was 0.00019996, and the exact Top-K overlap p-value was 0.07262642. They test different null models and do not prove cyberattack detection or quantum advantage.",
+      "confidence_scope": "exploratory_statistical_result",
+      "evidence": [
+        {
+          "source": "v18_statistics",
+          "json_path": "$.spearman.permutation.p_value_two_sided",
+          "file": "research_validation\\v18\\statistical_validation_v18_5_results.json"
+        },
+        {
+          "source": "v18_statistics",
+          "json_path": "$.top_k.hypergeometric_tail_p_value",
+          "file": "research_validation\\v18\\statistical_validation_v18_5_results.json"
+        }
+      ]
+    },
+    {
+      "finding_id": "RESEARCH-007",
+      "title": "Research validation",
+      "statement": "V17.5 passed 34 release checks, and V18.6 passed 46 release checks. These establish artifact-level validation, not operational security effectiveness.",
+      "confidence_scope": "artifact_verified",
+      "evidence": [
+        {
+          "source": "v17_release",
+          "json_path": "$.checks_passed",
+          "file": "research_validation\\v17\\ai_training_research_release_v17_5_results.json"
+        },
+        {
+          "source": "v18_release",
+          "json_path": "$.checks_passed",
+          "file": "research_validation\\v18\\research_release_v18_6_results.json"
+        }
+      ]
+    }
+  ],
+  "findings_count": 7,
+  "checks": [
+    {
+      "name": "Source exists: v19_architecture",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v19\\multi_agent_architecture_v19_1_results.json"
+    },
+    {
+      "name": "Readable JSON: v19_architecture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source exists: v17_release",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v17\\ai_training_research_release_v17_5_results.json"
+    },
+    {
+      "name": "Readable JSON: v17_release",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source exists: v18_release",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v18\\research_release_v18_6_results.json"
+    },
+    {
+      "name": "Readable JSON: v18_release",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source exists: v18_comparison",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v18\\quantum_classical_comparison_v18_4_results.json"
+    },
+    {
+      "name": "Readable JSON: v18_comparison",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source exists: v18_statistics",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v18\\statistical_validation_v18_5_results.json"
+    },
+    {
+      "name": "Readable JSON: v18_statistics",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Validated release: v19_architecture",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Validated release: v17_release",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Validated release: v18_release",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Validated release: v18_comparison",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Validated release: v18_statistics",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Research Agent configured",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V19.1 source fingerprint: v17_release",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V19.1 source fingerprint: v18_release",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V19.1 source fingerprint: v18_comparison",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V19.1 source fingerprint: v18_statistics",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Consistent research sample count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Research feature count valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Rank correlation consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Top-K comparison consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bootstrap interval valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Statistical p-values valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Evidence-grounded findings generated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Every finding contains source references",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "checks_passed": 28,
+  "checks_failed": 0,
+  "scientific_limitations": [
+    "Research sample contains only 20 transactions.",
+    "No verified malicious transaction labels.",
+    "No independent threat-detection test set.",
+    "Statistical tests rely on their null assumptions.",
+    "No physical quantum hardware was used.",
+    "No quantum advantage demonstrated.",
+    "Agent does not make autonomous external decisions."
+  ],
+  "next_stage": "V19.3 Validation Agent"
+}
