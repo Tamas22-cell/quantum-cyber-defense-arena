@@ -1,0 +1,168 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V18.4",
+  "module": "Quantum-Classical Comparison",
+  "created_utc": "2026-10-20T10:33:42.642274+00:00",
+  "status": "COMPARISON_PASS",
+  "dataset": {
+    "sha256": "a675d916a012a1fd8f2df2a8c6d6f318c541848af541e8ebbaedf0bc962cb95e",
+    "samples": 20,
+    "original_features": 10
+  },
+  "methods": {
+    "classical": "IsolationForest",
+    "quantum": "Qiskit simulated fidelity kernel with mean-fidelity novelty scoring"
+  },
+  "comparison": {
+    "spearman_rank_correlation": 0.79608751,
+    "top_k": 5,
+    "classical_top_k": [
+      6,
+      11,
+      12,
+      14,
+      15
+    ],
+    "quantum_top_k": [
+      6,
+      7,
+      10,
+      11,
+      12
+    ],
+    "top_k_overlap": 3,
+    "top_k_union": 7,
+    "top_k_jaccard": 0.42857143,
+    "top_k_overlap_fraction": 0.6,
+    "classical_anomaly_flags": 5,
+    "classical_vs_quantum_top_k_flag_agreement": 0.8
+  },
+  "runtime_observations": {
+    "classical_fit_seconds": 0.176692,
+    "classical_inference_seconds": 0.034461,
+    "classical_total_seconds": 0.211153,
+    "quantum_preprocessing_simulation_kernel_seconds": 0.150035,
+    "timing_comparison_is_fair": false
+  },
+  "checks": [
+    {
+      "name": "Required file: training_features_v17_1.csv",
+      "passed": true,
+      "details": "A:\\quantum-cyber-defense-arena\\research_validation\\v17\\training_features_v17_1.csv"
+    },
+    {
+      "name": "Required file: benchmark_architecture_v18_1_results.json",
+      "passed": true,
+      "details": "A:\\quantum-cyber-defense-arena\\research_validation\\v18\\benchmark_architecture_v18_1_results.json"
+    },
+    {
+      "name": "Required file: classical_baseline_v18_2_results.json",
+      "passed": true,
+      "details": "A:\\quantum-cyber-defense-arena\\research_validation\\v18\\classical_baseline_v18_2_results.json"
+    },
+    {
+      "name": "Required file: quantum_kernel_v18_3_results.json",
+      "passed": true,
+      "details": "A:\\quantum-cyber-defense-arena\\research_validation\\v18\\quantum_kernel_v18_3_results.json"
+    },
+    {
+      "name": "Required file: classical_baseline_v18_2_scores.csv",
+      "passed": true,
+      "details": "A:\\quantum-cyber-defense-arena\\research_validation\\v18\\classical_baseline_v18_2_scores.csv"
+    },
+    {
+      "name": "Required file: quantum_kernel_v18_3_scores.csv",
+      "passed": true,
+      "details": "A:\\quantum-cyber-defense-arena\\research_validation\\v18\\quantum_kernel_v18_3_scores.csv"
+    },
+    {
+      "name": "Required file: quantum_kernel_v18_3_matrix.csv",
+      "passed": true,
+      "details": "A:\\quantum-cyber-defense-arena\\research_validation\\v18\\quantum_kernel_v18_3_matrix.csv"
+    },
+    {
+      "name": "V18.1 architecture PASS",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "V18.2 classical PASS",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "V18.3 quantum PASS",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Identical dataset SHA-256",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Dataset sample counts agree",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Dataset feature order agrees",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Sample-level score alignment",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Kernel matrix sample count",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Quantum novelty matches saved kernel",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Classical anomaly count matches report",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Comparison scores are finite",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Top-K sets have correct size",
+      "passed": true,
+      "details": ""
+    },
+    {
+      "name": "Spearman correlation calculable",
+      "passed": true,
+      "details": ""
+    }
+  ],
+  "checks_passed": 20,
+  "checks_failed": 0,
+  "verified_attack_labels": false,
+  "quantum_advantage_demonstrated": false,
+  "limitations": [
+    "Only 20 blockchain transaction samples.",
+    "No independently verified cyberattack labels.",
+    "No independent test set.",
+    "Isolation Forest and quantum novelty scores have different statistical meanings.",
+    "Top-K overlap measures agreement, not accuracy.",
+    "Runtime figures describe different algorithms and were not collected under repeated controlled benchmark conditions.",
+    "Quantum computations used local simulation, not physical quantum hardware.",
+    "No quantum speedup or detection superiority is established."
+  ],
+  "outputs": {
+    "comparison_csv": "research_validation\\v18\\quantum_classical_comparison_v18_4_scores.csv",
+    "report_json": "research_validation\\v18\\quantum_classical_comparison_v18_4_results.json"
+  },
+  "next_stage": "V18.5 Statistical Validation"
+}

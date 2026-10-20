@@ -1,0 +1,366 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V18.6",
+  "module": "Quantum-Classical Research Release",
+  "created_utc": "2026-10-20T10:40:06.612759+00:00",
+  "status": "RESEARCH_RELEASE_PASS",
+  "checks_passed": 46,
+  "checks_failed": 0,
+  "checks": [
+    {
+      "name": "File exists: training_features_v17_1.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File exists: benchmark_architecture_v18_1_results.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File exists: classical_baseline_v18_2_results.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File exists: quantum_kernel_v18_3_results.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File exists: quantum_classical_comparison_v18_4_results.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File exists: statistical_validation_v18_5_results.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File exists: classical_baseline_v18_2_scores.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File exists: quantum_kernel_v18_3_matrix.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File exists: quantum_kernel_v18_3_scores.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File exists: quantum_classical_comparison_v18_4_scores.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "File exists: statistical_validation_v18_5_sensitivity.csv",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V18.1 version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V18.1 result PASS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V18.2 version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V18.2 result PASS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V18.3 version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V18.3 result PASS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V18.4 version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V18.4 result PASS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V18.5 version",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "V18.5 result PASS",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v18_1 checks failed = 0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v18_4 checks failed = 0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "v18_5 checks failed = 0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All stages use the same SHA-256 dataset",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "All stages use the same sample count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source feature count verified",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Source feature order verified",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Sample size documented",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Classical score rows verified",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Quantum kernel rows verified",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Quantum score rows verified",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Comparison score rows verified",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Sensitivity analysis rows verified",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Classical anomaly counts consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Quantum calculation is simulated",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Quantum kernel dimensions consistent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Quantum kernel PSD confirmed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Quantum qubit count valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Spearman correlation agrees",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Top-K overlap agrees",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Top-K size agrees",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Bootstrap confidence interval valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Permutation p-value valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Top-K exact p-value valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "No quantum advantage claimed",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "dataset": {
+    "samples": 20,
+    "feature_count": 10,
+    "feature_names": [
+      "value_eth",
+      "log_value_eth",
+      "gas_limit",
+      "log_gas_limit",
+      "gas_price_gwei",
+      "max_fee_per_gas_gwei",
+      "max_priority_fee_gwei",
+      "nonce",
+      "is_zero_value",
+      "sender_tx_count_in_sample"
+    ],
+    "sha256": "a675d916a012a1fd8f2df2a8c6d6f318c541848af541e8ebbaedf0bc962cb95e"
+  },
+  "research": {
+    "project": "Quantum Cyber Defense Arena",
+    "version": "V18.6",
+    "status": "RESEARCH_RELEASE_PASS",
+    "data_mode": "SAVED_RESEARCH_RESULTS",
+    "is_live": false,
+    "research_samples": 20,
+    "classical": {
+      "model": "Isolation Forest",
+      "anomaly_count": 5,
+      "runtime_seconds": 0.211153
+    },
+    "quantum": {
+      "model": "Qiskit Fidelity Kernel",
+      "qubits": 3,
+      "layers": 2,
+      "kernel_shape": [
+        20,
+        20
+      ],
+      "runtime_seconds": 0.150035,
+      "simulated": true
+    },
+    "comparison": {
+      "spearman": 0.79608751,
+      "top_k": 5,
+      "overlap": 3,
+      "jaccard": 0.42857143,
+      "bootstrap_ci_lower": 0.45202401,
+      "bootstrap_ci_upper": 0.94082278,
+      "permutation_p_value": 0.00019996,
+      "top_k_exact_p_value": 0.07262642
+    },
+    "disclaimers": [
+      "Results are not real-time.",
+      "Only a small transaction sample was used.",
+      "No verified cyberattack labels.",
+      "No quantum computational advantage established.",
+      "Runtime values are not a fair speed comparison.",
+      "The quantum method ran on a simulator."
+    ]
+  },
+  "artifact_fingerprints": [
+    {
+      "path": "research_validation\\v17\\training_features_v17_1.csv",
+      "size_bytes": 1497,
+      "sha256": "a675d916a012a1fd8f2df2a8c6d6f318c541848af541e8ebbaedf0bc962cb95e"
+    },
+    {
+      "path": "research_validation\\v18\\benchmark_architecture_v18_1_results.json",
+      "size_bytes": 4251,
+      "sha256": "058c9d77c5118eee2d221421127f96434c96d7629079245a6a8e88fb94c78146"
+    },
+    {
+      "path": "research_validation\\v18\\classical_baseline_v18_2_results.json",
+      "size_bytes": 2388,
+      "sha256": "c677d086c48fd63c293d62e6e062774da8e76138c96a84fcfef99c1bdef4e17d"
+    },
+    {
+      "path": "research_validation\\v18\\quantum_kernel_v18_3_results.json",
+      "size_bytes": 2948,
+      "sha256": "d2ba43988650df89021f231646d70ccb9d1370f2a87a81516eddf3590796de1e"
+    },
+    {
+      "path": "research_validation\\v18\\quantum_classical_comparison_v18_4_results.json",
+      "size_bytes": 5133,
+      "sha256": "c3e3c536ce515060f36bfe3fb111f7629ba74ecbd3dece445dd83a7a1ffeb463"
+    },
+    {
+      "path": "research_validation\\v18\\statistical_validation_v18_5_results.json",
+      "size_bytes": 4231,
+      "sha256": "608ee7a4ff2dd6686ff6efd59fda4854ae36625f92ffc5dc8e7f25a49b303a63"
+    },
+    {
+      "path": "research_validation\\v18\\classical_baseline_v18_2_scores.csv",
+      "size_bytes": 693,
+      "sha256": "f0c12d52df701ff5a145392c0aa3143d5ebd46cf574a858f8a0a7c2691b6b2d3"
+    },
+    {
+      "path": "research_validation\\v18\\quantum_kernel_v18_3_matrix.csv",
+      "size_bytes": 5182,
+      "sha256": "a4b0467eeeaa4f51c94edd0184ec5d74d3577a11b0ce01d185f33e883ad2ce7e"
+    },
+    {
+      "path": "research_validation\\v18\\quantum_kernel_v18_3_scores.csv",
+      "size_bytes": 429,
+      "sha256": "bdca1b5511c25d0b9389ae56cf2ef1b70c987bee21fc5e4781e53bdaa7a248ff"
+    },
+    {
+      "path": "research_validation\\v18\\quantum_classical_comparison_v18_4_scores.csv",
+      "size_bytes": 1054,
+      "sha256": "f79c534be96b12fcbf0b4eebe0b9e00a805ee7f459fbb65d8373612ca475f741"
+    },
+    {
+      "path": "research_validation\\v18\\statistical_validation_v18_5_sensitivity.csv",
+      "size_bytes": 372,
+      "sha256": "591c6263d2174e501fe7747e3a9defd1a5ad36a349593311f9ec21287a969f9d"
+    }
+  ],
+  "scientific_limitations": [
+    "Small research sample.",
+    "No verified malicious labels.",
+    "In-sample evaluation only.",
+    "No validated quantum advantage.",
+    "Different algorithms and score definitions.",
+    "No controlled runtime superiority established."
+  ],
+  "next_stage": "V19 - Autonomous Multi-Agent Research"
+}

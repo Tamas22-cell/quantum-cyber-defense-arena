@@ -1,0 +1,149 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V18.1",
+  "module": "Quantum-Classical Benchmark Architecture",
+  "created_utc": "2026-10-20T10:24:25.349194+00:00",
+  "status": "ARCHITECTURE_PASS",
+  "dataset": {
+    "source": "research_validation\\v17\\training_features_v17_1.csv",
+    "sha256": "a675d916a012a1fd8f2df2a8c6d6f318c541848af541e8ebbaedf0bc962cb95e",
+    "samples": 20,
+    "feature_count": 10,
+    "feature_names": [
+      "value_eth",
+      "log_value_eth",
+      "gas_limit",
+      "log_gas_limit",
+      "gas_price_gwei",
+      "max_fee_per_gas_gwei",
+      "max_priority_fee_gwei",
+      "nonce",
+      "is_zero_value",
+      "sender_tx_count_in_sample"
+    ],
+    "feature_statistics": {
+      "value_eth": {
+        "min": 0.0,
+        "max": 0.012234842,
+        "mean": 0.0006354,
+        "population_std": 0.00266309,
+        "unique_values": 3
+      },
+      "log_value_eth": {
+        "min": 0.0,
+        "max": 0.0121606,
+        "mean": 0.00063168,
+        "population_std": 0.00264692,
+        "unique_values": 3
+      },
+      "gas_limit": {
+        "min": 21000.0,
+        "max": 2000000.0,
+        "mean": 609179.45,
+        "population_std": 533543.00274696,
+        "unique_values": 15
+      },
+      "log_gas_limit": {
+        "min": 9.95232533,
+        "max": 14.50865824,
+        "mean": 12.90700888,
+        "population_std": 1.03280493,
+        "unique_values": 15
+      },
+      "gas_price_gwei": {
+        "min": 0.036865,
+        "max": 47.619048,
+        "mean": 3.42819385,
+        "population_std": 10.20445376,
+        "unique_values": 11
+      },
+      "max_fee_per_gas_gwei": {
+        "min": 0.036865,
+        "max": 250.0,
+        "mean": 20.8265291,
+        "population_std": 55.29136184,
+        "unique_values": 13
+      },
+      "max_priority_fee_gwei": {
+        "min": 0.0,
+        "max": 47.619048,
+        "mean": 3.40238835,
+        "population_std": 10.21076336,
+        "unique_values": 10
+      },
+      "nonce": {
+        "min": 0.0,
+        "max": 3788600.0,
+        "mean": 427283.3,
+        "population_std": 1125133.38959246,
+        "unique_values": 20
+      },
+      "is_zero_value": {
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.9,
+        "population_std": 0.3,
+        "unique_values": 2
+      },
+      "sender_tx_count_in_sample": {
+        "min": 1.0,
+        "max": 2.0,
+        "mean": 1.3,
+        "population_std": 0.45825757,
+        "unique_values": 2
+      }
+    }
+  },
+  "benchmark_design": {
+    "random_state": 42,
+    "classical_baseline": "IsolationForest",
+    "quantum_candidate": "Quantum kernel or simulator method to be defined and implemented in V18.3",
+    "same_input_dataset_required": true,
+    "same_test_partitions_required": true,
+    "preprocessing_fit_on_training_only": true,
+    "report_runtime_and_resources": true,
+    "report_model_parameters": true,
+    "avoid_ground_truth_accuracy_claims": true
+  },
+  "dataset_limitations": {
+    "verified_attack_labels": false,
+    "independent_test_set": false,
+    "sample_size_sufficient_for_publication": false,
+    "scientific_claim": "Architecture and data integrity only"
+  },
+  "checks": [
+    {
+      "name": "V17 feature dataset exists",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v17\\training_features_v17_1.csv"
+    },
+    {
+      "name": "V17 research release report exists",
+      "passed": true,
+      "detail": "A:\\quantum-cyber-defense-arena\\research_validation\\v17\\ai_training_research_release_v17_5_results.json"
+    },
+    {
+      "name": "Feature dataset readable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "Sufficient samples for architecture smoke test",
+      "passed": true,
+      "detail": "Samples: 20"
+    },
+    {
+      "name": "At least two numerical features",
+      "passed": true,
+      "detail": "Features: 10"
+    },
+    {
+      "name": "V17 research release validated",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "checks_passed": 6,
+  "checks_failed": 0,
+  "next_stage": "V18.2 Classical AI Baseline"
+}

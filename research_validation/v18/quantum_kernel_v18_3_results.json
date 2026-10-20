@@ -1,0 +1,92 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V18.3",
+  "module": "Quantum Kernel Simulator",
+  "created_utc": "2026-10-20T10:30:28.017241+00:00",
+  "status": "QUANTUM_KERNEL_PASS",
+  "dataset": {
+    "source": "research_validation\\v17\\training_features_v17_1.csv",
+    "sha256": "a675d916a012a1fd8f2df2a8c6d6f318c541848af541e8ebbaedf0bc962cb95e",
+    "samples": 20,
+    "original_features": 10,
+    "feature_names": [
+      "value_eth",
+      "log_value_eth",
+      "gas_limit",
+      "log_gas_limit",
+      "gas_price_gwei",
+      "max_fee_per_gas_gwei",
+      "max_priority_fee_gwei",
+      "nonce",
+      "is_zero_value",
+      "sender_tx_count_in_sample"
+    ]
+  },
+  "quantum_method": {
+    "framework": "Qiskit",
+    "qiskit_version": "2.6.0",
+    "backend_type": "local_statevector_simulator",
+    "physical_quantum_hardware": false,
+    "number_of_qubits": 3,
+    "circuit_layers": 2,
+    "gates": [
+      "RY",
+      "RZ",
+      "CX"
+    ],
+    "kernel_type": "fidelity_kernel",
+    "kernel_formula": "abs(inner_product(state_i,state_j))**2",
+    "preprocessing": "full-sample standardization, SVD/PCA reduction, tanh angle encoding",
+    "pca_variance_explained_ratio": 0.89182313,
+    "example_circuit_depth": 10,
+    "example_circuit_size": 22
+  },
+  "kernel_validation": {
+    "matrix_shape": [
+      20,
+      20
+    ],
+    "symmetric": true,
+    "diagonal_ones": true,
+    "positive_semidefinite": true,
+    "minimum_eigenvalue": 0.0,
+    "min_fidelity": 1e-08,
+    "max_fidelity": 1.0
+  },
+  "novelty_results": {
+    "method": "one_minus_mean_off_diagonal_fidelity",
+    "mean_score": 0.7225715,
+    "min_score": 0.55847478,
+    "max_score": 0.95341751
+  },
+  "runtime": {
+    "preprocessing_seconds": 0.066448,
+    "simulation_seconds": 0.019234,
+    "kernel_seconds": 0.064353,
+    "total_seconds": 0.150035
+  },
+  "evaluation": {
+    "type": "in_sample_quantum_kernel_exploration",
+    "verified_attack_labels": false,
+    "independent_test_set": false,
+    "model_accuracy_available": false,
+    "quantum_advantage_demonstrated": false,
+    "direct_score_comparability_with_iforest": false
+  },
+  "limitations": [
+    "Only 20 blockchain transaction samples.",
+    "All samples used to fit PCA preprocessing.",
+    "No verified threat labels.",
+    "No independent test set.",
+    "Quantum novelty score differs from Isolation Forest anomaly score.",
+    "This is an ideal statevector simulation.",
+    "No physical quantum hardware was used.",
+    "No quantum speedup or superiority claimed."
+  ],
+  "outputs": {
+    "kernel_csv": "research_validation\\v18\\quantum_kernel_v18_3_matrix.csv",
+    "novelty_scores_csv": "research_validation\\v18\\quantum_kernel_v18_3_scores.csv",
+    "report_json": "research_validation\\v18\\quantum_kernel_v18_3_results.json"
+  },
+  "next_stage": "V18.4 Quantum-Classical Comparison"
+}

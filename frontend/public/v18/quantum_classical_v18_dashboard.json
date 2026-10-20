@@ -1,0 +1,42 @@
+{
+  "project": "Quantum Cyber Defense Arena",
+  "version": "V18.6",
+  "status": "RESEARCH_RELEASE_PASS",
+  "data_mode": "SAVED_RESEARCH_RESULTS",
+  "is_live": false,
+  "research_samples": 20,
+  "classical": {
+    "model": "Isolation Forest",
+    "anomaly_count": 5,
+    "runtime_seconds": 0.211153
+  },
+  "quantum": {
+    "model": "Qiskit Fidelity Kernel",
+    "qubits": 3,
+    "layers": 2,
+    "kernel_shape": [
+      20,
+      20
+    ],
+    "runtime_seconds": 0.150035,
+    "simulated": true
+  },
+  "comparison": {
+    "spearman": 0.79608751,
+    "top_k": 5,
+    "overlap": 3,
+    "jaccard": 0.42857143,
+    "bootstrap_ci_lower": 0.45202401,
+    "bootstrap_ci_upper": 0.94082278,
+    "permutation_p_value": 0.00019996,
+    "top_k_exact_p_value": 0.07262642
+  },
+  "disclaimers": [
+    "Results are not real-time.",
+    "Only a small transaction sample was used.",
+    "No verified cyberattack labels.",
+    "No quantum computational advantage established.",
+    "Runtime values are not a fair speed comparison.",
+    "The quantum method ran on a simulator."
+  ]
+}
